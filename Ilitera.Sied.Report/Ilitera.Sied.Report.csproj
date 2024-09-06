@@ -1,0 +1,1259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FEA4E9D9-6182-46BC-B6CE-9AAC09B63E1F}</ProjectGuid>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>Ilitera.Sied.Report</AssemblyName>
+    <AssemblyOriginatorKeyFile>Ilitera.pfx</AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Ilitera.Sied.Report</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SignAssembly>false</SignAssembly>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <FileAlignment>4096</FileAlignment>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>SecurityRules.ruleset</CodeAnalysisRuleSet>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <Optimize>true</Optimize>
+    <FileAlignment>4096</FileAlignment>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Web, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataSourceClassificacaoFuncional.cs" />
+    <Compile Include="DataSourceGuia.cs" />
+    <Compile Include="DataSourceGuia_Prajna.cs" />
+    <Compile Include="DataSourceInsalubridade.cs" />
+    <Compile Include="DataSourcePCA.cs" />
+    <Compile Include="DataSourcePlanilhaA4PPRA_Novo.cs" />
+    <Compile Include="DataSourcePlanilhaA4PPRA_PCA.cs" />
+    <Compile Include="DataSourcePlanilhaA4PPRA_PPR.cs" />
+    <Compile Include="DataSourcePPRAAnexo.cs" />
+    <Compile Include="DataSourcePPRA_NR20.cs" />
+    <Compile Include="DataSource\dsNR201.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsNR20.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSource\ds_Entrega_EPI_EPIs2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_Entrega_EPI_EPIs2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSource\Guia.cs">
+      <DependentUpon>Guia.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSource\Guia.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Guia.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSource\PPRA_Anexo.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PPRA_Anexo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSource\QuadroEPI2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuadroEPI2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSource\rptQuadroEPI.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptQuadroEPI.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSourcePlanilhaEmpregados.cs" />
+    <Compile Include="ReportPPP99_Global.cs">
+      <DependentUpon>ReportPPP99_Global.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="RptCronogramaPGR.cs">
+      <DependentUpon>RptCronogramaPGR.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="RptDocumentoBasePGR2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptDocumentoBasePGR2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptErgonomia_New.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptErgonomia_New.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptGuia_Nova_Prajna.cs">
+      <DependentUpon>RptGuia_Nova_Prajna.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="RptGuia_Nova.cs">
+      <DependentUpon>RptGuia_Nova.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="RptGuia_Prajna.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptGuia_Prajna.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptInsalubridade.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptInsalubridade.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptListaFuncoes.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptListaFuncoes.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptListaSetor.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptListaSetor.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptPCA1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptPCA.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptPCA_PGR.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptPCA_PGR.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptPCMSOPlanilhaA4_Prajna.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptPCMSOPlanilhaA4_Prajna.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptPCMSOPlanilhaAnalitica.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptPCMSOPlanilhaAnalitica.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptPPRAAnexo2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptPPRAAnexo2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptPPRAEmpregadoQuadro.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptPPRAEmpregadoQuadro.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptPPRATextoAnexo.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptPPRATextoAnexo.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptPPRA_A4_Novo.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptPPRA_A4_Novo.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptPPRA_A4_PCA.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptPPRA_A4_PCA.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptPPRA_A4_PCA_PGR.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptPPRA_A4_PCA_PGR.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptPPRA_A4_PPR.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptPPRA_A4_PPR.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptPPRA_A4_Prajna.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptPPRA_A4_Prajna.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptPPRA_NR20_2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptPPRA_NR20_2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptPPRA_PGR.cs">
+      <DependentUpon>RptPPRA_PGR.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="RptPPRAEmpregadoPrevidenciario.cs">
+      <DependentUpon>RptPPRAEmpregadoPrevidenciario.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="DataSourceCronogramaErgonomia.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataSourceDocumentoBasePPRA.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataSourceEmpregado.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataSourceIntroducaoPPRA.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataSourceLaudoErgonomico.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataSourcePlanilhaA3PPRA.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataSourcePlanilhaA4PCMSO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataSourcePlanilhaA4PPRA.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataSourcePPRAEmpregado.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataSourceQuadroEPI.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataSource\DSMapaRisco.cs">
+      <DependentUpon>DSMapaRisco.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EntregaEPI.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PPP99.cs" />
+    <Compile Include="ReportEntregaEPI1.cs">
+      <DependentUpon>ReportEntregaEPI.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="ReportPPP99.cs">
+      <DependentUpon>ReportPPP99.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptCronogramaErgonomia.cs">
+      <DependentUpon>RptCronogramaErgonomia.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptDocumentoBasePPRA.cs">
+      <DependentUpon>RptDocumentoBasePPRA.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptErgonomia.cs">
+      <DependentUpon>RptErgonomia.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptIntroducaoPPRA.cs">
+      <DependentUpon>RptIntroducaoPPRA.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptListaDeEmpregados.cs">
+      <DependentUpon>RptListaDeEmpregados.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptPCMSOPlanilhaA4.cs">
+      <DependentUpon>RptPCMSOPlanilhaA4.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptPlanilhaPPRA.cs">
+      <DependentUpon>RptPlanilhaPPRA.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptPPRAEmpregado.cs">
+      <DependentUpon>RptPPRAEmpregado.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptPPRA_A4.cs">
+      <DependentUpon>RptPPRA_A4.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptQuadroEPI.cs">
+      <DependentUpon>RptQuadroEPI.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptQuadroEPI_PGRTR.cs">
+      <DependentUpon>RptQuadroEPI_PGRTR.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="RptQuadroEPI_PGR.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptQuadroEPI_PGR.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptReciboEPI2_Biometria.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptReciboEPI2_Biometria.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptReciboMateriais_Biometria.cs">
+      <DependentUpon>RptReciboMateriais_Biometria.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="RptReciboMateriais.cs">
+      <DependentUpon>RptReciboMateriais.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="RptReciboEPI2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptReciboEPI2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Content Include="DataSource\ClassificacaoFuncionalImportacao.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <EmbeddedResource Include="ReportPPP99_Global.resx">
+      <DependentUpon>ReportPPP99_Global.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportPPP99_Global.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportPPP99_Global.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptDocumentoBasePGR2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptDocumentoBasePGR2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptErgonomia_New.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptErgonomia_New.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptGuia_Nova_Prajna.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptGuia_Nova_Prajna.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptGuia_Nova.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptGuia_Nova.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptGuia_Prajna.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptGuia_Prajna.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptInsalubridade.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptInsalubridade.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptListaFuncoes.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptListaFuncoes.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptListaSetor.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptListaSetor.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptPCA.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptPCA1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptPCA_PGR.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptPCA_PGR.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptPCMSOPlanilhaA4_Prajna.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptPCMSOPlanilhaA4_Prajna.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptPCMSOPlanilhaAnalitica.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptPCMSOPlanilhaAnalitica.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptPPRAAnexo2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptPPRAAnexo2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptPPRATextoAnexo.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptPPRATextoAnexo.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptPPRA_A4_Novo.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptPPRA_A4_Novo.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptPPRA_A4_PCA.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptPPRA_A4_PCA.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptPPRA_A4_PCA_PGR.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptPPRA_A4_PCA_PGR.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptPPRA_A4_PPR.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptPPRA_A4_PPR.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptPPRA_A4_Prajna.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptPPRA_A4_Prajna.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptPPRA_NR20_2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptPPRA_NR20_2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptQuadroEPI_PGRTR.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptQuadroEPI_PGRTR.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptQuadroEPI_PGR.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptQuadroEPI_PGR.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptReciboEPI2_Biometria.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptReciboEPI2_Biometria.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptReciboMateriais_Biometria.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptReciboMateriais_Biometria.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptReciboMateriais.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptReciboMateriais.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptReciboEPI2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptReciboEPI2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="DataSource\CarimboCNPJ.xsc">
+      <DependentUpon>CarimboCNPJ.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\CarimboCNPJ.xss">
+      <DependentUpon>CarimboCNPJ.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\ClassificacaoFuncionalImportacao.xsc">
+      <DependentUpon>ClassificacaoFuncionalImportacao.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\ClassificacaoFuncionalImportacao.xss">
+      <DependentUpon>ClassificacaoFuncionalImportacao.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\ClassificacaoFuncionalImportacao.xsx">
+      <DependentUpon>ClassificacaoFuncionalImportacao.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\Auditoria.xsx">
+      <DependentUpon>Auditoria.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\AuditoriaFoto.xsx">
+      <DependentUpon>AuditoriaFoto.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\Avaliacao.xsx">
+      <DependentUpon>Avaliacao.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\Caldeira.xsx">
+      <DependentUpon>Caldeira.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\CaldeiraProjeto.xsx">
+      <DependentUpon>CaldeiraProjeto.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\CarimboCNPJ.xsx">
+      <DependentUpon>CarimboCNPJ.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\ClassificacaoFuncional.xsx">
+      <DependentUpon>ClassificacaoFuncional.xsd</DependentUpon>
+    </None>
+    <Content Include="DataSource\DSMapaRisco.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSHistogramaRuido.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\ClassificacaoFuncionalPorGrupo.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="DataSource\ClassificacaoFuncionalPorGrupo.xsc">
+      <DependentUpon>ClassificacaoFuncionalPorGrupo.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\ClassificacaoFuncionalPorGrupo.xss">
+      <DependentUpon>ClassificacaoFuncionalPorGrupo.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\ClassificacaoFuncionalPorGrupo.xsx">
+      <DependentUpon>ClassificacaoFuncionalPorGrupo.xsd</DependentUpon>
+    </None>
+    <Content Include="DataSource\sps_rptPPP_15_9.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="DataSource\DocumentoBasePPRA.xsc">
+      <DependentUpon>DocumentoBasePPRA.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DocumentoBasePPRA.xss">
+      <DependentUpon>DocumentoBasePPRA.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSAgentesQuimicos.xsc">
+      <DependentUpon>DSAgentesQuimicos.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSAgentesQuimicos.xss">
+      <DependentUpon>DSAgentesQuimicos.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\dsNR20.xsc">
+      <DependentUpon>dsNR20.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\dsNR20.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsNR201.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSource\dsNR20.xss">
+      <DependentUpon>dsNR20.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSPPRAEmpregado.xsc">
+      <DependentUpon>DSPPRAEmpregado.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSPPRAEmpregado.xss">
+      <DependentUpon>DSPPRAEmpregado.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSPrestador.xsc">
+      <DependentUpon>DSPrestador.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSPrestador.xss">
+      <DependentUpon>DSPrestador.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\ds_EntregaEPI.xsc">
+      <DependentUpon>ds_EntregaEPI.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\ds_EntregaEPI.xss">
+      <DependentUpon>ds_EntregaEPI.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\ds_EntregaEPI_EPIs.xsc">
+      <DependentUpon>ds_EntregaEPI_EPIs.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\ds_EntregaEPI_EPIs.xss">
+      <DependentUpon>ds_EntregaEPI_EPIs.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\ds_Entrega_EPI_EPIs2.xsc">
+      <DependentUpon>ds_Entrega_EPI_EPIs2.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\ds_Entrega_EPI_EPIs2.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_Entrega_EPI_EPIs2.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSource\ds_Entrega_EPI_EPIs2.xss">
+      <DependentUpon>ds_Entrega_EPI_EPIs2.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\FotoFachada.xsc">
+      <DependentUpon>FotoFachada.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\FotoFachada.xss">
+      <DependentUpon>FotoFachada.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\Guia.xsc">
+      <DependentUpon>Guia.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\Guia.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Guia.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSource\Guia.xss">
+      <DependentUpon>Guia.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\IntroducaoDocumentoBase.xsc">
+      <DependentUpon>IntroducaoDocumentoBase.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\IntroducaoDocumentoBase.xss">
+      <DependentUpon>IntroducaoDocumentoBase.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\LaudoErgonomico.xsc">
+      <DependentUpon>LaudoErgonomico.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\LaudoErgonomico.xss">
+      <DependentUpon>LaudoErgonomico.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\ListagemPPRA.xsc">
+      <DependentUpon>ListagemPPRA.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\ListagemPPRA.xss">
+      <DependentUpon>ListagemPPRA.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\PlanilhaPPRA.xsc">
+      <DependentUpon>PlanilhaPPRA.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\PlanilhaPPRA.xss">
+      <DependentUpon>PlanilhaPPRA.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\PlanilhaPPRA_A4.xsc">
+      <DependentUpon>PlanilhaPPRA_A4.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\PlanilhaPPRA_A4.xss">
+      <DependentUpon>PlanilhaPPRA_A4.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\PPRAColetivo.xsc">
+      <DependentUpon>PPRAColetivo.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\PPRAColetivo.xss">
+      <DependentUpon>PPRAColetivo.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\PPRA_Anexo.xsc">
+      <DependentUpon>PPRA_Anexo.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\PPRA_Anexo.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PPRA_Anexo.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSource\PPRA_Anexo.xss">
+      <DependentUpon>PPRA_Anexo.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\QuadroEPI2.xsc">
+      <DependentUpon>QuadroEPI2.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\QuadroEPI2.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuadroEPI2.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSource\QuadroEPI2.xss">
+      <DependentUpon>QuadroEPI2.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\rptQuadroEPI.xsc">
+      <DependentUpon>rptQuadroEPI.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\rptQuadroEPI.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>rptQuadroEPI.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSource\rptQuadroEPI.xss">
+      <DependentUpon>rptQuadroEPI.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\sps_rptPPP.xsc">
+      <DependentUpon>sps_rptPPP.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\sps_rptPPP.xss">
+      <DependentUpon>sps_rptPPP.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\sps_rptPPP_15_9.xsc">
+      <DependentUpon>sps_rptPPP_15_9.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\sps_rptPPP_15_9.xss">
+      <DependentUpon>sps_rptPPP_15_9.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\sps_rptPPP_15_9.xsx">
+      <DependentUpon>sps_rptPPP_15_9.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSHistogramaRuido.xsc">
+      <DependentUpon>DSHistogramaRuido.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSHistogramaRuido.xss">
+      <DependentUpon>DSHistogramaRuido.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSHistogramaRuido.xsx">
+      <DependentUpon>DSHistogramaRuido.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSMapaRisco.xsc">
+      <DependentUpon>DSMapaRisco.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSMapaRisco.xss">
+      <DependentUpon>DSMapaRisco.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSMapaRisco.xsx">
+      <DependentUpon>DSMapaRisco.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\CronogramaErgonomia.xsx">
+      <DependentUpon>CronogramaErgonomia.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DocumentoBasePPRA.xsx">
+      <DependentUpon>DocumentoBasePPRA.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSAgentesQuimicos.xsx">
+      <DependentUpon>DSAgentesQuimicos.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSAvaliacaoAmbiental.xsx">
+      <DependentUpon>DSAvaliacaoAmbiental.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSLocalTrabalho.xsx">
+      <DependentUpon>DSLocalTrabalho.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSPPRAEmpregado.xsx">
+      <DependentUpon>DSPPRAEmpregado.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSPrestador.xsx">
+      <DependentUpon>DSPrestador.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSPrestadorPPRA.xsx">
+      <DependentUpon>DSPrestadorPPRA.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\ds_EntregaEPI.xsx">
+      <DependentUpon>ds_EntregaEPI.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\ds_EntregaEPI_EPIs.xsx">
+      <DependentUpon>ds_EntregaEPI_EPIs.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\ds_ListaSetores.xsx">
+      <DependentUpon>ds_ListaSetores.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\FotoFachada.xsx">
+      <DependentUpon>FotoFachada.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\HeaderEmpresa.xsx">
+      <DependentUpon>HeaderEmpresa.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\IntroducaoDocumentoBase.xsx">
+      <DependentUpon>IntroducaoDocumentoBase.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\LaudoErgonomico.xsx">
+      <DependentUpon>LaudoErgonomico.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\ListagemPPRA.xsx">
+      <DependentUpon>ListagemPPRA.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\PlanilhaPCMSO_A4.xsc">
+      <DependentUpon>PlanilhaPCMSO_A4.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\PlanilhaPCMSO_A4.xss">
+      <DependentUpon>PlanilhaPCMSO_A4.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\PlanilhaPCMSO_A4.xsx">
+      <DependentUpon>PlanilhaPCMSO_A4.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\PlanilhaPPRA.xsx">
+      <DependentUpon>PlanilhaPPRA.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\PlanilhaPPRA_A4.xsx">
+      <DependentUpon>PlanilhaPPRA_A4.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\PPRAColetivo.xsx">
+      <DependentUpon>PPRAColetivo.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\sps_rptListaEmpregados.xsx">
+      <DependentUpon>sps_rptListaEmpregados.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\sps_rptListaFuncoes.xsx">
+      <DependentUpon>sps_rptListaFuncoes.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\sps_rptLTCAT.xsx">
+      <DependentUpon>sps_rptLTCAT.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\sps_rptPPP.xsx">
+      <DependentUpon>sps_rptPPP.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\sps_rptPPP_Cat.xsc">
+      <DependentUpon>sps_rptPPP_Cat.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\sps_rptPPP_Cat.xss">
+      <DependentUpon>sps_rptPPP_Cat.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\sps_rptPPP_Cat.xsx">
+      <DependentUpon>sps_rptPPP_Cat.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\sps_rptPPP_Exame.xsc">
+      <DependentUpon>sps_rptPPP_Exame.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\sps_rptPPP_Exame.xss">
+      <DependentUpon>sps_rptPPP_Exame.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\sps_rptPPP_Exame.xsx">
+      <DependentUpon>sps_rptPPP_Exame.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\sps_rptPPP_ExameAudiometrico.xsc">
+      <DependentUpon>sps_rptPPP_ExameAudiometrico.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\sps_rptPPP_ExameAudiometrico.xss">
+      <DependentUpon>sps_rptPPP_ExameAudiometrico.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\sps_rptPPP_ExameAudiometrico.xsx">
+      <DependentUpon>sps_rptPPP_ExameAudiometrico.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\sps_rptPPP_Exposicao.xsc">
+      <DependentUpon>sps_rptPPP_Exposicao.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\sps_rptPPP_Exposicao.xss">
+      <DependentUpon>sps_rptPPP_Exposicao.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\sps_rptPPP_Exposicao.xsx">
+      <DependentUpon>sps_rptPPP_Exposicao.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\sps_rptPPP_Periodo.xsc">
+      <DependentUpon>sps_rptPPP_Periodo.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\sps_rptPPP_Periodo.xss">
+      <DependentUpon>sps_rptPPP_Periodo.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\sps_rptPPP_Periodo.xsx">
+      <DependentUpon>sps_rptPPP_Periodo.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\sps_rptPPP_Responsavel.xsc">
+      <DependentUpon>sps_rptPPP_Responsavel.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\sps_rptPPP_Responsavel.xss">
+      <DependentUpon>sps_rptPPP_Responsavel.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\sps_rptPPP_Responsavel.xsx">
+      <DependentUpon>sps_rptPPP_Responsavel.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\sps_rptPPP_TecnicaUtilizada.xsc">
+      <DependentUpon>sps_rptPPP_TecnicaUtilizada.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\sps_rptPPP_TecnicaUtilizada.xss">
+      <DependentUpon>sps_rptPPP_TecnicaUtilizada.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\sps_rptPPP_TecnicaUtilizada.xsx">
+      <DependentUpon>sps_rptPPP_TecnicaUtilizada.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\VasoInspecao.xsx">
+      <DependentUpon>VasoInspecao.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\VasoProjeto.xsx">
+      <DependentUpon>VasoProjeto.xsd</DependentUpon>
+    </None>
+    <EmbeddedResource Include="RptCronogramaPGR.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptCronogramaPGR.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptPPRAEmpregadoQuadro.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptPPRAEmpregadoQuadro.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptPPRA_PGR.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptPPRA_PGR.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptPPRAEmpregadoPrevidenciario.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptPPRAEmpregadoPrevidenciario.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportEntregaEPI.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportEntregaEPI1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportEntregaEPI1.resx">
+      <DependentUpon>ReportEntregaEPI1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportPPP99.resx">
+      <DependentUpon>ReportPPP99.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportPPP99.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportPPP99.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptCronogramaErgonomia.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptCronogramaErgonomia.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptDocumentoBasePPRA.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptDocumentoBasePPRA.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptErgonomia.resx">
+      <DependentUpon>RptErgonomia.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptErgonomia.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptErgonomia.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptIntroducaoPPRA.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptIntroducaoPPRA.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptListaDeEmpregados.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptListaDeEmpregados.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptPCMSOPlanilhaA4.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptPCMSOPlanilhaA4.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptPlanilhaPPRA.resx">
+      <DependentUpon>RptPlanilhaPPRA.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptPlanilhaPPRA.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptPlanilhaPPRA.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptPPRAEmpregado.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptPPRAEmpregado.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptPPRA_A4.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptPPRA_A4.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptQuadroEPI.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptQuadroEPI.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Content Include="DataSource\Auditoria.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\AuditoriaFoto.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\Avaliacao.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\Caldeira.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\CaldeiraProjeto.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\CarimboCNPJ.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\ClassificacaoFuncional.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\CronogramaErgonomia.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DocumentoBasePPRA.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSAgentesQuimicos.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSAvaliacaoAmbiental.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSLocalTrabalho.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSPPRAEmpregado.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSPrestador.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSPrestadorPPRA.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\ds_EntregaEPI.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\ds_EntregaEPI_EPIs.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\ds_ListaSetores.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\FotoFachada.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\HeaderEmpresa.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\IntroducaoDocumentoBase.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\LaudoErgonomico.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\ListagemPPRA.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\PlanilhaPCMSO_A4.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\PlanilhaPPRA.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\PlanilhaPPRA_A4.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\PPRAColetivo.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\sps_rptListaEmpregados.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\sps_rptListaFuncoes.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\sps_rptLTCAT.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\sps_rptPPP.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\sps_rptPPP_Cat.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\sps_rptPPP_Exame.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\sps_rptPPP_ExameAudiometrico.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\sps_rptPPP_Exposicao.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\sps_rptPPP_Periodo.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\sps_rptPPP_Responsavel.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\sps_rptPPP_TecnicaUtilizada.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\VasoInspecao.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\VasoProjeto.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Ilitera.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3924545A-F8E2-475A-B1A4-05175BC41E50}" />
+    <Service Include="{5AD368F8-9AD3-4E4C-97D8-1F4F1C124158}" />
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+    <Service Include="{CF845C55-C321-4742-B673-E6212D061ED9}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Ilitera.Common\Ilitera.Common.csproj">
+      <Project>{6ef4b4ec-69d3-4f21-8934-f23f34a52533}</Project>
+      <Name>Ilitera.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ilitera.Data\Ilitera.Data.csproj">
+      <Project>{ddd39289-1377-486b-8aa3-122884700431}</Project>
+      <Name>Ilitera.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ilitera.Opsa.Data\Ilitera.Opsa.Data.csproj">
+      <Project>{7c453d2c-00bb-4cdc-9a34-3e4f52a66e13}</Project>
+      <Name>Ilitera.Opsa.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>del   "$(ProjectDir)obj\x64\Debug\*.*"  /q
+del   "$(ProjectDir)obj\Debug\*.*"  /q</PostBuildEvent>
+  </PropertyGroup>
+</Project>

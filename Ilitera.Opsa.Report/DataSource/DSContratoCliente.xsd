@@ -1,0 +1,37 @@
+<?xml version="1.0" standalone="yes" ?>
+<xs:schema id="DataSet" targetNamespace="http://www.tempuri.org/DataSet1.xsd" xmlns:mstns="http://www.tempuri.org/DataSet1.xsd"
+	xmlns="http://www.tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+	<xs:element name="DataSet" msdata:IsDataSet="true" msdata:Locale="pt-BR">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="Result">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="IdCliente" type="xs:int" minOccurs="0" />
+							<xs:element name="IdContrato" type="xs:int" minOccurs="0" />
+							<xs:element name="NomeCliente" type="xs:string" minOccurs="0" />
+							<xs:element name="Inicio" type="xs:string" minOccurs="0" />
+							<xs:element name="Termino" type="xs:string" minOccurs="0" />
+							<xs:element name="Descricao" type="xs:string" minOccurs="0" />
+							<xs:element name="DiaVencimento" type="xs:string" minOccurs="0" />
+							<xs:element name="Carencia" type="xs:string" minOccurs="0" />
+							<xs:element name="PrimeiroVencimento" type="xs:string" minOccurs="0" />
+							<xs:element name="Renegociar" type="xs:string" minOccurs="0" />
+							<xs:element name="RenegociarEm" type="xs:string" minOccurs="0" />
+							<xs:element name="DataRecisao" type="xs:string" minOccurs="0" />
+							<xs:element name="MotivoRecisao" type="xs:string" minOccurs="0" />
+							<xs:element name="TipoDeContrato" type="xs:string" minOccurs="0" />
+							<xs:element name="NotaFiscalEmNome" type="xs:string" minOccurs="0" />
+							<xs:element name="Observacao" type="xs:string" minOccurs="0" />
+							<xs:element name="EnderecoEntrega" type="xs:string" minOccurs="0" />
+							<xs:element name="EmpresaCedente" type="xs:string" minOccurs="0" />
+							<xs:element name="InstrucaoCobranca" type="xs:string" minOccurs="0" />
+							<xs:element name="AgruparServicos" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

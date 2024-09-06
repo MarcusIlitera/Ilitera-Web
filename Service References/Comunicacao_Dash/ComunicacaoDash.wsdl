@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="https://www.ilitera.net.br/essence_hom" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="https://www.ilitera.net.br/essence_hom" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="https://www.ilitera.net.br/essence_hom">
+      <s:element name="Exposicao_Colaboradores">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CNPJ" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Exposicao_ColaboradoresResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Exposicao_ColaboradoresResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="solicitar_CAT">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CNPJ" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CodUsuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Colaborador" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Data_Inicial" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Data_Final" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="solicitar_CATResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="solicitar_CATResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="Exposicao_ColaboradoresSoapIn">
+    <wsdl:part name="parameters" element="tns:Exposicao_Colaboradores" />
+  </wsdl:message>
+  <wsdl:message name="Exposicao_ColaboradoresSoapOut">
+    <wsdl:part name="parameters" element="tns:Exposicao_ColaboradoresResponse" />
+  </wsdl:message>
+  <wsdl:message name="solicitar_CATSoapIn">
+    <wsdl:part name="parameters" element="tns:solicitar_CAT" />
+  </wsdl:message>
+  <wsdl:message name="solicitar_CATSoapOut">
+    <wsdl:part name="parameters" element="tns:solicitar_CATResponse" />
+  </wsdl:message>
+  <wsdl:message name="Exposicao_ColaboradoresHttpGetIn">
+    <wsdl:part name="CNPJ" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Exposicao_ColaboradoresHttpGetOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="solicitar_CATHttpGetIn">
+    <wsdl:part name="ID" type="s:string" />
+    <wsdl:part name="CNPJ" type="s:string" />
+    <wsdl:part name="CodUsuario" type="s:string" />
+    <wsdl:part name="Colaborador" type="s:string" />
+    <wsdl:part name="Data_Inicial" type="s:string" />
+    <wsdl:part name="Data_Final" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="solicitar_CATHttpGetOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="Exposicao_ColaboradoresHttpPostIn">
+    <wsdl:part name="CNPJ" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Exposicao_ColaboradoresHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="solicitar_CATHttpPostIn">
+    <wsdl:part name="ID" type="s:string" />
+    <wsdl:part name="CNPJ" type="s:string" />
+    <wsdl:part name="CodUsuario" type="s:string" />
+    <wsdl:part name="Colaborador" type="s:string" />
+    <wsdl:part name="Data_Inicial" type="s:string" />
+    <wsdl:part name="Data_Final" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="solicitar_CATHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:portType name="ComunicacaoDashSoap">
+    <wsdl:operation name="Exposicao_Colaboradores">
+      <wsdl:input message="tns:Exposicao_ColaboradoresSoapIn" />
+      <wsdl:output message="tns:Exposicao_ColaboradoresSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="solicitar_CAT">
+      <wsdl:input message="tns:solicitar_CATSoapIn" />
+      <wsdl:output message="tns:solicitar_CATSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="ComunicacaoDashHttpGet">
+    <wsdl:operation name="Exposicao_Colaboradores">
+      <wsdl:input message="tns:Exposicao_ColaboradoresHttpGetIn" />
+      <wsdl:output message="tns:Exposicao_ColaboradoresHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="solicitar_CAT">
+      <wsdl:input message="tns:solicitar_CATHttpGetIn" />
+      <wsdl:output message="tns:solicitar_CATHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="ComunicacaoDashHttpPost">
+    <wsdl:operation name="Exposicao_Colaboradores">
+      <wsdl:input message="tns:Exposicao_ColaboradoresHttpPostIn" />
+      <wsdl:output message="tns:Exposicao_ColaboradoresHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="solicitar_CAT">
+      <wsdl:input message="tns:solicitar_CATHttpPostIn" />
+      <wsdl:output message="tns:solicitar_CATHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ComunicacaoDashSoap" type="tns:ComunicacaoDashSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Exposicao_Colaboradores">
+      <soap:operation soapAction="https://www.ilitera.net.br/essence_hom/Exposicao_Colaboradores" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="solicitar_CAT">
+      <soap:operation soapAction="https://www.ilitera.net.br/essence_hom/solicitar_CAT" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ComunicacaoDashSoap12" type="tns:ComunicacaoDashSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Exposicao_Colaboradores">
+      <soap12:operation soapAction="https://www.ilitera.net.br/essence_hom/Exposicao_Colaboradores" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="solicitar_CAT">
+      <soap12:operation soapAction="https://www.ilitera.net.br/essence_hom/solicitar_CAT" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ComunicacaoDashHttpGet" type="tns:ComunicacaoDashHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="Exposicao_Colaboradores">
+      <http:operation location="/Exposicao_Colaboradores" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="solicitar_CAT">
+      <http:operation location="/solicitar_CAT" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ComunicacaoDashHttpPost" type="tns:ComunicacaoDashHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="Exposicao_Colaboradores">
+      <http:operation location="/Exposicao_Colaboradores" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="solicitar_CAT">
+      <http:operation location="/solicitar_CAT" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ComunicacaoDash">
+    <wsdl:port name="ComunicacaoDashSoap" binding="tns:ComunicacaoDashSoap">
+      <soap:address location="http://localhost:46870/ComunicacaoDash.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ComunicacaoDashSoap12" binding="tns:ComunicacaoDashSoap12">
+      <soap12:address location="http://localhost:46870/ComunicacaoDash.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ComunicacaoDashHttpGet" binding="tns:ComunicacaoDashHttpGet">
+      <http:address location="http://localhost:46870/ComunicacaoDash.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ComunicacaoDashHttpPost" binding="tns:ComunicacaoDashHttpPost">
+      <http:address location="http://localhost:46870/ComunicacaoDash.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

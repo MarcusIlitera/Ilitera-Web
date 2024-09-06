@@ -1,0 +1,28 @@
+<?xml version="1.0" standalone="yes" ?>
+<xs:schema id="DataSet" targetNamespace="http://www.tempuri.org/DataSet1.xsd" xmlns:mstns="http://www.tempuri.org/DataSet1.xsd" xmlns="http://www.tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+	<xs:element name="DataSet" msdata:IsDataSet="true" msdata:Locale="pt-BR">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="Result">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="nID_EMPR" type="xs:int" minOccurs="0" />
+							<xs:element name="nID_EMPREGADO" type="xs:int" minOccurs="0" />
+							<xs:element name="tPERIODO" type="xs:string" minOccurs="0" />
+							<xs:element name="tNO_STR_EMPR" type="xs:string" minOccurs="0" />
+							<xs:element name="tNO_CARGO" type="xs:string" minOccurs="0" />
+							<xs:element name="tNO_FUNC_EMPR" type="xs:string" minOccurs="0" />
+							<xs:element name="tCBO" type="xs:string" minOccurs="0" />
+							<xs:element name="tDS_REQUISITO" type="xs:string" minOccurs="0" />
+							<xs:element name="tDS_FUNC_EMPR" type="xs:string" minOccurs="0" />
+							<xs:element name="NUMERO_PERIODO" type="xs:string" minOccurs="0" />
+							<xs:element name="JORNADA" type="xs:string" minOccurs="0" />
+							<xs:element name="DESCRICAO_LOCAL_TRABALHO" type="xs:string" minOccurs="0" />
+							<xs:element name="CONCLUSAO_LTCAT" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

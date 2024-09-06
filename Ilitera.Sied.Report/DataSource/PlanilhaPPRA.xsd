@@ -1,0 +1,40 @@
+<?xml version="1.0" standalone="yes" ?>
+<xs:schema id="DataSet" targetNamespace="http://www.tempuri.org/DataSet1.xsd" xmlns:mstns="http://www.tempuri.org/DataSet1.xsd"
+	xmlns="http://www.tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+	<xs:element name="DataSet" msdata:IsDataSet="true" msdata:Locale="pt-BR">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="Result">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="CarimboCNPJ" type="xs:string" minOccurs="0" />
+							<xs:element name="Ghe" type="xs:string" minOccurs="0" />
+							<xs:element name="DataLevantamento" type="xs:string" minOccurs="0" />
+							<xs:element name="DescricaoFuncao" type="xs:string" minOccurs="0" />
+							<xs:element name="TrabalhadoresExpostos" type="xs:string" minOccurs="0" />
+							<xs:element name="RiscosFisicos" type="xs:string" minOccurs="0" />
+							<xs:element name="RiscosQuimicosQuantitativo" type="xs:string" minOccurs="0" />
+							<xs:element name="RiscosQuimicosQualitativo" type="xs:string" minOccurs="0" />
+							<xs:element name="RiscosBiologicos" type="xs:string" minOccurs="0" />
+							<xs:element name="RiscosFisicosRuidoDb" type="xs:string" minOccurs="0" />
+							<xs:element name="RiscosFisicosRuidoLimiteTolerancia" type="xs:string" minOccurs="0" />
+							<xs:element name="RiscosFisicosCalorIBUTG" type="xs:string" minOccurs="0" />
+							<xs:element name="RiscosFisicosCalorLimiteTolerancia" type="xs:string" minOccurs="0" />
+							<xs:element name="RiscosQuimicosValor" type="xs:string" minOccurs="0" />
+							<xs:element name="RiscosQuimicosLimiteTolerancia" type="xs:string" minOccurs="0" />
+							<xs:element name="TempoDeExposicao" type="xs:string" minOccurs="0" />
+							<xs:element name="EPI" type="xs:string" minOccurs="0" />
+							<xs:element name="EPC" type="xs:string" minOccurs="0" />
+							<xs:element name="ExameMedico" type="xs:string" minOccurs="0" />
+							<xs:element name="Periodicidade" type="xs:string" minOccurs="0" />
+							<xs:element name="bRuidoUltrapassado" type="xs:boolean" minOccurs="0" />
+							<xs:element name="bAnalQuantAgQuimico" type="xs:boolean" minOccurs="0" />
+							<xs:element name="bAnalQuantCalor" type="xs:boolean" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

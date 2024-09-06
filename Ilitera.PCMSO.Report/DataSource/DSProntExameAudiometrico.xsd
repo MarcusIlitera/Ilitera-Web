@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="Dataset" targetNamespace="http://tempuri.org/Dataset.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/Dataset.xsd" xmlns:mstns="http://tempuri.org/Dataset.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="Dataset" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="Result">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="DataExame" type="xs:string" />
+							<xs:element name="AAOE025" type="xs:string" />
+							<xs:element name="AAOD025" type="xs:string" />
+							<xs:element name="AAOE05" type="xs:string" />
+							<xs:element name="AAOD05" type="xs:string" />
+							<xs:element name="AAOE1" type="xs:string" />
+							<xs:element name="AAOD1" type="xs:string" />
+							<xs:element name="AAOE2" type="xs:string" />
+							<xs:element name="AAOD2" type="xs:string" />
+							<xs:element name="AAOE3" type="xs:string" />
+							<xs:element name="AAOD3" type="xs:string" />
+							<xs:element name="AAOE4" type="xs:string" />
+							<xs:element name="AAOD4" type="xs:string" />
+							<xs:element name="AAOE6" type="xs:string" />
+							<xs:element name="AAOD6" type="xs:string" />
+							<xs:element name="AAOE8" type="xs:string" />
+							<xs:element name="AAOD8" type="xs:string" />
+							<xs:element name="OAOE05" type="xs:string" />
+							<xs:element name="OAOD05" type="xs:string" />
+							<xs:element name="OAOE1" type="xs:string" />
+							<xs:element name="OAOD1" type="xs:string" />
+							<xs:element name="OAOE2" type="xs:string" />
+							<xs:element name="OAOD2" type="xs:string" />
+							<xs:element name="OAOE3" type="xs:string" />
+							<xs:element name="OAOD3" type="xs:string" />
+							<xs:element name="OAOE4" type="xs:string" />
+							<xs:element name="OAOD4" type="xs:string" />
+							<xs:element name="OAOE6" type="xs:string" />
+							<xs:element name="OAOD6" type="xs:string" />
+							<xs:element name="ReferencialOE" type="xs:string" />
+							<xs:element name="ReferencialOD" type="xs:string" />
+							<xs:element name="Tipo" type="xs:string" />
+							<xs:element name="Audiometro" type="xs:string" />
+							<xs:element name="ResultadoOE" type="xs:string" />
+							<xs:element name="ResultadoOD" type="xs:string" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

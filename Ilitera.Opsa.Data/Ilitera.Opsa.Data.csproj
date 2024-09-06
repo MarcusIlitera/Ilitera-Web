@@ -1,0 +1,589 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7C453D2C-00BB-4CDC-9A34-3E4F52A66E13}</ProjectGuid>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>Ilitera.Opsa.Data</AssemblyName>
+    <AssemblyOriginatorKeyFile>Ilitera.pfx</AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Ilitera.Opsa.Data</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SignAssembly>false</SignAssembly>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <FileAlignment>4096</FileAlignment>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>SecurityRules.ruleset</CodeAnalysisRuleSet>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <Optimize>true</Optimize>
+    <FileAlignment>4096</FileAlignment>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ilitera.Data, Version=1.0.6416.17758, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Ilitera.Data\bin\x64\Debug\Ilitera.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AgenteQuimico.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Agrupamento.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Anamnese.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AnamneseAudiologica.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Anamnese_Questoes.cs" />
+    <Compile Include="AposentadoriaEspecial.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AtaPDT.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Audiometria.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AudiometriaAudiograma.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Audiometro.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Auditoria.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Brasanitas.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Caracterizacao.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CaracterizacaoCliente.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CAT.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CedenteBaixaAutomatica.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Cipa.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Cliente.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ClienteExameDicionario.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ContratoServicoExameDicionarioReajuste.cs" />
+    <Compile Include="Clinica.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ClinicaCliente.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ClinicaClienteExameDicionario.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ClinicaExameDicionario.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Cobranca.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Concentracao.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Conta.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Contato.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Contrato.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ContratoReajuste.cs" />
+    <Compile Include="ContratoServico.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ContratoServicoExameDicionario.cs" />
+    <Compile Include="ContratoServicoObrigacao.cs" />
+    <Compile Include="ContratoServicoObrigacaoReajuste.cs" />
+    <Compile Include="ContratoServicoReajuste.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controle.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ControleEPI.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ControleExtintores.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ControleObrigacao.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ControlePedido.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Convocacao.cs" />
+    <Compile Include="ConvocacaoExame.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Agenda.cs" />
+    <Compile Include="CronogramaLaudoEletrico.cs" />
+    <Compile Include="CronogramaPCMSO.cs" />
+    <Compile Include="eSocial_Tabelas.cs" />
+    <Compile Include="LaudoEletrico.cs" />
+    <Compile Include="ListaEmailsEnviarAta.cs" />
+    <Compile Include="Morbidade.cs" />
+    <Compile Include="Pericia.cs" />
+    <Compile Include="OrdemServicoNR1_7.cs" />
+    <Compile Include="RiscoAcidenteGhe.cs" />
+    <Compile Include="SatisfacaoUsuario.cs" />
+    <Compile Include="Cotacao.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CronogramaErgonomia.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CronogranaPPRA.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DadosTecnicos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DanosRelacionadosSaude.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DeclaracaoPadrao.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Diagnostico.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Documento.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DRT.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Empregado.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EmpregadoFuncao.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Empresa.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EntragaDocumento.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EPC.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Epi.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EPIConcentracao.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EquipamentoMedicao.cs" />
+    <Compile Include="EventoBaseCipa.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EventoCipa.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ExameBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ExameDicionario.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ExameDicionarioAgenteQuimico.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ExameDicionarioIdade.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ExamePlanejamento.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ExameRelacionado.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FAQ.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Faturamento.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FaturamentoPedido.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FaturamentoServico.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FaturamentoServicoAnalitico.cs" />
+    <Compile Include="FraseGheAE.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Funcao.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Ghe.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HistogramaRuido.cs" />
+    <Compile Include="HistoricoLogin.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HistoricoPageErrors.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ICalculoVasoCaldeira.cs" />
+    <Compile Include="ImportacaoAutomatica.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ImportaEmpregado.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ImpressaoDocUsuario.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Indice.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="InspecaoVasoCaldeira.cs" />
+    <Compile Include="IntegrantesSESMT.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Lancamento.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LaudoTecnico.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ManualBioSeguranca.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MapaRisco.cs" />
+    <Compile Include="MateriaPrima.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Medico.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MembroCipa.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Movimentacao.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Obrigacao.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ObrigacaoAtividade.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ObrigacaoCliente.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OrdemServico.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Origem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PagamentoClinica.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PagamentoPrestador.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pcmso.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PcmsoDocumento.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PcmsoFrasePadrao.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PcmsoFrasePadraoDicionario.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PcmsoGHE.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PcmsoPlanejamento.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PcmsoPlanejamentoIdade.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pedido.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PedidoEmpregado.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PedidoGrupo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Perito.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Ppra.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PrestadorCliente.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProntuarioDigital.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProspecaoExcel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Prospeccao.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RateioDespesaCliente.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Recomendacao.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RegimeRevezamento.cs" />
+    <Compile Include="RegraCliente.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RegraLei.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RegraSindicato.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RequisitoLegal.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Responsavel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ReuniaoCipa.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Risco.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SaidaDocumento.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Servico.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Setor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sied.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sindicato.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Telemarketing.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TempoExposicao.cs" />
+    <Compile Include="TextoPadrao.cs" />
+    <Compile Include="TipoCliente.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Treinamento.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Unidade.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vacinas.cs" />
+    <Compile Include="VasoPressao.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ilitera.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Ilitera.Common\Ilitera.Common.csproj">
+      <Project>{6ef4b4ec-69d3-4f21-8934-f23f34a52533}</Project>
+      <Name>Ilitera.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>del   "$(ProjectDir)obj\x64\Debug\*.*"  /q
+del   "$(ProjectDir)obj\Debug\*.*"  /q</PostBuildEvent>
+  </PropertyGroup>
+</Project>

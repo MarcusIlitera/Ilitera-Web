@@ -1,0 +1,159 @@
+﻿'iisexpress.exe' (CLR v2.0.50727: DefaultDomain): Loaded 'C:\WINDOWS\assembly\GAC_64\mscorlib\2.0.0.0__b77a5c561934e089\mscorlib.dll'. Cannot find or open the PDB file.
+'iisexpress.exe' (CLR v2.0.50727: DefaultDomain): Loaded 'C:\WINDOWS\assembly\GAC_64\System.Web\2.0.0.0__b03f5f7f11d50a3a\System.Web.dll'. Cannot find or open the PDB file.
+'iisexpress.exe' (CLR v2.0.50727: DefaultDomain): Loaded 'C:\WINDOWS\assembly\GAC_MSIL\System\2.0.0.0__b77a5c561934e089\System.dll'. Cannot find or open the PDB file.
+'iisexpress.exe' (CLR v2.0.50727: Domain 2): Loaded 'C:\WINDOWS\assembly\GAC_64\mscorlib\2.0.0.0__b77a5c561934e089\mscorlib.dll'. Cannot find or open the PDB file.
+'iisexpress.exe' (CLR v2.0.50727: DefaultDomain): Loaded 'C:\WINDOWS\assembly\GAC_MSIL\mscorlib.resources\2.0.0.0_pt-BR_b77a5c561934e089\mscorlib.resources.dll'. Module was built without symbols.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\WINDOWS\assembly\GAC_64\System.Web\2.0.0.0__b03f5f7f11d50a3a\System.Web.dll'. Cannot find or open the PDB file.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\WINDOWS\assembly\GAC_MSIL\System\2.0.0.0__b77a5c561934e089\System.dll'. Cannot find or open the PDB file.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\WINDOWS\assembly\GAC_MSIL\System.Configuration\2.0.0.0__b03f5f7f11d50a3a\System.Configuration.dll'. Cannot find or open the PDB file.
+'iisexpress.exe' (CLR v2.0.50727: DefaultDomain): Loaded 'C:\WINDOWS\assembly\GAC_MSIL\System.Configuration\2.0.0.0__b03f5f7f11d50a3a\System.Configuration.dll'. Cannot find or open the PDB file.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\WINDOWS\assembly\GAC_MSIL\System.Xml\2.0.0.0__b77a5c561934e089\System.Xml.dll'. Cannot find or open the PDB file.
+'iisexpress.exe' (CLR v2.0.50727: DefaultDomain): Loaded 'C:\WINDOWS\assembly\GAC_MSIL\System.Xml\2.0.0.0__b77a5c561934e089\System.Xml.dll'. Cannot find or open the PDB file.
+Exception thrown: 'System.UnauthorizedAccessException' in mscorlib.dll
+Exception thrown: 'System.ArgumentException' in mscorlib.dll
+Exception thrown: 'System.Security.SecurityException' in mscorlib.dll
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\WINDOWS\assembly\GAC_MSIL\Microsoft.JScript\8.0.0.0__b03f5f7f11d50a3a\Microsoft.JScript.dll'. Cannot find or open the PDB file.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\Users\Usuario\AppData\Local\Temp\Temporary ASP.NET Files\root\35f32dab\fbe51930\App_global.asax.t_eptog_.dll'. 
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\Users\Usuario\AppData\Local\Temp\Temporary ASP.NET Files\root\35f32dab\fbe51930\assembly\dl3\d3bec159\9218e5c8_2aa6d101\Ilitera.Net.DLL'. Symbols loaded.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\WINDOWS\assembly\GAC_MSIL\System.ServiceModel\3.0.0.0__b77a5c561934e089\System.ServiceModel.dll'. Cannot find or open the PDB file.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\WINDOWS\assembly\GAC_MSIL\System.Web.Extensions\3.5.0.0__31bf3856ad364e35\System.Web.Extensions.dll'. Cannot find or open the PDB file.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\Users\Usuario\AppData\Local\Temp\Temporary ASP.NET Files\root\35f32dab\fbe51930\assembly\dl3\3aa70b94\00bfe038_abe7ce01\EO.Web.DLL'. Module was built without symbols.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded '<unknown>'. Module was built without symbols.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded '<unknown>'. Module was built without symbols.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\WINDOWS\assembly\GAC_MSIL\System.Windows.Forms\2.0.0.0__b77a5c561934e089\System.Windows.Forms.dll'. Cannot find or open the PDB file.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\WINDOWS\assembly\GAC_MSIL\System.Drawing\2.0.0.0__b03f5f7f11d50a3a\System.Drawing.dll'. Cannot find or open the PDB file.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\WINDOWS\assembly\GAC_64\System.Data\2.0.0.0__b77a5c561934e089\System.Data.dll'. Cannot find or open the PDB file.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\WINDOWS\assembly\GAC_MSIL\System.Design\2.0.0.0__b03f5f7f11d50a3a\System.Design.dll'. Cannot find or open the PDB file.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\WINDOWS\assembly\GAC_MSIL\System.Web.Mobile\2.0.0.0__b03f5f7f11d50a3a\System.Web.Mobile.dll'. Cannot find or open the PDB file.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\WINDOWS\assembly\GAC_MSIL\System.Web.RegularExpressions\2.0.0.0__b03f5f7f11d50a3a\System.Web.RegularExpressions.dll'. Cannot find or open the PDB file.
+'iisexpress.exe' (CLR v2.0.50727: DefaultDomain): Loaded 'C:\WINDOWS\assembly\GAC_MSIL\System.Web.RegularExpressions\2.0.0.0__b03f5f7f11d50a3a\System.Web.RegularExpressions.dll'. Cannot find or open the PDB file.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\WINDOWS\assembly\GAC_MSIL\SMDiagnostics\3.0.0.0__b77a5c561934e089\SMDiagnostics.dll'. Cannot find or open the PDB file.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\Users\Usuario\AppData\Local\Temp\Temporary ASP.NET Files\root\35f32dab\fbe51930\App_Web_w-nxs8bk.dll'. 
+'iisexpress.exe' (CLR v2.0.50727: DefaultDomain): Loaded 'C:\WINDOWS\assembly\GAC_MSIL\System.Drawing\2.0.0.0__b03f5f7f11d50a3a\System.Drawing.dll'. Cannot find or open the PDB file.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\WINDOWS\assembly\GAC_MSIL\System.Web.Abstractions\3.5.0.0__31bf3856ad364e35\System.Web.Abstractions.dll'. Cannot find or open the PDB file.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\Users\Usuario\AppData\Local\Temp\Temporary ASP.NET Files\root\35f32dab\fbe51930\assembly\dl3\af0e3223\d27467cd_019bd101\Ilitera.Data.DLL'. Symbols loaded.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\WINDOWS\assembly\GAC_MSIL\System.Core\3.5.0.0__b77a5c561934e089\System.Core.dll'. Cannot find or open the PDB file.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\WINDOWS\assembly\GAC_MSIL\System.Web.Extensions.resources\3.5.0.0_pt-BR_31bf3856ad364e35\System.Web.Extensions.resources.dll'. Module was built without symbols.
+'iisexpress.exe' (CLR v2.0.50727: DefaultDomain): Loaded 'C:\WINDOWS\assembly\GAC_64\System.Data\2.0.0.0__b77a5c561934e089\System.Data.dll'. Cannot find or open the PDB file.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\Users\Usuario\AppData\Local\Temp\Temporary ASP.NET Files\root\35f32dab\fbe51930\assembly\dl3\5a48e30c\322a7ed5_3a9ad101\Entities.DLL'. Symbols loaded.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\Users\Usuario\AppData\Local\Temp\Temporary ASP.NET Files\root\35f32dab\fbe51930\assembly\dl3\508671e9\bc70d7d5_3a9ad101\Facade.DLL'. Symbols loaded.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\Users\Usuario\AppData\Local\Temp\Temporary ASP.NET Files\root\35f32dab\fbe51930\assembly\dl3\bc2c9697\32f23caa_0752d101\BLL.DLL'. Symbols loaded.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\Users\Usuario\AppData\Local\Temp\Temporary ASP.NET Files\root\35f32dab\fbe51930\assembly\dl3\47a24b66\193ba5d5_3a9ad101\DAL.DLL'. Symbols loaded.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\Users\Usuario\AppData\Local\Temp\Temporary ASP.NET Files\root\35f32dab\fbe51930\assembly\dl3\0bb23b6a\00b9da3c_80ddca01\Microsoft.Practices.EnterpriseLibrary.Data.DLL'. Symbols loaded.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\Users\Usuario\AppData\Local\Temp\Temporary ASP.NET Files\root\35f32dab\fbe51930\assembly\dl3\23d42979\00b9da3c_80ddca01\Microsoft.Practices.EnterpriseLibrary.Common.DLL'. Symbols loaded.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\WINDOWS\assembly\GAC_64\System.Transactions\2.0.0.0__b77a5c561934e089\System.Transactions.dll'. Cannot find or open the PDB file.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\WINDOWS\assembly\GAC_64\System.EnterpriseServices\2.0.0.0__b03f5f7f11d50a3a\System.EnterpriseServices.dll'. Cannot find or open the PDB file.
+'iisexpress.exe' (CLR v2.0.50727: DefaultDomain): Loaded 'C:\WINDOWS\assembly\GAC_64\System.Transactions\2.0.0.0__b77a5c561934e089\System.Transactions.dll'. Cannot find or open the PDB file.
+'iisexpress.exe' (CLR v2.0.50727: DefaultDomain): Loaded 'C:\WINDOWS\assembly\GAC_64\System.EnterpriseServices\2.0.0.0__b03f5f7f11d50a3a\System.EnterpriseServices.dll'. Cannot find or open the PDB file.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\Users\Usuario\AppData\Local\Temp\Temporary ASP.NET Files\root\35f32dab\fbe51930\assembly\dl3\10aec22c\00246c6d_7bddca01\Microsoft.Practices.Unity.DLL'. Symbols loaded.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\Users\Usuario\AppData\Local\Temp\Temporary ASP.NET Files\root\35f32dab\fbe51930\App_Web_atarnhkg.dll'. 
+Exception thrown: 'System.Threading.ThreadAbortException' in mscorlib.dll
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\Users\Usuario\AppData\Local\Temp\Temporary ASP.NET Files\root\35f32dab\fbe51930\assembly\dl3\3c48224e\03e460ce_019bd101\Ilitera.Common.DLL'. Symbols loaded.
+Exception thrown: 'System.Threading.ThreadAbortException' in mscorlib.dll
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\Users\Usuario\AppData\Local\Temp\Temporary ASP.NET Files\root\35f32dab\fbe51930\assembly\dl3\809fd331\d7120e43_63a5d101\Ilitera.Opsa.Data.DLL'. Symbols loaded.
+Exception thrown: 'System.Threading.ThreadAbortException' in mscorlib.dll
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\Users\Usuario\AppData\Local\Temp\Temporary ASP.NET Files\root\35f32dab\fbe51930\App_Web_6v0tiyuv.dll'. 
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\WINDOWS\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll'. Cannot find or open the PDB file.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\Users\Usuario\AppData\Local\Temp\Temporary ASP.NET Files\root\35f32dab\fbe51930\assembly\dl3\be6d66fc\4ff68070_d19dcb01\ceTe.DynamicPDF.35.DLL'. Module was built without symbols.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\WINDOWS\assembly\GAC_MSIL\CRVsPackageLib\13.0.2000.0__692fbea5521e1304\CRVsPackageLib.dll'. Cannot find or open the PDB file.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\WINDOWS\assembly\GAC_MSIL\CrystalDecisions.CrystalReports.Design\13.0.2000.0__692fbea5521e1304\CrystalDecisions.CrystalReports.Design.dll'. Cannot find or open the PDB file.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\WINDOWS\assembly\GAC_MSIL\CrystalDecisions.CrystalReports.Engine\13.0.2000.0__692fbea5521e1304\CrystalDecisions.CrystalReports.Engine.dll'. Cannot find or open the PDB file.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\WINDOWS\assembly\GAC_64\CrystalDecisions.CrystalReports.TemplateEngine\13.0.2000.0__692fbea5521e1304\CrystalDecisions.CrystalReports.TemplateEngine.dll'. Cannot find or open the PDB file.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\WINDOWS\assembly\GAC_MSIL\CrystalDecisions.Data.AdoDotNetInterop\13.0.2000.0__692fbea5521e1304\CrystalDecisions.Data.AdoDotNetInterop.dll'. Module was built without symbols.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\WINDOWS\assembly\GAC_64\CrystalDecisions.Enterprise.Viewing.ReportSource\13.0.2000.0__692fbea5521e1304\CrystalDecisions.Enterprise.Viewing.ReportSource.dll'. Module was built without symbols.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\WINDOWS\assembly\GAC_64\CrystalDecisions.ReportAppServer.ClientDoc\13.0.2000.0__692fbea5521e1304\CrystalDecisions.ReportAppServer.ClientDoc.dll'. Cannot find or open the PDB file.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\WINDOWS\assembly\GAC_64\CrystalDecisions.ReportAppServer.CommLayer\13.0.2000.0__692fbea5521e1304\CrystalDecisions.ReportAppServer.CommLayer.dll'. Cannot find or open the PDB file.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\WINDOWS\assembly\GAC_64\CrystalDecisions.ReportAppServer.CommonControls\13.0.2000.0__692fbea5521e1304\CrystalDecisions.ReportAppServer.CommonControls.dll'. Cannot find or open the PDB file.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\WINDOWS\assembly\GAC_64\CrystalDecisions.ReportAppServer.CommonObjectModel\13.0.2000.0__692fbea5521e1304\CrystalDecisions.ReportAppServer.CommonObjectModel.dll'. Cannot find or open the PDB file.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\WINDOWS\assembly\GAC_64\CrystalDecisions.ReportAppServer.Controllers\13.0.2000.0__692fbea5521e1304\CrystalDecisions.ReportAppServer.Controllers.dll'. Cannot find or open the PDB file.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\WINDOWS\assembly\GAC_64\CrystalDecisions.ReportAppServer.CubeDefModel\13.0.2000.0__692fbea5521e1304\CrystalDecisions.ReportAppServer.CubeDefModel.dll'. Cannot find or open the PDB file.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\WINDOWS\assembly\GAC_64\CrystalDecisions.ReportAppServer.DataDefModel\13.0.2000.0__692fbea5521e1304\CrystalDecisions.ReportAppServer.DataDefModel.dll'. Cannot find or open the PDB file.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\WINDOWS\assembly\GAC_MSIL\CrystalDecisions.ReportAppServer.DataSetConversion\13.0.2000.0__692fbea5521e1304\CrystalDecisions.ReportAppServer.DataSetConversion.dll'. Cannot find or open the PDB file.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\WINDOWS\assembly\GAC_64\CrystalDecisions.ReportAppServer.ObjectFactory\13.0.2000.0__692fbea5521e1304\CrystalDecisions.ReportAppServer.ObjectFactory.dll'. Cannot find or open the PDB file.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\WINDOWS\assembly\GAC_64\CrystalDecisions.ReportAppServer.Prompting\13.0.2000.0__692fbea5521e1304\CrystalDecisions.ReportAppServer.Prompting.dll'. Cannot find or open the PDB file.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\WINDOWS\assembly\GAC_64\CrystalDecisions.ReportAppServer.ReportDefModel\13.0.2000.0__692fbea5521e1304\CrystalDecisions.ReportAppServer.ReportDefModel.dll'. Cannot find or open the PDB file.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\WINDOWS\assembly\GAC_64\CrystalDecisions.ReportAppServer.XmlSerialize\13.0.2000.0__692fbea5521e1304\CrystalDecisions.ReportAppServer.XmlSerialize.dll'. Cannot find or open the PDB file.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\WINDOWS\assembly\GAC_MSIL\CrystalDecisions.ReportSource\13.0.2000.0__692fbea5521e1304\CrystalDecisions.ReportSource.dll'. Cannot find or open the PDB file.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\WINDOWS\assembly\GAC_MSIL\CrystalDecisions.Shared\13.0.2000.0__692fbea5521e1304\CrystalDecisions.Shared.dll'. Cannot find or open the PDB file.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\WINDOWS\assembly\GAC_MSIL\CrystalDecisions.VSDesigner\13.0.2000.0__692fbea5521e1304\CrystalDecisions.VSDesigner.dll'. Cannot find or open the PDB file.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\WINDOWS\assembly\GAC_MSIL\CrystalDecisions.Web\13.0.2000.0__692fbea5521e1304\CrystalDecisions.Web.dll'. Cannot find or open the PDB file.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\WINDOWS\assembly\GAC_MSIL\CrystalDecisions.Windows.Forms\13.0.2000.0__692fbea5521e1304\CrystalDecisions.Windows.Forms.dll'. Cannot find or open the PDB file.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\Users\Usuario\AppData\Local\Temp\Temporary ASP.NET Files\root\35f32dab\fbe51930\assembly\dl3\102e0898\14107e70_d19dcb01\DynamicPDF.DLL'. Module was built without symbols.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\WINDOWS\assembly\GAC\EnvDTE\8.0.0.0__b03f5f7f11d50a3a\EnvDTE.dll'. Module was built without symbols.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\WINDOWS\assembly\GAC\EnvDTE80\8.0.0.0__b03f5f7f11d50a3a\EnvDTE80.dll'. Module was built without symbols.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\WINDOWS\assembly\GAC\FlashControlV71\1.0.3187.32366__692fbea5521e1304\FlashControlV71.dll'. Module was built without symbols.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\Users\Usuario\AppData\Local\Temp\Temporary ASP.NET Files\root\35f32dab\fbe51930\assembly\dl3\8b59f873\2675b744_63a5d101\Ilitera.Auditoria.Report.DLL'. Symbols loaded.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\Users\Usuario\AppData\Local\Temp\Temporary ASP.NET Files\root\35f32dab\fbe51930\assembly\dl3\de85355b\d9524844_63a5d101\Ilitera.Cursos.Report.DLL'. Symbols loaded.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\Users\Usuario\AppData\Local\Temp\Temporary ASP.NET Files\root\35f32dab\fbe51930\assembly\dl3\c86838cf\01dc4443_63a5d101\Ilitera.Marshall.Data.DLL'. Symbols loaded.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\Users\Usuario\AppData\Local\Temp\Temporary ASP.NET Files\root\35f32dab\fbe51930\assembly\dl3\6306a566\4ed25446_63a5d101\Ilitera.Opsa.Report.DLL'. Symbols loaded.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\Users\Usuario\AppData\Local\Temp\Temporary ASP.NET Files\root\35f32dab\fbe51930\assembly\dl3\ce35cdea\df91ce43_63a5d101\Ilitera.OrdemServico.Report.DLL'. Symbols loaded.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\Users\Usuario\AppData\Local\Temp\Temporary ASP.NET Files\root\35f32dab\fbe51930\assembly\dl3\6e74cab4\fde75544_63a5d101\Ilitera.PCMSO.Report.DLL'. Symbols loaded.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\Users\Usuario\AppData\Local\Temp\Temporary ASP.NET Files\root\35f32dab\fbe51930\assembly\dl3\23885a80\8a182047_63a5d101\Ilitera.Sied.Report.DLL'. Symbols loaded.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\Users\Usuario\AppData\Local\Temp\Temporary ASP.NET Files\root\35f32dab\fbe51930\assembly\dl3\191e4b82\9d84e549_63a5d101\Ilitera.SPDA.Report.DLL'. Symbols loaded.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\Users\Usuario\AppData\Local\Temp\Temporary ASP.NET Files\root\35f32dab\fbe51930\assembly\dl3\2169a9a5\e7160c47_63a5d101\Ilitera.VasoCaldeira.Report.DLL'. Symbols loaded.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\Users\Usuario\AppData\Local\Temp\Temporary ASP.NET Files\root\35f32dab\fbe51930\assembly\dl3\f5f55845\00b8e2ae_2f41c601\IMAP4.Net.DLL'. Module was built without symbols.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\Users\Usuario\AppData\Local\Temp\Temporary ASP.NET Files\root\35f32dab\fbe51930\assembly\dl3\a12875b3\4d3b7c70_d19dcb01\itextsharp.DLL'. Cannot find or open the PDB file.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\Users\Usuario\AppData\Local\Temp\Temporary ASP.NET Files\root\35f32dab\fbe51930\assembly\dl3\c87e5db7\00b9da3c_80ddca01\Microsoft.Practices.ServiceLocation.DLL'. Symbols loaded.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\Users\Usuario\AppData\Local\Temp\Temporary ASP.NET Files\root\35f32dab\fbe51930\assembly\dl3\cf5328c2\00246c6d_7bddca01\Microsoft.Practices.Unity.Interception.DLL'. Symbols loaded.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\WINDOWS\assembly\GAC_MSIL\Microsoft.VisualStudio.TemplateWizardInterface\8.0.0.0__b03f5f7f11d50a3a\Microsoft.VisualStudio.TemplateWizardInterface.dll'. Cannot find or open the PDB file.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\WINDOWS\assembly\GAC\Microsoft.VisualStudio.VSHelp\7.0.3300.0__b03f5f7f11d50a3a\Microsoft.VisualStudio.VSHelp.dll'. Module was built without symbols.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\WINDOWS\assembly\GAC_MSIL\Microsoft.Web.Administration\7.9.0.0__31bf3856ad364e35\Microsoft.Web.Administration.dll'. Cannot find or open the PDB file.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\Users\Usuario\AppData\Local\Temp\Temporary ASP.NET Files\root\35f32dab\fbe51930\assembly\dl3\98635b76\00b8e2ae_2f41c601\Parse.Net.DLL'. Module was built without symbols.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\Users\Usuario\AppData\Local\Temp\Temporary ASP.NET Files\root\35f32dab\fbe51930\assembly\dl3\c1ef3a3c\ec85baf3_dd9dcb01\PdfSharp.DLL'. Module was built without symbols.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\Users\Usuario\AppData\Local\Temp\Temporary ASP.NET Files\root\35f32dab\fbe51930\assembly\dl3\0e6595a4\00b8e2ae_2f41c601\POP3.Net.DLL'. Module was built without symbols.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\Users\Usuario\AppData\Local\Temp\Temporary ASP.NET Files\root\35f32dab\fbe51930\assembly\dl3\9f1a86c4\00e513b0_2f41c601\SASL.Net.DLL'. Module was built without symbols.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\WINDOWS\assembly\GAC\ShockwaveFlashObjects\1.0.0.0__692fbea5521e1304\ShockwaveFlashObjects.dll'. Module was built without symbols.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\Users\Usuario\AppData\Local\Temp\Temporary ASP.NET Files\root\35f32dab\fbe51930\assembly\dl3\9cc6d49b\00b8e2ae_2f41c601\SMIME.Net.DLL'. Module was built without symbols.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\Users\Usuario\AppData\Local\Temp\Temporary ASP.NET Files\root\35f32dab\fbe51930\assembly\dl3\949200fd\00b8e2ae_2f41c601\SMTP.Net.DLL'. Module was built without symbols.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\Users\Usuario\AppData\Local\Temp\Temporary ASP.NET Files\root\35f32dab\fbe51930\assembly\dl3\9dbedd8e\00e513b0_2f41c601\SSL.Net.DLL'. Module was built without symbols.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\WINDOWS\assembly\GAC\stdole\7.0.3300.0__b03f5f7f11d50a3a\stdole.dll'. Module was built without symbols.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\WINDOWS\assembly\GAC\VSLangProj\7.0.3300.0__b03f5f7f11d50a3a\VSLangProj.dll'. Module was built without symbols.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\WINDOWS\assembly\GAC\VsWebSite.Interop\8.0.0.0__b03f5f7f11d50a3a\VsWebSite.Interop.dll'. Cannot find or open the PDB file.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\WINDOWS\assembly\GAC_MSIL\System.ServiceModel.Web\3.5.0.0__31bf3856ad364e35\System.ServiceModel.Web.dll'. Cannot find or open the PDB file.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\WINDOWS\assembly\GAC_MSIL\System.WorkflowServices\3.5.0.0__31bf3856ad364e35\System.WorkflowServices.dll'. Cannot find or open the PDB file.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\WINDOWS\assembly\GAC_MSIL\System.Runtime.Serialization\3.0.0.0__b77a5c561934e089\System.Runtime.Serialization.dll'. Cannot find or open the PDB file.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\WINDOWS\assembly\GAC_MSIL\System.IdentityModel\3.0.0.0__b77a5c561934e089\System.IdentityModel.dll'. Cannot find or open the PDB file.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\WINDOWS\assembly\GAC_MSIL\System.Xml.Linq\3.5.0.0__b77a5c561934e089\System.Xml.Linq.dll'. Cannot find or open the PDB file.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\WINDOWS\assembly\GAC_MSIL\System.Data.DataSetExtensions\3.5.0.0__b77a5c561934e089\System.Data.DataSetExtensions.dll'. Cannot find or open the PDB file.
+Exception thrown: 'System.IO.FileNotFoundException' in mscorlib.dll
+Exception thrown: 'System.IO.FileNotFoundException' in System.Web.dll
+Exception thrown: 'System.IO.FileNotFoundException' in mscorlib.dll
+Exception thrown: 'System.IO.FileNotFoundException' in System.Web.dll
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\Users\Usuario\AppData\Local\Temp\Temporary ASP.NET Files\root\35f32dab\fbe51930\App_Web_geyc9c-x.dll'. 
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\Users\Usuario\AppData\Local\Temp\Temporary ASP.NET Files\root\35f32dab\fbe51930\App_Web_fatinxow.dll'. 
+Exception thrown: 'System.IO.FileNotFoundException' in mscorlib.dll
+Exception thrown: 'System.IO.FileNotFoundException' in System.Web.dll
+Exception thrown: 'System.IO.FileNotFoundException' in mscorlib.dll
+Exception thrown: 'System.IO.FileNotFoundException' in System.Web.dll
+Exception thrown: 'System.IO.FileNotFoundException' in mscorlib.dll
+Exception thrown: 'System.IO.FileNotFoundException' in System.Web.dll
+Exception thrown: 'System.IO.FileNotFoundException' in mscorlib.dll
+Exception thrown: 'System.IO.FileNotFoundException' in System.Web.dll
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\Users\Usuario\AppData\Local\Temp\Temporary ASP.NET Files\root\35f32dab\fbe51930\App_Web_cqjiv9gh.dll'. 
+Exception thrown: 'System.IO.FileNotFoundException' in mscorlib.dll
+Exception thrown: 'System.IO.FileNotFoundException' in System.Web.dll
+Exception thrown: 'System.IO.FileNotFoundException' in mscorlib.dll
+Exception thrown: 'System.IO.FileNotFoundException' in System.Web.dll
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\Users\Usuario\AppData\Local\Temp\Temporary ASP.NET Files\root\35f32dab\fbe51930\App_Web_i85lcwlz.dll'. 
+Exception thrown: 'System.IO.FileNotFoundException' in mscorlib.dll
+Exception thrown: 'System.IO.FileNotFoundException' in System.Web.dll
+Exception thrown: 'System.IO.FileNotFoundException' in mscorlib.dll
+Exception thrown: 'System.IO.FileNotFoundException' in System.Web.dll
+Exception thrown: 'System.IO.FileNotFoundException' in mscorlib.dll
+Exception thrown: 'System.IO.FileNotFoundException' in System.Web.dll
+Exception thrown: 'System.IO.FileNotFoundException' in mscorlib.dll
+Exception thrown: 'System.IO.FileNotFoundException' in System.Web.dll
+Exception thrown: 'System.IO.FileNotFoundException' in mscorlib.dll
+Exception thrown: 'System.IO.FileNotFoundException' in System.Web.dll
+Exception thrown: 'System.IO.FileNotFoundException' in mscorlib.dll
+Exception thrown: 'System.IO.FileNotFoundException' in System.Web.dll
+Exception thrown: 'System.IO.FileNotFoundException' in mscorlib.dll
+Exception thrown: 'System.IO.FileNotFoundException' in System.Web.dll
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\WINDOWS\assembly\GAC_64\System.EnterpriseServices\2.0.0.0__b03f5f7f11d50a3a\System.EnterpriseServices.Wrapper.dll'. Cannot find or open the PDB file.
+'iisexpress.exe' (CLR v2.0.50727: DefaultDomain): Loaded 'C:\WINDOWS\assembly\GAC_MSIL\System.Design\2.0.0.0__b03f5f7f11d50a3a\System.Design.dll'. Cannot find or open the PDB file.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\WINDOWS\assembly\GAC_MSIL\System.resources\2.0.0.0_pt-BR_b77a5c561934e089\System.resources.dll'. Module was built without symbols.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'A_95bdd436_06fa_494f_98bb_512643d1d766'. 
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'M_95bdd436_06fa_494f_98bb_512643d1d766'. 
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\WINDOWS\assembly\GAC_MSIL\System.Web.resources\2.0.0.0_pt-BR_b03f5f7f11d50a3a\System.Web.resources.dll'. Module was built without symbols.
+'iisexpress.exe' (CLR v2.0.50727: /LM/W3SVC/2/ROOT-1-131068571249561568): Loaded 'C:\Users\Usuario\AppData\Local\Temp\Temporary ASP.NET Files\root\35f32dab\fbe51930\App_Web_duzbjqpg.dll'. 
+The program '[16852] iisexpress.exe' has exited with code -1 (0xffffffff).

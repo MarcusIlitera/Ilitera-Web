@@ -1,0 +1,34 @@
+<?xml version="1.0" standalone="yes" ?>
+<xs:schema id="DataSet" targetNamespace="http://www.tempuri.org/DataSet1.xsd" xmlns:mstns="http://www.tempuri.org/DataSet1.xsd"
+	xmlns="http://www.tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+	<xs:element name="DataSet" msdata:IsDataSet="true" msdata:Locale="pt-BR">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="Result">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ContratoCliente" type="xs:string" minOccurs="0" />
+							<xs:element name="ContratoDescricao" type="xs:string" minOccurs="0" />
+							<xs:element name="ContratoInicio" type="xs:string" minOccurs="0" />
+							<xs:element name="ServicoCliente" type="xs:string" minOccurs="0" />
+							<xs:element name="ServicoDescricao" type="xs:string" minOccurs="0" />
+							<xs:element name="ServicoInicio" type="xs:string" minOccurs="0" />
+							<xs:element name="Quantidade" type="xs:float" minOccurs="0" />
+							<xs:element name="ValorUnitario" type="xs:float" minOccurs="0" />
+							<xs:element name="ValorTotal" type="xs:float" minOccurs="0" />
+							<xs:element name="Indice" type="xs:string" minOccurs="0" />
+							<xs:element name="MesReajuste" type="xs:string" minOccurs="0" />
+							<xs:element name="Ultimo" type="xs:string" minOccurs="0" />
+							<xs:element name="Proximo" type="xs:string" minOccurs="0" />
+							<xs:element name="Cotacao" type="xs:string" minOccurs="0" />
+							<xs:element name="ValorAnterio" type="xs:string" minOccurs="0" />
+							<xs:element name="ValorReajustado" type="xs:string" minOccurs="0" />
+							<xs:element name="Atualizado" type="xs:boolean" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

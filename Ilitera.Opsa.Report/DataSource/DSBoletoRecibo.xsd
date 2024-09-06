@@ -1,0 +1,70 @@
+<?xml version="1.0" standalone="yes" ?>
+<xs:schema id="DataSet" targetNamespace="http://www.tempuri.org/DataSet1.xsd" xmlns:mstns="http://www.tempuri.org/DataSet1.xsd"
+	xmlns="http://www.tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+	<xs:element name="DataSet" msdata:IsDataSet="true" msdata:Locale="pt-BR">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="Result">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="IdFaturamento" type="xs:int" minOccurs="0" />
+							<xs:element name="TipoRecibo" type="xs:boolean" minOccurs="0" />
+							<xs:element name="Emissao" type="xs:string" minOccurs="0" />
+							<xs:element name="NomeCompleto" type="xs:string" minOccurs="0" />
+							<xs:element name="Endereco" type="xs:string" minOccurs="0" />
+							<xs:element name="Cidade" type="xs:string" minOccurs="0" />
+							<xs:element name="UF" type="xs:string" minOccurs="0" />
+							<xs:element name="Cep" type="xs:string" minOccurs="0" />
+							<xs:element name="CNPJ" type="xs:string" minOccurs="0" />
+							<xs:element name="InscricaoEstadual" type="xs:string" minOccurs="0" />
+							<xs:element name="InscricaoCCM" type="xs:string" minOccurs="0" />
+							<xs:element name="CondicaoPagamento" type="xs:string" minOccurs="0" />
+							<xs:element name="Vencimento" type="xs:string" minOccurs="0" />
+							<xs:element name="Valor_1" type="xs:string" minOccurs="0" />
+							<xs:element name="Valor_5" type="xs:string" minOccurs="0" />
+							<xs:element name="Valor_6" type="xs:string" minOccurs="0" />
+							<xs:element name="Valor_IR" type="xs:string" minOccurs="0" />
+							<xs:element name="Valor_PIS" type="xs:string" minOccurs="0" />
+							<xs:element name="Valor_CONFINS" type="xs:string" minOccurs="0" />
+							<xs:element name="Valor_CSLL" type="xs:string" minOccurs="0" />
+							<xs:element name="Valor_TotalImpostos" type="xs:string" minOccurs="0" />
+							<xs:element name="Valor_TotalSemImpostos" type="xs:string" minOccurs="0" />
+							<xs:element name="Valor_Total" type="xs:string" minOccurs="0" />
+							<xs:element name="Porcentagem_Impostos" type="xs:string" minOccurs="0" />
+							<xs:element name="Descricao_5" type="xs:string" minOccurs="0" />
+							<xs:element name="Descricao_6" type="xs:string" minOccurs="0" />
+							<xs:element name="EntregaEndereco" type="xs:string" minOccurs="0" />
+							<xs:element name="EntregaTelefone" type="xs:string" minOccurs="0" />
+							<xs:element name="Cedente" type="xs:string" minOccurs="0" />
+							<xs:element name="CnpjCedente" type="xs:string" minOccurs="0" />
+							<xs:element name="Agencia_CodigoCedente" type="xs:string" minOccurs="0" />
+							<xs:element name="DataDocumento" type="xs:string" minOccurs="0" />
+							<xs:element name="NumeroDocumento" type="xs:string" minOccurs="0" />
+							<xs:element name="EspecieDocumento" type="xs:string" minOccurs="0" />
+							<xs:element name="Aceite" type="xs:string" minOccurs="0" />
+							<xs:element name="DataProcessamento" type="xs:string" minOccurs="0" />
+							<xs:element name="NossoNumero" type="xs:string" minOccurs="0" />
+							<xs:element name="UsoBanco" type="xs:string" minOccurs="0" />
+							<xs:element name="Carteira" type="xs:string" minOccurs="0" />
+							<xs:element name="EspecieMoeda" type="xs:string" minOccurs="0" />
+							<xs:element name="Quantidade" type="xs:string" minOccurs="0" />
+							<xs:element name="Valor" type="xs:string" minOccurs="0" />
+							<xs:element name="ValorDocumento" type="xs:string" minOccurs="0" />
+							<xs:element name="Instrucoes" type="xs:string" minOccurs="0" />
+							<xs:element name="Desconto_Abatimentos" type="xs:string" minOccurs="0" />
+							<xs:element name="OutrasDeducoes" type="xs:string" minOccurs="0" />
+							<xs:element name="Mora_Multa" type="xs:string" minOccurs="0" />
+							<xs:element name="OutrosAcressimos" type="xs:string" minOccurs="0" />
+							<xs:element name="ValorCobrado" type="xs:string" minOccurs="0" />
+							<xs:element name="LinhaDigitavel" type="xs:string" minOccurs="0" />
+							<xs:element name="CodBarras" type="xs:string" minOccurs="0" />
+							<xs:element name="Motorista" type="xs:string" minOccurs="0" />
+							<xs:element name="BoletoComDemostrativo" type="xs:int" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

@@ -1,0 +1,92 @@
+.igtxt_TrendyEditWithButtons
+{
+	background-position:bottom ;
+	background-image: url(images/footer.gif);
+	font-size:10px;
+	font-family: Verdana;
+	border:solid 1px #139C47;
+	line-height: 1px;
+	height: 20px;
+	width: 130px;
+}
+
+
+.igtxt_TrendyEdit
+{
+	background-position:bottom ;
+	background-image: url(images/footer.gif);
+	border:solid 1px #139C47;
+	outline: 0;
+}
+
+
+.igtxt_TrendyEditInContainer
+{
+	background-color:Transparent;
+	border-width:0px;
+	margin:0px;
+	padding-top:0px;
+	padding-bottom:0px;
+	outline: 0;
+}
+
+
+.igtxt_TrendyButton
+{
+	background-color:#139C47;
+	border:solid 1px #EAF2FB;
+	line-height: normal;
+}
+
+
+.igtxt_TrendyButtonHover
+{
+	background-color:#B4B4B4;
+	border:solid 1px #ABC1DE;
+}
+
+
+.igtxt_TrendyButtonPressed
+{
+	background-color:#FFA738;
+	border:solid 1px #ABC1DE;
+}
+
+
+.igtxt_TrendyButtonDisabled
+{
+	background-color:#EAF2FB;
+	border:solid 1px White;
+}
+
+
+.igtxt_TrendyButtonSize
+{
+	width: 15px;
+	height: 100%;
+}
+
+
+.igtxt_TrendyTextArea
+{
+	background-position:bottom ;
+	background-image: url(images/footer.gif);
+	font-size:12px;
+	font-family: arial;
+	border:solid 1px #139C47;
+	outline: 0;
+}
+
+
+.igtxt_TrendyButtonFocus
+{
+	background-color:#F0F0B0;
+}
+
+
+.igtxt_TrendyFocus
+{
+	border-color:#C0C080;
+}
+
+

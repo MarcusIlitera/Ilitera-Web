@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="Dataset" targetNamespace="http://tempuri.org/Dataset.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/Dataset.xsd" xmlns:mstns="http://tempuri.org/Dataset.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="Dataset" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="Result">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="IdAudiometria" type="xs:int" />
+							<xs:element name="TipoExame" type="xs:string" minOccurs="0" />
+							<xs:element name="RazaoSocial" type="xs:string" minOccurs="0" />
+							<xs:element name="Endereco" type="xs:string" minOccurs="0" />
+							<xs:element name="CEP" type="xs:string" minOccurs="0" />
+							<xs:element name="CidadeEstado" type="xs:string" minOccurs="0" />
+							<xs:element name="CNPJ" type="xs:string" minOccurs="0" />
+							<xs:element name="NomeEmpregado" type="xs:string" minOccurs="0" />
+							<xs:element name="Identidade" type="xs:string" minOccurs="0" />
+							<xs:element name="DataNascimento" type="xs:string" minOccurs="0" />
+							<xs:element name="Idade" type="xs:string" minOccurs="0" />
+							<xs:element name="Sexo" type="xs:string" minOccurs="0" />
+							<xs:element name="Setor" type="xs:string" />
+							<xs:element name="Funcao" type="xs:string" />
+							<xs:element name="FotoEmpregado" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

@@ -1,0 +1,68 @@
+<?xml version="1.0" standalone="yes" ?>
+<xs:schema id="DataSet" targetNamespace="http://www.tempuri.org/DataSet1.xsd" xmlns:mstns="http://www.tempuri.org/DataSet1.xsd" xmlns="http://www.tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+	<xs:element name="DataSet" msdata:IsDataSet="true" msdata:Locale="pt-BR">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="Result">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="tData" type="xs:string" minOccurs="0" />
+							<xs:element name="tNomeCompleto" type="xs:string" minOccurs="0" />
+							<xs:element name="tLogradouro" type="xs:string" minOccurs="0" />
+							<xs:element name="tTelefone" type="xs:string" minOccurs="0" />
+							<xs:element name="tFax" type="xs:string" minOccurs="0" />
+							<xs:element name="tContato" type="xs:string" minOccurs="0" />
+							<xs:element name="tDepartamento" type="xs:string" minOccurs="0" />
+							<xs:element name="tNumeroDeEmpregados" type="xs:string" minOccurs="0" />
+							<xs:element name="d1Reuniao" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="d2Reuniao" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="d3Reuniao" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="d4Reuniao" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="d5Reuniao" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="d6Reuniao" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="d7Reuniao" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="d8Reuniao" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="d9Reuniao" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="d10Reuniao" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="d11Reuniao" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="d12Reuniao" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="tEleicao" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="tPosse" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="tPresidente" type="xs:string" minOccurs="0" />
+							<xs:element name="t1MemEmpregador" type="xs:string" minOccurs="0" />
+							<xs:element name="t2MemEmpregador" type="xs:string" minOccurs="0" />
+							<xs:element name="t3MemEmpregador" type="xs:string" minOccurs="0" />
+							<xs:element name="t4MemEmpregador" type="xs:string" minOccurs="0" />
+							<xs:element name="t5MemEmpregador" type="xs:string" minOccurs="0" />
+							<xs:element name="tVicePresidente" type="xs:string" minOccurs="0" />
+							<xs:element name="t1MemEmpregado" type="xs:string" minOccurs="0" />
+							<xs:element name="t2MemEmpregado" type="xs:string" minOccurs="0" />
+							<xs:element name="t3MemEmpregado" type="xs:string" minOccurs="0" />
+							<xs:element name="t4MemEmpregado" type="xs:string" minOccurs="0" />
+							<xs:element name="t5MemEmpregado" type="xs:string" minOccurs="0" />
+							<xs:element name="t1SuplEmpregador" type="xs:string" minOccurs="0" />
+							<xs:element name="t2SuplEmpregador" type="xs:string" minOccurs="0" />
+							<xs:element name="t3SuplEmpregador" type="xs:string" minOccurs="0" />
+							<xs:element name="t4SuplEmpregador" type="xs:string" minOccurs="0" />
+							<xs:element name="t5SuplEmpregador" type="xs:string" minOccurs="0" />
+							<xs:element name="t6SuplEmpregador" type="xs:string" minOccurs="0" />
+							<xs:element name="t1SuplEmpregado" type="xs:string" minOccurs="0" />
+							<xs:element name="t2SuplEmpregado" type="xs:string" minOccurs="0" />
+							<xs:element name="t3SuplEmpregado" type="xs:string" minOccurs="0" />
+							<xs:element name="t4SuplEmpregado" type="xs:string" minOccurs="0" />
+							<xs:element name="t5SuplEmpregado" type="xs:string" minOccurs="0" />
+							<xs:element name="t6SuplEmpregado" type="xs:string" minOccurs="0" />
+							<xs:element name="tSecretario" type="xs:string" minOccurs="0" />
+							<xs:element name="tSecretarioSubst" type="xs:string" minOccurs="0" />
+							<xs:element name="tDataPeriodo" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="Constraint1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:DSReuniaoCipa" />
+			<xs:field xpath="mstns:ID" />
+		</xs:unique>
+	</xs:element>
+</xs:schema>

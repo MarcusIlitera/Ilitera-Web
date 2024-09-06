@@ -1,0 +1,42 @@
+<?xml version="1.0" standalone="yes" ?>
+<xs:schema id="DataSet" targetNamespace="http://www.tempuri.org/DataSet1.xsd" xmlns:mstns="http://www.tempuri.org/DataSet1.xsd"
+	xmlns="http://www.tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+	<xs:element name="DataSet" msdata:IsDataSet="true" msdata:Locale="pt-BR">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="Result">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="DataPcmso" type="xs:string" minOccurs="0" />
+							<xs:element name="NomeCliente" type="xs:string" minOccurs="0" />
+							<xs:element name="LogradouroNumero" type="xs:string" minOccurs="0" />
+							<xs:element name="CEPCidadeEstado" type="xs:string" minOccurs="0" />
+							<xs:element name="CNPJ" type="xs:string" minOccurs="0" />
+							<xs:element name="CNAE" type="xs:string" minOccurs="0" />
+							<xs:element name="Ghe" type="xs:string" minOccurs="0" />
+							<xs:element name="DescricaoFuncao" type="xs:string" minOccurs="0" />
+							<xs:element name="TrabalhadoresExpostos" type="xs:string" minOccurs="0" />
+							<xs:element name="RiscosFisicos" type="xs:string" minOccurs="0" />
+							<xs:element name="RiscosQuimicosQuantitativo" type="xs:string" minOccurs="0" />
+							<xs:element name="RiscosQuimicosQualitativo" type="xs:string" minOccurs="0" />
+							<xs:element name="RiscosBiologicos" type="xs:string" minOccurs="0" />
+							<xs:element name="RiscosOcupacionais" type="xs:string" minOccurs="0" />
+							<xs:element name="ExamesOcupacionais" type="xs:string" minOccurs="0" />
+							<xs:element name="ExamesOcupacionaisPerio" type="xs:string" minOccurs="0" />
+							<xs:element name="ExamesPreventivos" type="xs:string" minOccurs="0" />
+							<xs:element name="ExamesPreventivosPerio" type="xs:string" minOccurs="0" />
+							<xs:element name="Observacao" type="xs:string" minOccurs="0" />
+							<xs:element name="bAnalQuantAgQuimico" type="xs:boolean" minOccurs="0" />
+							<xs:element name="bAnalQuantCalor" type="xs:boolean" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="Constraint1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:DSReuniaoCipa" />
+			<xs:field xpath="mstns:ID" />
+		</xs:unique>
+	</xs:element>
+</xs:schema>

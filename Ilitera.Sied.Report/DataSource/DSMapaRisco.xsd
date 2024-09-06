@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet" targetNamespace="http://www.tempuri.org/DataSet1.xsd" xmlns:mstns="http://www.tempuri.org/DataSet1.xsd" xmlns="http://www.tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet" msdata:IsDataSet="true" msdata:Locale="pt-BR" msprop:Generator_UserDSName="DataSet" msprop:Generator_DataSetName="DataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Result" msprop:Generator_UserTableName="Result" msprop:Generator_RowDeletedName="ResultRowDeleted" msprop:Generator_RowChangedName="ResultRowChanged" msprop:Generator_RowClassName="ResultRow" msprop:Generator_RowChangingName="ResultRowChanging" msprop:Generator_RowEvArgName="ResultRowChangeEvent" msprop:Generator_RowEvHandlerName="ResultRowChangeEventHandler" msprop:Generator_TableClassName="ResultDataTable" msprop:Generator_TableVarName="tableResult" msprop:Generator_RowDeletingName="ResultRowDeleting" msprop:Generator_TablePropName="Result">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Ghe" msprop:Generator_UserColumnName="Ghe" msprop:Generator_ColumnPropNameInRow="Ghe" msprop:Generator_ColumnVarNameInTable="columnGhe" msprop:Generator_ColumnPropNameInTable="GheColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Reconhecimento" msprop:Generator_UserColumnName="Reconhecimento" msprop:Generator_ColumnPropNameInRow="Reconhecimento" msprop:Generator_ColumnVarNameInTable="columnReconhecimento" msprop:Generator_ColumnPropNameInTable="ReconhecimentoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Avaliacao" msprop:Generator_UserColumnName="Avaliacao" msprop:Generator_ColumnPropNameInRow="Avaliacao" msprop:Generator_ColumnVarNameInTable="columnAvaliacao" msprop:Generator_ColumnPropNameInTable="AvaliacaoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="LimiteTolerancia" msprop:Generator_UserColumnName="LimiteTolerancia" msprop:Generator_ColumnPropNameInRow="LimiteTolerancia" msprop:Generator_ColumnVarNameInTable="columnLimiteTolerancia" msprop:Generator_ColumnPropNameInTable="LimiteToleranciaColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="MedidasControle" msprop:Generator_UserColumnName="MedidasControle" msprop:Generator_ColumnPropNameInRow="MedidasControle" msprop:Generator_ColumnVarNameInTable="columnMedidasControle" msprop:Generator_ColumnPropNameInTable="MedidasControleColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TamFonte" msprop:Generator_UserColumnName="TamFonte" msprop:Generator_ColumnPropNameInRow="TamFonte" msprop:Generator_ColumnVarNameInTable="columnTamFonte" msprop:Generator_ColumnPropNameInTable="TamFonteColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

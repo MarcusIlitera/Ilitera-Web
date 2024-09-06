@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="Dataset" targetNamespace="http://tempuri.org/Dataset.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/Dataset.xsd" xmlns:mstns="http://tempuri.org/Dataset.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="Dataset" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="Result">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="IdAudiometria" type="xs:int" />
+							<xs:element name="HasSenteDificuldadeAuditiva" type="xs:string" />
+							<xs:element name="HasTemPresencaAcufenos" type="xs:string" />
+							<xs:element name="HasTemPresencaVertigens" type="xs:string" />
+							<xs:element name="HasFamiliaresComProblemaAuditivo" type="xs:string" />
+							<xs:element name="IsAntecedenteCaxumba" type="xs:string" />
+							<xs:element name="IsAntecedenteSarampo" type="xs:string" />
+							<xs:element name="IsAntecedenteMenigite" type="xs:string" />
+							<xs:element name="HasFazUsoMedicacao" type="xs:string" />
+							<xs:element name="FazUsoMedicacaoQual" type="xs:string" />
+							<xs:element name="TempoExposicaoRuidoOcupacional" type="xs:string" />
+							<xs:element name="TempoUsoProtetorAuricular" type="xs:string" />
+							<xs:element name="HasExposicaoRuidoExtraLaboral" type="xs:string" />
+							<xs:element name="HasExposicaoProdutosOtotoxicos" type="xs:string" />
+							<xs:element name="ExposicaoProdutosOtotoxicosQual" type="xs:string" />
+							<xs:element name="HasAlteracaoMeatosAcusticos" type="xs:string" />
+							<xs:element name="AlteracaoMeatosAcusticosQual" type="xs:string" />
+							<xs:element name="Observacao" type="xs:string" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

@@ -1,0 +1,275 @@
+/* CSS Document */
+h3 {
+font-size: 30px;
+line-height: 34px;
+text-align: center;
+color: #FFF;
+}
+/*H3 A
+{
+	color: #FFF;
+}*/
+/*A
+{
+	color: #FFF;
+}*/
+/*H1
+{
+	margin-top: 100px;
+	text-align: center;
+	font-size: 60px;
+	line-height: 70px;
+	font-family: 'Bree Serif', 'serif';
+}*/
+/*#container
+{
+	margin: 0 auto;
+	max-width: 890px;
+}*/
+/*P
+{
+	text-align: center;
+}*/
+.toggle, [id^=drop] {
+display: none;
+}
+.navbar-nav-icon > li > a:hover {
+background-color: #429890 !important;
+color: #FFFFFF !important;
+}
+/* Giving a background-color to the nav container. */
+nav {
+margin: 0;
+padding: 0;
+background-color: #D9D9D6;
+}
+#logo {
+display: block;
+padding: 0 30px;
+float: left;
+font-size: 20px;
+line-height: 60px;
+}
+/* Since we'll have the "ul li" "float:left"
+ * we need to add a clear after the container. */
+nav:after {
+content: "";
+display: table;
+clear: both;
+}
+/* Removing padding, margin and "list-style" from the "ul",
+ * and adding "position:reltive" */
+nav ul {
+/*float: right;*/
+padding: 0;
+margin: auto;
+list-style: none;
+position: relative;
+}
+/* Positioning the navigation items inline */
+nav ul li {
+margin: 0px;
+display: inline-block;
+float: left;
+}
+/* Styling the links */
+nav a {
+display: block;
+padding: 14px 20px;
+color: #FFF;
+font-size: 17px;
+text-decoration: none;
+}
+.menu li ul li a {
+padding: 11px 0 11px 6px;
+font-size: 14px;
+width: auto;
+border-bottom: 1px solid #429890;
+}
+.navbar-nav-icon > li > a {
+/*word-break: keep-all;*/
+/*max-width: 171px;*/
+/*padding-left: 47px;*/
+/*padding-top: 25px;*/
+/*padding-bottom: 22px;*/
+border-bottom: 1px solid rgba(66, 151, 143, 0.359);
+color: #429890 !important;
+}
+@media screen and (min-width: 768px) {
+.menu li ul li a {
+padding: 2px 0 2px 6px;
+font-size: 14px;
+width: auto;
+border-bottom: 1px solid #429890;
+}
+.navbar-nav-icon > li > a {
+word-break: keep-all;
+max-width: 171px;
+padding-left: 47px;
+padding-top: 11px;
+padding-bottom: 10px;
+border-bottom: none;
+}
+nav > ul {
+/*left: 10px;*/
+}
+nav a {
+/*height: 62px;*/
+}
+.navbarlink-umalinha {
+padding-top: 6px !important;
+padding-bottom: 16px !important;
+display: block;
+}
+#lnk-empresas > a {
+background: url(../img/ico-empresas.png) 5px center no-repeat;
+}
+#lnk-cadastro-colaboradores > a {
+background: url(../img/ico-cadastro.png) 5px center no-repeat;
+}
+#lnk-seguranca-trabalho > a {
+background: url(../img/ico-seguranca.png) 5px center no-repeat;
+}
+#lnk-saude-ocupacional > a {
+background: url(../img/ico-saude.png) 5px center no-repeat;
+}
+#lnk-outros-aplicativos > a {
+background: url(../img/ico-outros.png) 5px center no-repeat;
+}
+#lnk-ajuda > a {
+background: url(../img/ico-ajuda.png) 5px center no-repeat;
+}
+#lnk-sair > a {
+background: url(../img/ico-sair.png) 5px center no-repeat;
+}
+}
+nav ul li ul li:hover {
+background: #000000;
+}
+/* Background color change on Hover */
+nav a:hover {
+background-color: #429890;
+color: #FFFFFF;
+text-decoration: none;
+}
+/* Hide Dropdowns by Default
+ * and giving it a position of absolute */
+nav ul ul {
+display: none;
+position: absolute;
+/* has to be the same number as the "line-height" of "nav a" */
+top: 67px;
+}
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+display: inherit;
+}
+/* Fisrt Tier Dropdown */
+nav ul ul li {
+width: 170px;
+float: none;
+display: list-item;
+position: relative;
+background-color: #254441;
+}
+/* Second, Third and more Tiers	
+ * We move the 2nd and 3rd etc tier dropdowns to the left
+ * by the amount of the width of the first tier.
+*/
+nav ul ul ul li {
+position: relative;
+top: -60px;
+/* has to be the same number as the "width" of "nav ul ul li" */
+left: 170px;
+}
+/* Change ' +' in order to change the Dropdown symbol */
+li > a:after {
+/*content: ' +';*/
+}
+li > a:only-child:after {
+content: '';
+}
+/* Media Queries
+--------------------------------------------- */
+@media all and (max-width: 768px) {
+#logo {
+display: block;
+padding: 0;
+width: 100%;
+text-align: center;
+float: none;
+}
+nav {
+margin: 0;
+}
+/* Hide the navigation menu by default */
+/* Also hide the  */
+.toggle + a, .menu {
+display: none;
+}
+/* Stylinf the toggle lable */
+.toggle {
+display: block;
+background-color: #254441;
+padding: 14px 20px;
+color: #FFF;
+font-size: 17px;
+text-decoration: none;
+border: none;
+}
+.toggle:hover {
+background-color: #000000;
+}
+/* Display Dropdown when clicked on Parent Lable */
+[id^=drop]:checked + ul {
+display: block;
+}
+/* Change menu item's width to 100% */
+nav ul li {
+display: block;
+width: 100%;
+}
+nav ul ul .toggle, nav ul ul a {
+padding: 0 40px;
+}
+nav ul ul ul a {
+padding: 0 80px;
+}
+nav a:hover, nav ul ul ul a {
+background-color: #000000;
+}
+nav ul li ul li .toggle, nav ul ul a, nav ul ul ul a {
+padding: 14px 20px;
+color: #FFF;
+font-size: 17px;
+}
+nav ul li ul li .toggle, nav ul ul a {
+background-color: #212121;
+}
+/* Hide Dropdowns by Default */
+nav ul ul {
+float: none;
+position: static;
+color: #FFFFFF;
+/* has to be the same number as the "line-height" of "nav a" */
+}
+/* Hide menus on hover */
+nav ul ul li:hover > ul, nav ul li:hover > ul {
+display: none;
+}
+/* Fisrt Tier Dropdown */
+nav ul ul li {
+display: block;
+width: 100%;
+}
+nav ul ul ul li {
+position: static;
+/* has to be the same number as the "width" of "nav ul ul li" */
+}
+}
+@media all and (max-width: 330px) {
+nav ul li {
+display: block;
+width: 94%;
+}
+}

@@ -1,0 +1,131 @@
+.igc_TrendyControl
+{
+	background-color:White;
+	font-size:12px;
+	font-family: Segoe UI,Verdana,Arial,Sans-Serif;
+	border:solid 1px #119A49;
+	margin:0px;
+	padding:10px;
+}
+
+
+.igc_TrendyControlActive
+{
+}
+
+
+.igc_TrendyCaptchaImage
+{
+	margin-bottom:10px;
+	display: block;
+}
+
+
+.igc_TrendyCaptchaInput
+{
+	border:solid 1px #119A49;
+	margin-bottom:10px;
+	padding-top:5px;
+	padding-right:0px;
+	display: block;
+	*margin-bottom: 0;
+}
+
+
+.igc_TrendyRefreshAndAudioButtonsArea
+{
+	border-width:0px;
+	margin-left:10px;
+	display: block;
+	float: left;
+	text-decoration:none;
+}
+
+
+.igc_TrendySubmitButton
+{
+	background-color:#24A244;
+	background-repeat:repeat-x;
+	background-position:left top ;
+	background-image: url(./images/igc_submitbuttonbg.png);
+	font-weight:bold;
+	font-size:12px;
+	font-family: Segoe UI,Verdana,Arial,Sans-Serif;
+	border:solid 1px #109A48;
+	margin-top:10px;
+	padding:0px;
+	clear: left;
+	display: block;
+	height: 30px;
+	width: 177px;
+	cursor:pointer;
+	color:White;
+}
+
+
+.igc_TrendyErrorLabel
+{
+	background-color:#FF6666;
+	padding:3px;
+	color:White;
+}
+
+
+.igc_TrendyCaptchaInfoTextLabel
+{
+	margin:10px 0px 5px 0px;
+	display: block;
+}
+
+
+.igc_TrendyCaptchaText
+{
+}
+
+
+.igc_TrendyCaptchaImageArea
+{
+	margin:0px;
+	padding:0px;
+	display: block;
+	float: left;
+}
+
+
+.igc_TrendyRefreshAndAudioButtonsArea img
+{
+	border-width:0px;
+	margin-bottom:3px;
+	text-decoration:none;
+}
+
+
+.igc_TrendyRefreshAndAudioButtonsArea a, .igc_TrendyRefreshAndAudioButtonsArea img
+{
+	cursor:pointer;
+}
+
+
+.igc_TrendyCaptchaImageArea label
+{
+	display: block;
+}
+
+
+.igc_TrendyCaptchaImageLabel
+{
+	border:solid 1px #119A49;
+}
+
+
+.igc_TrendyCaptchaInputLabel
+{
+}
+
+
+.igc_TrendyRefreshAndAudioButtonsArea a
+{
+	display: block;
+}
+
+

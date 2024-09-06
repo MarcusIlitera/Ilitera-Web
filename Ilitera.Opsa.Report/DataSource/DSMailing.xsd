@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSMailing" targetNamespace="http://tempuri.org/DSMailing.xsd" xmlns:mstns="http://tempuri.org/DSMailing.xsd" xmlns="http://tempuri.org/DSMailing.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSMailing" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DSMailing" msprop:Generator_UserDSName="DSMailing">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Result" msprop:Generator_TableClassName="ResultDataTable" msprop:Generator_TableVarName="tableResult" msprop:Generator_TablePropName="Result" msprop:Generator_RowDeletingName="ResultRowDeleting" msprop:Generator_RowChangingName="ResultRowChanging" msprop:Generator_RowEvHandlerName="ResultRowChangeEventHandler" msprop:Generator_RowDeletedName="ResultRowDeleted" msprop:Generator_UserTableName="Result" msprop:Generator_RowChangedName="ResultRowChanged" msprop:Generator_RowEvArgName="ResultRowChangeEvent" msprop:Generator_RowClassName="ResultRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Data_Inicial" msprop:Generator_ColumnVarNameInTable="columnData_Inicial" msprop:Generator_ColumnPropNameInRow="Data_Inicial" msprop:Generator_ColumnPropNameInTable="Data_InicialColumn" msprop:Generator_UserColumnName="Data_Inicial" type="xs:string" minOccurs="0" />
+              <xs:element name="Data_Final" msprop:Generator_ColumnVarNameInTable="columnData_Final" msprop:Generator_ColumnPropNameInRow="Data_Final" msprop:Generator_ColumnPropNameInTable="Data_FinalColumn" msprop:Generator_UserColumnName="Data_Final" type="xs:string" minOccurs="0" />
+              <xs:element name="Data_Mailing" msprop:Generator_ColumnVarNameInTable="columnData_Mailing" msprop:Generator_ColumnPropNameInRow="Data_Mailing" msprop:Generator_ColumnPropNameInTable="Data_MailingColumn" msprop:Generator_UserColumnName="Data_Mailing" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Empresa" msprop:Generator_ColumnVarNameInTable="columnEmpresa" msprop:Generator_ColumnPropNameInRow="Empresa" msprop:Generator_ColumnPropNameInTable="EmpresaColumn" msprop:Generator_UserColumnName="Empresa" type="xs:string" minOccurs="0" />
+              <xs:element name="Colaborador" msprop:Generator_ColumnVarNameInTable="columnColaborador" msprop:Generator_ColumnPropNameInRow="Colaborador" msprop:Generator_ColumnPropNameInTable="ColaboradorColumn" msprop:Generator_UserColumnName="Colaborador" type="xs:string" minOccurs="0" />
+              <xs:element name="DataEnvio" msprop:Generator_ColumnVarNameInTable="columnDataEnvio" msprop:Generator_ColumnPropNameInRow="DataEnvio" msprop:Generator_ColumnPropNameInTable="DataEnvioColumn" msprop:Generator_UserColumnName="DataEnvio" type="xs:string" minOccurs="0" />
+              <xs:element name="Data_Planejada" msprop:Generator_ColumnVarNameInTable="columnData_Planejada" msprop:Generator_ColumnPropNameInRow="Data_Planejada" msprop:Generator_ColumnPropNameInTable="Data_PlanejadaColumn" msprop:Generator_UserColumnName="Data_Planejada" type="xs:string" minOccurs="0" />
+              <xs:element name="Numero_Mailing" msprop:Generator_ColumnVarNameInTable="columnNumero_Mailing" msprop:Generator_ColumnPropNameInRow="Numero_Mailing" msprop:Generator_ColumnPropNameInTable="Numero_MailingColumn" msprop:Generator_UserColumnName="Numero_Mailing" type="xs:short" minOccurs="0" />
+              <xs:element name="Status_Envio" msprop:Generator_ColumnVarNameInTable="columnStatus_Envio" msprop:Generator_ColumnPropNameInRow="Status_Envio" msprop:Generator_ColumnPropNameInTable="Status_EnvioColumn" msprop:Generator_UserColumnName="Status_Envio" type="xs:string" minOccurs="0" />
+              <xs:element name="Email_Envio" msprop:Generator_ColumnVarNameInTable="columnEmail_Envio" msprop:Generator_ColumnPropNameInRow="Email_Envio" msprop:Generator_ColumnPropNameInTable="Email_EnvioColumn" msprop:Generator_UserColumnName="Email_Envio" type="xs:string" minOccurs="0" />
+              <xs:element name="Status_Exame" msprop:Generator_ColumnVarNameInTable="columnStatus_Exame" msprop:Generator_ColumnPropNameInRow="Status_Exame" msprop:Generator_ColumnPropNameInTable="Status_ExameColumn" msprop:Generator_UserColumnName="Status_Exame" type="xs:string" minOccurs="0" />
+              <xs:element name="Resultado_Exame" msprop:Generator_ColumnVarNameInTable="columnResultado_Exame" msprop:Generator_ColumnPropNameInRow="Resultado_Exame" msprop:Generator_ColumnPropNameInTable="Resultado_ExameColumn" msprop:Generator_UserColumnName="Resultado_Exame" type="xs:string" minOccurs="0" />
+              <xs:element name="Data_Digitalizacao" msprop:Generator_ColumnVarNameInTable="columnData_Digitalizacao" msprop:Generator_ColumnPropNameInRow="Data_Digitalizacao" msprop:Generator_ColumnPropNameInTable="Data_DigitalizacaoColumn" msprop:Generator_UserColumnName="Data_Digitalizacao" type="xs:string" minOccurs="0" />
+              <xs:element name="CPF" msprop:Generator_ColumnVarNameInTable="columnCPF" msprop:Generator_ColumnPropNameInRow="CPF" msprop:Generator_ColumnPropNameInTable="CPFColumn" msprop:Generator_UserColumnName="CPF" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

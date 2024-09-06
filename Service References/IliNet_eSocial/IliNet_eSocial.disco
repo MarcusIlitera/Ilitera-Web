@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="https://www.ilitera.net.br/essence_hom/IliNet_eSocial.asmx?wsdl" docRef="https://www.ilitera.net.br/essence_hom/IliNet_eSocial.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="https://www.ilitera.net.br/essence_hom/IliNet_eSocial.asmx" xmlns:q1="https://www.ilitera.net.br/essence_hom" binding="q1:IliNet_eSocialSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="https://www.ilitera.net.br/essence_hom/IliNet_eSocial.asmx" xmlns:q2="https://www.ilitera.net.br/essence_hom" binding="q2:IliNet_eSocialSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>

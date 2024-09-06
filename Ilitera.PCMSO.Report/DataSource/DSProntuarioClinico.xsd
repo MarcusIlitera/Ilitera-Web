@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="Dataset" targetNamespace="http://tempuri.org/Dataset.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/Dataset.xsd" xmlns:mstns="http://tempuri.org/Dataset.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="Dataset" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="Result">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="NomeEmpresa" type="xs:string" />
+							<xs:element name="EnderecoEmpresa" type="xs:string" />
+							<xs:element name="CEPEmpresa" type="xs:string" />
+							<xs:element name="CidadeEmpresa" type="xs:string" />
+							<xs:element name="EstadoEmpresa" type="xs:string" />
+							<xs:element name="CNPJ" type="xs:string" />
+							<xs:element name="NomeEmpregado" type="xs:string" />
+							<xs:element name="RG" type="xs:string" />
+							<xs:element name="DataNascimento" type="xs:string" />
+							<xs:element name="Idade" type="xs:string" />
+							<xs:element name="Sexo" type="xs:string" />
+							<xs:element name="Setor" type="xs:string" />
+							<xs:element name="Funcao" type="xs:string" />
+							<xs:element name="iFOTO" type="xs:base64Binary" />
+							<xs:element name="ComFoto" type="xs:boolean" />
+							<xs:element name="ComListagemExames" type="xs:boolean" />
+							<xs:element name="ComExamesClinico" type="xs:boolean" />
+							<xs:element name="ComExamesAudiom" type="xs:boolean" />
+							<xs:element name="ComExamesCompl" type="xs:boolean" />
+							<xs:element name="ComProntuarioDigital" type="xs:boolean" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

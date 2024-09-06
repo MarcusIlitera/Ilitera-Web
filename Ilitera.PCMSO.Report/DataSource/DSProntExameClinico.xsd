@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="Dataset" targetNamespace="http://tempuri.org/Dataset.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/Dataset.xsd" xmlns:mstns="http://tempuri.org/Dataset.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="Dataset" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="Result">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="DataExame" type="xs:string" />
+							<xs:element name="TipoExame" type="xs:string" />
+							<xs:element name="QueixasAtuais" type="xs:string" />
+							<xs:element name="AfastamentoTrabalho" type="xs:string" />
+							<xs:element name="AntecedentesFamiliares" type="xs:string" />
+							<xs:element name="DoencaCronica" type="xs:string" />
+							<xs:element name="Cirurgia" type="xs:string" />
+							<xs:element name="Trauma" type="xs:string" />
+							<xs:element name="DeficienciaFisica" type="xs:string" />
+							<xs:element name="Medicamentos" type="xs:string" />
+							<xs:element name="Tabagista" type="xs:string" />
+							<xs:element name="Etilista" type="xs:string" />
+							<xs:element name="PeleAnexos" type="xs:string" />
+							<xs:element name="OsteoMuscular" type="xs:string" />
+							<xs:element name="CabecaPescoco" type="xs:string" />
+							<xs:element name="Coracao" type="xs:string" />
+							<xs:element name="Pulmoes" type="xs:string" />
+							<xs:element name="Abdomem" type="xs:string" />
+							<xs:element name="MS" type="xs:string" />
+							<xs:element name="MI" type="xs:string" />
+							<xs:element name="PA" type="xs:string" />
+							<xs:element name="Pulso" type="xs:string" />
+							<xs:element name="Altura" type="xs:string" />
+							<xs:element name="Peso" type="xs:string" />
+							<xs:element name="DUM" type="xs:string" />
+							<xs:element name="ResultadoExame" type="xs:string" />
+							<xs:element name="ObservacaoExame" type="xs:string" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet" targetNamespace="http://www.tempuri.org/DataSet1.xsd" xmlns:mstns="http://www.tempuri.org/DataSet1.xsd" xmlns="http://www.tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet" msdata:IsDataSet="true" msdata:Locale="pt-BR" msprop:Generator_UserDSName="DataSet" msprop:Generator_DataSetName="DataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Result" msprop:Generator_UserTableName="Result" msprop:Generator_RowDeletedName="ResultRowDeleted" msprop:Generator_RowChangedName="ResultRowChanged" msprop:Generator_RowClassName="ResultRow" msprop:Generator_RowChangingName="ResultRowChanging" msprop:Generator_RowEvArgName="ResultRowChangeEvent" msprop:Generator_RowEvHandlerName="ResultRowChangeEventHandler" msprop:Generator_TableClassName="ResultDataTable" msprop:Generator_TableVarName="tableResult" msprop:Generator_RowDeletingName="ResultRowDeleting" msprop:Generator_TablePropName="Result">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NomeEmpregado" msprop:Generator_UserColumnName="NomeEmpregado" msprop:Generator_ColumnVarNameInTable="columnNomeEmpregado" msprop:Generator_ColumnPropNameInRow="NomeEmpregado" msprop:Generator_ColumnPropNameInTable="NomeEmpregadoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NomeExame" msprop:Generator_UserColumnName="NomeExame" msprop:Generator_ColumnVarNameInTable="columnNomeExame" msprop:Generator_ColumnPropNameInRow="NomeExame" msprop:Generator_ColumnPropNameInTable="NomeExameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DataExame" msprop:Generator_UserColumnName="DataExame" msprop:Generator_ColumnVarNameInTable="columnDataExame" msprop:Generator_ColumnPropNameInRow="DataExame" msprop:Generator_ColumnPropNameInTable="DataExameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Resultado" msprop:Generator_UserColumnName="Resultado" msprop:Generator_ColumnVarNameInTable="columnResultado" msprop:Generator_ColumnPropNameInRow="Resultado" msprop:Generator_ColumnPropNameInTable="ResultadoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DataUltimo" msprop:Generator_UserColumnName="DataUltimo" msprop:Generator_ColumnVarNameInTable="columnDataUltimo" msprop:Generator_ColumnPropNameInRow="DataUltimo" msprop:Generator_ColumnPropNameInTable="DataUltimoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DataVencimento" msprop:Generator_UserColumnName="DataVencimento" msprop:Generator_ColumnVarNameInTable="columnDataVencimento" msprop:Generator_ColumnPropNameInRow="DataVencimento" msprop:Generator_ColumnPropNameInTable="DataVencimentoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DataRenovacao" msprop:Generator_UserColumnName="DataRenovacao" msprop:Generator_ColumnPropNameInRow="DataRenovacao" msprop:Generator_ColumnVarNameInTable="columnDataRenovacao" msprop:Generator_ColumnPropNameInTable="DataRenovacaoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Preventivo" msprop:Generator_UserColumnName="Preventivo" msprop:Generator_ColumnPropNameInRow="Preventivo" msprop:Generator_ColumnVarNameInTable="columnPreventivo" msprop:Generator_ColumnPropNameInTable="PreventivoColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

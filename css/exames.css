@@ -1,0 +1,89 @@
+.tituloLabel {
+    color: #1C9489;
+}
+
+.texto {
+    color: #B0ABAB;
+    font-size: 12px;
+    font-family: 'Ubuntu';
+}
+
+.opcoes {
+    color: #1C9489;
+    font-size: 12px;
+    font-family: 'Ubuntu';
+    font-weight: 500;
+}
+
+.subtitulo {
+    font-family: 'Univia Pro';
+    color: #1C9489;
+    font-size: 16px;
+    font-weight: 500;
+    font-variant: normal;
+    margin-bottom: 0 !important;
+    margin-top: .8rem;
+    margin-left: 50px;
+}
+
+.subtituloBG {
+    background-color: #F1F1F1;
+    border-radius: 5px;
+    height: 45px;
+}
+
+.btn {
+    /*margin-left: 5px;
+            font: 800 14px "Inter";
+            color: white;
+            padding: 8px;
+            background-color: #5865f2;
+            border-radius: 4px;
+            border-color: #5865f2;*/
+    width: 100px;
+    height: 32px;
+    font-family: 'Univia Pro';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    /*text-align: center;*/
+    color: #ffffff;
+    background: linear-gradient(180deg, #48A79E 54.35%, #1C9489 54.36%);
+    border-radius: 5px;
+    margin: 10px;
+}
+
+    .btn:hover {
+        color: #ffffff;
+        background: linear-gradient(180deg, #F2B988 53.35%, #F09E60 53.36%);
+        border-radius: 5px;
+    }
+
+.btn2 {
+    min-width: 120px;
+    height: 32px;
+    font-family: 'Univia Pro';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    color: #ffffff;
+    background: linear-gradient(180deg, #F2B988 53.35%, #F09E60 53.36%);
+    border-radius: 5px;
+    border: none;
+    margin-right: 10px;
+}
+
+    .btn2:hover {
+        color: #ffffff;
+        background: linear-gradient(180deg, #48A79E 54.35%, #1C9489 54.36%);
+        border-radius: 5px;
+    }
+
+
+.link{
+    font-family: 'Univia Pro';
+    font-size: 12px;
+    color: #1C9489;
+    font-weight: normal;
+    text-decoration: none;
+}

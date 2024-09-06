@@ -1,0 +1,49 @@
+<?xml version="1.0" standalone="yes" ?>
+<xs:schema id="DataSet" targetNamespace="http://www.tempuri.org/DataSet1.xsd" xmlns:mstns="http://www.tempuri.org/DataSet1.xsd"
+	xmlns="http://www.tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+	<xs:element name="DataSet" msdata:IsDataSet="true" msdata:Locale="pt-BR">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="Result">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="dDataSolicitacao" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="tCliente" type="xs:string" minOccurs="0" />
+							<xs:element name="tSolicitante" type="xs:string" minOccurs="0" />
+							<xs:element name="tPrestador" type="xs:string" minOccurs="0" />
+							<xs:element name="tRazaoSocial" type="xs:string" minOccurs="0" />
+							<xs:element name="tEndereco" type="xs:string" minOccurs="0" />
+							<xs:element name="tBairro" type="xs:string" minOccurs="0" />
+							<xs:element name="tCidade" type="xs:string" minOccurs="0" />
+							<xs:element name="tUF" type="xs:string" minOccurs="0" />
+							<xs:element name="tCEP" type="xs:string" minOccurs="0" />
+							<xs:element name="tIE" type="xs:string" minOccurs="0" />
+							<xs:element name="tCGC" type="xs:string" minOccurs="0" />
+							<xs:element name="tTelefone" type="xs:string" minOccurs="0" />
+							<xs:element name="tFax" type="xs:string" minOccurs="0" />
+							<xs:element name="tDepartamento" type="xs:string" minOccurs="0" />
+							<xs:element name="tContato" type="xs:string" minOccurs="0" />
+							<xs:element name="tRamoAtividade" type="xs:string" minOccurs="0" />
+							<xs:element name="tCaldeira" type="xs:string" minOccurs="0" />
+							<xs:element name="tCompressor" type="xs:string" minOccurs="0" />
+							<xs:element name="tEmpilhadeira" type="xs:string" minOccurs="0" />
+							<xs:element name="tPonteRolante" type="xs:string" minOccurs="0" />
+							<xs:element name="tCNAE" type="xs:string" minOccurs="0" />
+							<xs:element name="tGrupo" type="xs:string" minOccurs="0" />
+							<xs:element name="tGrauDeRisco" type="xs:string" minOccurs="0" />
+							<xs:element name="tNumeroDeEmpregados" type="xs:string" minOccurs="0" />
+							<xs:element name="tObservacoes" type="xs:string" minOccurs="0" />
+							<xs:element name="tNumeroPedido" type="xs:string" minOccurs="0" />
+							<xs:element name="iFOTO" type="xs:base64Binary" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="Constraint1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:DSReuniaoCipa" />
+			<xs:field xpath="mstns:ID" />
+		</xs:unique>
+	</xs:element>
+</xs:schema>

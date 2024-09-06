@@ -1,0 +1,194 @@
+.igdt_TrendyControl
+{
+	background-color:Transparent;
+	font-size:xx-small;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	border:solid 1px Transparent;
+	color:Black;
+}
+
+
+.igdt_TrendyControlActive
+{
+}
+
+
+.igdt_TrendyControlDisabled
+{
+}
+
+
+.igdt_TrendyDataLoadingContainer
+{
+}
+
+
+.igdt_TrendyDataLoadingMessage
+{
+}
+
+
+/* //////////////////// GROUP STYLES //////////////////// */
+.igdt_TrendyNodeGroup
+{
+	margin-left:0px;
+	padding-left:0px;
+	list-style: none;
+}
+
+
+.igdt_TrendyNodeHolder
+{
+	white-space: nowrap;
+}
+
+
+.igdt_TrendyNodeImage
+{
+	vertical-align:middle;
+}
+
+
+.igdt_TrendyNode
+{
+	padding:1px 3px 1px 3px;
+	line-height: 15px;
+	cursor:hand;
+	color:#333333;
+	text-decoration:none;
+}
+
+
+.igdt_TrendyNodeRoot
+{
+	font-weight:bold;
+	color:#109A48;
+}
+
+
+.igdt_TrendyNodeParent
+{
+}
+
+
+.igdt_TrendyNodeSelected
+{
+	background-color:#07B5FF;
+	color:White;
+}
+
+
+.igdt_TrendyNodeActive
+{
+	border:dotted 1px #109A48;
+	padding:0px 3px 0px 2px;
+}
+
+
+.igdt_TrendyNodeHover
+{
+}
+
+
+.igdt_TrendyNodeDisabled
+{
+	color:Gray;
+}
+
+
+.igdt_TrendyInternalNodeEditor
+{
+	border:solid 1px #109A48;
+	padding-left:2px;
+}
+
+
+/*Applied on the cloned node that is being dragged*/
+.igdt_TrendyDragMarkup
+{
+	font-size:xx-small;
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+	padding-top:1px;
+	padding-right:3px;
+	cursor:move;
+}
+
+
+/* //////////////////// GROUP STYLES //////////////////// */
+/****************************************************/
+/* Added for WebDataTree Drag And Drop funtionality */
+/****************************************************/
+/*CSS class that will define the style applied before or after some node. 
+If the space between the nodes is accepted as potential drop target this class will define 
+some separator/dashed line that will show where the new node will be placed*/
+/*The DropIndicator purpose is to guide the user where the node will be inserted 
+when they drop it*/
+.igdt_TrendyDropIndicator
+{
+	background-color:#32C928;
+	background-image: url(./images/igdt_dropindicatorbg.jpg);
+	font-family: Segoe UI,Arial,Verdana,Helvetica,sans-serif;
+	border:solid 1px #0065A8;
+	padding:1px 8px 3px 4px;
+	Repeat-X: 12px;
+	height: 20px;
+	cursor:default;
+	color:#333333;
+}
+
+
+/*CSS class that will be applied just before the Dropping event is fired on a node if it is a possible drop target. For example when you drag over concrete node its color will change to alert the user he will drop inside the highlighted node.*/
+.igdt_TrendyDropTarget
+{
+	background-color:#8BC835;
+}
+
+
+/* Applied to the line shown, when inserting between two nodes.*/
+.igdt_TrendyDropInsertLine
+{
+	border:dotted 2px #0065A8;
+}
+
+
+.igdt_TrendyNodeGroupDragDrop
+{
+	margin-left:0px;
+	padding-top:2px;
+	padding-bottom:2px;
+	padding-left:0px;
+	list-style: none;
+}
+
+
+.igdt_TrendyNodeHolderDragDrop
+{
+	padding-top:2px;
+	padding-bottom:2px;
+	white-space: nowrap;
+}
+
+
+.igdt_TrendyDropIndicator img
+{
+	margin-right:5px;
+	position: relative;
+	top: 3px;
+	width: 16px;
+	height: 16px;
+}
+
+
+.igdt_TrendyDropIndicator span
+{
+	position: relative;
+	top: -1px;
+}
+
+
+.igdt_TrendyNodeHolder img
+{
+	vertical-align:middle;
+}
+
+

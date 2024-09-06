@@ -1,0 +1,60 @@
+.table
+{
+	font: xx-small Verdana;
+	color: #44926D;
+}
+
+.tableItem
+{
+	font: xx-small Verdana;
+	color: #156047;
+}
+
+.tableHeader
+{
+	font: Bold xx-small Verdana;
+	color:#44926D;
+	background-color: #DEEFE4;
+}
+
+.alternatingItem
+{
+	background-color: #FFFFFF;
+	color: #156047;
+}
+
+.tablePage
+{
+	font: Bold xx-small Verdana;
+	color: #44926D;
+	background-color: #DEEFE4;
+	text-align:left;
+}
+
+A:link
+{ 
+	color: #44926D;
+	font-style: normal;
+	text-decoration: none
+}
+
+A:active
+{
+	color: #44926D;
+	font-style: normal;
+	text-decoration: none
+}
+
+A:visited
+{
+	color: #44926D;
+	font-style: normal;
+	text-decoration: none
+}
+
+A:hover
+{
+	color: #44926D;
+	font-style: normal;
+	text-decoration: underline
+}

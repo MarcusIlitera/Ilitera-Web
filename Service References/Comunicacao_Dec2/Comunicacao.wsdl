@@ -1,0 +1,1862 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="https://www.ilitera.net.br/essence_hom" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="https://www.ilitera.net.br/essence_hom" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="https://www.ilitera.net.br/essence_hom">
+      <s:element name="Executar_Convocacao_Old">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CNPJ" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Empresa" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CodUsuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TipoExame" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Colaborador" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Data" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IdConvocacao" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Executar_Convocacao_OldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Executar_Convocacao_OldResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Executar_Afastamento">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Empresa" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CNPJ" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CodUsuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Colaborador" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DataInicio" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="HoraInicio" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PrevisaoRetorno" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DataRetorno" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="HoraRetorno" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Observacao" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TipoAfastamento" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Emitente_Atestado" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Responsavel_Atestado" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NrConselho_Atestado" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UFConselho_Atestado" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CID1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CID2" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CID3" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CID4" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Arquivo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Conteudo_Arquivo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Executar_AfastamentoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Executar_AfastamentoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Retornar_Clinicas">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CEP" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Numero_Clinicas" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Valor_Maximo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Retornar_ClinicasResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Retornar_ClinicasResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Retornar_Laudos">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xCNPJ" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Retornar_LaudosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Retornar_LaudosResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Executar_Exame">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Empresa" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CNPJ" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CodUsuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TipoExame" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Colaborador" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Data" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NIT" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RG" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CPF" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DtAdmissao" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DtNascimento" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CTPS_Numero" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CTPS_Serie" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CTPS_UF" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Email" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Matricula" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Sexo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Funcao" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Cargo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Setor" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Executar_ExameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Executar_ExameResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Executar_Acidente">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Empresa" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CodUsuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CNPJ" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Colaborador" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DataAcidente" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="HoraAcidente" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TipoAcidente" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SituacaoGeradora" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ParteCorpoAtingida" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Lateralidade" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AgenteCausador" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DescricaoLesao" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DescricaoCompl" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="LocalAcidente" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="EnderecoLocal" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NumeroLocal" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MunicipioLocal" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UFLocal" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UnidadeLocal" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="EspecificacaoLocal" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SetorAcidente" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Internacao" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DataAtendimento" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="HoraAtendimento" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DuracaoTratamentoDias" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CodigoCNES" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Reponsavel_Atestado" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NrConselho_Atestado" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UFConselho_Atestado" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DiagnosticoProvavel" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CID1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CID2" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CID3" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CID4" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TransferidoOutroSetor" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AposentadoInvalidez" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PerdaMaterial" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="EmitenteCAT" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DataEmissaoCAT" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="HoraEmissaoCAT" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TipoCAT" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NumeroCAT" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Iniciativa" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="BOPolicial" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DataObito" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DataInicioAbsenteismo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="HoraInicioAbsenteismo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PrevisaoRetornoAbsenteismo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DataRetornoAbsenteismo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="HoraRetornoAbsenteismo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ObservacaoAbsenteismo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Executar_AcidenteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Executar_AcidenteResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Executar_CIPA">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Empresa" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CodUsuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CNPJ" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Colaborador" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DataInicioCIPA" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Papel" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Indicado" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Executar_CIPAResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Executar_CIPAResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Executar_CIPA_Evento">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Empresa" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CodUsuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CNPJ" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DataInicioCIPA" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DataEvento" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Evento" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Descricao" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TipoReuniao" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Arquivo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Conteudo_Arquivo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Executar_CIPA_EventoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Executar_CIPA_EventoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Executar_Convocacao">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CNPJ" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Empresa" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CodUsuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TipoExame" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Colaborador" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Data" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IdConvocacao" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Executar_ConvocacaoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Executar_ConvocacaoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Resultado_Exame">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CodUsuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CNPJ" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TipoExame" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Colaborador" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Data" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Resultado" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Observacao" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Arquivo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Conteudo_Arquivo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Resultado_ExameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Resultado_ExameResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Editar_Afastamento">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CNPJ" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CodUsuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Colaborador" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DataInicio_Original" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DataInicio" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="HoraInicio" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PrevisaoRetorno" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DataRetorno" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="HoraRetorno" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Observacao" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TipoAfastamento" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Emitente_Atestado" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Responsavel_Atestado" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NrConselho_Atestado" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UFConselho_Atestado" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CID1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CID2" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CID3" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CID4" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Arquivo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Conteudo_Arquivo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Editar_AfastamentoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Editar_AfastamentoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Criar_Cargo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CodUsuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CNPJ" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Cargo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DescricaoCargo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CBO" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Criar_CargoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Criar_CargoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Cadastrar_Unidade">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="xNomeEmpresa" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="xRazaoSocial" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="xCNPJ" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="xCodUsuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="xTipoLogradouro" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="xLogradouro" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="xNumero" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="xComplemento" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="xBairro" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="xCEP" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="xMunicipio" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="xUF" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="xIE" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="xCCM" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="xSite" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="xEmail" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="xObservacao" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="xDDDContato" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="xTelefoneContato" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="xNomeContato" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="xDeptoContato" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="xEmailContato" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="xCNAE" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Cadastrar_UnidadeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Cadastrar_UnidadeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Editar_Acidente">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CodUsuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CNPJ" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Colaborador" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DataAcidente_Original" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DataAcidente" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="HoraAcidente" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TipoAcidente" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SituacaoGeradora" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ParteCorpoAtingida" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Lateralidade" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AgenteCausador" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DescricaoLesao" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DescricaoCompl" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="LocalAcidente" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="EnderecoLocal" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NumeroLocal" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MunicipioLocal" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UFLocal" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UnidadeLocal" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="EspecificacaoLocal" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SetorAcidente" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Internacao" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DataAtendimento" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="HoraAtendimento" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DuracaoTratamentoDias" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CodigoCNES" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Reponsavel_Atestado" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NrConselho_Atestado" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UFConselho_Atestado" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DiagnosticoProvavel" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CID1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CID2" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CID3" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CID4" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TransferidoOutroSetor" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AposentadoInvalidez" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PerdaMaterial" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="EmitenteCAT" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DataEmissaoCAT" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="HoraEmissaoCAT" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TipoCAT" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NumeroCAT" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Iniciativa" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="BOPolicial" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DataObito" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Arquivo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Conteudo_Arquivo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Editar_AcidenteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Editar_AcidenteResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="Executar_Convocacao_OldSoapIn">
+    <wsdl:part name="parameters" element="tns:Executar_Convocacao_Old" />
+  </wsdl:message>
+  <wsdl:message name="Executar_Convocacao_OldSoapOut">
+    <wsdl:part name="parameters" element="tns:Executar_Convocacao_OldResponse" />
+  </wsdl:message>
+  <wsdl:message name="Executar_AfastamentoSoapIn">
+    <wsdl:part name="parameters" element="tns:Executar_Afastamento" />
+  </wsdl:message>
+  <wsdl:message name="Executar_AfastamentoSoapOut">
+    <wsdl:part name="parameters" element="tns:Executar_AfastamentoResponse" />
+  </wsdl:message>
+  <wsdl:message name="Retornar_ClinicasSoapIn">
+    <wsdl:part name="parameters" element="tns:Retornar_Clinicas" />
+  </wsdl:message>
+  <wsdl:message name="Retornar_ClinicasSoapOut">
+    <wsdl:part name="parameters" element="tns:Retornar_ClinicasResponse" />
+  </wsdl:message>
+  <wsdl:message name="Retornar_LaudosSoapIn">
+    <wsdl:part name="parameters" element="tns:Retornar_Laudos" />
+  </wsdl:message>
+  <wsdl:message name="Retornar_LaudosSoapOut">
+    <wsdl:part name="parameters" element="tns:Retornar_LaudosResponse" />
+  </wsdl:message>
+  <wsdl:message name="Executar_ExameSoapIn">
+    <wsdl:part name="parameters" element="tns:Executar_Exame" />
+  </wsdl:message>
+  <wsdl:message name="Executar_ExameSoapOut">
+    <wsdl:part name="parameters" element="tns:Executar_ExameResponse" />
+  </wsdl:message>
+  <wsdl:message name="Executar_AcidenteSoapIn">
+    <wsdl:part name="parameters" element="tns:Executar_Acidente" />
+  </wsdl:message>
+  <wsdl:message name="Executar_AcidenteSoapOut">
+    <wsdl:part name="parameters" element="tns:Executar_AcidenteResponse" />
+  </wsdl:message>
+  <wsdl:message name="Executar_CIPASoapIn">
+    <wsdl:part name="parameters" element="tns:Executar_CIPA" />
+  </wsdl:message>
+  <wsdl:message name="Executar_CIPASoapOut">
+    <wsdl:part name="parameters" element="tns:Executar_CIPAResponse" />
+  </wsdl:message>
+  <wsdl:message name="Executar_CIPA_EventoSoapIn">
+    <wsdl:part name="parameters" element="tns:Executar_CIPA_Evento" />
+  </wsdl:message>
+  <wsdl:message name="Executar_CIPA_EventoSoapOut">
+    <wsdl:part name="parameters" element="tns:Executar_CIPA_EventoResponse" />
+  </wsdl:message>
+  <wsdl:message name="Executar_ConvocacaoSoapIn">
+    <wsdl:part name="parameters" element="tns:Executar_Convocacao" />
+  </wsdl:message>
+  <wsdl:message name="Executar_ConvocacaoSoapOut">
+    <wsdl:part name="parameters" element="tns:Executar_ConvocacaoResponse" />
+  </wsdl:message>
+  <wsdl:message name="Resultado_ExameSoapIn">
+    <wsdl:part name="parameters" element="tns:Resultado_Exame" />
+  </wsdl:message>
+  <wsdl:message name="Resultado_ExameSoapOut">
+    <wsdl:part name="parameters" element="tns:Resultado_ExameResponse" />
+  </wsdl:message>
+  <wsdl:message name="Editar_AfastamentoSoapIn">
+    <wsdl:part name="parameters" element="tns:Editar_Afastamento" />
+  </wsdl:message>
+  <wsdl:message name="Editar_AfastamentoSoapOut">
+    <wsdl:part name="parameters" element="tns:Editar_AfastamentoResponse" />
+  </wsdl:message>
+  <wsdl:message name="Criar_CargoSoapIn">
+    <wsdl:part name="parameters" element="tns:Criar_Cargo" />
+  </wsdl:message>
+  <wsdl:message name="Criar_CargoSoapOut">
+    <wsdl:part name="parameters" element="tns:Criar_CargoResponse" />
+  </wsdl:message>
+  <wsdl:message name="Cadastrar_UnidadeSoapIn">
+    <wsdl:part name="parameters" element="tns:Cadastrar_Unidade" />
+  </wsdl:message>
+  <wsdl:message name="Cadastrar_UnidadeSoapOut">
+    <wsdl:part name="parameters" element="tns:Cadastrar_UnidadeResponse" />
+  </wsdl:message>
+  <wsdl:message name="Editar_AcidenteSoapIn">
+    <wsdl:part name="parameters" element="tns:Editar_Acidente" />
+  </wsdl:message>
+  <wsdl:message name="Editar_AcidenteSoapOut">
+    <wsdl:part name="parameters" element="tns:Editar_AcidenteResponse" />
+  </wsdl:message>
+  <wsdl:message name="Executar_Convocacao_OldHttpGetIn">
+    <wsdl:part name="CNPJ" type="s:string" />
+    <wsdl:part name="Empresa" type="s:string" />
+    <wsdl:part name="CodUsuario" type="s:string" />
+    <wsdl:part name="TipoExame" type="s:string" />
+    <wsdl:part name="Colaborador" type="s:string" />
+    <wsdl:part name="Data" type="s:string" />
+    <wsdl:part name="ID" type="s:string" />
+    <wsdl:part name="IdConvocacao" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Executar_Convocacao_OldHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Executar_AfastamentoHttpGetIn">
+    <wsdl:part name="ID" type="s:string" />
+    <wsdl:part name="Empresa" type="s:string" />
+    <wsdl:part name="CNPJ" type="s:string" />
+    <wsdl:part name="CodUsuario" type="s:string" />
+    <wsdl:part name="Colaborador" type="s:string" />
+    <wsdl:part name="DataInicio" type="s:string" />
+    <wsdl:part name="HoraInicio" type="s:string" />
+    <wsdl:part name="PrevisaoRetorno" type="s:string" />
+    <wsdl:part name="DataRetorno" type="s:string" />
+    <wsdl:part name="HoraRetorno" type="s:string" />
+    <wsdl:part name="Observacao" type="s:string" />
+    <wsdl:part name="TipoAfastamento" type="s:string" />
+    <wsdl:part name="Emitente_Atestado" type="s:string" />
+    <wsdl:part name="Responsavel_Atestado" type="s:string" />
+    <wsdl:part name="NrConselho_Atestado" type="s:string" />
+    <wsdl:part name="UFConselho_Atestado" type="s:string" />
+    <wsdl:part name="CID1" type="s:string" />
+    <wsdl:part name="CID2" type="s:string" />
+    <wsdl:part name="CID3" type="s:string" />
+    <wsdl:part name="CID4" type="s:string" />
+    <wsdl:part name="Arquivo" type="s:string" />
+    <wsdl:part name="Conteudo_Arquivo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Executar_AfastamentoHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Retornar_ClinicasHttpGetIn">
+    <wsdl:part name="CEP" type="s:string" />
+    <wsdl:part name="Numero_Clinicas" type="s:string" />
+    <wsdl:part name="Valor_Maximo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Retornar_ClinicasHttpGetOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="Retornar_LaudosHttpGetIn">
+    <wsdl:part name="xCNPJ" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Retornar_LaudosHttpGetOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="Executar_ExameHttpGetIn">
+    <wsdl:part name="ID" type="s:string" />
+    <wsdl:part name="Empresa" type="s:string" />
+    <wsdl:part name="CNPJ" type="s:string" />
+    <wsdl:part name="CodUsuario" type="s:string" />
+    <wsdl:part name="TipoExame" type="s:string" />
+    <wsdl:part name="Colaborador" type="s:string" />
+    <wsdl:part name="Data" type="s:string" />
+    <wsdl:part name="NIT" type="s:string" />
+    <wsdl:part name="RG" type="s:string" />
+    <wsdl:part name="CPF" type="s:string" />
+    <wsdl:part name="DtAdmissao" type="s:string" />
+    <wsdl:part name="DtNascimento" type="s:string" />
+    <wsdl:part name="CTPS_Numero" type="s:string" />
+    <wsdl:part name="CTPS_Serie" type="s:string" />
+    <wsdl:part name="CTPS_UF" type="s:string" />
+    <wsdl:part name="Email" type="s:string" />
+    <wsdl:part name="Matricula" type="s:string" />
+    <wsdl:part name="Sexo" type="s:string" />
+    <wsdl:part name="Funcao" type="s:string" />
+    <wsdl:part name="Cargo" type="s:string" />
+    <wsdl:part name="Setor" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Executar_ExameHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Executar_AcidenteHttpGetIn">
+    <wsdl:part name="ID" type="s:string" />
+    <wsdl:part name="Empresa" type="s:string" />
+    <wsdl:part name="CodUsuario" type="s:string" />
+    <wsdl:part name="CNPJ" type="s:string" />
+    <wsdl:part name="Colaborador" type="s:string" />
+    <wsdl:part name="DataAcidente" type="s:string" />
+    <wsdl:part name="HoraAcidente" type="s:string" />
+    <wsdl:part name="TipoAcidente" type="s:string" />
+    <wsdl:part name="SituacaoGeradora" type="s:string" />
+    <wsdl:part name="ParteCorpoAtingida" type="s:string" />
+    <wsdl:part name="Lateralidade" type="s:string" />
+    <wsdl:part name="AgenteCausador" type="s:string" />
+    <wsdl:part name="DescricaoLesao" type="s:string" />
+    <wsdl:part name="DescricaoCompl" type="s:string" />
+    <wsdl:part name="LocalAcidente" type="s:string" />
+    <wsdl:part name="EnderecoLocal" type="s:string" />
+    <wsdl:part name="NumeroLocal" type="s:string" />
+    <wsdl:part name="MunicipioLocal" type="s:string" />
+    <wsdl:part name="UFLocal" type="s:string" />
+    <wsdl:part name="UnidadeLocal" type="s:string" />
+    <wsdl:part name="EspecificacaoLocal" type="s:string" />
+    <wsdl:part name="SetorAcidente" type="s:string" />
+    <wsdl:part name="Internacao" type="s:string" />
+    <wsdl:part name="DataAtendimento" type="s:string" />
+    <wsdl:part name="HoraAtendimento" type="s:string" />
+    <wsdl:part name="DuracaoTratamentoDias" type="s:string" />
+    <wsdl:part name="CodigoCNES" type="s:string" />
+    <wsdl:part name="Reponsavel_Atestado" type="s:string" />
+    <wsdl:part name="NrConselho_Atestado" type="s:string" />
+    <wsdl:part name="UFConselho_Atestado" type="s:string" />
+    <wsdl:part name="DiagnosticoProvavel" type="s:string" />
+    <wsdl:part name="CID1" type="s:string" />
+    <wsdl:part name="CID2" type="s:string" />
+    <wsdl:part name="CID3" type="s:string" />
+    <wsdl:part name="CID4" type="s:string" />
+    <wsdl:part name="TransferidoOutroSetor" type="s:string" />
+    <wsdl:part name="AposentadoInvalidez" type="s:string" />
+    <wsdl:part name="PerdaMaterial" type="s:string" />
+    <wsdl:part name="EmitenteCAT" type="s:string" />
+    <wsdl:part name="DataEmissaoCAT" type="s:string" />
+    <wsdl:part name="HoraEmissaoCAT" type="s:string" />
+    <wsdl:part name="TipoCAT" type="s:string" />
+    <wsdl:part name="NumeroCAT" type="s:string" />
+    <wsdl:part name="Iniciativa" type="s:string" />
+    <wsdl:part name="BOPolicial" type="s:string" />
+    <wsdl:part name="DataObito" type="s:string" />
+    <wsdl:part name="DataInicioAbsenteismo" type="s:string" />
+    <wsdl:part name="HoraInicioAbsenteismo" type="s:string" />
+    <wsdl:part name="PrevisaoRetornoAbsenteismo" type="s:string" />
+    <wsdl:part name="DataRetornoAbsenteismo" type="s:string" />
+    <wsdl:part name="HoraRetornoAbsenteismo" type="s:string" />
+    <wsdl:part name="ObservacaoAbsenteismo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Executar_AcidenteHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Executar_CIPAHttpGetIn">
+    <wsdl:part name="ID" type="s:string" />
+    <wsdl:part name="Empresa" type="s:string" />
+    <wsdl:part name="CodUsuario" type="s:string" />
+    <wsdl:part name="CNPJ" type="s:string" />
+    <wsdl:part name="Colaborador" type="s:string" />
+    <wsdl:part name="DataInicioCIPA" type="s:string" />
+    <wsdl:part name="Papel" type="s:string" />
+    <wsdl:part name="Indicado" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Executar_CIPAHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Executar_CIPA_EventoHttpGetIn">
+    <wsdl:part name="Id" type="s:string" />
+    <wsdl:part name="Empresa" type="s:string" />
+    <wsdl:part name="CodUsuario" type="s:string" />
+    <wsdl:part name="CNPJ" type="s:string" />
+    <wsdl:part name="DataInicioCIPA" type="s:string" />
+    <wsdl:part name="DataEvento" type="s:string" />
+    <wsdl:part name="Evento" type="s:string" />
+    <wsdl:part name="Descricao" type="s:string" />
+    <wsdl:part name="TipoReuniao" type="s:string" />
+    <wsdl:part name="Arquivo" type="s:string" />
+    <wsdl:part name="Conteudo_Arquivo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Executar_CIPA_EventoHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Executar_ConvocacaoHttpGetIn">
+    <wsdl:part name="CNPJ" type="s:string" />
+    <wsdl:part name="Empresa" type="s:string" />
+    <wsdl:part name="CodUsuario" type="s:string" />
+    <wsdl:part name="TipoExame" type="s:string" />
+    <wsdl:part name="Colaborador" type="s:string" />
+    <wsdl:part name="Data" type="s:string" />
+    <wsdl:part name="ID" type="s:string" />
+    <wsdl:part name="IdConvocacao" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Executar_ConvocacaoHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Resultado_ExameHttpGetIn">
+    <wsdl:part name="Id" type="s:string" />
+    <wsdl:part name="CodUsuario" type="s:string" />
+    <wsdl:part name="CNPJ" type="s:string" />
+    <wsdl:part name="TipoExame" type="s:string" />
+    <wsdl:part name="Colaborador" type="s:string" />
+    <wsdl:part name="Data" type="s:string" />
+    <wsdl:part name="Resultado" type="s:string" />
+    <wsdl:part name="Observacao" type="s:string" />
+    <wsdl:part name="Arquivo" type="s:string" />
+    <wsdl:part name="Conteudo_Arquivo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Resultado_ExameHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Editar_AfastamentoHttpGetIn">
+    <wsdl:part name="ID" type="s:string" />
+    <wsdl:part name="CNPJ" type="s:string" />
+    <wsdl:part name="CodUsuario" type="s:string" />
+    <wsdl:part name="Colaborador" type="s:string" />
+    <wsdl:part name="DataInicio_Original" type="s:string" />
+    <wsdl:part name="DataInicio" type="s:string" />
+    <wsdl:part name="HoraInicio" type="s:string" />
+    <wsdl:part name="PrevisaoRetorno" type="s:string" />
+    <wsdl:part name="DataRetorno" type="s:string" />
+    <wsdl:part name="HoraRetorno" type="s:string" />
+    <wsdl:part name="Observacao" type="s:string" />
+    <wsdl:part name="TipoAfastamento" type="s:string" />
+    <wsdl:part name="Emitente_Atestado" type="s:string" />
+    <wsdl:part name="Responsavel_Atestado" type="s:string" />
+    <wsdl:part name="NrConselho_Atestado" type="s:string" />
+    <wsdl:part name="UFConselho_Atestado" type="s:string" />
+    <wsdl:part name="CID1" type="s:string" />
+    <wsdl:part name="CID2" type="s:string" />
+    <wsdl:part name="CID3" type="s:string" />
+    <wsdl:part name="CID4" type="s:string" />
+    <wsdl:part name="Arquivo" type="s:string" />
+    <wsdl:part name="Conteudo_Arquivo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Editar_AfastamentoHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Criar_CargoHttpGetIn">
+    <wsdl:part name="ID" type="s:string" />
+    <wsdl:part name="CodUsuario" type="s:string" />
+    <wsdl:part name="CNPJ" type="s:string" />
+    <wsdl:part name="Cargo" type="s:string" />
+    <wsdl:part name="DescricaoCargo" type="s:string" />
+    <wsdl:part name="CBO" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Criar_CargoHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Cadastrar_UnidadeHttpGetIn">
+    <wsdl:part name="xID" type="s:string" />
+    <wsdl:part name="xNomeEmpresa" type="s:string" />
+    <wsdl:part name="xRazaoSocial" type="s:string" />
+    <wsdl:part name="xCNPJ" type="s:string" />
+    <wsdl:part name="xCodUsuario" type="s:string" />
+    <wsdl:part name="xTipoLogradouro" type="s:string" />
+    <wsdl:part name="xLogradouro" type="s:string" />
+    <wsdl:part name="xNumero" type="s:string" />
+    <wsdl:part name="xComplemento" type="s:string" />
+    <wsdl:part name="xBairro" type="s:string" />
+    <wsdl:part name="xCEP" type="s:string" />
+    <wsdl:part name="xMunicipio" type="s:string" />
+    <wsdl:part name="xUF" type="s:string" />
+    <wsdl:part name="xIE" type="s:string" />
+    <wsdl:part name="xCCM" type="s:string" />
+    <wsdl:part name="xSite" type="s:string" />
+    <wsdl:part name="xEmail" type="s:string" />
+    <wsdl:part name="xObservacao" type="s:string" />
+    <wsdl:part name="xDDDContato" type="s:string" />
+    <wsdl:part name="xTelefoneContato" type="s:string" />
+    <wsdl:part name="xNomeContato" type="s:string" />
+    <wsdl:part name="xDeptoContato" type="s:string" />
+    <wsdl:part name="xEmailContato" type="s:string" />
+    <wsdl:part name="xCNAE" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Cadastrar_UnidadeHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Editar_AcidenteHttpGetIn">
+    <wsdl:part name="ID" type="s:string" />
+    <wsdl:part name="CodUsuario" type="s:string" />
+    <wsdl:part name="CNPJ" type="s:string" />
+    <wsdl:part name="Colaborador" type="s:string" />
+    <wsdl:part name="DataAcidente_Original" type="s:string" />
+    <wsdl:part name="DataAcidente" type="s:string" />
+    <wsdl:part name="HoraAcidente" type="s:string" />
+    <wsdl:part name="TipoAcidente" type="s:string" />
+    <wsdl:part name="SituacaoGeradora" type="s:string" />
+    <wsdl:part name="ParteCorpoAtingida" type="s:string" />
+    <wsdl:part name="Lateralidade" type="s:string" />
+    <wsdl:part name="AgenteCausador" type="s:string" />
+    <wsdl:part name="DescricaoLesao" type="s:string" />
+    <wsdl:part name="DescricaoCompl" type="s:string" />
+    <wsdl:part name="LocalAcidente" type="s:string" />
+    <wsdl:part name="EnderecoLocal" type="s:string" />
+    <wsdl:part name="NumeroLocal" type="s:string" />
+    <wsdl:part name="MunicipioLocal" type="s:string" />
+    <wsdl:part name="UFLocal" type="s:string" />
+    <wsdl:part name="UnidadeLocal" type="s:string" />
+    <wsdl:part name="EspecificacaoLocal" type="s:string" />
+    <wsdl:part name="SetorAcidente" type="s:string" />
+    <wsdl:part name="Internacao" type="s:string" />
+    <wsdl:part name="DataAtendimento" type="s:string" />
+    <wsdl:part name="HoraAtendimento" type="s:string" />
+    <wsdl:part name="DuracaoTratamentoDias" type="s:string" />
+    <wsdl:part name="CodigoCNES" type="s:string" />
+    <wsdl:part name="Reponsavel_Atestado" type="s:string" />
+    <wsdl:part name="NrConselho_Atestado" type="s:string" />
+    <wsdl:part name="UFConselho_Atestado" type="s:string" />
+    <wsdl:part name="DiagnosticoProvavel" type="s:string" />
+    <wsdl:part name="CID1" type="s:string" />
+    <wsdl:part name="CID2" type="s:string" />
+    <wsdl:part name="CID3" type="s:string" />
+    <wsdl:part name="CID4" type="s:string" />
+    <wsdl:part name="TransferidoOutroSetor" type="s:string" />
+    <wsdl:part name="AposentadoInvalidez" type="s:string" />
+    <wsdl:part name="PerdaMaterial" type="s:string" />
+    <wsdl:part name="EmitenteCAT" type="s:string" />
+    <wsdl:part name="DataEmissaoCAT" type="s:string" />
+    <wsdl:part name="HoraEmissaoCAT" type="s:string" />
+    <wsdl:part name="TipoCAT" type="s:string" />
+    <wsdl:part name="NumeroCAT" type="s:string" />
+    <wsdl:part name="Iniciativa" type="s:string" />
+    <wsdl:part name="BOPolicial" type="s:string" />
+    <wsdl:part name="DataObito" type="s:string" />
+    <wsdl:part name="Arquivo" type="s:string" />
+    <wsdl:part name="Conteudo_Arquivo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Editar_AcidenteHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Executar_Convocacao_OldHttpPostIn">
+    <wsdl:part name="CNPJ" type="s:string" />
+    <wsdl:part name="Empresa" type="s:string" />
+    <wsdl:part name="CodUsuario" type="s:string" />
+    <wsdl:part name="TipoExame" type="s:string" />
+    <wsdl:part name="Colaborador" type="s:string" />
+    <wsdl:part name="Data" type="s:string" />
+    <wsdl:part name="ID" type="s:string" />
+    <wsdl:part name="IdConvocacao" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Executar_Convocacao_OldHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Executar_AfastamentoHttpPostIn">
+    <wsdl:part name="ID" type="s:string" />
+    <wsdl:part name="Empresa" type="s:string" />
+    <wsdl:part name="CNPJ" type="s:string" />
+    <wsdl:part name="CodUsuario" type="s:string" />
+    <wsdl:part name="Colaborador" type="s:string" />
+    <wsdl:part name="DataInicio" type="s:string" />
+    <wsdl:part name="HoraInicio" type="s:string" />
+    <wsdl:part name="PrevisaoRetorno" type="s:string" />
+    <wsdl:part name="DataRetorno" type="s:string" />
+    <wsdl:part name="HoraRetorno" type="s:string" />
+    <wsdl:part name="Observacao" type="s:string" />
+    <wsdl:part name="TipoAfastamento" type="s:string" />
+    <wsdl:part name="Emitente_Atestado" type="s:string" />
+    <wsdl:part name="Responsavel_Atestado" type="s:string" />
+    <wsdl:part name="NrConselho_Atestado" type="s:string" />
+    <wsdl:part name="UFConselho_Atestado" type="s:string" />
+    <wsdl:part name="CID1" type="s:string" />
+    <wsdl:part name="CID2" type="s:string" />
+    <wsdl:part name="CID3" type="s:string" />
+    <wsdl:part name="CID4" type="s:string" />
+    <wsdl:part name="Arquivo" type="s:string" />
+    <wsdl:part name="Conteudo_Arquivo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Executar_AfastamentoHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Retornar_ClinicasHttpPostIn">
+    <wsdl:part name="CEP" type="s:string" />
+    <wsdl:part name="Numero_Clinicas" type="s:string" />
+    <wsdl:part name="Valor_Maximo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Retornar_ClinicasHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="Retornar_LaudosHttpPostIn">
+    <wsdl:part name="xCNPJ" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Retornar_LaudosHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="Executar_ExameHttpPostIn">
+    <wsdl:part name="ID" type="s:string" />
+    <wsdl:part name="Empresa" type="s:string" />
+    <wsdl:part name="CNPJ" type="s:string" />
+    <wsdl:part name="CodUsuario" type="s:string" />
+    <wsdl:part name="TipoExame" type="s:string" />
+    <wsdl:part name="Colaborador" type="s:string" />
+    <wsdl:part name="Data" type="s:string" />
+    <wsdl:part name="NIT" type="s:string" />
+    <wsdl:part name="RG" type="s:string" />
+    <wsdl:part name="CPF" type="s:string" />
+    <wsdl:part name="DtAdmissao" type="s:string" />
+    <wsdl:part name="DtNascimento" type="s:string" />
+    <wsdl:part name="CTPS_Numero" type="s:string" />
+    <wsdl:part name="CTPS_Serie" type="s:string" />
+    <wsdl:part name="CTPS_UF" type="s:string" />
+    <wsdl:part name="Email" type="s:string" />
+    <wsdl:part name="Matricula" type="s:string" />
+    <wsdl:part name="Sexo" type="s:string" />
+    <wsdl:part name="Funcao" type="s:string" />
+    <wsdl:part name="Cargo" type="s:string" />
+    <wsdl:part name="Setor" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Executar_ExameHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Executar_AcidenteHttpPostIn">
+    <wsdl:part name="ID" type="s:string" />
+    <wsdl:part name="Empresa" type="s:string" />
+    <wsdl:part name="CodUsuario" type="s:string" />
+    <wsdl:part name="CNPJ" type="s:string" />
+    <wsdl:part name="Colaborador" type="s:string" />
+    <wsdl:part name="DataAcidente" type="s:string" />
+    <wsdl:part name="HoraAcidente" type="s:string" />
+    <wsdl:part name="TipoAcidente" type="s:string" />
+    <wsdl:part name="SituacaoGeradora" type="s:string" />
+    <wsdl:part name="ParteCorpoAtingida" type="s:string" />
+    <wsdl:part name="Lateralidade" type="s:string" />
+    <wsdl:part name="AgenteCausador" type="s:string" />
+    <wsdl:part name="DescricaoLesao" type="s:string" />
+    <wsdl:part name="DescricaoCompl" type="s:string" />
+    <wsdl:part name="LocalAcidente" type="s:string" />
+    <wsdl:part name="EnderecoLocal" type="s:string" />
+    <wsdl:part name="NumeroLocal" type="s:string" />
+    <wsdl:part name="MunicipioLocal" type="s:string" />
+    <wsdl:part name="UFLocal" type="s:string" />
+    <wsdl:part name="UnidadeLocal" type="s:string" />
+    <wsdl:part name="EspecificacaoLocal" type="s:string" />
+    <wsdl:part name="SetorAcidente" type="s:string" />
+    <wsdl:part name="Internacao" type="s:string" />
+    <wsdl:part name="DataAtendimento" type="s:string" />
+    <wsdl:part name="HoraAtendimento" type="s:string" />
+    <wsdl:part name="DuracaoTratamentoDias" type="s:string" />
+    <wsdl:part name="CodigoCNES" type="s:string" />
+    <wsdl:part name="Reponsavel_Atestado" type="s:string" />
+    <wsdl:part name="NrConselho_Atestado" type="s:string" />
+    <wsdl:part name="UFConselho_Atestado" type="s:string" />
+    <wsdl:part name="DiagnosticoProvavel" type="s:string" />
+    <wsdl:part name="CID1" type="s:string" />
+    <wsdl:part name="CID2" type="s:string" />
+    <wsdl:part name="CID3" type="s:string" />
+    <wsdl:part name="CID4" type="s:string" />
+    <wsdl:part name="TransferidoOutroSetor" type="s:string" />
+    <wsdl:part name="AposentadoInvalidez" type="s:string" />
+    <wsdl:part name="PerdaMaterial" type="s:string" />
+    <wsdl:part name="EmitenteCAT" type="s:string" />
+    <wsdl:part name="DataEmissaoCAT" type="s:string" />
+    <wsdl:part name="HoraEmissaoCAT" type="s:string" />
+    <wsdl:part name="TipoCAT" type="s:string" />
+    <wsdl:part name="NumeroCAT" type="s:string" />
+    <wsdl:part name="Iniciativa" type="s:string" />
+    <wsdl:part name="BOPolicial" type="s:string" />
+    <wsdl:part name="DataObito" type="s:string" />
+    <wsdl:part name="DataInicioAbsenteismo" type="s:string" />
+    <wsdl:part name="HoraInicioAbsenteismo" type="s:string" />
+    <wsdl:part name="PrevisaoRetornoAbsenteismo" type="s:string" />
+    <wsdl:part name="DataRetornoAbsenteismo" type="s:string" />
+    <wsdl:part name="HoraRetornoAbsenteismo" type="s:string" />
+    <wsdl:part name="ObservacaoAbsenteismo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Executar_AcidenteHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Executar_CIPAHttpPostIn">
+    <wsdl:part name="ID" type="s:string" />
+    <wsdl:part name="Empresa" type="s:string" />
+    <wsdl:part name="CodUsuario" type="s:string" />
+    <wsdl:part name="CNPJ" type="s:string" />
+    <wsdl:part name="Colaborador" type="s:string" />
+    <wsdl:part name="DataInicioCIPA" type="s:string" />
+    <wsdl:part name="Papel" type="s:string" />
+    <wsdl:part name="Indicado" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Executar_CIPAHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Executar_CIPA_EventoHttpPostIn">
+    <wsdl:part name="Id" type="s:string" />
+    <wsdl:part name="Empresa" type="s:string" />
+    <wsdl:part name="CodUsuario" type="s:string" />
+    <wsdl:part name="CNPJ" type="s:string" />
+    <wsdl:part name="DataInicioCIPA" type="s:string" />
+    <wsdl:part name="DataEvento" type="s:string" />
+    <wsdl:part name="Evento" type="s:string" />
+    <wsdl:part name="Descricao" type="s:string" />
+    <wsdl:part name="TipoReuniao" type="s:string" />
+    <wsdl:part name="Arquivo" type="s:string" />
+    <wsdl:part name="Conteudo_Arquivo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Executar_CIPA_EventoHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Executar_ConvocacaoHttpPostIn">
+    <wsdl:part name="CNPJ" type="s:string" />
+    <wsdl:part name="Empresa" type="s:string" />
+    <wsdl:part name="CodUsuario" type="s:string" />
+    <wsdl:part name="TipoExame" type="s:string" />
+    <wsdl:part name="Colaborador" type="s:string" />
+    <wsdl:part name="Data" type="s:string" />
+    <wsdl:part name="ID" type="s:string" />
+    <wsdl:part name="IdConvocacao" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Executar_ConvocacaoHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Resultado_ExameHttpPostIn">
+    <wsdl:part name="Id" type="s:string" />
+    <wsdl:part name="CodUsuario" type="s:string" />
+    <wsdl:part name="CNPJ" type="s:string" />
+    <wsdl:part name="TipoExame" type="s:string" />
+    <wsdl:part name="Colaborador" type="s:string" />
+    <wsdl:part name="Data" type="s:string" />
+    <wsdl:part name="Resultado" type="s:string" />
+    <wsdl:part name="Observacao" type="s:string" />
+    <wsdl:part name="Arquivo" type="s:string" />
+    <wsdl:part name="Conteudo_Arquivo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Resultado_ExameHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Editar_AfastamentoHttpPostIn">
+    <wsdl:part name="ID" type="s:string" />
+    <wsdl:part name="CNPJ" type="s:string" />
+    <wsdl:part name="CodUsuario" type="s:string" />
+    <wsdl:part name="Colaborador" type="s:string" />
+    <wsdl:part name="DataInicio_Original" type="s:string" />
+    <wsdl:part name="DataInicio" type="s:string" />
+    <wsdl:part name="HoraInicio" type="s:string" />
+    <wsdl:part name="PrevisaoRetorno" type="s:string" />
+    <wsdl:part name="DataRetorno" type="s:string" />
+    <wsdl:part name="HoraRetorno" type="s:string" />
+    <wsdl:part name="Observacao" type="s:string" />
+    <wsdl:part name="TipoAfastamento" type="s:string" />
+    <wsdl:part name="Emitente_Atestado" type="s:string" />
+    <wsdl:part name="Responsavel_Atestado" type="s:string" />
+    <wsdl:part name="NrConselho_Atestado" type="s:string" />
+    <wsdl:part name="UFConselho_Atestado" type="s:string" />
+    <wsdl:part name="CID1" type="s:string" />
+    <wsdl:part name="CID2" type="s:string" />
+    <wsdl:part name="CID3" type="s:string" />
+    <wsdl:part name="CID4" type="s:string" />
+    <wsdl:part name="Arquivo" type="s:string" />
+    <wsdl:part name="Conteudo_Arquivo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Editar_AfastamentoHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Criar_CargoHttpPostIn">
+    <wsdl:part name="ID" type="s:string" />
+    <wsdl:part name="CodUsuario" type="s:string" />
+    <wsdl:part name="CNPJ" type="s:string" />
+    <wsdl:part name="Cargo" type="s:string" />
+    <wsdl:part name="DescricaoCargo" type="s:string" />
+    <wsdl:part name="CBO" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Criar_CargoHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Cadastrar_UnidadeHttpPostIn">
+    <wsdl:part name="xID" type="s:string" />
+    <wsdl:part name="xNomeEmpresa" type="s:string" />
+    <wsdl:part name="xRazaoSocial" type="s:string" />
+    <wsdl:part name="xCNPJ" type="s:string" />
+    <wsdl:part name="xCodUsuario" type="s:string" />
+    <wsdl:part name="xTipoLogradouro" type="s:string" />
+    <wsdl:part name="xLogradouro" type="s:string" />
+    <wsdl:part name="xNumero" type="s:string" />
+    <wsdl:part name="xComplemento" type="s:string" />
+    <wsdl:part name="xBairro" type="s:string" />
+    <wsdl:part name="xCEP" type="s:string" />
+    <wsdl:part name="xMunicipio" type="s:string" />
+    <wsdl:part name="xUF" type="s:string" />
+    <wsdl:part name="xIE" type="s:string" />
+    <wsdl:part name="xCCM" type="s:string" />
+    <wsdl:part name="xSite" type="s:string" />
+    <wsdl:part name="xEmail" type="s:string" />
+    <wsdl:part name="xObservacao" type="s:string" />
+    <wsdl:part name="xDDDContato" type="s:string" />
+    <wsdl:part name="xTelefoneContato" type="s:string" />
+    <wsdl:part name="xNomeContato" type="s:string" />
+    <wsdl:part name="xDeptoContato" type="s:string" />
+    <wsdl:part name="xEmailContato" type="s:string" />
+    <wsdl:part name="xCNAE" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Cadastrar_UnidadeHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Editar_AcidenteHttpPostIn">
+    <wsdl:part name="ID" type="s:string" />
+    <wsdl:part name="CodUsuario" type="s:string" />
+    <wsdl:part name="CNPJ" type="s:string" />
+    <wsdl:part name="Colaborador" type="s:string" />
+    <wsdl:part name="DataAcidente_Original" type="s:string" />
+    <wsdl:part name="DataAcidente" type="s:string" />
+    <wsdl:part name="HoraAcidente" type="s:string" />
+    <wsdl:part name="TipoAcidente" type="s:string" />
+    <wsdl:part name="SituacaoGeradora" type="s:string" />
+    <wsdl:part name="ParteCorpoAtingida" type="s:string" />
+    <wsdl:part name="Lateralidade" type="s:string" />
+    <wsdl:part name="AgenteCausador" type="s:string" />
+    <wsdl:part name="DescricaoLesao" type="s:string" />
+    <wsdl:part name="DescricaoCompl" type="s:string" />
+    <wsdl:part name="LocalAcidente" type="s:string" />
+    <wsdl:part name="EnderecoLocal" type="s:string" />
+    <wsdl:part name="NumeroLocal" type="s:string" />
+    <wsdl:part name="MunicipioLocal" type="s:string" />
+    <wsdl:part name="UFLocal" type="s:string" />
+    <wsdl:part name="UnidadeLocal" type="s:string" />
+    <wsdl:part name="EspecificacaoLocal" type="s:string" />
+    <wsdl:part name="SetorAcidente" type="s:string" />
+    <wsdl:part name="Internacao" type="s:string" />
+    <wsdl:part name="DataAtendimento" type="s:string" />
+    <wsdl:part name="HoraAtendimento" type="s:string" />
+    <wsdl:part name="DuracaoTratamentoDias" type="s:string" />
+    <wsdl:part name="CodigoCNES" type="s:string" />
+    <wsdl:part name="Reponsavel_Atestado" type="s:string" />
+    <wsdl:part name="NrConselho_Atestado" type="s:string" />
+    <wsdl:part name="UFConselho_Atestado" type="s:string" />
+    <wsdl:part name="DiagnosticoProvavel" type="s:string" />
+    <wsdl:part name="CID1" type="s:string" />
+    <wsdl:part name="CID2" type="s:string" />
+    <wsdl:part name="CID3" type="s:string" />
+    <wsdl:part name="CID4" type="s:string" />
+    <wsdl:part name="TransferidoOutroSetor" type="s:string" />
+    <wsdl:part name="AposentadoInvalidez" type="s:string" />
+    <wsdl:part name="PerdaMaterial" type="s:string" />
+    <wsdl:part name="EmitenteCAT" type="s:string" />
+    <wsdl:part name="DataEmissaoCAT" type="s:string" />
+    <wsdl:part name="HoraEmissaoCAT" type="s:string" />
+    <wsdl:part name="TipoCAT" type="s:string" />
+    <wsdl:part name="NumeroCAT" type="s:string" />
+    <wsdl:part name="Iniciativa" type="s:string" />
+    <wsdl:part name="BOPolicial" type="s:string" />
+    <wsdl:part name="DataObito" type="s:string" />
+    <wsdl:part name="Arquivo" type="s:string" />
+    <wsdl:part name="Conteudo_Arquivo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Editar_AcidenteHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:portType name="Comunicacao1Soap">
+    <wsdl:operation name="Executar_Convocacao_Old">
+      <wsdl:input message="tns:Executar_Convocacao_OldSoapIn" />
+      <wsdl:output message="tns:Executar_Convocacao_OldSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Executar_Afastamento">
+      <wsdl:input message="tns:Executar_AfastamentoSoapIn" />
+      <wsdl:output message="tns:Executar_AfastamentoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Retornar_Clinicas">
+      <wsdl:input message="tns:Retornar_ClinicasSoapIn" />
+      <wsdl:output message="tns:Retornar_ClinicasSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Retornar_Laudos">
+      <wsdl:input message="tns:Retornar_LaudosSoapIn" />
+      <wsdl:output message="tns:Retornar_LaudosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Executar_Exame">
+      <wsdl:input message="tns:Executar_ExameSoapIn" />
+      <wsdl:output message="tns:Executar_ExameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Executar_Acidente">
+      <wsdl:input message="tns:Executar_AcidenteSoapIn" />
+      <wsdl:output message="tns:Executar_AcidenteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Executar_CIPA">
+      <wsdl:input message="tns:Executar_CIPASoapIn" />
+      <wsdl:output message="tns:Executar_CIPASoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Executar_CIPA_Evento">
+      <wsdl:input message="tns:Executar_CIPA_EventoSoapIn" />
+      <wsdl:output message="tns:Executar_CIPA_EventoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Executar_Convocacao">
+      <wsdl:input message="tns:Executar_ConvocacaoSoapIn" />
+      <wsdl:output message="tns:Executar_ConvocacaoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Resultado_Exame">
+      <wsdl:input message="tns:Resultado_ExameSoapIn" />
+      <wsdl:output message="tns:Resultado_ExameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Editar_Afastamento">
+      <wsdl:input message="tns:Editar_AfastamentoSoapIn" />
+      <wsdl:output message="tns:Editar_AfastamentoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Criar_Cargo">
+      <wsdl:input message="tns:Criar_CargoSoapIn" />
+      <wsdl:output message="tns:Criar_CargoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Cadastrar_Unidade">
+      <wsdl:input message="tns:Cadastrar_UnidadeSoapIn" />
+      <wsdl:output message="tns:Cadastrar_UnidadeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Editar_Acidente">
+      <wsdl:input message="tns:Editar_AcidenteSoapIn" />
+      <wsdl:output message="tns:Editar_AcidenteSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="Comunicacao1HttpGet">
+    <wsdl:operation name="Executar_Convocacao_Old">
+      <wsdl:input message="tns:Executar_Convocacao_OldHttpGetIn" />
+      <wsdl:output message="tns:Executar_Convocacao_OldHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Executar_Afastamento">
+      <wsdl:input message="tns:Executar_AfastamentoHttpGetIn" />
+      <wsdl:output message="tns:Executar_AfastamentoHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Retornar_Clinicas">
+      <wsdl:input message="tns:Retornar_ClinicasHttpGetIn" />
+      <wsdl:output message="tns:Retornar_ClinicasHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Retornar_Laudos">
+      <wsdl:input message="tns:Retornar_LaudosHttpGetIn" />
+      <wsdl:output message="tns:Retornar_LaudosHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Executar_Exame">
+      <wsdl:input message="tns:Executar_ExameHttpGetIn" />
+      <wsdl:output message="tns:Executar_ExameHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Executar_Acidente">
+      <wsdl:input message="tns:Executar_AcidenteHttpGetIn" />
+      <wsdl:output message="tns:Executar_AcidenteHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Executar_CIPA">
+      <wsdl:input message="tns:Executar_CIPAHttpGetIn" />
+      <wsdl:output message="tns:Executar_CIPAHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Executar_CIPA_Evento">
+      <wsdl:input message="tns:Executar_CIPA_EventoHttpGetIn" />
+      <wsdl:output message="tns:Executar_CIPA_EventoHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Executar_Convocacao">
+      <wsdl:input message="tns:Executar_ConvocacaoHttpGetIn" />
+      <wsdl:output message="tns:Executar_ConvocacaoHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Resultado_Exame">
+      <wsdl:input message="tns:Resultado_ExameHttpGetIn" />
+      <wsdl:output message="tns:Resultado_ExameHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Editar_Afastamento">
+      <wsdl:input message="tns:Editar_AfastamentoHttpGetIn" />
+      <wsdl:output message="tns:Editar_AfastamentoHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Criar_Cargo">
+      <wsdl:input message="tns:Criar_CargoHttpGetIn" />
+      <wsdl:output message="tns:Criar_CargoHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Cadastrar_Unidade">
+      <wsdl:input message="tns:Cadastrar_UnidadeHttpGetIn" />
+      <wsdl:output message="tns:Cadastrar_UnidadeHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Editar_Acidente">
+      <wsdl:input message="tns:Editar_AcidenteHttpGetIn" />
+      <wsdl:output message="tns:Editar_AcidenteHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="Comunicacao1HttpPost">
+    <wsdl:operation name="Executar_Convocacao_Old">
+      <wsdl:input message="tns:Executar_Convocacao_OldHttpPostIn" />
+      <wsdl:output message="tns:Executar_Convocacao_OldHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Executar_Afastamento">
+      <wsdl:input message="tns:Executar_AfastamentoHttpPostIn" />
+      <wsdl:output message="tns:Executar_AfastamentoHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Retornar_Clinicas">
+      <wsdl:input message="tns:Retornar_ClinicasHttpPostIn" />
+      <wsdl:output message="tns:Retornar_ClinicasHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Retornar_Laudos">
+      <wsdl:input message="tns:Retornar_LaudosHttpPostIn" />
+      <wsdl:output message="tns:Retornar_LaudosHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Executar_Exame">
+      <wsdl:input message="tns:Executar_ExameHttpPostIn" />
+      <wsdl:output message="tns:Executar_ExameHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Executar_Acidente">
+      <wsdl:input message="tns:Executar_AcidenteHttpPostIn" />
+      <wsdl:output message="tns:Executar_AcidenteHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Executar_CIPA">
+      <wsdl:input message="tns:Executar_CIPAHttpPostIn" />
+      <wsdl:output message="tns:Executar_CIPAHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Executar_CIPA_Evento">
+      <wsdl:input message="tns:Executar_CIPA_EventoHttpPostIn" />
+      <wsdl:output message="tns:Executar_CIPA_EventoHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Executar_Convocacao">
+      <wsdl:input message="tns:Executar_ConvocacaoHttpPostIn" />
+      <wsdl:output message="tns:Executar_ConvocacaoHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Resultado_Exame">
+      <wsdl:input message="tns:Resultado_ExameHttpPostIn" />
+      <wsdl:output message="tns:Resultado_ExameHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Editar_Afastamento">
+      <wsdl:input message="tns:Editar_AfastamentoHttpPostIn" />
+      <wsdl:output message="tns:Editar_AfastamentoHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Criar_Cargo">
+      <wsdl:input message="tns:Criar_CargoHttpPostIn" />
+      <wsdl:output message="tns:Criar_CargoHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Cadastrar_Unidade">
+      <wsdl:input message="tns:Cadastrar_UnidadeHttpPostIn" />
+      <wsdl:output message="tns:Cadastrar_UnidadeHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Editar_Acidente">
+      <wsdl:input message="tns:Editar_AcidenteHttpPostIn" />
+      <wsdl:output message="tns:Editar_AcidenteHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="Comunicacao1Soap" type="tns:Comunicacao1Soap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Executar_Convocacao_Old">
+      <soap:operation soapAction="https://www.ilitera.net.br/essence_hom/Executar_Convocacao_Old" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Executar_Afastamento">
+      <soap:operation soapAction="https://www.ilitera.net.br/essence_hom/Executar_Afastamento" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Retornar_Clinicas">
+      <soap:operation soapAction="https://www.ilitera.net.br/essence_hom/Retornar_Clinicas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Retornar_Laudos">
+      <soap:operation soapAction="https://www.ilitera.net.br/essence_hom/Retornar_Laudos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Executar_Exame">
+      <soap:operation soapAction="https://www.ilitera.net.br/essence_hom/Executar_Exame" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Executar_Acidente">
+      <soap:operation soapAction="https://www.ilitera.net.br/essence_hom/Executar_Acidente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Executar_CIPA">
+      <soap:operation soapAction="https://www.ilitera.net.br/essence_hom/Executar_CIPA" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Executar_CIPA_Evento">
+      <soap:operation soapAction="https://www.ilitera.net.br/essence_hom/Executar_CIPA_Evento" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Executar_Convocacao">
+      <soap:operation soapAction="https://www.ilitera.net.br/essence_hom/Executar_Convocacao" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Resultado_Exame">
+      <soap:operation soapAction="https://www.ilitera.net.br/essence_hom/Resultado_Exame" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Editar_Afastamento">
+      <soap:operation soapAction="https://www.ilitera.net.br/essence_hom/Editar_Afastamento" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Criar_Cargo">
+      <soap:operation soapAction="https://www.ilitera.net.br/essence_hom/Criar_Cargo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Cadastrar_Unidade">
+      <soap:operation soapAction="https://www.ilitera.net.br/essence_hom/Cadastrar_Unidade" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Editar_Acidente">
+      <soap:operation soapAction="https://www.ilitera.net.br/essence_hom/Editar_Acidente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="Comunicacao1Soap12" type="tns:Comunicacao1Soap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Executar_Convocacao_Old">
+      <soap12:operation soapAction="https://www.ilitera.net.br/essence_hom/Executar_Convocacao_Old" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Executar_Afastamento">
+      <soap12:operation soapAction="https://www.ilitera.net.br/essence_hom/Executar_Afastamento" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Retornar_Clinicas">
+      <soap12:operation soapAction="https://www.ilitera.net.br/essence_hom/Retornar_Clinicas" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Retornar_Laudos">
+      <soap12:operation soapAction="https://www.ilitera.net.br/essence_hom/Retornar_Laudos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Executar_Exame">
+      <soap12:operation soapAction="https://www.ilitera.net.br/essence_hom/Executar_Exame" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Executar_Acidente">
+      <soap12:operation soapAction="https://www.ilitera.net.br/essence_hom/Executar_Acidente" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Executar_CIPA">
+      <soap12:operation soapAction="https://www.ilitera.net.br/essence_hom/Executar_CIPA" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Executar_CIPA_Evento">
+      <soap12:operation soapAction="https://www.ilitera.net.br/essence_hom/Executar_CIPA_Evento" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Executar_Convocacao">
+      <soap12:operation soapAction="https://www.ilitera.net.br/essence_hom/Executar_Convocacao" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Resultado_Exame">
+      <soap12:operation soapAction="https://www.ilitera.net.br/essence_hom/Resultado_Exame" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Editar_Afastamento">
+      <soap12:operation soapAction="https://www.ilitera.net.br/essence_hom/Editar_Afastamento" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Criar_Cargo">
+      <soap12:operation soapAction="https://www.ilitera.net.br/essence_hom/Criar_Cargo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Cadastrar_Unidade">
+      <soap12:operation soapAction="https://www.ilitera.net.br/essence_hom/Cadastrar_Unidade" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Editar_Acidente">
+      <soap12:operation soapAction="https://www.ilitera.net.br/essence_hom/Editar_Acidente" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="Comunicacao1HttpGet" type="tns:Comunicacao1HttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="Executar_Convocacao_Old">
+      <http:operation location="/Executar_Convocacao_Old" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Executar_Afastamento">
+      <http:operation location="/Executar_Afastamento" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Retornar_Clinicas">
+      <http:operation location="/Retornar_Clinicas" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Retornar_Laudos">
+      <http:operation location="/Retornar_Laudos" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Executar_Exame">
+      <http:operation location="/Executar_Exame" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Executar_Acidente">
+      <http:operation location="/Executar_Acidente" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Executar_CIPA">
+      <http:operation location="/Executar_CIPA" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Executar_CIPA_Evento">
+      <http:operation location="/Executar_CIPA_Evento" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Executar_Convocacao">
+      <http:operation location="/Executar_Convocacao" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Resultado_Exame">
+      <http:operation location="/Resultado_Exame" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Editar_Afastamento">
+      <http:operation location="/Editar_Afastamento" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Criar_Cargo">
+      <http:operation location="/Criar_Cargo" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Cadastrar_Unidade">
+      <http:operation location="/Cadastrar_Unidade" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Editar_Acidente">
+      <http:operation location="/Editar_Acidente" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="Comunicacao1HttpPost" type="tns:Comunicacao1HttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="Executar_Convocacao_Old">
+      <http:operation location="/Executar_Convocacao_Old" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Executar_Afastamento">
+      <http:operation location="/Executar_Afastamento" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Retornar_Clinicas">
+      <http:operation location="/Retornar_Clinicas" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Retornar_Laudos">
+      <http:operation location="/Retornar_Laudos" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Executar_Exame">
+      <http:operation location="/Executar_Exame" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Executar_Acidente">
+      <http:operation location="/Executar_Acidente" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Executar_CIPA">
+      <http:operation location="/Executar_CIPA" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Executar_CIPA_Evento">
+      <http:operation location="/Executar_CIPA_Evento" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Executar_Convocacao">
+      <http:operation location="/Executar_Convocacao" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Resultado_Exame">
+      <http:operation location="/Resultado_Exame" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Editar_Afastamento">
+      <http:operation location="/Editar_Afastamento" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Criar_Cargo">
+      <http:operation location="/Criar_Cargo" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Cadastrar_Unidade">
+      <http:operation location="/Cadastrar_Unidade" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Editar_Acidente">
+      <http:operation location="/Editar_Acidente" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Comunicacao1">
+    <wsdl:port name="Comunicacao1Soap" binding="tns:Comunicacao1Soap">
+      <soap:address location="https://www.ilitera.net.br/essence_hom/Comunicacao.asmx" />
+    </wsdl:port>
+    <wsdl:port name="Comunicacao1Soap12" binding="tns:Comunicacao1Soap12">
+      <soap12:address location="https://www.ilitera.net.br/essence_hom/Comunicacao.asmx" />
+    </wsdl:port>
+    <wsdl:port name="Comunicacao1HttpGet" binding="tns:Comunicacao1HttpGet">
+      <http:address location="https://www.ilitera.net.br/essence_hom/Comunicacao.asmx" />
+    </wsdl:port>
+    <wsdl:port name="Comunicacao1HttpPost" binding="tns:Comunicacao1HttpPost">
+      <http:address location="https://www.ilitera.net.br/essence_hom/Comunicacao.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

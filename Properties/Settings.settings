@@ -1,0 +1,27 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Ilitera.Net.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Ilitera_Net_WsConsultar_ServicoConsultarLoteEventos" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://webservices.producaorestrita.esocial.gov.br/servicos/empregador/consultarloteeventos/WsConsultarLoteEventos.svc</Value>
+    </Setting>
+    <Setting Name="Ilitera_Net_WsEnviar_ServicoEnviarLoteEventos" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://webservices.producaorestrita.esocial.gov.br/servicos/empregador/enviarloteeventos/WsEnviarLoteEventos.svc</Value>
+    </Setting>
+    <Setting Name="Ilitera_Net_WSRPS_ServiceGinfesImplService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://producao.ginfes.com.br//ServiceGinfesImpl</Value>
+    </Setting>
+    <Setting Name="ClientID" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">0cdea50f-287f-4f81-b430-270cf8ce9da3</Value>
+    </Setting>
+    <Setting Name="ClientSecret" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">ve9l7wnwgiqLo48DAMZFHFWPJ7/B4d1F7FaNB/ypr0Q=</Value>
+    </Setting>
+    <Setting Name="PowerBIAPI" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">https://analysis.windows.net/powerbi/api</Value>
+    </Setting>
+    <Setting Name="PowerBIDataSet" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">https://api.powerbi.com/v1.0/myorg/</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

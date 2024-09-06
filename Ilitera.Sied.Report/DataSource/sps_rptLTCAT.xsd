@@ -1,0 +1,81 @@
+<?xml version="1.0" standalone="yes" ?>
+<xs:schema id="DataSet" targetNamespace="http://www.tempuri.org/DataSet1.xsd" xmlns:mstns="http://www.tempuri.org/DataSet1.xsd"
+	xmlns="http://www.tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+	<xs:element name="DataSet" msdata:IsDataSet="true" msdata:Locale="pt-BR">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="Result">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="NomeCliente" type="xs:string" minOccurs="0" />
+							<xs:element name="Logradouro" type="xs:string" minOccurs="0" />
+							<xs:element name="CNPJ" type="xs:string" minOccurs="0" />
+							<xs:element name="CNAE" type="xs:string" minOccurs="0" />
+							<xs:element name="nID_EMPREGADO" type="xs:int" minOccurs="0" />
+							<xs:element name="nID_GHE" type="xs:int" minOccurs="0" />
+							<xs:element name="NOME_EMPREGADO" type="xs:string" minOccurs="0" />
+							<xs:element name="CBO" type="xs:string" minOccurs="0" />
+							<xs:element name="CTPS" type="xs:string" minOccurs="0" />
+							<xs:element name="JORNADA" type="xs:string" minOccurs="0" />
+							<xs:element name="DEMISSAO" type="xs:string" minOccurs="0" />
+							<xs:element name="PIS_PASEP" type="xs:float" minOccurs="0" />
+							<xs:element name="DATA_NASCIMENTO" type="xs:string" minOccurs="0" />
+							<xs:element name="SEXO" type="xs:string" minOccurs="0" />
+							<xs:element name="ADMISSAO" type="xs:string" minOccurs="0" />
+							<xs:element name="COM_FOTO" type="xs:boolean" minOccurs="0" />
+							<xs:element name="FOTO_EMPREGADO" type="xs:base64Binary" minOccurs="0" />
+							<xs:element name="NOME_SETOR" type="xs:string" minOccurs="0" />
+							<xs:element name="DESCRICAO_SETOR" type="xs:string" minOccurs="0" />
+							<xs:element name="NOME_FUNCAO" type="xs:string" minOccurs="0" />
+							<xs:element name="DESCRICAO_FUNCAO" type="xs:string" minOccurs="0" />
+							<xs:element name="TIPO_LTCAT" type="xs:int" minOccurs="0" />
+							<xs:element name="MUDANCA_SIM" type="xs:string" minOccurs="0" />
+							<xs:element name="MUDANCA_NAO" type="xs:string" minOccurs="0" />
+							<xs:element name="DEMAIS_AGENTES" type="xs:string" minOccurs="0" />
+							<xs:element name="RUIDO_VALOR" type="xs:string" minOccurs="0" />
+							<xs:element name="RUIDO_TEMPO" type="xs:string" minOccurs="0" />
+							<xs:element name="RUIDO_LIMITE" type="xs:string" minOccurs="0" />
+							<xs:element name="RUIDO_ULTRAPASSADO_85" type="xs:string" minOccurs="0" />
+							<xs:element name="RUIDO_ULTRAPASSADO_90" type="xs:string" minOccurs="0" />
+							<xs:element name="RUIDO_ULTRAPASSADO_80" type="xs:string" minOccurs="0" />
+							<xs:element name="CALOR_DESCANSO_LOCAL_DIVERSO" type="xs:boolean" minOccurs="0" />
+							<xs:element name="CALOR_VALOR" type="xs:string" minOccurs="0" />
+							<xs:element name="CALOR_TEMPO" type="xs:string" minOccurs="0" />
+							<xs:element name="CALOR_LIMITE" type="xs:string" minOccurs="0" />
+							<xs:element name="CALOR_ULTRAPASSADO" type="xs:string" minOccurs="0" />
+							<xs:element name="CALOR_TAXA_METABOLISMO" type="xs:string" minOccurs="0" />
+							<xs:element name="CALOR_TEMPO_TRABALHO" type="xs:string" minOccurs="0" />
+							<xs:element name="CALOR_TEMPO_DESCANSO" type="xs:string" minOccurs="0" />
+							<xs:element name="CALOR_IBUTG_TRABALHO" type="xs:string" minOccurs="0" />
+							<xs:element name="CALOR_IBUTG_DESCANSO" type="xs:string" minOccurs="0" />
+							<xs:element name="CALOR_METABOLISMO_TRABALHO" type="xs:string" minOccurs="0" />
+							<xs:element name="CALOR_METABOLISMO_DESCANSO" type="xs:string" minOccurs="0" />
+							<xs:element name="DESCRICAO_EPI" type="xs:string" minOccurs="0" />
+							<xs:element name="DESCRICAO_EPC" type="xs:string" minOccurs="0" />
+							<xs:element name="EQUIPAMENTOS" type="xs:string" minOccurs="0" />
+							<xs:element name="CONCLUSAO_LTCAT" type="xs:string" minOccurs="0" />
+							<xs:element name="CONCLUSAO_AE_1" type="xs:string" minOccurs="0" />
+							<xs:element name="CONCLUSAO_AE_2" type="xs:string" minOccurs="0" />
+							<xs:element name="TEM_LAUDO_SIM" type="xs:string" minOccurs="0" />
+							<xs:element name="TEM_LAUDO_NAO" type="xs:string" minOccurs="0" />
+							<xs:element name="RAMO_ATIVIDADE" type="xs:string" minOccurs="0" />
+							<xs:element name="PERIODO_ATIVIDADE" type="xs:string" minOccurs="0" />
+							<xs:element name="IdPrestador" type="xs:int" minOccurs="0" />
+							<xs:element name="EMISSAO" type="xs:string" minOccurs="0" />
+							<xs:element name="DECLARECAO_EMPRESA" type="xs:string" minOccurs="0" />
+							<xs:element name="ACOMPANHANTE_EMPRESA" type="xs:string" minOccurs="0" />
+							<xs:element name="DECLARECAO_EMPREGADO" type="xs:string" minOccurs="0" />
+							<xs:element name="DATA_LAUDO" type="xs:string" minOccurs="0" />
+							<xs:element name="PREPOSTO_NOME" type="xs:string" minOccurs="0" />
+							<xs:element name="PREPOSTO_CODIGO" type="xs:string" minOccurs="0" />
+							<xs:element name="PREPOSTO_TITULO" type="xs:string" minOccurs="0" />
+							<xs:element name="PREPOSTO_NUMERO" type="xs:string" minOccurs="0" />
+							<xs:element name="CarimboCNPJ" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

@@ -1,0 +1,138 @@
+.igte_TrendyEditWithButtons
+{
+	background-color:White;
+	background-repeat:repeat-x;
+	font-size:10px;
+	font-family: Segoe UI, Verdana, Arial, Sans-Serif;
+	border:solid 1px #D8D8D8;
+	line-height: 1px;
+	height: 20px;
+	width: 130px;
+}
+
+
+.igte_TrendyEdit
+{
+	background-color:White;
+	background-repeat:repeat-x;
+	background-image: url(images/igte_inputbg.gif);
+	font-size:12px;
+	font-family: Segoe UI, Verdana, Arial, Sans-Serif;
+	border:solid 1px #D8D8D8;
+	outline: 0;
+}
+
+
+.igte_TrendyEditInContainer
+{
+	background-color:Transparent;
+	font-size:12px;
+	font-family: Segoe UI, Verdana, Arial, Sans-Serif;
+	border-width:0px;
+	outline: 0;
+}
+
+
+.igte_TrendyTextArea
+{
+	background-color:White;
+	background-repeat:repeat-x;
+	background-image: url(images/igte_inputbg.gif);
+	font-size:12px;
+	font-family: Segoe UI, Verdana, Arial, Sans-Serif;
+	border:solid 1px #D8D8D8;
+	outline: 0;
+}
+
+
+.igte_TrendyButtonSize
+{
+	width: 15px;
+	height: 100%;
+}
+
+
+.igte_TrendyButton
+{
+	background-color:#24A244;
+	background-repeat:repeat-x;
+	background-image: url(images/igte_spinbuttonbg.gif);
+	border:solid 1px #109A48;
+	line-height: normal;
+	cursor:pointer;
+	color:White;
+}
+
+
+.igte_TrendyInner
+{
+	border-width:0px;
+}
+
+
+.igte_TrendyButtonImg
+{
+}
+
+
+.igte_TrendyFocus
+{
+	background-color:White;
+	background-image:none;
+	border-color:#109A48;
+}
+
+
+.igte_TrendyButtonFocus
+{
+}
+
+
+.igte_TrendyInnerFocus
+{
+}
+
+
+.igte_TrendyButtonHover
+{
+	background-color:#0099FF;
+	background-image: url(images/igte_spinbuttonbghover.gif);
+	border:solid 1px #0099FF;
+}
+
+
+.igte_TrendyNullText
+{
+	color:#888888;
+}
+
+
+.igte_TrendyHover
+{
+}
+
+
+.igte_TrendyInnerHover
+{
+}
+
+
+.igte_TrendyButtonPressed
+{
+	background-color:#33CCFF;
+	background-image: url(images/igte_spinbuttonbgpressed.gif);
+	border:solid 1px #0099FF;
+}
+
+
+.igte_TrendyButtonDisabled
+{
+}
+
+
+.igte_Hover
+{
+	border-color:Gray;
+}
+
+

@@ -1,0 +1,416 @@
+body
+{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    color: #2C8178;
+}
+
+header
+{
+    position: relative;
+    z-index: 999;
+}
+
+h1
+{
+    font-size: 26px;
+}
+
+.btn-link
+{
+    color: #2C8178;
+}
+
+.form-control
+{
+    border-color: #B8CFCB;
+    color: #776856;
+}
+
+.btn
+{
+    border-radius: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.btn-success
+{
+    color: #FFF;
+    background-color: #2C8178;
+    border-color: #B8CFCB;
+}
+
+.topo-container
+{
+    background-color: #2C8178;
+    margin-bottom: 52px;
+    border-bottom: 4px solid #B6CFCB;
+    padding-top: 16px;
+    padding-bottom: 4px;
+    background-image: url('../img/fundo-topo-celular.jpg');
+}
+
+.topo-slogan h1,
+.topo-slogan p
+{
+    color: #FFFFFF;
+}
+
+@media screen and (min-width: 768px)
+{
+    .topo-container
+    {
+        margin-bottom: 52px;
+        border-bottom: 8px solid #B6CFCB;
+        padding-top: 16px;
+        padding-bottom: 4px;
+    }
+}
+
+@media screen and (min-width: 992px)
+{
+    .topo-container
+    {
+        margin-bottom: 52px;
+        border-bottom: 8px solid #B6CFCB;
+        background-image: url('../img/fundo-topo.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+        padding-top: 0px;
+        padding-bottom: 4px;
+    }
+}
+
+.topo-logo
+{
+    margin: 0;
+    text-align: center;
+}
+
+.topo-slogan
+{
+    text-align: center;
+    padding-top: 0;
+    position: relative;
+    top: 16px;
+}
+
+@media (min-width: 992px)
+{
+    .topo-slogan
+    {
+        text-align: left;
+    }
+    
+    .topo-logo
+    {
+        text-align: right;
+        margin-top: 17px;
+    }
+}
+
+.topo
+{
+    padding-top: 15px;
+    padding-bottom: 36px;
+}
+
+label
+{
+    font-weight: normal;
+}
+
+.contem-titulo-acesso-login
+{
+    background: url(../img/logo-ili-net.png) 10px 5px no-repeat;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.titulo-acesso-login
+{
+    color: #FFFFFF;
+    font-size: 22px;
+    text-align: right;
+    padding: 12px 10px 14px 0;
+    -webkit-border-top-right-radius: 8px;
+    -moz-border-radius-topright: 8px;
+    border-top-right-radius: 8px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f7a669+0,f7a669+100&0+0,1+100 */
+    background: -webkit-linear-gradient(left, rgba(247, 166, 105, 0) 0%, #F7A669 100%);
+    background: -moz-linear-gradient(left, rgba(247, 166, 105, 0) 0%, #F7A669 100%);
+    background: -o-linear-gradient(left, rgba(247, 166, 105, 0) 0%, #F7A669 100%);
+    background: linear-gradient(to right, rgba(247, 166, 105, 0) 0%, #F7A669 100%);
+    /* FF3.6-15 */
+    /* Chrome10-25,Safari5.1-6 */
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00f7a669', endColorstr='#f7a669', GradientType=1);
+    /* IE6-9 */
+}
+
+.titulo-acesso-login:after
+{
+    display: block;
+    content: "";
+    width: 0px;
+    height: 0px;
+    border: 20px solid #F7A669;
+    border-left-color: transparent;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    position: absolute;
+    right: 0px;
+    bottom: -20px;
+    z-index: 999;
+}
+
+.titulo-secundario
+{
+    color: #FFFFFF;
+    font-size: 22px;
+    text-align: right;
+    padding: 12px 10px 14px 0;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    background: #609F98;
+}
+
+.titulo-secundario:after
+{
+    display: block;
+    content: "";
+    width: 0px;
+    height: 0px;
+    border: 20px solid #609F98;
+    border-left-color: transparent;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    position: absolute;
+    right: 0px;
+    bottom: -20px;
+    z-index: 999;
+}
+
+.titulo-contato:before
+{
+    width: 80px;
+    height: 80px;
+    display: block;
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: 15px;
+    background-image: url('../img/icone-fale.png');
+}
+
+.contem-text-input-login
+{
+    padding-right: 34px;
+}
+
+.topo-slogan h1
+{
+    margin-bottom: 0px;
+}
+
+.balao
+{
+    border-radius: 8px;
+    position: relative;
+    background: #FFF;
+    z-index: 10;
+    box-shadow: 0px 0px 0px 2px #2C867E;
+    font-size: 15px;
+    padding-left: 27px;
+    padding-bottom: 11px;
+    padding-top: 1px;
+    margin-bottom: 36px;
+}
+
+.balao:after
+{
+    display: block;
+    content: "";
+    width: 0px;
+    height: 0px;
+    border: 20px solid #FFF;
+    border-left-color: transparent;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    position: absolute;
+    right: 0px;
+    bottom: -20px;
+    z-index: 9;
+}
+
+.balao:before
+{
+    display: block;
+    content: "";
+    width: 0px;
+    height: 0px;
+    border: 22px solid #2C867E;
+    border-left-color: transparent;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    position: absolute;
+    right: -2px;
+    bottom: -24px;
+    z-index: 0;
+}
+
+.balao-titulo
+{
+    font-size: 17px;
+    margin-top: 18px;
+    margin-bottom: 3px;
+    border-bottom: 2px dotted;
+    margin-right: 23px;
+}
+
+.balao-titulo span
+{
+    background-color: #FFFFFF;
+    padding-bottom: 3px;
+    padding-right: 4px;
+    position: relative;
+    bottom: -3px;
+}
+
+.row-titulo
+{
+    margin-bottom: 21px;
+    margin-top: 32px;
+}
+
+/*header internas*/
+.header-identidade-empresa
+{
+    background: url(../img/fundo-topo-celular.jpg) center / auto no-repeat;
+    padding-top: 44px;
+    padding-bottom: 36px;
+    position: relative;
+    border-bottom: 6px solid #B8CFCB;
+}
+
+.img-logo-mini
+{
+    margin-top: 48px;
+}
+
+/*navegacao interna*/
+/*.navbar-inverse
+{
+	border: none;
+	background-color: #D9D9D6;
+}*/
+/*.navbar-collapse
+{
+	padding-right: 0;
+	padding-left: 0;
+}*/
+/*.navbar-nav-icon > LI > A
+{
+	(*word-break: keep-all;*)
+	(*max-width: 171px;*)
+	padding-left: 47px;
+	padding-top: 25px;
+	padding-bottom: 22px;
+	border-bottom: 1px solid rgba(66, 151, 143, 0.359);
+	color: #429890 !important;
+}*/
+/*.nav > LI.active > A
+{
+	background-color: rgba(66, 151, 143, 0.248) !important;
+}*/
+/*.nav > LI > A > SPAN
+{
+	display: block;
+}*/
+/*#lnk-empresas A
+{
+	background: url(../img/ico-empresas.png) 5px center no-repeat;
+}*/
+/*#lnk-cadastro-colaboradores A
+{
+	background: url(../img/ico-cadastro.png) 5px center no-repeat;
+}*/
+/*#lnk-seguranca-trabalho A
+{
+	background: url(../img/ico-seguranca.png) 5px center no-repeat;
+}*/
+/*#lnk-saude-ocupacional A
+{
+	background: url(../img/ico-saude.png) 5px center no-repeat;
+}*/
+/*#lnk-outros-aplicativos A
+{
+	background: url(../img/ico-outros.png) 5px center no-repeat;
+}*/
+/*#lnk-ajuda A
+{
+	background: url(../img/ico-ajuda.png) 5px center no-repeat;
+}*/
+/*#lnk-sair A
+{
+	background: url(../img/ico-sair.png) 5px center no-repeat;
+}*/
+@media screen and (min-width: 768px)
+{
+    /*.navbar-nav-icon > LI > A
+    {
+    	word-break: keep-all;
+    	max-width: 171px;
+    	padding-left: 47px;
+    	padding-top: 11px;
+    	padding-bottom: 10px;
+    	border-bottom: none;
+    }*/
+    .navbarlink-umalinha
+    {
+        padding-top: 20px !important;
+        padding-bottom: 19px !important;
+    }
+    /*#lnk-empresas A
+    {
+    	background: url(../img/ico-empresas.png) 5px center no-repeat;
+    }*/
+    /*#lnk-cadastro-colaboradores A
+    {
+    	background: url(../img/ico-cadastro.png) 5px center no-repeat;
+    }*/
+    /*#lnk-seguranca-trabalho A
+    {
+    	background: url(../img/ico-seguranca.png) 5px center no-repeat;
+    }*/
+    /*#lnk-saude-ocupacional A
+    {
+    	background: url(../img/ico-saude.png) 5px center no-repeat;
+    }*/
+    /*#lnk-outros-aplicativos A
+    {
+    	background: url(../img/ico-outros.png) 5px center no-repeat;
+    }*/
+    /*#lnk-ajuda A
+    {
+    	background: url(../img/ico-ajuda.png) 5px center no-repeat;
+    }*/
+    /*#lnk-sair A
+    {
+    	background: url(../img/ico-sair.png) 5px center no-repeat;
+    }*/
+}
+
+@media screen and (min-width: 992px)
+{
+    .header-identidade-empresa
+    {
+        background: url(../img/fundo-topo.png) center / auto no-repeat;
+        padding-top: 44px;
+        padding-bottom: 36px;
+        position: relative;
+        border-bottom: 6px solid #B8CFCB;
+    }
+}

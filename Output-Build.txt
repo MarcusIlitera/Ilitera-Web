@@ -1,0 +1,247 @@
+﻿1>------ Rebuild All started: Project: Ilitera.Data, Configuration: Debug x64 ------
+2>------ Rebuild All started: Project: Entities, Configuration: Debug x64 ------
+2>  Entities -> I:\Desenv\Ilitera.Net_Essential_Objects\Entities\Entities\bin\x64\Debug\Entities.dll
+3>------ Rebuild All started: Project: DAL, Configuration: Debug x64 ------
+1>I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.Data\EntityProxy.cs(176,34,176,36): warning CS0168: The variable 'ex' is declared but never used
+1>I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.Data\Empregado_Cadastral.cs(406,34,406,36): warning CS0168: The variable 'ex' is declared but never used
+1>I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.Data\EntityProxy.cs(211,34,211,36): warning CS0168: The variable 'ex' is declared but never used
+1>I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.Data\EntityProxy.cs(265,34,265,36): warning CS0168: The variable 'ex' is declared but never used
+1>I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.Data\EntityProxy.cs(302,34,302,36): warning CS0168: The variable 'ex' is declared but never used
+1>I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.Data\EntityProxy.cs(320,34,320,36): warning CS0168: The variable 'ex' is declared but never used
+1>I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.Data\PPRA_EPI.cs(1208,20,1208,26): warning CS0219: The variable 'xSetor' is assigned but its value is never used
+1>I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.Data\PPRA_EPI.cs(3374,34,3374,36): warning CS0168: The variable 'ex' is declared but never used
+1>  Ilitera.Data -> I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.Data\bin\x64\Debug\Ilitera.Data.dll
+4>------ Rebuild All started: Project: Ilitera.Common, Configuration: Debug x64 ------
+3>  DAL -> I:\Desenv\Ilitera.Net_Essential_Objects\Dal\DAL\bin\x64\Debug\DAL.dll
+5>------ Rebuild All started: Project: BLL, Configuration: Debug x64 ------
+5>  BLL -> I:\Desenv\Ilitera.Net_Essential_Objects\Bll\BLL\bin\x64\Debug\BLL.dll
+6>------ Rebuild All started: Project: Facade, Configuration: Debug x64 ------
+6>  Facade -> I:\Desenv\Ilitera.Net_Essential_Objects\Facade\Facade\bin\x64\Debug\Facade.dll
+4>C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets(1820,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "BouncyCastle.Crypto". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors.
+4>C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets(1820,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "IMAP4.Net". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors.
+4>C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets(1820,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "Infragistics3.Wpf.Themes.Leaf.v10.1, Version=10.1.20101.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors.
+4>C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets(1820,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "NTLM.Net, Version=1.1.0.1, Culture=neutral, PublicKeyToken=986a9aa31056680b". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors.
+4>C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets(1820,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "Parse.Net". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors.
+4>C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets(1820,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "POP3.Net". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors.
+4>C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets(1820,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "SASL.Net". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors.
+4>C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets(1820,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "SMIME.Net". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors.
+4>C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets(1820,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "SMTP.Net". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors.
+4>C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets(1820,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "SSL.Net". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors.
+4>I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.Common\Fotos.cs(415,20,415,33): warning CS0168: The variable 'workingBitmap' is declared but never used
+4>I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.Common\QuantificacaoEmpregado.cs(122,34,122,36): warning CS0168: The variable 'ex' is declared but never used
+4>I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.Common\Prestador.cs(250,34,250,36): warning CS0168: The variable 'ex' is declared but never used
+4>I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.Common\Juridica.cs(396,30,396,32): warning CS0168: The variable 'ex' is declared but never used
+4>I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.Common\PdfSharpUtility.cs(339,15,339,36): warning CS0618: 'XStringFormat.Default' is obsolete: 'Use XStringFormats.Default. (Note plural in class name.)'
+4>I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.Common\Juridica.cs(976,27,976,37): warning CS0168: The variable 'iJuridica3' is declared but never used
+4>I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.Common\Juridica.cs(977,27,977,37): warning CS0168: The variable 'iEndereco2' is declared but never used
+4>I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.Common\PdfSharpUtility.cs(372,15,372,36): warning CS0618: 'XStringFormat.Default' is obsolete: 'Use XStringFormats.Default. (Note plural in class name.)'
+4>I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.Common\Juridica.cs(1088,27,1088,37): warning CS0168: The variable 'iJuridica3' is declared but never used
+4>I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.Common\Juridica.cs(1089,27,1089,37): warning CS0168: The variable 'iEndereco2' is declared but never used
+4>I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.Common\Juridica.cs(1216,27,1216,37): warning CS0168: The variable 'iJuridica3' is declared but never used
+4>I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.Common\Juridica.cs(1217,27,1217,37): warning CS0168: The variable 'iEndereco2' is declared but never used
+4>CSC : warning CS8012: Referenced assembly 'System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a' targets a different processor.
+4>  Ilitera.Common -> I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.Common\bin\x64\Debug\Ilitera.Common.dll
+7>------ Rebuild All started: Project: Ilitera.Opsa.Data, Configuration: Debug x64 ------
+7>I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.Opsa.Data\Cipa.cs(701,34,701,36): warning CS0168: The variable 'ex' is declared but never used
+7>I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.Opsa.Data\ExameBase.cs(1705,20,1705,26): warning CS0219: The variable 'xExame' is assigned but its value is never used
+7>I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.Opsa.Data\ExameBase.cs(1706,20,1706,28): warning CS0219: The variable 'xEspacos' is assigned but its value is never used
+7>I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.Opsa.Data\ExameBase.cs(1708,17,1708,23): warning CS0219: The variable 'xMeses' is assigned but its value is never used
+7>I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.Opsa.Data\ProspecaoExcel.cs(349,21,349,23): warning CS0168: The variable 'ex' is declared but never used
+7>I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.Opsa.Data\ExameBase.cs(1945,20,1945,26): warning CS0219: The variable 'xExame' is assigned but its value is never used
+7>I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.Opsa.Data\ExameBase.cs(1946,20,1946,28): warning CS0219: The variable 'xEspacos' is assigned but its value is never used
+7>I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.Opsa.Data\ExameBase.cs(1948,17,1948,23): warning CS0219: The variable 'xMeses' is assigned but its value is never used
+7>I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.Opsa.Data\ProspecaoExcel.cs(191,21,191,23): warning CS0168: The variable 'ex' is declared but never used
+7>I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.Opsa.Data\ObrigacaoCliente.cs(249,34,249,36): warning CS0168: The variable 'ex' is declared but never used
+7>I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.Opsa.Data\ObrigacaoCliente.cs(929,34,929,36): warning CS0168: The variable 'ex' is declared but never used
+7>I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.Opsa.Data\ObrigacaoCliente.cs(954,34,954,36): warning CS0168: The variable 'ex' is declared but never used
+7>I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.Opsa.Data\ObrigacaoCliente.cs(998,34,998,36): warning CS0168: The variable 'ex' is declared but never used
+7>I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.Opsa.Data\ObrigacaoCliente.cs(1023,34,1023,36): warning CS0168: The variable 'ex' is declared but never used
+7>I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.Opsa.Data\Cipa.cs(1135,43,1135,58): warning CS0067: The event 'CipaRepositorio.ProgressIniciar' is never used
+7>I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.Opsa.Data\Cipa.cs(1136,36,1136,53): warning CS0067: The event 'CipaRepositorio.ProgressAtualizar' is never used
+7>  Ilitera.Opsa.Data -> I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.Opsa.Data\bin\x64\Debug\Ilitera.Opsa.Data.dll
+8>------ Rebuild All started: Project: Ilitera.Marshall.Data, Configuration: Debug x64 ------
+9>------ Rebuild All started: Project: Ilitera.VasoCaldeira.Report, Configuration: Debug x64 ------
+10>------ Rebuild All started: Project: Ilitera.Sied.Report, Configuration: Debug x64 ------
+11>------ Rebuild All started: Project: Ilitera.PCMSO.Report, Configuration: Debug x64 ------
+12>------ Rebuild All started: Project: Ilitera.OrdemServico.Report, Configuration: Debug x64 ------
+13>------ Rebuild All started: Project: Ilitera.Cursos.Report, Configuration: Debug x64 ------
+14>------ Rebuild All started: Project: Ilitera.Auditoria.Report, Configuration: Debug x64 ------
+15>------ Rebuild All started: Project: Ilitera.SPDA.Report, Configuration: Debug x64 ------
+8>  Ilitera.Marshall.Data -> I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.Marshall.Data\bin\x64\Debug\Ilitera.Marshall.Data.dll
+16>------ Rebuild All started: Project: Ilitera.Opsa.Report, Configuration: Debug x64 ------
+13>C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets(1820,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "CrystalDecisions.VSDesigner, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors.
+13>  Ilitera.Cursos.Report -> I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.Cursos.Report\bin\x64\Debug\Ilitera.Cursos.Report.dll
+12>I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.OrdemServico.Report\DataSourceOrdemDeServico.cs(9,7,9,25): warning CS0105: The using directive for 'System.Collections' appeared previously in this namespace
+12>  Ilitera.OrdemServico.Report -> I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.OrdemServico.Report\bin\x64\Debug\Ilitera.OrdemServico.Report.dll
+14>I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.Auditoria.Report\DataSourceAuditoria.cs(108,22,108,24): warning CS0168: The variable 'ex' is declared but never used
+14>I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.Auditoria.Report\DataSourceAuditoria.cs(138,23,138,25): warning CS0168: The variable 'ex' is declared but never used
+14>I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.Auditoria.Report\DataSourceAuditoria.cs(172,38,172,40): warning CS0168: The variable 'ex' is declared but never used
+14>I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.Auditoria.Report\DataSourceAuditoria.cs(267,22,267,24): warning CS0168: The variable 'ex' is declared but never used
+14>I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.Auditoria.Report\DataSourceAuditoria.cs(296,23,296,25): warning CS0168: The variable 'ex' is declared but never used
+14>I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.Auditoria.Report\DataSourceAuditoria.cs(342,22,342,24): warning CS0168: The variable 'ex' is declared but never used
+14>  Ilitera.Auditoria.Report -> I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.Auditoria.Report\bin\x64\Debug\Ilitera.Auditoria.Report.dll
+11>I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.PCMSO.Report\DataSourceExamePlanejado.cs(5,7,5,25): warning CS0105: The using directive for 'System.Collections' appeared previously in this namespace
+11>I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.PCMSO.Report\DataSourceExamePlanejamento.cs(5,7,5,25): warning CS0105: The using directive for 'System.Collections' appeared previously in this namespace
+11>I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.PCMSO.Report\DataSourceTestesEspeciais.cs(568,24,568,28): warning CS0219: The variable 'zObs' is assigned but its value is never used
+11>I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.PCMSO.Report\DataSourceExameAnamnese.cs(619,24,619,28): warning CS0219: The variable 'zObs' is assigned but its value is never used
+11>I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.PCMSO.Report\DataSourceExameAnamnese.cs(21,45,21,62): warning CS0067: The event 'DataSourceExameAnamnese.ProgressAtualizar' is never used
+11>I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.PCMSO.Report\DataSourceTestesEspeciais.cs(21,45,21,62): warning CS0067: The event 'DataSourceTestesEspeciais.ProgressAtualizar' is never used
+11>I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.PCMSO.Report\DataSourceTestesEspeciais.cs(22,54,22,71): warning CS0067: The event 'DataSourceTestesEspeciais.ProgressFinalizar' is never used
+11>I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.PCMSO.Report\DataSourceExameAnamnese.cs(22,54,22,71): warning CS0067: The event 'DataSourceExameAnamnese.ProgressFinalizar' is never used
+11>I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.PCMSO.Report\DataSourceExameAnamnese.cs(20,45,20,60): warning CS0067: The event 'DataSourceExameAnamnese.ProgressIniciar' is never used
+11>I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.PCMSO.Report\DataSourceTestesEspeciais.cs(20,45,20,60): warning CS0067: The event 'DataSourceTestesEspeciais.ProgressIniciar' is never used
+11>  Ilitera.PCMSO.Report -> I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.PCMSO.Report\bin\x64\Debug\Ilitera.PCMSO.Report.dll
+16>I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.Opsa.Report\DataSourceVacinas.cs(315,18,315,23): warning CS0219: The variable 'zDTPA' is assigned but its value is never used
+16>I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.Opsa.Report\DataSourceAbsenteismo.cs(814,70,814,117): warning CS0472: The result of the expression is always 'false' since a value of type 'int' is never equal to 'null' of type 'int?'
+16>I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.Opsa.Report\DataSourceAbsenteismos.cs(803,69,803,116): warning CS0472: The result of the expression is always 'false' since a value of type 'int' is never equal to 'null' of type 'int?'
+16>I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.Opsa.Report\DataSourceBioSegurancaColetivo.cs(70,14,70,26): warning CS0219: The variable 'htmlTextArea' is assigned but its value is never used
+16>I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.Opsa.Report\DataSourceBioSegurancaIndividual.cs(80,26,80,38): warning CS0219: The variable 'htmlTextArea' is assigned but its value is never used
+16>I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.Opsa.Report\DataSourceObrigacoesLegaisPCMSO.cs(148,34,148,36): warning CS0168: The variable 'ex' is declared but never used
+16>I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.Opsa.Report\DataSourceBioSegurancaIndividual.cs(19,20,19,25): warning CS0169: The field 'DataSourceBioSegurancaIndividual.style' is never used
+16>I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.Opsa.Report\DataSourceBioSegurancaColetivo.cs(19,26,19,31): warning CS0169: The field 'DataSourceBioSegurancaColetivo.style' is never used
+16>  Ilitera.Opsa.Report -> I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.Opsa.Report\bin\x64\Debug\Ilitera.Opsa.Report.dll
+10>I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.Sied.Report\DataSourcePPRA_NR20.cs(384,20,384,25): warning CS0219: The variable 'xNR20' is assigned but its value is never used
+10>I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.Sied.Report\DataSourceIntroducaoPPRA.cs(415,21,415,23): warning CS0168: The variable 'ex' is declared but never used
+10>I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.Sied.Report\DataSourceIntroducaoPPRA.cs(448,22,448,24): warning CS0168: The variable 'ex' is declared but never used
+10>I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.Sied.Report\DataSourceIntroducaoPPRA.cs(455,21,455,23): warning CS0168: The variable 'ex' is declared but never used
+10>I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.Sied.Report\DataSourceIntroducaoPPRA.cs(489,23,489,25): warning CS0168: The variable 'ex' is declared but never used
+10>I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.Sied.Report\DataSourceIntroducaoPPRA.cs(517,23,517,25): warning CS0168: The variable 'ex' is declared but never used
+10>I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.Sied.Report\DataSourceIntroducaoPPRA.cs(546,23,546,25): warning CS0168: The variable 'ex' is declared but never used
+10>I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.Sied.Report\DataSourceIntroducaoPPRA.cs(564,22,564,24): warning CS0168: The variable 'ex' is declared but never used
+10>I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.Sied.Report\DataSourceLaudoErgonomico.cs(438,21,438,23): warning CS0168: The variable 'ex' is declared but never used
+10>I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.Sied.Report\DataSourceGuia_FTD.cs(30,24,30,28): warning CS0169: The field 'DataSourceGuia_FTD.xObs' is never used
+10>I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.Sied.Report\DataSourceGuia_Prajna.cs(30,24,30,28): warning CS0169: The field 'DataSourceGuia_Prajna.xObs' is never used
+10>I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.Sied.Report\DataSourceGuia.cs(30,24,30,28): warning CS0169: The field 'DataSourceGuia.xObs' is never used
+10>I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.Sied.Report\PPP99.cs(25,22,25,41): warning CS0414: The field 'PPP99.IsGhePericulosicade' is assigned but its value is never used
+10>  Ilitera.Sied.Report -> I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.Sied.Report\bin\x64\Debug\Ilitera.Sied.Report.dll
+9>I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.VasoCaldeira.Report\DataSourceQuadroLaudoEletrico.cs(50,21,50,27): warning CS0168: The variable 'newRow' is declared but never used
+9>I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.VasoCaldeira.Report\DataSourceLaudoEletrico2.cs(1044,20,1044,30): warning CS0219: The variable 'zDescricao' is assigned but its value is never used
+9>I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.VasoCaldeira.Report\DataSourceLaudoEletrico2.cs(1146,20,1146,30): warning CS0219: The variable 'zDescricao' is assigned but its value is never used
+9>I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.VasoCaldeira.Report\DataSourceLaudoEletrico2.cs(1252,20,1252,30): warning CS0219: The variable 'zDescricao' is assigned but its value is never used
+9>I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.VasoCaldeira.Report\DataSourceQuadroLaudoEletrico.cs(15,25,15,32): warning CS0169: The field 'DataSourceQuadroLaudoEletrico.cliente' is never used
+9>I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.VasoCaldeira.Report\DataSourceCronograma.cs(15,25,15,32): warning CS0649: Field 'DataSourceCronograma.cliente' is never assigned to, and will always have its default value null
+9>  Ilitera.VasoCaldeira.Report -> I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.VasoCaldeira.Report\bin\x64\Debug\Ilitera.VasoCaldeira.Report.dll
+15>I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.SPDA.Report\DataSourceLaudoSPDA2.cs(1066,20,1066,30): warning CS0219: The variable 'zDescricao' is assigned but its value is never used
+15>I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.SPDA.Report\DataSourceLaudoSPDA2.cs(1164,20,1164,30): warning CS0219: The variable 'zDescricao' is assigned but its value is never used
+15>I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.SPDA.Report\DataSourceLaudoSPDA2.cs(1260,20,1260,30): warning CS0219: The variable 'zDescricao' is assigned but its value is never used
+15>I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.SPDA.Report\DataSourceCronograma.cs(15,25,15,32): warning CS0649: Field 'DataSourceCronograma.cliente' is never assigned to, and will always have its default value null
+15>I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.SPDA.Report\DataSourceQuadroLaudoEletrico.cs(15,25,15,32): warning CS0169: The field 'DataSourceQuadroLaudoEletrico.cliente' is never used
+15>  Ilitera.SPDA.Report -> I:\Desenv\Ilitera.Net_Essential_Objects\Ilitera.SPDA.Report\bin\x64\Debug\Ilitera.SPDA.Report.dll
+17>------ Rebuild All started: Project: Ilitera.Net, Configuration: Debug x64 ------
+17>C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets(1820,5): warning MSB3267: The primary reference "Microsoft.CSharp", which is a framework assembly, could not be resolved in the currently targeted framework. ".NETFramework,Version=v3.5". To resolve this problem, either remove the reference "Microsoft.CSharp" or retarget your application to a framework version which contains "Microsoft.CSharp".
+17>  No way to resolve conflict between "EnvDTE, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" and "EnvDTE, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a". Choosing "EnvDTE, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" arbitrarily.
+17>  Consider app.config remapping of assembly "EnvDTE, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" from Version "7.0.3300.0" [] to Version "8.0.0.0" [C:\Program Files (x86)\Common Files\Microsoft Shared\MSEnv\PublicAssemblies\EnvDTE.dll] to solve conflict and get rid of warning.
+17>C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets(1820,5): warning MSB3247: Found conflicts between different versions of the same dependent assembly. In Visual Studio, double-click this warning (or select it and press Enter) to fix the conflicts; otherwise, add the following binding redirects to the "runtime" node in the application configuration file: <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1"><dependentAssembly><assemblyIdentity name="EnvDTE" culture="neutral" publicKeyToken="b03f5f7f11d50a3a" /><bindingRedirect oldVersion="0.0.0.0-8.0.0.0" newVersion="8.0.0.0" /></dependentAssembly></assemblyBinding>
+17>I:\Desenv\Ilitera.Net_Essential_Objects\CheckLaudoErgonomicoPeriodo.aspx.cs(137,17,137,18): warning CS0642: Possible mistaken empty statement
+17>I:\Desenv\Ilitera.Net_Essential_Objects\ControleEPI\HistoricoEntrega.aspx.cs(497,17,497,18): warning CS0642: Possible mistaken empty statement
+17>I:\Desenv\Ilitera.Net_Essential_Objects\OrdemdeServico2\CadAPR.aspx.cs(606,17,606,18): warning CS0642: Possible mistaken empty statement
+17>I:\Desenv\Ilitera.Net_Essential_Objects\CheckLaudoSPDAPeriodos.aspx.cs(129,17,129,18): warning CS0642: Possible mistaken empty statement
+17>I:\Desenv\Ilitera.Net_Essential_Objects\Treinamentos\EmpregadoTreinamento.aspx.cs(413,17,413,18): warning CS0642: Possible mistaken empty statement
+17>I:\Desenv\Ilitera.Net_Essential_Objects\OrdemdeServico2\CadConjuntoProcedimento.aspx.cs(506,17,506,18): warning CS0642: Possible mistaken empty statement
+17>I:\Desenv\Ilitera.Net_Essential_Objects\OrdemdeServico2\CadProcedimento.aspx.cs(3417,17,3417,18): warning CS0642: Possible mistaken empty statement
+17>I:\Desenv\Ilitera.Net_Essential_Objects\Treinamentos\ListaTreinamentos.aspx.cs(193,17,193,18): warning CS0642: Possible mistaken empty statement
+17>I:\Desenv\Ilitera.Net_Essential_Objects\CheckPCAPeriodos.aspx.cs(288,17,288,18): warning CS0642: Possible mistaken empty statement
+17>I:\Desenv\Ilitera.Net_Essential_Objects\Treinamentos\ListaEmpregadoCurso.aspx.cs(200,17,200,18): warning CS0642: Possible mistaken empty statement
+17>I:\Desenv\Ilitera.Net_Essential_Objects\CheckPCMSOPeriodos.aspx.cs(269,17,269,18): warning CS0642: Possible mistaken empty statement
+17>I:\Desenv\Ilitera.Net_Essential_Objects\OrdemdeServico2\ListaProcedimento.aspx.cs(372,17,372,18): warning CS0642: Possible mistaken empty statement
+17>I:\Desenv\Ilitera.Net_Essential_Objects\PCMSO\DadosEmpregado_Lista.aspx.cs(651,17,651,18): warning CS0642: Possible mistaken empty statement
+17>I:\Desenv\Ilitera.Net_Essential_Objects\CheckPPRAPeriodos.aspx.cs(398,17,398,18): warning CS0642: Possible mistaken empty statement
+17>I:\Desenv\Ilitera.Net_Essential_Objects\CheckLaudoEletricoPeriodos.aspx.cs(129,17,129,18): warning CS0642: Possible mistaken empty statement
+17>I:\Desenv\Ilitera.Net_Essential_Objects\PCMSO\ListaUniformes.aspx.cs(219,17,219,18): warning CS0642: Possible mistaken empty statement
+17>I:\Desenv\Ilitera.Net_Essential_Objects\ControleCIPA\IndicarCIPA.aspx.cs(681,17,681,18): warning CS0642: Possible mistaken empty statement
+17>I:\Desenv\Ilitera.Net_Essential_Objects\OrdemdeServico2\ListaProcedimentoAPR.aspx.cs(240,17,240,18): warning CS0642: Possible mistaken empty statement
+17>I:\Desenv\Ilitera.Net_Essential_Objects\ControleCIPA\ListaReunioesCIPA.aspx.cs(222,21,222,22): warning CS0642: Possible mistaken empty statement
+17>I:\Desenv\Ilitera.Net_Essential_Objects\ControleCIPA\ListaReunioesCIPA.aspx.cs(288,17,288,18): warning CS0642: Possible mistaken empty statement
+17>I:\Desenv\Ilitera.Net_Essential_Objects\Auditoria\ListagemIrregularidades.aspx.cs(467,17,467,18): warning CS0642: Possible mistaken empty statement
+17>I:\Desenv\Ilitera.Net_Essential_Objects\OrdemdeServico2\CadEmpregadoConjuntoProcedimento.aspx.cs(1174,17,1174,18): warning CS0642: Possible mistaken empty statement
+17>I:\Desenv\Ilitera.Net_Essential_Objects\ControleExtintores\ListaExtintores.aspx.cs(385,17,385,18): warning CS0642: Possible mistaken empty statement
+17>I:\Desenv\Ilitera.Net_Essential_Objects\Auditoria\DetalheIrregularidade.aspx.cs(454,17,454,18): warning CS0642: Possible mistaken empty statement
+17>I:\Desenv\Ilitera.Net_Essential_Objects\Auditoria\ListagemIrregularidades.aspx.cs(11,7,11,32): warning CS0105: The using directive for 'System.Web.UI.WebControls' appeared previously in this namespace
+17>I:\Desenv\Ilitera.Net_Essential_Objects\CheckInsalubridade.aspx.cs(16,7,16,25): warning CS0105: The using directive for 'System.Collections' appeared previously in this namespace
+17>I:\Desenv\Ilitera.Net_Essential_Objects\CheckLTCAT.aspx.cs(16,7,16,25): warning CS0105: The using directive for 'System.Collections' appeared previously in this namespace
+17>I:\Desenv\Ilitera.Net_Essential_Objects\ControleCIPA\RelatorioInscricaoCIPA.aspx.cs(21,7,21,18): warning CS0105: The using directive for 'System.Text' appeared previously in this namespace
+17>I:\Desenv\Ilitera.Net_Essential_Objects\PCMSO\ASOGuiaEmpregado.aspx.cs(23,7,23,33): warning CS0105: The using directive for 'System.Web.UI.HtmlControls' appeared previously in this namespace
+17>I:\Desenv\Ilitera.Net_Essential_Objects\Auditoria\Apresentacao.aspx.cs(88,30,88,32): warning CS0168: The variable 'ex' is declared but never used
+17>I:\Desenv\Ilitera.Net_Essential_Objects\Auditoria\LoginRestrito.aspx.cs(63,20,63,22): warning CS0168: The variable 'ex' is declared but never used
+17>I:\Desenv\Ilitera.Net_Essential_Objects\Auditoria\Apresentacao.aspx.cs(179,30,179,32): warning CS0168: The variable 'ex' is declared but never used
+17>I:\Desenv\Ilitera.Net_Essential_Objects\CheckLaudoEletricoPeriodos.aspx.cs(95,20,95,25): warning CS0219: The variable 'zTipo' is assigned but its value is never used
+17>I:\Desenv\Ilitera.Net_Essential_Objects\CheckLaudoSPDAPeriodos.aspx.cs(95,20,95,25): warning CS0219: The variable 'zTipo' is assigned but its value is never used
+17>I:\Desenv\Ilitera.Net_Essential_Objects\visualizarDadosEmpregado_Novo2.aspx.cs(826,21,826,24): warning CS0168: The variable 'xDs' is declared but never used
+17>I:\Desenv\Ilitera.Net_Essential_Objects\visualizarDadosEmpregado_Novo2.aspx.cs(827,17,827,22): warning CS0168: The variable 'xCont' is declared but never used
+17>I:\Desenv\Ilitera.Net_Essential_Objects\ControleCIPA\RelatorioAnual.aspx.cs(45,20,45,22): warning CS0168: The variable 'ex' is declared but never used
+17>I:\Desenv\Ilitera.Net_Essential_Objects\ControleExtintores\ListagemExtintores.aspx.cs(45,20,45,22): warning CS0168: The variable 'ex' is declared but never used
+17>I:\Desenv\Ilitera.Net_Essential_Objects\ControleEPI\EntregaEPI.aspx.cs(384,9,384,17): warning CS0219: The variable 'checkEPI' is assigned but its value is never used
+17>I:\Desenv\Ilitera.Net_Essential_Objects\ControleEPI\ListagemEPI.aspx.cs(150,22,150,33): warning CS0219: The variable 'hasNumeroCA' is assigned but its value is never used
+17>I:\Desenv\Ilitera.Net_Essential_Objects\ControleEPI\EntregaEPI_Auto.aspx.cs(398,9,398,17): warning CS0219: The variable 'checkEPI' is assigned but its value is never used
+17>I:\Desenv\Ilitera.Net_Essential_Objects\DadosEmpresa\RelatorioMailing.aspx.cs(38,20,38,25): warning CS0168: The variable 'xTipo' is declared but never used
+17>I:\Desenv\Ilitera.Net_Essential_Objects\DadosEmpresa\RelatorioMailing.aspx.cs(40,20,40,27): warning CS0168: The variable 'xExames' is declared but never used
+17>I:\Desenv\Ilitera.Net_Essential_Objects\visualizarDadosEmpregado_Novo2.aspx.cs(2239,34,2239,36): warning CS0168: The variable 'ex' is declared but never used
+17>I:\Desenv\Ilitera.Net_Essential_Objects\ControleCIPA\RelatorioInscricaoCIPA.aspx.cs(57,20,57,22): warning CS0168: The variable 'ex' is declared but never used
+17>I:\Desenv\Ilitera.Net_Essential_Objects\DadosEmpresa\RelatorioGuiaComp.aspx.cs(62,19,62,29): warning CS0219: The variable 'xTipoExame' is assigned but its value is never used
+17>I:\Desenv\Ilitera.Net_Essential_Objects\ControleExtintores\ExtintorDetalhe.aspx.cs(42,20,42,22): warning CS0168: The variable 'ex' is declared but never used
+17>I:\Desenv\Ilitera.Net_Essential_Objects\Treinamentos\ParticipantesCurso.aspx.cs(41,20,41,22): warning CS0168: The variable 'ex' is declared but never used
+17>I:\Desenv\Ilitera.Net_Essential_Objects\MapaRisco.aspx.cs(42,20,42,22): warning CS0168: The variable 'ex' is declared but never used
+17>I:\Desenv\Ilitera.Net_Essential_Objects\Login.aspx.cs(315,34,315,36): warning CS0168: The variable 'ex' is declared but never used
+17>I:\Desenv\Ilitera.Net_Essential_Objects\Treinamentos\FichaEmpregado.aspx.cs(48,20,48,22): warning CS0168: The variable 'ex' is declared but never used
+17>I:\Desenv\Ilitera.Net_Essential_Objects\Treinamentos\CertificadoIndividual.aspx.cs(59,20,59,22): warning CS0168: The variable 'ex' is declared but never used
+17>I:\Desenv\Ilitera.Net_Essential_Objects\Treinamentos\CertificadoColetivo.aspx.cs(41,20,41,22): warning CS0168: The variable 'ex' is declared but never used
+17>I:\Desenv\Ilitera.Net_Essential_Objects\PCMSO\DadosEmpregado_Vacina.aspx.cs(112,21,112,26): warning CS0219: The variable 'width' is assigned but its value is never used
+17>I:\Desenv\Ilitera.Net_Essential_Objects\PCMSO\DadosEmpregado_Vacina.aspx.cs(112,34,112,40): warning CS0219: The variable 'height' is assigned but its value is never used
+17>I:\Desenv\Ilitera.Net_Essential_Objects\OrdemdeServico2\CadEquipamento.aspx.cs(98,12,98,24): warning CS0219: The variable 'tipoProcesso' is assigned but its value is never used
+17>I:\Desenv\Ilitera.Net_Essential_Objects\OrdemdeServico2\CadProduto.aspx.cs(98,12,98,24): warning CS0219: The variable 'tipoProcesso' is assigned but its value is never used
+17>I:\Desenv\Ilitera.Net_Essential_Objects\OrdemdeServico2\CadFerramenta.aspx.cs(97,12,97,24): warning CS0219: The variable 'tipoProcesso' is assigned but its value is never used
+17>I:\Desenv\Ilitera.Net_Essential_Objects\PCMSO\AnamneseAud.aspx.cs(44,21,44,23): warning CS0168: The variable 'ex' is declared but never used
+17>I:\Desenv\Ilitera.Net_Essential_Objects\PCMSO\ExameQuestionario.aspx.cs(312,30,312,32): warning CS0168: The variable 'ex' is declared but never used
+17>I:\Desenv\Ilitera.Net_Essential_Objects\PCMSO\ExameQuestionario.aspx.cs(321,30,321,32): warning CS0168: The variable 'ex' is declared but never used
+17>I:\Desenv\Ilitera.Net_Essential_Objects\PCMSO\Relatorio_Vacinas_Atrasadas.aspx.cs(124,20,124,31): warning CS0219: The variable 'xConsiderar' is assigned but its value is never used
+17>I:\Desenv\Ilitera.Net_Essential_Objects\PCMSO\Audiograma.aspx.cs(46,21,46,23): warning CS0168: The variable 'ex' is declared but never used
+17>I:\Desenv\Ilitera.Net_Essential_Objects\OrdemdeServico2\CadEmpregadoConjuntoProcedimento.aspx.cs(800,18,800,27): warning CS0219: The variable 'ListaProc' is assigned but its value is never used
+17>I:\Desenv\Ilitera.Net_Essential_Objects\OrdemdeServico2\CadEmpregadoConjuntoProcedimento.aspx.cs(800,37,800,40): warning CS0219: The variable 'POP' is assigned but its value is never used
+17>I:\Desenv\Ilitera.Net_Essential_Objects\OrdemdeServico2\CadEmpregadoConjuntoProcedimento.aspx.cs(800,50,800,61): warning CS0219: The variable 'POPGenerico' is assigned but its value is never used
+17>I:\Desenv\Ilitera.Net_Essential_Objects\OrdemdeServico2\CadEmpregadoConjuntoProcedimento.aspx.cs(860,18,860,27): warning CS0219: The variable 'ListaProc' is assigned but its value is never used
+17>I:\Desenv\Ilitera.Net_Essential_Objects\OrdemdeServico2\CadEmpregadoConjuntoProcedimento.aspx.cs(860,37,860,40): warning CS0219: The variable 'POP' is assigned but its value is never used
+17>I:\Desenv\Ilitera.Net_Essential_Objects\OrdemdeServico2\CadEmpregadoConjuntoProcedimento.aspx.cs(860,50,860,61): warning CS0219: The variable 'POPGenerico' is assigned but its value is never used
+17>I:\Desenv\Ilitera.Net_Essential_Objects\PCMSO\CadastroUniformes.aspx.cs(212,21,212,23): warning CS0168: The variable 'ex' is declared but never used
+17>I:\Desenv\Ilitera.Net_Essential_Objects\PCMSO\CadastroUniformes.aspx.cs(236,21,236,23): warning CS0168: The variable 'ex' is declared but never used
+17>I:\Desenv\Ilitera.Net_Essential_Objects\PCMSO\Graficos.aspx.cs(161,20,161,28): warning CS0219: The variable 'xTipoRel' is assigned but its value is never used
+17>I:\Desenv\Ilitera.Net_Essential_Objects\PCMSO\Graficos.aspx.cs(162,20,162,31): warning CS0219: The variable 'xConsiderar' is assigned but its value is never used
+17>I:\Desenv\Ilitera.Net_Essential_Objects\PCMSO\Graficos.aspx.cs(163,20,163,27): warning CS0219: The variable 'xStatus' is assigned but its value is never used
+17>I:\Desenv\Ilitera.Net_Essential_Objects\SelecaoGHE.aspx.cs(424,30,424,32): warning CS0168: The variable 'ex' is declared but never used
+17>I:\Desenv\Ilitera.Net_Essential_Objects\SelecaoGHE.aspx.cs(506,30,506,32): warning CS0168: The variable 'ex' is declared but never used
+17>I:\Desenv\Ilitera.Net_Essential_Objects\SelecaoGHE.aspx.cs(718,36,718,40): warning CS0168: The variable 'PPRA' is declared but never used
+17>I:\Desenv\Ilitera.Net_Essential_Objects\SelecaoGHE.aspx.cs(818,34,818,36): warning CS0168: The variable 'ex' is declared but never used
+17>I:\Desenv\Ilitera.Net_Essential_Objects\RelatAbsenteismo.aspx.cs(40,30,40,32): warning CS0168: The variable 'ex' is declared but never used
+17>I:\Desenv\Ilitera.Net_Essential_Objects\QuadroEPI2.aspx.cs(41,20,41,22): warning CS0168: The variable 'ex' is declared but never used
+17>I:\Desenv\Ilitera.Net_Essential_Objects\PCMSO\DadosEmpregado_Guia_Dup.aspx.cs(736,17,736,21): warning CS0168: The variable 'xAux' is declared but never used
+17>I:\Desenv\Ilitera.Net_Essential_Objects\PCMSO\DadosEmpregado_Guia_Dup.aspx.cs(744,17,744,22): warning CS0219: The variable 'xCont' is assigned but its value is never used
+17>I:\Desenv\Ilitera.Net_Essential_Objects\PCMSO\DadosEmpregado_Guia_Dup.aspx.cs(747,20,747,34): warning CS0219: The variable 'Aviso_Bloqueio' is assigned but its value is never used
+17>I:\Desenv\Ilitera.Net_Essential_Objects\PCMSO\ExameClinicoGuia.aspx.cs(1012,30,1012,32): warning CS0168: The variable 'ex' is declared but never used
+17>I:\Desenv\Ilitera.Net_Essential_Objects\PCMSO\DadosEmpregado_Guia_Dup.aspx.cs(1239,17,1239,21): warning CS0168: The variable 'xAux' is declared but never used
+17>I:\Desenv\Ilitera.Net_Essential_Objects\PCMSO\DadosEmpregado_Guia_Dup.aspx.cs(1247,17,1247,22): warning CS0219: The variable 'xCont' is assigned but its value is never used
+17>I:\Desenv\Ilitera.Net_Essential_Objects\PCMSO\DadosEmpregado_Guia_Dup.aspx.cs(1250,20,1250,34): warning CS0219: The variable 'Aviso_Bloqueio' is assigned but its value is never used
+17>I:\Desenv\Ilitera.Net_Essential_Objects\PPRACompleto.aspx.cs(72,21,72,29): warning CS0219: The variable 'xRetirar' is assigned but its value is never used
+17>I:\Desenv\Ilitera.Net_Essential_Objects\PCMSO\DadosEmpregado_Guia_Dup.aspx.cs(1607,17,1607,27): warning CS0219: The variable 'xTipoExame' is assigned but its value is never used
+17>I:\Desenv\Ilitera.Net_Essential_Objects\PPRACompletoIndice.aspx.cs(92,21,92,29): warning CS0219: The variable 'xRetirar' is assigned but its value is never used
+17>I:\Desenv\Ilitera.Net_Essential_Objects\PCMSO\ExameComplementar.aspx.cs(398,21,398,46): warning CS0252: Possible unintended reference comparison; to get a value comparison, cast the left hand side to type 'string'
+17>I:\Desenv\Ilitera.Net_Essential_Objects\PCMSO\ExameComplementar.aspx.cs(446,21,446,46): warning CS0252: Possible unintended reference comparison; to get a value comparison, cast the left hand side to type 'string'
+17>I:\Desenv\Ilitera.Net_Essential_Objects\PCMSO\ExameComplementar.aspx.cs(530,17,530,42): warning CS0252: Possible unintended reference comparison; to get a value comparison, cast the left hand side to type 'string'
+17>I:\Desenv\Ilitera.Net_Essential_Objects\PCMSO\DadosEmpregado_Guia.aspx.cs(779,17,779,27): warning CS0219: The variable 'xTipoExame' is assigned but its value is never used
+17>I:\Desenv\Ilitera.Net_Essential_Objects\PCMSO\DadosEmpregado_Guia.aspx.cs(1149,17,1149,27): warning CS0219: The variable 'xTipoExame' is assigned but its value is never used
+17>I:\Desenv\Ilitera.Net_Essential_Objects\PCMSO\DadosEmpregado_Guia.aspx.cs(1621,37,1621,43): warning CS0162: Unreachable code detected
+17>I:\Desenv\Ilitera.Net_Essential_Objects\PCMSO\ExameClinico.aspx.cs(2342,43,2342,45): warning CS0168: The variable 'ex' is declared but never used
+17>I:\Desenv\Ilitera.Net_Essential_Objects\PCMSO\ExameClinico.aspx.cs(2478,46,2478,48): warning CS0168: The variable 'ex' is declared but never used
+17>I:\Desenv\Ilitera.Net_Essential_Objects\CheckLaudoEletricoPeriodos.aspx.cs(26,39,26,59): warning CS0169: The field 'CheckLaudoEletricoPeriodos.listEmpregadoFuncao2' is never used
+17>I:\Desenv\Ilitera.Net_Essential_Objects\PCMSO\Vacinas_Setor.aspx.cs(19,24,19,28): warning CS0169: The field 'Vacinas_Setor.tipo' is never used
+17>I:\Desenv\Ilitera.Net_Essential_Objects\PCMSO\Relatorio_Absenteismo.aspx.cs(27,24,27,29): warning CS0649: Field 'Relatorio_Absenteismo.xTipo' is never assigned to, and will always have its default value null
+17>I:\Desenv\Ilitera.Net_Essential_Objects\PCMSO\Graficos.aspx.cs(29,24,29,29): warning CS0169: The field 'Graficos.xTipo' is never used
+17>I:\Desenv\Ilitera.Net_Essential_Objects\Treinamentos\ListaEmpregadoCurso.aspx.cs(23,29,23,40): warning CS0169: The field 'ListaEmpregadoCurso.treinamento' is never used
+17>I:\Desenv\Ilitera.Net_Essential_Objects\ControleCIPA\Repositorio.aspx.cs(23,24,23,28): warning CS0169: The field 'Repositorio.tipo' is never used
+17>I:\Desenv\Ilitera.Net_Essential_Objects\CheckLaudoSPDAPeriodos.aspx.cs(26,39,26,59): warning CS0169: The field 'CheckLaudoSPDAPeriodos.listEmpregadoFuncao2' is never used
+17>I:\Desenv\Ilitera.Net_Essential_Objects\PCMSO\ExameNaoOcupacional.aspx.cs(23,18,23,22): warning CS0414: The field 'ExameNaoOcupacional.tipo' is assigned but its value is never used
+17>I:\Desenv\Ilitera.Net_Essential_Objects\ControleExtintores\CadastroExtintores.aspx.cs(17,10,17,22): warning CS0414: The field 'CadastroExtintores.tipoCadastro' is assigned but its value is never used
+17>I:\Desenv\Ilitera.Net_Essential_Objects\PCMSO\CadastroUniformes.aspx.cs(18,10,18,22): warning CS0414: The field 'CadastroUniformes.tipoCadastro' is assigned but its value is never used
+17>I:\Desenv\Ilitera.Net_Essential_Objects\PCMSO\ExameQuestionario.aspx.cs(23,24,23,28): warning CS0414: The field 'ExameQuestionario.tipo' is assigned but its value is never used
+17>I:\Desenv\Ilitera.Net_Essential_Objects\PCMSO\Vacinas.aspx.cs(19,18,19,22): warning CS0414: The field 'Vacinas.tipo' is assigned but its value is never used
+17>CSC : warning CS8012: Referenced assembly 'System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a' targets a different processor.
+17>  Ilitera.Net -> I:\Desenv\Ilitera.Net_Essential_Objects\bin\Ilitera.Net.dll
+========== Rebuild All: 17 succeeded, 0 failed, 0 skipped ==========

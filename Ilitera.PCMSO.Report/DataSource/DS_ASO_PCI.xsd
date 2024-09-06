@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="Dataset" targetNamespace="http://tempuri.org/Dataset.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/Dataset.xsd" xmlns:mstns="http://tempuri.org/Dataset.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="Dataset" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="Result">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="nID_EMPREGADO" type="xs:int" />
+							<xs:element name="tNO_EMPG" type="xs:string" minOccurs="0" />
+							<xs:element name="tNO_IDENTIDADE" type="xs:string" minOccurs="0" />
+							<xs:element name="hDT_NASC" type="xs:string" minOccurs="0" />
+							<xs:element name="RazãoSocial" type="xs:string" minOccurs="0" />
+							<xs:element name="Endereço" type="xs:string" minOccurs="0" />
+							<xs:element name="CidadeEstado" type="xs:string" minOccurs="0" />
+							<xs:element name="CEP" type="xs:string" minOccurs="0" />
+							<xs:element name="CGC" type="xs:string" minOccurs="0" />
+							<xs:element name="tDS_EXAME_TIPO" type="xs:string" />
+							<xs:element name="tNOME_MEDICO" type="xs:string" />
+							<xs:element name="tNU_REG_CONSELHO" type="xs:string" />						
+							<xs:element name="tCONTATO_MEDICO" type="xs:string" />						
+							<xs:element name="tNO_STR_EMPR" type="xs:string" />
+							<xs:element name="tNO_FUNC_EMPR" type="xs:string" />	
+							<xs:element name="CidadeData" type="xs:string" minOccurs="0" />					
+							<xs:element name="iFOTO" type="xs:base64Binary" minOccurs="0" />							
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

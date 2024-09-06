@@ -1,0 +1,25 @@
+.linkTroca
+{
+	a
+	{
+		font-style: normal; text-decoration: none; color: #FFFFFF;
+	}
+
+	a:hover
+	{
+		text-decoration: underline
+	}
+}
+
+.linkMenu
+{
+	a
+	{
+		font-style: normal; text-decoration: none; color: #004400;
+	}
+
+	a:hover
+	{
+		text-decoration: underline
+	}
+}

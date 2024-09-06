@@ -1,0 +1,3009 @@
+.igtab_TrendyTHControl
+{
+	overflow: hidden;
+}
+
+
+.igtab_TrendyTHContent
+{
+	background-color:#EFEFEF;
+	background-repeat:repeat-x;
+	background-image: url(./images/igtab_thcontentbackground.png);
+	height: 100%;
+	position: relative;
+}
+
+
+.igtab_TrendyTHContentHolder
+{
+	background-color:White;
+	border:solid 1px #999999;
+	border-top-width:0px;
+	height: 80%;
+	overflow: hidden;
+	position: relative;
+}
+
+
+.igtab_TrendyTHTab
+{
+	background-color:Transparent;
+	background-repeat:no-repeat;
+	background-position:top left ;
+	background-image: url(./images/igtab_thleft.gif);
+	border-bottom:solid 1px #999999;
+	margin:0px;
+	padding-left:7px;
+	display: inline;
+	position: relative;
+	float: left;
+	overflow: hidden;
+	white-space: nowrap;
+	height: 22px;
+}
+
+
+.igtab_TrendyTHCenter
+{
+	background-color:#E5E5E5;
+	background-repeat:repeat-x;
+	background-image: url(./images/igtab_thcenter.png);
+	font-size:22px;
+	font-family: sans-serif;
+	padding:0px 1px 0px 1px;
+	display: block;
+	position: relative;
+	white-space: nowrap;
+	line-height: 22px;
+	overflow: hidden;
+	text-align:center;
+}
+
+
+.igtab_TrendyTHTail
+{
+	background-color:Transparent;
+	background-repeat:no-repeat;
+	background-position:top right ;
+	background-image: url(./images/igtab_thright.gif);
+	margin:0px;
+	padding-right:7px;
+	padding-left:0px;
+	display: block;
+}
+
+
+.igtab_TrendyTHText
+{
+	font-size:13px;
+	font-family: Verdana;
+	border-width:0px;
+	padding:0px;
+	white-space: nowrap;
+	line-height: 22px;
+	cursor:default;
+	vertical-align:middle;
+}
+
+
+.igtab_TrendyTHMirror
+{
+}
+
+
+.igtab_TrendyTHMirrorCenter
+{
+}
+
+
+.igtab_TrendyTHOverlap
+{
+	margin-left:-5px;
+}
+
+
+.igtab_TrendyTHImage
+{
+	vertical-align:middle;
+}
+
+
+.igtab_TrendyTHClose
+{
+	margin-top:6px;
+	margin-left:-20px;
+	position: absolute;
+	left: 100%;
+	top: 0px;
+	cursor:pointer;
+}
+
+
+.igtab_TrendyTHCloseSize
+{
+	padding-right:20px;
+}
+
+
+.igtab_TrendyTHHolder
+{
+	background-repeat:repeat-x;
+	background-position:bottom left ;
+	background-image: url(./images/igtab_holderborder.gif);
+	margin:0px;
+	padding:0px;
+	position: relative;
+	display: block;
+	height: 23px;
+	width: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+
+.igtab_TrendyTHHolderNoScroll
+{
+	display: block;
+	position: relative;
+	width: 100%;
+}
+
+
+.igtab_TrendyTHHolderScroll
+{
+	margin-left:-50px;
+	position: relative;
+	width: 100%;
+	display: block;
+	overflow: hidden;
+}
+
+
+.igtab_TrendyTHHolderScrollInner
+{
+	position: relative;
+	display: block;
+	width: 9999px;
+	left: 50px;
+}
+
+
+.igtab_TrendyTHScrollButton
+{
+	padding:1px;
+}
+
+
+.igtab_TrendyTHScrollButtons
+{
+	font-size:1px;
+	margin-left:-50px;
+	padding-top:2px;
+	position: absolute;
+	left: 100%;
+	display: block;
+	width: 50px;
+	z-index: 20000;
+	text-align:right;
+}
+
+
+.igtab_TrendyTHRoundedTopBottom
+{
+	background-repeat:repeat-x;
+	background-image: url(./images/igtab_troundtopbot.gif);
+	position: absolute;
+	display: block;
+}
+
+
+.igtab_TrendyTHRoundedLeftRight
+{
+	background-repeat:repeat-y;
+	background-image: url(./images/igtab_troundleftright.gif);
+	position: absolute;
+	display: block;
+}
+
+
+.igtab_TrendyTHRoundedCorners
+{
+	background-repeat:no-repeat;
+	background-image: url(./images/igtab_troundcorners.gif);
+	position: absolute;
+	display: block;
+}
+
+
+.igtab_TrendyTHRoundedFill
+{
+	background-image: url(./images/igtab_troundfill.gif);
+	position: absolute;
+	display: block;
+}
+
+
+.igtab_TrendyTHRoundedForScroll
+{
+	margin-left:-56px;
+}
+
+
+.igtab_TrendyTHRoundedForHolder
+{
+	background-color: none;
+	margin-left:5px;
+	height: 22px;
+}
+
+
+.igtab_TrendyTHRoundedForHolderScroll
+{
+}
+
+
+.igtab_TrendyTHRoundedForHolderInner
+{
+}
+
+
+.igtab_TrendyTHRoundedForHolderScrollInner
+{
+}
+
+
+.igtab_TrendyTHContentHolderInner
+{
+}
+
+
+.igtab_TrendyTHTabHov
+{
+	background-color:#4DB13E;
+	background-position:0px -50px ;
+}
+
+
+.igtab_TrendyTHCenterHov
+{
+	background-color:#FF9933;
+	background-position:0px -50px ;
+}
+
+
+.igtab_TrendyTHTailHov
+{
+	background-color:Transparent;
+	background-position:top right ;
+	background-image: url(./images/igtab_thrighthov.gif);
+}
+
+
+.igtab_TrendyTHTextHov
+{
+	color:White;
+}
+
+
+.igtab_TrendyTHMirrorHov
+{
+}
+
+
+.igtab_TrendyTHMirrorCenterHov
+{
+}
+
+
+.igtab_TrendyTHTabSel
+{
+	background-position:0px -100px ;
+}
+
+
+.igtab_TrendyTHCenterSel
+{
+	background-color:#94C8EB;
+	background-position:0px -100px ;
+}
+
+
+.igtab_TrendyTHTailSel
+{
+	background-color:Transparent;
+	background-repeat:no-repeat;
+	background-position:top right ;
+	background-image: url(./images/igtab_thrightsel.gif);
+}
+
+
+.igtab_TrendyTHTextSel
+{
+}
+
+
+.igtab_TrendyTHMirrorSel
+{
+}
+
+
+.igtab_TrendyTHMirrorCenterSel
+{
+}
+
+
+.igtab_TrendyTHTabAct
+{
+}
+
+
+.igtab_TrendyTHCenterAct
+{
+}
+
+
+.igtab_TrendyTHTailAct
+{
+}
+
+
+.igtab_TrendyTHTextAct
+{
+	border:dotted 1px #000000;
+}
+
+
+.igtab_TrendyTHMirrorAct
+{
+}
+
+
+.igtab_TrendyTHMirrorCenterAct
+{
+}
+
+
+.igtab_TrendyTHTabDis
+{
+	background-position:0px -150px ;
+}
+
+
+.igtab_TrendyTHCenterDis
+{
+	background-color:#CCCCCC;
+	background-position:0px -150px ;
+}
+
+
+.igtab_TrendyTHTailDis
+{
+	background-image: url(./images/igtab_thrightdis.gif);
+}
+
+
+.igtab_TrendyTHTextDis
+{
+	color:#AAAAAA;
+}
+
+
+.igtab_TrendyTHMirrorDis
+{
+}
+
+
+.igtab_TrendyTHMirrorCenterDis
+{
+}
+
+
+.igtab_TrendyTHTabMoving
+{
+	filter: alpha(opacity : 30);
+	opacity: 0.3;
+}
+
+
+.igtab_TrendyTHTabMovingMarkUp
+{
+	filter: alpha(opacity : 70);
+	opacity: 0.7;
+}
+
+
+.igtab_TrendyRVClose
+{
+	margin-top:-15px;
+	margin-left:4px;
+	position: absolute;
+	cursor:pointer;
+}
+
+
+.igtab_TrendyRVTextHov
+{
+	color:White;
+}
+
+
+.igtab_TrendyLVRoundedTopBottom
+{
+	background-repeat:repeat-x;
+	background-image: url(./images/igtab_troundtopbot.gif);
+	position: absolute;
+	display: block;
+}
+
+
+.igtab_TrendyBVTailHov
+{
+	background-position:-50px 0px ;
+}
+
+
+.igtab_TrendyLVContent
+{
+	background-color:White;
+	height: 100%;
+	position: relative;
+}
+
+
+.igtab_TrendyRVRoundedFill
+{
+	background-image: url(./images/igtab_troundfill.gif);
+	position: absolute;
+	display: block;
+}
+
+
+.igtab_TrendyLVTabAct
+{
+}
+
+
+.igtab_TrendyLVTailSel
+{
+	background-image: url(./images/igtab_lvbotsel.gif);
+	border-right-color:#999999;
+}
+
+
+.igtab_TrendyRHMirrorAct
+{
+}
+
+
+.igtab_TrendyRHMirror
+{
+	background-repeat:no-repeat;
+	background-position:bottom right ;
+	background-image: url(./images/igtab_rhbotright.gif);
+	border-left:solid 1px #999999;
+	padding-right:10px;
+	display: block;
+	height: 3px;
+}
+
+
+.igtab_TrendyTVTailSel
+{
+	background-position:-100px 0px ;
+}
+
+
+.igtab_TrendyRVCenterSel
+{
+	background-color:#019AFF;
+	background-image: url(./images/igtab_rvcentersel.gif);
+}
+
+
+.igtab_TrendyBHHolderScrollInner
+{
+	position: relative;
+	display: block;
+	width: 9999px;
+	left: 50px;
+}
+
+
+.igtab_TrendyRVRoundedLeftRight
+{
+	background-repeat:repeat-y;
+	background-image: url(./images/igtab_troundleftright.gif);
+	position: absolute;
+	display: block;
+}
+
+
+.igtab_TrendyLVTextSel
+{
+}
+
+
+.igtab_TrendyLVRoundedForHolder
+{
+	top: -6px;
+}
+
+
+.igtab_TrendyTVTabDis
+{
+	background-position:0px -57px ;
+}
+
+
+.igtab_TrendyTVTabMovingMarkUp
+{
+	filter: alpha(opacity : 70);
+	opacity: 0.7;
+}
+
+
+.igtab_TrendyLVHolderScrollInner
+{
+	top: 47px;
+}
+
+
+.igtab_TrendyTVMirrorAct
+{
+}
+
+
+.igtab_TrendyLHContentHolder
+{
+	background-color:White;
+	border:solid 1px #999999;
+	height: 99%;
+	left: -1px;
+	position: relative;
+	overflow: hidden;
+	z-index: 9;
+}
+
+
+.igtab_TrendyBVHolderScrollInner
+{
+	position: relative;
+	display: block;
+	width: 9999px;
+	left: 50px;
+}
+
+
+.igtab_TrendyRHCenter
+{
+	background-color:#E5E5E5;
+	background-repeat:repeat-x;
+	background-image: url(./images/igtab_rhtop.gif);
+	font-size:22px;
+	font-family: sans-serif;
+	display: block;
+	line-height: 20px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-align:right;
+}
+
+
+.igtab_TrendyTVCenterSel
+{
+}
+
+
+.igtab_TrendyTVMirrorCenterAct
+{
+}
+
+
+.igtab_TrendyLHHolderScrollInner
+{
+	top: 47px;
+}
+
+
+.igtab_TrendyBVTab
+{
+	background-repeat:no-repeat;
+	background-position:bottom left ;
+	background-image: url(./images/igtab_bvleftbot.gif);
+	border-top:solid 1px #999999;
+	margin:0px;
+	padding:0px;
+	display: inline;
+	position: relative;
+	float: left;
+	overflow: hidden;
+	width: 30px;
+}
+
+
+.igtab_TrendyBVOverlap
+{
+	margin-left:-7px;
+}
+
+
+.igtab_TrendyRHRoundedForHolderInner
+{
+	top: 12px;
+}
+
+
+.igtab_TrendyLHRoundedForHolderScroll
+{
+	top: -53px;
+}
+
+
+.igtab_TrendyLVTextAct
+{
+	border:dotted 1px #000000;
+}
+
+
+.igtab_TrendyLHTabSel
+{
+}
+
+
+.igtab_TrendyBVClose
+{
+	margin-top:-16px;
+	margin-left:-18px;
+	position: absolute;
+	left: 100%;
+	top: 100%;
+	cursor:pointer;
+}
+
+
+.igtab_TrendyLHRoundedCorners
+{
+	background-repeat:no-repeat;
+	background-image: url(./images/igtab_troundcorners.gif);
+	position: absolute;
+	display: block;
+}
+
+
+.igtab_TrendyLVCloseSize
+{
+	padding-bottom:14px;
+}
+
+
+.igtab_TrendyRHCenterSel
+{
+	background-color:#019AFF;
+	background-image: url(./images/igtab_rhtopsel.gif);
+}
+
+
+.igtab_TrendyLHImage
+{
+	margin-top:2px;
+	position: relative;
+	vertical-align:middle;
+}
+
+
+.igtab_TrendyBHHolderScroll
+{
+	margin-left:-50px;
+	position: relative;
+	width: 100%;
+	display: block;
+	overflow: hidden;
+}
+
+
+.igtab_TrendyRHTailAct
+{
+}
+
+
+.igtab_TrendyRVTabMoving
+{
+	filter: alpha(opacity : 30);
+	opacity: 0.3;
+}
+
+
+.igtab_TrendyLHCenterHov
+{
+	background-color:#4DB13E;
+	background-image: url(./images/igtab_lhtophov.gif);
+}
+
+
+.igtab_TrendyTVRoundedForScroll
+{
+	margin-left:-56px;
+}
+
+
+.igtab_TrendyTVContentHolder
+{
+	background-color:White;
+	border:solid 1px #999999;
+	border-top-width:0px;
+	height: 50%;
+	overflow: hidden;
+	position: relative;
+}
+
+
+.igtab_TrendyRHTabAct
+{
+}
+
+
+.igtab_TrendyTVRoundedLastTab
+{
+	margin-right:10px;
+}
+
+
+.igtab_TrendyTVMirrorCenterHov
+{
+	background-color:#FF9933;
+	background-image: url(./images/igtab_tvrighthov.png);
+}
+
+
+.igtab_TrendyRVRoundedCorners
+{
+	background-repeat:no-repeat;
+	background-image: url(./images/igtab_troundcorners.gif);
+	position: absolute;
+	display: block;
+}
+
+
+.igtab_TrendyBHHolder
+{
+	background-repeat:repeat-x;
+	background-image: url(./images/igtab_holderborder.gif);
+	margin:0px;
+	padding:0px;
+	position: relative;
+	display: block;
+	height: 23px;
+	width: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+
+.igtab_TrendyTVMirrorDis
+{
+	background-image: url(./images/igtab_tvrighttopdis.gif);
+}
+
+
+.igtab_TrendyTVMirror
+{
+	background-color:#6DA3CC;
+	background-repeat:no-repeat;
+	background-position:top right ;
+	background-image: url(./images/igtab_tvrighttop.gif);
+	margin-left:8px;
+	display: block;
+	position: absolute;
+	width: 22px;
+	height: 100%;
+}
+
+
+.igtab_TrendyLHMirrorDis
+{
+	background-image: url(./images/igtab_lhbotleftdis.gif);
+}
+
+
+.igtab_TrendyLVTab
+{
+	background-repeat:no-repeat;
+	background-position:top left ;
+	background-image: url(./images/igtab_lvtop.gif);
+	border-right:solid 1px #999999;
+	padding-top:3px;
+	display: block;
+	overflow: hidden;
+	position: relative;
+}
+
+
+.igtab_TrendyLHMirrorSel
+{
+	background-image: url(./images/igtab_lhbotleftsel.gif);
+	border-right-color:#999999;
+}
+
+
+.igtab_TrendyBHCloseSize
+{
+	padding-right:20px;
+}
+
+
+.igtab_TrendyBVTextAct
+{
+	border:dotted 1px #000000;
+	margin:2px 0px 0px 4px;
+}
+
+
+.igtab_TrendyRHScrollButtons
+{
+	font-size:1px;
+	margin-top:-47px;
+	position: absolute;
+	top: 100%;
+	z-index: 20000;
+	left: 100%;
+}
+
+
+.igtab_TrendyLVClose
+{
+	margin-top:-15px;
+	margin-left:6px;
+	position: absolute;
+	cursor:pointer;
+}
+
+
+.igtab_TrendyRVScrollButton
+{
+	margin-top:2px;
+	display: block;
+}
+
+
+.igtab_TrendyTVMirrorHov
+{
+	background-image: url(./images/igtab_tvrighttophov.gif);
+}
+
+
+.igtab_TrendyRHContentHolder
+{
+	background-color:White;
+	border-top:solid 1px #999999;
+	border-right:solid 1px #999999;
+	border-bottom:solid 1px #999999;
+	height: 99%;
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	z-index: 9;
+}
+
+
+.igtab_TrendyRHTab
+{
+	display: block;
+	overflow: hidden;
+	position: relative;
+}
+
+
+.igtab_TrendyBHTabHov
+{
+	background-position:0px -27px ;
+}
+
+
+.igtab_TrendyLHTailAct
+{
+}
+
+
+.igtab_TrendyRHRoundedForHolder
+{
+	top: -6px;
+}
+
+
+.igtab_TrendyBHCenter
+{
+	background-color:#6DA3CC;
+	background-repeat:repeat-x;
+	background-position:top left ;
+	background-image: url(./images/igtab_bhcenter.gif);
+	font-size:22px;
+	font-family: sans-serif;
+	display: block;
+	position: relative;
+	white-space: nowrap;
+	line-height: 22px;
+	overflow: hidden;
+	text-align:center;
+}
+
+
+.igtab_TrendyLVTabHov
+{
+	background-image: url(./images/igtab_lvtophov.gif);
+	color:White;
+}
+
+
+.igtab_TrendyTVScrollButtons
+{
+	font-size:1px;
+	margin-top:-23px;
+	margin-left:-50px;
+	padding-top:2px;
+	position: absolute;
+	left: 100%;
+	top: 100%;
+	display: block;
+	width: 50px;
+	z-index: 20000;
+	text-align:right;
+}
+
+
+.igtab_TrendyLHMirrorCenterDis
+{
+	background-image: url(./images/igtab_lhbotdis.gif);
+}
+
+
+.igtab_TrendyBVRoundedTopBottom
+{
+	background-repeat:repeat-x;
+	background-image: url(./images/igtab_broundtopbot.gif);
+	position: absolute;
+	display: block;
+}
+
+
+.igtab_TrendyLVOverlap
+{
+	margin-top:-5px;
+}
+
+
+.igtab_TrendyTVTailDis
+{
+	background-position:-150px 0px ;
+}
+
+
+.igtab_TrendyBHOverlap
+{
+	margin-left:-5px;
+}
+
+
+.igtab_TrendyTVMirrorSel
+{
+	background-image: url(./images/igtab_tvrighttopsel.gif);
+}
+
+
+.igtab_TrendyLVRoundedForHolderScroll
+{
+	top: -53px;
+}
+
+
+.igtab_TrendyRHMirrorCenterHov
+{
+	background-image: url(./images/igtab_rhbothov.gif);
+}
+
+
+.igtab_TrendyLVTailDis
+{
+	background-image: url(./images/igtab_lvbotdis.gif);
+}
+
+
+.igtab_TrendyRHMirrorCenterSel
+{
+	background-image: url(./images/igtab_rhbotsel.gif);
+}
+
+
+.igtab_TrendyRVTextSel
+{
+}
+
+
+.igtab_TrendyLHMirrorCenterAct
+{
+}
+
+
+.igtab_TrendyBVTailSel
+{
+	background-position:-100px 0px ;
+}
+
+
+.igtab_TrendyRVTextDis
+{
+}
+
+
+.igtab_TrendyTVControl
+{
+	overflow: hidden;
+}
+
+
+.igtab_TrendyLHScrollButtons
+{
+	font-size:1px;
+	margin-top:-47px;
+	margin-left:-21px;
+	position: absolute;
+	top: 100%;
+	z-index: 20000;
+}
+
+
+.igtab_TrendyLHText
+{
+	font-size:13px;
+	font-family: Verdana;
+	line-height: 24px;
+	white-space: nowrap;
+	position: relative;
+	cursor:default;
+	vertical-align:middle;
+}
+
+
+.igtab_TrendyLHHolder
+{
+	overflow: hidden;
+	position: absolute;
+	z-index: 999;
+	left: 0px;
+	top: 0px;
+	height: 100%;
+}
+
+
+.igtab_TrendyRVTabDis
+{
+	background-image: url(./images/igtab_rvtopdis.gif);
+}
+
+
+.igtab_TrendyLVScrollButton
+{
+	margin-top:2px;
+	display: block;
+}
+
+
+.igtab_TrendyRVCloseSize
+{
+	padding-bottom:14px;
+}
+
+
+.igtab_TrendyRHScrollButton
+{
+	margin-top:2px;
+	margin-left:3px;
+	display: block;
+}
+
+
+.igtab_TrendyTVOverlap
+{
+	margin-left:-7px;
+}
+
+
+.igtab_TrendyRHMirrorDis
+{
+	background-image: url(./images/igtab_rhbotrightdis.gif);
+}
+
+
+.igtab_TrendyLHMirrorCenterHov
+{
+	background-image: url(./images/igtab_lhbothov.gif);
+}
+
+
+.igtab_TrendyTVHolderScrollInner
+{
+	position: relative;
+	display: block;
+	width: 9999px;
+	left: 50px;
+}
+
+
+.igtab_TrendyLVContentHolder
+{
+	background-color:White;
+	border:solid 1px #999999;
+	margin-left:24px;
+	height: 99%;
+	position: relative;
+	overflow: hidden;
+	z-index: 9;
+}
+
+
+.igtab_TrendyBVCenterDis
+{
+}
+
+
+.igtab_TrendyRHMirrorSel
+{
+	background-image: url(./images/igtab_rhbotrightsel.gif);
+	border-left-color:#999999;
+}
+
+
+.igtab_TrendyLHMirrorCenterSel
+{
+	background-image: url(./images/igtab_lhbotsel.gif);
+}
+
+
+.igtab_TrendyTVTabHov
+{
+	background-position:0px -19px ;
+}
+
+
+.igtab_TrendyBHContentHolder
+{
+	background-color:White;
+	border:solid 1px #999999;
+	border-bottom-width:0px;
+	height: 60%;
+	overflow: hidden;
+	position: relative;
+}
+
+
+.igtab_TrendyBVContentHolder
+{
+	background-color:White;
+	border:solid 1px #999999;
+	border-bottom-width:0px;
+	height: 50%;
+	overflow: hidden;
+	position: relative;
+}
+
+
+.igtab_TrendyRVContent
+{
+	background-color:White;
+	height: 100%;
+	position: relative;
+}
+
+
+.igtab_TrendyTVTab
+{
+	background-repeat:no-repeat;
+	background-image: url(./images/igtab_tvlefttop.gif);
+	border-bottom:solid 1px #999999;
+	margin:0px;
+	padding:0px;
+	display: inline;
+	position: relative;
+	float: left;
+	overflow: hidden;
+	width: 30px;
+}
+
+
+.igtab_TrendyTVTailHov
+{
+	background-position:-50px 0px ;
+}
+
+
+.igtab_TrendyRVText
+{
+	font-size:13px;
+	font-family: Verdana;
+	padding-left:5px;
+	line-height: 14px;
+	display: block;
+	width: 13px;
+	position: relative;
+	cursor:default;
+	vertical-align:middle;
+}
+
+
+.igtab_TrendyRHTailDis
+{
+	background-image: url(./images/igtab_rhtoprightdis.gif);
+}
+
+
+.igtab_TrendyLHOverlap
+{
+	margin-top:-5px;
+}
+
+
+.igtab_TrendyTVImage
+{
+	margin-left:10%;
+	display: block;
+}
+
+
+.igtab_TrendyBHControl
+{
+	overflow: hidden;
+}
+
+
+.igtab_TrendyLVRoundedForHolderInner
+{
+	top: 12px;
+}
+
+
+.igtab_TrendyRHRoundedTopBottom
+{
+	background-repeat:repeat-x;
+	background-image: url(./images/igtab_troundtopbot.gif);
+	position: absolute;
+	display: block;
+}
+
+
+.igtab_TrendyBVTabMoving
+{
+	filter: alpha(opacity : 30);
+	opacity: 0.3;
+}
+
+
+.igtab_TrendyBHScrollButton
+{
+	padding:1px;
+}
+
+
+.igtab_TrendyBVHolderScroll
+{
+	margin-left:-50px;
+	position: relative;
+	width: 100%;
+	display: block;
+	overflow: hidden;
+}
+
+
+.igtab_TrendyBHTabAct
+{
+}
+
+
+.igtab_TrendyTVRoundedTopBottom
+{
+	background-repeat:repeat-x;
+	background-image: url(./images/igtab_troundtopbot.gif);
+	position: absolute;
+	display: block;
+}
+
+
+.igtab_TrendyTVTextDis
+{
+	color:#AAAAAA;
+}
+
+
+.igtab_TrendyLHScrollButton
+{
+	margin-top:2px;
+	display: block;
+}
+
+
+.igtab_TrendyLHTabHov
+{
+}
+
+
+.igtab_TrendyBVRoundedCorners
+{
+	background-repeat:no-repeat;
+	background-image: url(./images/igtab_broundcorners.gif);
+	position: absolute;
+	display: block;
+}
+
+
+.igtab_TrendyBHHolderNoScroll
+{
+	display: block;
+	position: relative;
+	width: 100%;
+}
+
+
+.igtab_TrendyTVClose
+{
+	margin-top:-13px;
+	position: absolute;
+	left: 12px;
+	top: 100%;
+	cursor:pointer;
+}
+
+
+.igtab_TrendyLVTextDis
+{
+}
+
+
+.igtab_TrendyLHRoundedTopBottom
+{
+	background-repeat:repeat-x;
+	background-image: url(./images/igtab_troundtopbot.gif);
+	position: absolute;
+	display: block;
+}
+
+
+.igtab_TrendyLVRoundedForHolderScrollInner
+{
+	top: 59px;
+}
+
+
+.igtab_TrendyTVTabSel
+{
+	background-position:0px -38px ;
+}
+
+
+.igtab_TrendyTVRoundedCorners
+{
+	background-repeat:no-repeat;
+	background-image: url(./images/igtab_troundcorners.gif);
+	position: absolute;
+	display: block;
+}
+
+
+.igtab_TrendyLHMirrorHov
+{
+	background-image: url(./images/igtab_lhbotlefthov.gif);
+}
+
+
+.igtab_TrendyLVCenterHov
+{
+	background-color:#4DB13E;
+	background-image: url(./images/igtab_lvcenterhov.gif);
+}
+
+
+.igtab_TrendyRVTailSel
+{
+	background-image: url(./images/igtab_rvbotsel.gif);
+	border-left-color:#999999;
+}
+
+
+.igtab_TrendyTVMirrorCenterDis
+{
+	background-image: url(./images/igtab_tvrightdis.gif);
+}
+
+
+.igtab_TrendyLHTextHov
+{
+	color:White;
+}
+
+
+.igtab_TrendyBHTailAct
+{
+}
+
+
+.igtab_TrendyRVHolderScrollInner
+{
+	top: 47px;
+}
+
+
+.igtab_TrendyBVCenterHov
+{
+}
+
+
+.igtab_TrendyBHRoundedLastTab
+{
+	margin-right:10px;
+}
+
+
+.igtab_TrendyLVCenterSel
+{
+	background-color:#019AFF;
+	background-image: url(./images/igtab_lvcentersel.gif);
+}
+
+
+.igtab_TrendyTVTabAct
+{
+}
+
+
+.igtab_TrendyRHImage
+{
+	margin-top:2px;
+	position: relative;
+	vertical-align:middle;
+}
+
+
+.igtab_TrendyBHCenterAct
+{
+}
+
+
+.igtab_TrendyLVRoundedFill
+{
+	background-image: url(./images/igtab_troundfill.gif);
+	position: absolute;
+	display: block;
+}
+
+
+.igtab_TrendyBHTailHov
+{
+	background-image: url(./images/igtab_bhrighthov.gif);
+}
+
+
+.igtab_TrendyLHCenterDis
+{
+	background-color:#CCCCCC;
+	background-image: url(./images/igtab_lhtopdis.gif);
+}
+
+
+.igtab_TrendyRVRoundedTopBottom
+{
+	background-repeat:repeat-x;
+	background-image: url(./images/igtab_troundtopbot.gif);
+	position: absolute;
+	display: block;
+}
+
+
+.igtab_TrendyTVCloseSize
+{
+	padding-bottom:12px;
+}
+
+
+.igtab_TrendyBHRoundedForHolder
+{
+	background-color: none;
+	margin-left:5px;
+	height: 22px;
+}
+
+
+.igtab_TrendyLHTailSel
+{
+	background-image: url(./images/igtab_lhtopleftsel.gif);
+	border-right-color:#999999;
+}
+
+
+.igtab_TrendyRVTabMovingMarkUp
+{
+	filter: alpha(opacity : 70);
+	opacity: 0.7;
+}
+
+
+.igtab_TrendyRVCenterDis
+{
+	background-color:#CCCCCC;
+	background-image: url(./images/igtab_rvcenterdis.gif);
+}
+
+
+.igtab_TrendyBVTextSel
+{
+}
+
+
+.igtab_TrendyBVTailDis
+{
+	background-position:-150px 0px ;
+}
+
+
+.igtab_TrendyRVHolder
+{
+	margin-left:-24px;
+	overflow: hidden;
+	position: absolute;
+	z-index: 999;
+	left: 100%;
+	top: 0px;
+	height: 100%;
+	width: 24px;
+}
+
+
+.igtab_TrendyRVTailAct
+{
+}
+
+
+.igtab_TrendyBHContent
+{
+	background-color:#EFEFEF;
+	background-repeat:repeat-x;
+	background-image: url(./images/igtab_thcontentbackground.png);
+	height: 100%;
+	position: relative;
+}
+
+
+.igtab_TrendyBHTab
+{
+	background-color:Transparent;
+	background-repeat:no-repeat;
+	background-position:top left ;
+	background-image: url(./images/igtab_bhleft.gif);
+	border-top:solid 1px #999999;
+	margin:0px;
+	padding-left:7px;
+	display: inline;
+	position: relative;
+	float: left;
+	overflow: hidden;
+	white-space: nowrap;
+	height: 22px;
+}
+
+
+.igtab_TrendyRVImage
+{
+	position: relative;
+	display: block;
+	vertical-align:middle;
+}
+
+
+.igtab_TrendyLVTailHov
+{
+	background-image: url(./images/igtab_lvbothov.gif);
+}
+
+
+.igtab_TrendyTVTextAct
+{
+	border:dotted 1px #000000;
+	margin-left:4px;
+}
+
+
+.igtab_TrendyLVImage
+{
+	position: relative;
+	display: block;
+	vertical-align:middle;
+}
+
+
+.igtab_TrendyBVTabDis
+{
+	background-image: url(./images/igtab_bvleftbotdis.gif);
+}
+
+
+.igtab_TrendyRHMirrorCenterDis
+{
+	background-image: url(./images/igtab_rhbotdis.gif);
+}
+
+
+.igtab_TrendyBHRoundedFill
+{
+	background-image: url(./images/igtab_broundfill.gif);
+	position: absolute;
+	display: block;
+}
+
+
+.igtab_TrendyRVContentHolder
+{
+	background-color:White;
+	border-top:solid 1px #999999;
+	border-right:solid 1px #999999;
+	border-bottom:solid 1px #999999;
+	margin-left:-24px;
+	height: 99%;
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	z-index: 9;
+}
+
+
+.igtab_TrendyBHTextDis
+{
+	color:#AAAAAA;
+}
+
+
+.igtab_TrendyRVTailHov
+{
+	background-image: url(./images/igtab_rvbothov.gif);
+}
+
+
+.igtab_TrendyRHControl
+{
+	overflow: hidden;
+	position: relative;
+}
+
+
+.igtab_TrendyRVRoundedForScroll
+{
+	margin-top:-53px;
+}
+
+
+.igtab_TrendyRVTail
+{
+	background-position:bottom right ;
+	background-image: url(./images/igtab_rvbot.gif);
+	padding-top:3px;
+	display: block;
+}
+
+
+.igtab_TrendyRVRoundedForHolderInner
+{
+	top: 12px;
+}
+
+
+.igtab_TrendyLVTail
+{
+	background-position:bottom left ;
+	background-image: url(./images/igtab_lvbot.gif);
+	padding-top:3px;
+	display: block;
+}
+
+
+.igtab_TrendyLVRoundedForScroll
+{
+	margin-top:-53px;
+}
+
+
+.igtab_TrendyTVCenterAct
+{
+}
+
+
+.igtab_TrendyLHTabMoving
+{
+	filter: alpha(opacity : 30);
+	opacity: 0.3;
+}
+
+
+.igtab_TrendyRHMirrorCenterAct
+{
+}
+
+
+.igtab_TrendyLVTabMoving
+{
+	filter: alpha(opacity : 30);
+	opacity: 0.3;
+}
+
+
+.igtab_TrendyLHTab
+{
+	display: block;
+	overflow: hidden;
+	position: relative;
+}
+
+
+.igtab_TrendyBHText
+{
+	font-size:13px;
+	font-family: Verdana;
+	border-width:0px;
+	padding:0px;
+	white-space: nowrap;
+	line-height: 22px;
+	cursor:default;
+	vertical-align:middle;
+}
+
+
+.igtab_TrendyLHRoundedForHolder
+{
+	top: -6px;
+}
+
+
+.igtab_TrendyLHControl
+{
+	overflow: hidden;
+	position: relative;
+}
+
+
+.igtab_TrendyBHTail
+{
+	background-repeat:no-repeat;
+	background-position:top right ;
+	background-image: url(./images/igtab_bhright.gif);
+	padding-right:7px;
+	padding-left:0px;
+	display: block;
+}
+
+
+.igtab_TrendyLHTabAct
+{
+}
+
+
+.igtab_TrendyBVMirrorCenterHov
+{
+	background-image: url(./images/igtab_bvrighthov.png);
+}
+
+
+.igtab_TrendyLHHolderScroll
+{
+	top: -47px;
+}
+
+
+.igtab_TrendyBVMirrorSel
+{
+	background-image: url(./images/igtab_bvrightbotsel.gif);
+}
+
+
+.igtab_TrendyRVHolderScroll
+{
+	top: -47px;
+}
+
+
+.igtab_TrendyRVOverlap
+{
+	margin-top:-5px;
+}
+
+
+.igtab_TrendyRVCenter
+{
+	background-color:#E5E5E5;
+	background-repeat:repeat-y;
+	background-position:top right ;
+	background-image: url(./images/igtab_rvcenter.gif);
+	padding-left:1px;
+	display: block;
+	position: relative;
+	overflow: hidden;
+}
+
+
+.igtab_TrendyBVRoundedLeftRight
+{
+	background-repeat:repeat-y;
+	background-image: url(./images/igtab_broundleftright.gif);
+	position: absolute;
+	display: block;
+}
+
+
+.igtab_TrendyBHRoundedTopBottom
+{
+	background-repeat:repeat-x;
+	background-image: url(./images/igtab_broundtopbot.gif);
+	position: absolute;
+	display: block;
+}
+
+
+.igtab_TrendyLHCenter
+{
+	background-color:#E5E5E5;
+	background-repeat:repeat-x;
+	background-image: url(./images/igtab_lhtop.gif);
+	font-size:1px;
+	font-family: verdana;
+	display: block;
+	line-height: 1px;
+	height: 100%;
+}
+
+
+.igtab_TrendyTVTabMoving
+{
+	filter: alpha(opacity : 30);
+	opacity: 0.3;
+}
+
+
+.igtab_TrendyRHCenterAct
+{
+}
+
+
+.igtab_TrendyBVMirror
+{
+	background-repeat:no-repeat;
+	background-position:bottom right ;
+	background-image: url(./images/igtab_bvrightbot.gif);
+	margin-left:8px;
+	display: block;
+	position: absolute;
+	width: 22px;
+	height: 100%;
+}
+
+
+.igtab_TrendyRHTextAct
+{
+	border:dotted 1px Blue;
+}
+
+
+.igtab_TrendyBHCenterDis
+{
+	background-color:#CCCCCC;
+	background-position:0px -81px ;
+}
+
+
+.igtab_TrendyLHMirrorAct
+{
+}
+
+
+.igtab_TrendyRVTabSel
+{
+	background-image: url(./images/igtab_rvtopsel.gif);
+	border-left-color:#94C8EB;
+}
+
+
+.igtab_TrendyBVCloseSize
+{
+	padding-bottom:14px;
+}
+
+
+.igtab_TrendyLVTabMovingMarkUp
+{
+	filter: alpha(opacity : 70);
+	opacity: 0.7;
+}
+
+
+.igtab_TrendyBVTextDis
+{
+	color:#AAAAAA;
+}
+
+
+.igtab_TrendyBHCenterHov
+{
+	background-color:#4DB13E;
+	background-position:0px -27px ;
+}
+
+
+.igtab_TrendyTVScrollButton
+{
+	padding:1px;
+}
+
+
+.igtab_TrendyRHTextHov
+{
+	color:White;
+}
+
+
+.igtab_TrendyLHCenterAct
+{
+}
+
+
+.igtab_TrendyRVRoundedForHolderScroll
+{
+	top: -53px;
+}
+
+
+.igtab_TrendyBVCenterAct
+{
+}
+
+
+.igtab_TrendyRVTabAct
+{
+}
+
+
+.igtab_TrendyRHRoundedFill
+{
+	background-image: url(./images/igtab_troundfill.gif);
+	position: absolute;
+	display: block;
+}
+
+
+.igtab_TrendyTVCenter
+{
+	padding-top:5px;
+	display: block;
+	position: relative;
+	overflow: hidden;
+}
+
+
+.igtab_TrendyBVMirrorCenter
+{
+	background-color:#6DA3CC;
+	background-repeat:repeat-y;
+	background-position:top right ;
+	background-image: url(./images/igtab_bvright.gif);
+	margin-top:-12px;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+
+.igtab_TrendyLHTabMovingMarkUp
+{
+	filter: alpha(opacity : 70);
+	opacity: 0.7;
+}
+
+
+.igtab_TrendyLHTailDis
+{
+	background-image: url(./images/igtab_lhtopleftdis.gif);
+}
+
+
+.igtab_TrendyBHRoundedLeftRight
+{
+	background-repeat:repeat-y;
+	background-image: url(./images/igtab_broundleftright.gif);
+	position: absolute;
+	display: block;
+}
+
+
+.igtab_TrendyLVText
+{
+	font-size:13px;
+	font-family: Verdana;
+	padding-left:6px;
+	line-height: 14px;
+	display: block;
+	position: relative;
+	cursor:default;
+	vertical-align:middle;
+}
+
+
+.igtab_TrendyLHTextSel
+{
+}
+
+
+.igtab_TrendyBHTailSel
+{
+	background-image: url(./images/igtab_bhrightsel.gif);
+}
+
+
+.igtab_TrendyLVTabDis
+{
+	background-image: url(./images/igtab_lvtopdis.gif);
+}
+
+
+.igtab_TrendyLHCenterSel
+{
+	background-color:#019AFF;
+	background-image: url(./images/igtab_lhtopsel.gif);
+}
+
+
+.igtab_TrendyBVHolder
+{
+	background-repeat:repeat-x;
+	background-position:top left ;
+	background-image: url(./images/igtab_holderborder.gif);
+	margin:0px;
+	padding:0px;
+	position: relative;
+	display: block;
+	width: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+
+.igtab_TrendyLVCenterDis
+{
+	background-color:#CCCCCC;
+	background-image: url(./images/igtab_lvcenterdis.gif);
+}
+
+
+.igtab_TrendyBVMirrorAct
+{
+}
+
+
+.igtab_TrendyRHOverlap
+{
+	margin-top:-5px;
+}
+
+
+.igtab_TrendyLHCloseSize
+{
+	padding-right:10px;
+}
+
+
+.igtab_TrendyTVContent
+{
+	background-color:#EFEFEF;
+	background-repeat:repeat-x;
+	background-image: url(./images/igtab_thcontentbackground.png);
+	height: 100%;
+	position: relative;
+}
+
+
+.igtab_TrendyLHContent
+{
+	background-color:White;
+	height: 100%;
+	position: relative;
+}
+
+
+.igtab_TrendyRHRoundedCorners
+{
+	background-repeat:no-repeat;
+	background-image: url(./images/igtab_troundcorners.gif);
+	position: absolute;
+	display: block;
+}
+
+
+.igtab_TrendyBHRoundedForScroll
+{
+	margin-left:-56px;
+}
+
+
+.igtab_TrendyTVTextSel
+{
+}
+
+
+.igtab_TrendyTVHolderScroll
+{
+	margin-left:-50px;
+	position: relative;
+	width: 100%;
+	display: block;
+	overflow: hidden;
+}
+
+
+.igtab_TrendyBVRoundedLastTab
+{
+	margin-right:10px;
+}
+
+
+.igtab_TrendyTVTail
+{
+	background-repeat:repeat-y;
+	background-image: url(./images/igtab_tvleft.png);
+	margin-top:12px;
+	padding:0px;
+	display: block;
+	position: absolute;
+	width: 12px;
+	height: 100%;
+}
+
+
+.igtab_TrendyRVRoundedForHolder
+{
+	top: -6px;
+}
+
+
+.igtab_TrendyBHTextSel
+{
+}
+
+
+.igtab_TrendyTVHolder
+{
+	background-repeat:repeat-x;
+	background-position:bottom left ;
+	background-image: url(./images/igtab_holderborder.gif);
+	margin:0px;
+	padding:0px;
+	position: relative;
+	display: block;
+	width: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+
+.igtab_TrendyRHTailHov
+{
+	background-image: url(./images/igtab_rhtoprighthov.gif);
+}
+
+
+.igtab_TrendyRHTabSel
+{
+}
+
+
+.igtab_TrendyBVScrollButtons
+{
+	font-size:1px;
+	margin-left:-50px;
+	padding-top:1px;
+	position: absolute;
+	left: 100%;
+	display: block;
+	width: 50px;
+	z-index: 20000;
+	text-align:right;
+}
+
+
+.igtab_TrendyTVCenterHov
+{
+}
+
+
+.igtab_TrendyTVHolderNoScroll
+{
+	display: block;
+	position: relative;
+	width: 100%;
+}
+
+
+.igtab_TrendyRHMirrorHov
+{
+	background-image: url(./images/igtab_rhbotrighthov.gif);
+}
+
+
+.igtab_TrendyBVControl
+{
+	overflow: hidden;
+}
+
+
+.igtab_TrendyRVContentHolderInner
+{
+	border-left:solid 1px #999999;
+	margin-left:24px;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+	z-index: 9;
+}
+
+
+.igtab_TrendyBVTabHov
+{
+	background-image: url(./images/igtab_bvleftbothov.gif);
+}
+
+
+.igtab_TrendyRHTabDis
+{
+}
+
+
+.igtab_TrendyBVImage
+{
+	margin-top:2px;
+	margin-left:3px;
+	display: block;
+}
+
+
+.igtab_TrendyLHTabDis
+{
+}
+
+
+.igtab_TrendyRHCenterHov
+{
+	background-color:#4DB13E;
+	background-image: url(./images/igtab_rhtophov.gif);
+}
+
+
+.igtab_TrendyTVRoundedFill
+{
+	background-image: url(./images/igtab_troundfill.gif);
+	position: absolute;
+	display: block;
+}
+
+
+.igtab_TrendyTVTailAct
+{
+}
+
+
+.igtab_TrendyBHRoundedCorners
+{
+	background-repeat:no-repeat;
+	background-image: url(./images/igtab_broundcorners.gif);
+	position: absolute;
+	display: block;
+}
+
+
+.igtab_TrendyBVTail
+{
+	background-repeat:repeat-y;
+	background-image: url(./images/igtab_bvleft.png);
+	margin-top:-12px;
+	padding:0px;
+	display: block;
+	position: absolute;
+	width: 12px;
+	height: 100%;
+}
+
+
+.igtab_TrendyLVTailAct
+{
+}
+
+
+.igtab_TrendyRVScrollButtons
+{
+	font-size:1px;
+	margin-top:-47px;
+	margin-left:-22px;
+	position: absolute;
+	top: 100%;
+	z-index: 20000;
+	left: 100%;
+}
+
+
+.igtab_TrendyTVTextHov
+{
+	color:White;
+}
+
+
+.igtab_TrendyLVHolderScroll
+{
+	top: -47px;
+}
+
+
+.igtab_TrendyBVMirrorCenterDis
+{
+	background-image: url(./images/igtab_bvrightdis.gif);
+}
+
+
+.igtab_TrendyLVHolder
+{
+	overflow: hidden;
+	position: absolute;
+	z-index: 999;
+	left: 0px;
+	top: 0px;
+	height: 100%;
+	width: 25px;
+}
+
+
+.igtab_TrendyRHRoundedLeftRight
+{
+	background-repeat:repeat-y;
+	background-image: url(./images/igtab_troundleftright.gif);
+	position: absolute;
+	display: block;
+}
+
+
+.igtab_TrendyLVTextHov
+{
+	color:White;
+}
+
+
+.igtab_TrendyTVRoundedForHolder
+{
+	background-color: none;
+	margin-left:5px;
+}
+
+
+.igtab_TrendyTVMirrorCenter
+{
+	background-color:#6DA3CC;
+	background-repeat:repeat-y;
+	background-position:top right ;
+	background-image: url(./images/igtab_tvright.gif);
+	margin-top:12px;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+
+.igtab_TrendyBVTabSel
+{
+	background-image: url(./images/igtab_bvleftbotsel.gif);
+}
+
+
+.igtab_TrendyLHTextAct
+{
+	border:dotted 1px Blue;
+}
+
+
+.igtab_TrendyRVCenterAct
+{
+}
+
+
+.igtab_TrendyRHTailSel
+{
+	background-image: url(./images/igtab_rhtoprightsel.gif);
+	border-left-color:#999999;
+}
+
+
+.igtab_TrendyRHContentHolderInner
+{
+	border-left:solid 1px #999999;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+	z-index: 9;
+}
+
+
+.igtab_TrendyRVTab
+{
+	background-repeat:no-repeat;
+	background-position:top right ;
+	background-image: url(./images/igtab_rvtop.gif);
+	border-left:solid 1px #999999;
+	padding-top:3px;
+	display: block;
+	overflow: hidden;
+	position: relative;
+}
+
+
+.igtab_TrendyBVMirrorCenterAct
+{
+}
+
+
+.igtab_TrendyTVCenterDis
+{
+}
+
+
+.igtab_TrendyBVTextHov
+{
+	color:White;
+}
+
+
+.igtab_TrendyLHClose
+{
+	margin-left:-17px;
+	position: absolute;
+	left: 100%;
+	top: 12px;
+	cursor:pointer;
+}
+
+
+.igtab_TrendyRVTabHov
+{
+	background-image: url(./images/igtab_rvtophov.gif);
+	color:White;
+}
+
+
+.igtab_TrendyBVTabMovingMarkUp
+{
+	filter: alpha(opacity : 70);
+	opacity: 0.7;
+}
+
+
+.igtab_TrendyBHCenterSel
+{
+	background-color:#019AFF;
+	background-position:0px -54px ;
+}
+
+
+.igtab_TrendyLVCenterAct
+{
+}
+
+
+.igtab_TrendyRHMirrorCenter
+{
+	background-repeat:repeat-x;
+	background-position:bottom left ;
+	background-image: url(./images/igtab_rhbot.gif);
+	font-size:1px;
+	font-family: verdana;
+	display: block;
+	line-height: 1px;
+	height: 100%;
+}
+
+
+.igtab_TrendyRHCloseSize
+{
+	padding-left:10px;
+}
+
+
+.igtab_TrendyBVTabAct
+{
+}
+
+
+.igtab_TrendyRHTextSel
+{
+}
+
+
+.igtab_TrendyBVContent
+{
+	background-color:#EFEFEF;
+	background-repeat:repeat-x;
+	background-image: url(./images/igtab_thcontentbackground.png);
+	height: 100%;
+	position: relative;
+}
+
+
+.igtab_TrendyBHImage
+{
+	vertical-align:middle;
+}
+
+
+.igtab_TrendyTHRoundedLastTab
+{
+	margin-right:10px;
+}
+
+
+.igtab_TrendyTVText
+{
+	font-size:13px;
+	font-family: Verdana;
+	border-width:0px;
+	margin-top:5px;
+	margin-bottom:6px;
+	margin-left:5px;
+	white-space: nowrap;
+	line-height: 11px;
+	display: block;
+	overflow: hidden;
+	width: 20px;
+	cursor:default;
+	text-align:center;
+}
+
+
+.igtab_TrendyBVScrollButton
+{
+	padding:1px;
+}
+
+
+.igtab_TrendyLVScrollButtons
+{
+	font-size:1px;
+	margin-top:-47px;
+	margin-left:5px;
+	position: absolute;
+	top: 100%;
+	z-index: 20000;
+	left: 0px;
+}
+
+
+.igtab_TrendyRHTextDis
+{
+}
+
+
+.igtab_TrendyRHClose
+{
+	margin-left:3px;
+	position: absolute;
+	top: 12px;
+	cursor:pointer;
+}
+
+
+.igtab_TrendyBHTailDis
+{
+	background-image: url(./images/igtab_bhrightdis.gif);
+}
+
+
+.igtab_TrendyBVRoundedForScroll
+{
+	margin-left:-56px;
+}
+
+
+.igtab_TrendyRHCenterDis
+{
+	background-color:#CCCCCC;
+	background-image: url(./images/igtab_rhtopdis.gif);
+}
+
+
+.igtab_TrendyBVHolderNoScroll
+{
+	display: block;
+	position: relative;
+	width: 100%;
+}
+
+
+.igtab_TrendyBVMirrorDis
+{
+	background-image: url(./images/igtab_bvrightbotdis.gif);
+}
+
+
+.igtab_TrendyRVControl
+{
+	overflow: hidden;
+	position: relative;
+}
+
+
+.igtab_TrendyLHTailHov
+{
+	background-image: url(./images/igtab_lhtoplefthov.gif);
+}
+
+
+.igtab_TrendyLHMirror
+{
+	background-repeat:no-repeat;
+	background-position:bottom left ;
+	background-image: url(./images/igtab_lhbotleft.gif);
+	border-right:solid 1px #999999;
+	padding-left:10px;
+	display: block;
+	height: 3px;
+}
+
+
+.igtab_TrendyBHClose
+{
+	margin-top:5px;
+	margin-left:-20px;
+	position: absolute;
+	left: 100%;
+	top: 0px;
+	cursor:pointer;
+}
+
+
+.igtab_TrendyRHHolderScroll
+{
+	top: -47px;
+}
+
+
+.igtab_TrendyRHRoundedForScroll
+{
+	margin-top:-53px;
+}
+
+
+.igtab_TrendyRHRoundedForHolderScroll
+{
+	top: -53px;
+}
+
+
+.igtab_TrendyBHTabMoving
+{
+	filter: alpha(opacity : 30);
+	opacity: 0.3;
+}
+
+
+.igtab_TrendyRHTail
+{
+	background-repeat:no-repeat;
+	background-position:top right ;
+	background-image: url(./images/igtab_rhtopright.gif);
+	border-left:solid 1px #999999;
+	padding-right:10px;
+	display: block;
+	white-space: nowrap;
+	height: 24px;
+}
+
+
+.igtab_TrendyRVCenterHov
+{
+	background-color:#4DB13E;
+	background-image: url(./images/igtab_rvcenterhov.gif);
+}
+
+
+.igtab_TrendyLVRoundedCorners
+{
+	background-repeat:no-repeat;
+	background-image: url(./images/igtab_troundcorners.gif);
+	position: absolute;
+	display: block;
+}
+
+
+.igtab_TrendyLHTail
+{
+	background-repeat:no-repeat;
+	background-image: url(./images/igtab_lhtopleft.gif);
+	border-right:solid 1px #999999;
+	padding-left:10px;
+	display: block;
+	white-space: nowrap;
+	height: 24px;
+}
+
+
+.igtab_TrendyLVRoundedLeftRight
+{
+	background-repeat:repeat-y;
+	background-image: url(./images/igtab_troundleftright.gif);
+	position: absolute;
+	display: block;
+}
+
+
+.igtab_TrendyRVTailDis
+{
+	background-image: url(./images/igtab_rvbotdis.gif);
+}
+
+
+.igtab_TrendyLHRoundedForScroll
+{
+	margin-top:-53px;
+}
+
+
+.igtab_TrendyBVText
+{
+	font-size:13px;
+	font-family: Verdana;
+	border-width:0px;
+	margin-top:3px;
+	margin-bottom:5px;
+	margin-left:4px;
+	white-space: nowrap;
+	line-height: 11px;
+	display: block;
+	overflow: hidden;
+	width: 20px;
+	cursor:default;
+	text-align:center;
+}
+
+
+.igtab_TrendyRHContent
+{
+	background-color:White;
+	height: 100%;
+	position: relative;
+}
+
+
+.igtab_TrendyBHTextAct
+{
+	border:dotted 1px #000000;
+}
+
+
+.igtab_TrendyBVRoundedFill
+{
+	background-image: url(./images/igtab_broundfill.gif);
+	position: absolute;
+	display: block;
+}
+
+
+.igtab_TrendyBHTabSel
+{
+	background-position:0px -54px ;
+}
+
+
+.igtab_TrendyLVControl
+{
+	overflow: hidden;
+	position: relative;
+}
+
+
+.igtab_TrendyRHHolderScrollInner
+{
+	top: 47px;
+}
+
+
+.igtab_TrendyLHRoundedForHolderScrollInner
+{
+	top: 59px;
+}
+
+
+.igtab_TrendyRHHolder
+{
+	overflow: hidden;
+	position: absolute;
+	z-index: 999;
+	left: 100%;
+	top: 0px;
+	height: 100%;
+}
+
+
+.igtab_TrendyRHText
+{
+	font-size:13px;
+	font-family: Verdana;
+	line-height: 24px;
+	white-space: nowrap;
+	position: relative;
+	cursor:default;
+	vertical-align:middle;
+}
+
+
+.igtab_TrendyBVCenter
+{
+	padding-bottom:5px;
+	display: block;
+	position: relative;
+	overflow: hidden;
+}
+
+
+.igtab_TrendyLHRoundedForHolderInner
+{
+	top: 12px;
+}
+
+
+.igtab_TrendyBVCenterSel
+{
+}
+
+
+.igtab_TrendyBHTextHov
+{
+	color:White;
+}
+
+
+.igtab_TrendyBHTabDis
+{
+	background-position:0px -81px ;
+}
+
+
+.igtab_TrendyBVRoundedForHolder
+{
+	background-color: none;
+	margin-left:5px;
+}
+
+
+.igtab_TrendyRHRoundedForHolderScrollInner
+{
+	top: 59px;
+}
+
+
+.igtab_TrendyLVCenter
+{
+	background-color:#E5E5E5;
+	background-repeat:repeat-y;
+	background-image: url(./images/igtab_lvcenter.gif);
+	padding-left:3px;
+	display: block;
+	position: relative;
+	overflow: hidden;
+}
+
+
+.igtab_TrendyBVMirrorCenterSel
+{
+	background-image: url(./images/igtab_bvrightsel.gif);
+}
+
+
+.igtab_TrendyRVRoundedForHolderScrollInner
+{
+	top: 59px;
+}
+
+
+.igtab_TrendyRHTabHov
+{
+}
+
+
+.igtab_TrendyRVTextAct
+{
+	border:dotted 1px #000000;
+}
+
+
+.igtab_TrendyLHMirrorCenter
+{
+	background-repeat:repeat-x;
+	background-position:bottom left ;
+	background-image: url(./images/igtab_lhbot.gif);
+	font-size:1px;
+	font-family: verdana;
+	display: block;
+	line-height: 1px;
+	height: 100%;
+}
+
+
+.igtab_TrendyBHScrollButtons
+{
+	font-size:1px;
+	margin-left:-50px;
+	padding-top:2px;
+	position: absolute;
+	left: 100%;
+	display: block;
+	width: 50px;
+	z-index: 20000;
+	text-align:right;
+}
+
+
+.igtab_TrendyTVRoundedLeftRight
+{
+	background-repeat:repeat-y;
+	background-image: url(./images/igtab_troundleftright.gif);
+	position: absolute;
+	display: block;
+}
+
+
+.igtab_TrendyLHTextDis
+{
+}
+
+
+.igtab_TrendyBVMirrorHov
+{
+	background-image: url(./images/igtab_bvrightbothov.gif);
+}
+
+
+.igtab_TrendyLVTabSel
+{
+	background-image: url(./images/igtab_lvtopsel.gif);
+	border-right-color:#94C8EB;
+}
+
+
+.igtab_TrendyBVTailAct
+{
+}
+
+
+.igtab_TrendyBHTabMovingMarkUp
+{
+	filter: alpha(opacity : 70);
+	opacity: 0.7;
+}
+
+
+.igtab_TrendyTVMirrorCenterSel
+{
+	background-color:White;
+	background-image: url(./images/igtab_tvrightsel.gif);
+}
+
+
+.igtab_TrendyLHRoundedFill
+{
+	background-image: url(./images/igtab_troundfill.gif);
+	position: absolute;
+	display: block;
+}
+
+
+.igtab_TrendyLHRoundedLeftRight
+{
+	background-repeat:repeat-y;
+	background-image: url(./images/igtab_troundleftright.gif);
+	position: absolute;
+	display: block;
+}
+
+

@@ -1,0 +1,237 @@
+.grid {
+    width: fit-content;
+    height: 400px;
+    border-radius: 10px;
+}
+
+.tabelaC {
+    background-color: #D9D9D9;
+    color: #1C9489;
+    font-family: 'Ubuntu';
+    font-size: 12px;
+    font-weight: 600;
+    padding: .3rem .3rem .3rem .5rem;
+    display: flex;
+    text-align: left;
+}
+
+.col1 {
+    width: 300px !important;
+    vertical-align: central;
+}
+
+.linha1 {
+    font-family: 'Ubuntu';
+    font-size: 12px;
+    font-weight: 500;
+    color: #B0ABAB;
+    background-color: #FAFAFA;
+    text-align: left;
+}
+
+.linha2 {
+    font-family: 'Ubuntu';
+    font-size: 12px;
+    font-weight: 500;
+    color: #B0ABAB;
+    background-color: transparent;
+    text-align: left;
+}
+
+.linha1:hover .linha2:hover {
+    background-color: #C4C4C4;
+    color: #FFF;
+}
+
+.linhaHover {
+    background-color: #76A8A3;
+    font-family: 'Ubuntu';
+    font-size: 12px;
+    font-weight: 500;
+    color: #FFF;
+    text-align: left;
+    padding: 0.3rem 0.3rem 0.3rem 0.5rem;
+}
+
+.tFiltros {
+    font-family: "Univia Pro";
+    font-size: 12px;
+    color: #1C9489 !important;
+}
+
+.pFiltros {
+    font-family: "Ubuntu";
+    font-size: 12px;
+    color: #7D7B7B;
+    padding-right: .2rem;
+    padding-left: .2rem;
+}
+
+.listaTexto{
+    font-family: "Ubuntu";
+    font-size: 12px;
+    color: #7D7B7B;
+    padding-right: .2rem;
+    padding-left: .2rem;
+}
+
+/* listagem de empresas */
+
+#ctl00_MainContent_grd_Empresas_c0_sort, #ctl00_MainContent_grd_Empresas_c1_sort, #ctl00_MainContent_grd_Empresas_c2_sort, #ctl00_MainContent_grd_EmpresasNome_c0_sort {
+    width: 12px;
+    opacity: 35%;
+    padding-top: 0.3rem;
+}
+
+/* ppra */
+
+#ctl00_MainContent_grd_Clinicos_c0_sort, ctl00_MainContent_grd_Clinicos_c1_sort {
+    width: 12px;
+    opacity: 35%;
+    padding-top: 0.3rem;
+}
+
+/* clínicos */
+
+#ctl00_MainContent_grd_Clinicos_c1_sort, #ctl00_MainContent_grd_Clinicos_c1_sort {
+    width: 12px;
+    opacity: 35%;
+    padding-top: 0.3rem;
+}
+
+
+/* ciparepositorio */
+
+#ctl00_MainContent_gridExames_c0_sort, #ctl00_MainContent_grd_Clinicos_c0_sort, #ctl00_MainContent_grd_Clinicos_c1_sort, #ctl00_MainContent_grd_Clinicos_c2_sort, #ctl00_MainContent_grd_Representantes_c0_sort {
+    width: 12px;
+    opacity: 35%;
+    padding-top: 0.3rem;
+}
+
+/* equipcalibracao */
+
+#ctl00_MainContent_grd_Clinicos_c0_sort, #ctl00_MainContent_grd_Clinicos_c1_sort, #ctl00_MainContent_grd_Clinicos_c2_sort, #ctl00_MainContent_grd_Clinicos_c3_sort,
+#ctl00_MainContent_grd_Clinicos_c4_sort, #ctl00_MainContent_grd_Clinicos_c5_sort, #ctl00_MainContent_grd_Clinicos_c6_sort, #ctl00_MainContent_grd_Clinicos_c7_sort {
+    width: 12px;
+    opacity: 35%;
+    padding-top: 0.3rem;
+}
+
+/* repositório */
+
+#ctl00_MainContent_grd_Clinicos_c0_sort, #ctl00_MainContent_grd_Clinicos_c1_sort, #ctl00_MainContent_grd_Clinicos_c2_sort {
+    width: 12px;
+    opacity: 35%;
+    padding-top: 0.3rem;
+}
+
+/* lista procedimento */
+
+#ctl00_MainContent_gridEmpregados_c0_sort, #ctl00_MainContent_gridEmpregados_c1_sort {
+    width: 12px;
+    opacity: 35%;
+    padding-top: 0.3rem;
+}
+
+/* riscos e epi */
+
+#ctl00_MainContent_gridRiscos_c1_sort, #ctl00_MainContent_gridRiscos_c0_sort, #ctl00_MainContent_gridEPI_c0_sort {
+    width: 12px;
+    opacity: 35%;
+    padding-top: 0.3rem;
+}
+
+/* dados cadastrais */
+
+#ctl00_MainContent_gridContatoTelefonico_c0_sort, #ctl00_MainContent_gridContatoTelefonico_c1_sort, #ctl00_MainContent_gridContatoTelefonico_c2_sort, #ctl00_MainContent_gridContatoTelefonico_c3_sort {
+    width: 12px;
+    opacity: 35%;
+    padding-top: 0.3rem;
+}
+
+/* colaborador x ghe */
+
+#ctl00_MainContent_gridEmpregadossemGHE_c0_sort, #ctl00_MainContent_gridEmpregadossemGHE_c1_sort, #ctl00_MainContent_gridEmpregadossemGHE_c2_sort, #ctl00_MainContent_gridEmpregadossemGHE_c3_sort,
+#ctl00_MainContent_gridEmpregadossemGHE_c4_sort, #ctl00_MainContent_gridEmpregadossemGHE_c5_sort, #ctl00_MainContent_gridEmpregados_c1_sort, #ctl00_MainContent_gridEmpregados_c2_sort,
+#ctl00_MainContent_gridEmpregados_c3_sort, #ctl00_MainContent_gridEmpregados_c4_sort, #ctl00_MainContent_gridEmpregados_c5_sort {
+    width: 12px;
+    opacity: 35%;
+    padding-top: 0.3rem;
+}
+
+/* certificados */
+
+#ctl00_MainContent_UltraWebGridTreinamentos_c0_sort, #ctl00_MainContent_UltraWebGridTreinamentos_c1_sort {
+    width: 12px;
+    opacity: 35%;
+    padding-top: 0.3rem;
+}
+
+/* lista extintores */
+
+#ctl00_MainContent_UltraWebGridListaExtintores_c0_sort, #ctl00_MainContent_UltraWebGridListaExtintores_c1_sort, #ctl00_MainContent_UltraWebGridListaExtintores_c2_sort,
+#ctl00_MainContent_UltraWebGridListaExtintores_c3_sort, #ctl00_MainContent_UltraWebGridListaExtintores_c4_sort {
+    width: 12px;
+    opacity: 35%;
+    padding-top: 0.3rem;
+}
+
+/* lista uniformes */
+
+#ctl00_MainContent_UltraWebGridListaUniformes_c0_sort, #ctl00_MainContent_UltraWebGridListaUniformes_c1_sort, #ctl00_MainContent_UltraWebGridListaUniformes_c2_sort {
+    width: 12px;
+    opacity: 35%;
+    padding-top: 0.3rem;
+}
+
+/* lista procedimento apr */
+
+#ctl00_MainContent_UltraWebGridProcedimentos_c0_sort, #ctl00_MainContent_UltraWebGridProcedimentos_c1_sort {
+    width: 12px;
+    opacity: 35%;
+    padding-top: 0.3rem;
+}
+
+/* atas de reunião cipa */
+
+#ctl00_MainContent_UltraWebGridReuniaoCipa_c0_sort, #ctl00_MainContent_UltraWebGridReuniaoCipa_c1_sort {
+    width: 12px;
+    opacity: 35%;
+    padding-top: 0.3rem;
+}
+
+/* exames não ocupacionais */
+
+#ctl00_MainContent_gridAnamnese_c0_sort, #ctl00_MainContent_gridAnamnese_c4_sort, #ctl00_MainContent_gridAnamnese_c5_sort {
+    width: 12px;
+    opacity: 35%;
+    padding-top: 0.3rem;
+}
+
+/* listagem irregularidades */
+
+#ctl00_MainContent_UltraWebGridIrregularidades_c0_sort, #ctl00_MainContent_UltraWebGridIrregularidades_c1_sort, #ctl00_MainContent_UltraWebGridIrregularidades_c2_sort,
+#ctl00_MainContent_UltraWebGridIrregularidades_c3_sort {
+    width: 12px;
+    opacity: 35%;
+    padding-top: 0.3rem;
+}
+
+/* lista acidente 2 */
+
+#ctl00_MainContent_UltraWebGridExameClinico_c0_sort, #ctl00_MainContent_UltraWebGridExameClinico_c1_sort, #ctl00_MainContent_UltraWebGridExameClinico_c2_sort,
+#ctl00_MainContent_UltraWebGridExameClinico_c3_sort {
+    width: 12px;
+    opacity: 35%;
+    padding-top: 0.3rem;
+}
+
+/* lista treinamentos */
+
+ 
+
+#ctl00_MainContent_UltraWebGridListaTreinamentos_c0_sort, #ctl00_MainContent_UltraWebGridListaTreinamentos_c1_sort {
+width: 12px;
+opacity: 35%;
+padding-top: 0.3rem;
+}

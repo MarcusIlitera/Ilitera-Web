@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="rptQuadroEPI" targetNamespace="http://tempuri.org/rptQuadroEPI.xsd" xmlns:mstns="http://tempuri.org/rptQuadroEPI.xsd" xmlns="http://tempuri.org/rptQuadroEPI.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="rptQuadroEPI" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="rptQuadroEPI" msprop:Generator_UserDSName="rptQuadroEPI">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Result" msprop:Generator_TableClassName="ResultDataTable" msprop:Generator_TableVarName="tableResult" msprop:Generator_TablePropName="Result" msprop:Generator_RowDeletingName="ResultRowDeleting" msprop:Generator_UserTableName="Result" msprop:Generator_RowChangingName="ResultRowChanging" msprop:Generator_RowEvHandlerName="ResultRowChangeEventHandler" msprop:Generator_RowDeletedName="ResultRowDeleted" msprop:Generator_RowEvArgName="ResultRowChangeEvent" msprop:Generator_RowChangedName="ResultRowChanged" msprop:Generator_RowClassName="ResultRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="tNO_FUNC" msprop:Generator_ColumnVarNameInTable="columntNO_FUNC" msprop:Generator_ColumnPropNameInRow="tNO_FUNC" msprop:Generator_ColumnPropNameInTable="tNO_FUNCColumn" msprop:Generator_UserColumnName="tNO_FUNC" type="xs:string" minOccurs="0" />
+              <xs:element name="tNO_EPI" msprop:Generator_ColumnVarNameInTable="columntNO_EPI" msprop:Generator_ColumnPropNameInRow="tNO_EPI" msprop:Generator_ColumnPropNameInTable="tNO_EPIColumn" msprop:Generator_UserColumnName="tNO_EPI" type="xs:string" minOccurs="0" />
+              <xs:element name="tNO_X" msprop:Generator_ColumnVarNameInTable="columntNO_X" msprop:Generator_ColumnPropNameInRow="tNO_X" msprop:Generator_ColumnPropNameInTable="tNO_XColumn" msprop:Generator_UserColumnName="tNO_X" type="xs:string" minOccurs="0" />
+              <xs:element name="tNO_TOT" msprop:Generator_ColumnVarNameInTable="columntNO_TOT" msprop:Generator_ColumnPropNameInRow="tNO_TOT" msprop:Generator_ColumnPropNameInTable="tNO_TOTColumn" msprop:Generator_UserColumnName="tNO_TOT" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

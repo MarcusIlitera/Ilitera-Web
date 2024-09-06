@@ -1,0 +1,62 @@
+<?xml version="1.0" standalone="yes" ?>
+<xs:schema id="DataSet" targetNamespace="http://www.tempuri.org/DataSet1.xsd" xmlns:mstns="http://www.tempuri.org/DataSet1.xsd"
+	xmlns="http://www.tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+	<xs:element name="DataSet" msdata:IsDataSet="true" msdata:Locale="pt-BR">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="Result">
+					<xs:complexType>
+						<xs:sequence>					
+							<xs:element name="NomeEmpresa" type="xs:string" minOccurs="0" />
+							<xs:element name="Configuracao_QtdEmpregados" type="xs:int"/>
+							<xs:element name="Configuracao_Turnover" type="xs:double" />
+							<xs:element name="Receita_ValorEmpregado" type="xs:double" />
+							<xs:element name="Receita_TotalMensal" type="xs:double" />
+							<xs:element name="Receita_TotalAnual" type="xs:double" />
+							<xs:element name="Despesa_Exa_AdmDem_Qtd" type="xs:int" />
+							<xs:element name="Despesa_Exa_AdmDem_ValorUnit" type="xs:double" />
+							<xs:element name="Despesa_Exa_AdmDem_ValorMensal" type="xs:double" />
+							<xs:element name="Despesa_Exa_AdmDem_ValorAnual" type="xs:double" />
+							<xs:element name="Despesa_Exa_Periodico_Qtd" type="xs:int" />
+							<xs:element name="Despesa_Exa_Periodico_ValorUnit" type="xs:double" />
+							<xs:element name="Despesa_Exa_Periodico_ValorMensal" type="xs:double" />
+							<xs:element name="Despesa_Exa_Periodico_ValorAnual" type="xs:double" />
+							<xs:element name="Despesa_MedicaMensal" type="xs:double" />							
+							<xs:element name="Despesa_MedicaAnual" type="xs:double" />
+							<xs:element name="LucoBrutoMensal" type="xs:double" />
+							<xs:element name="DespesaADMMensal" type="xs:double" />
+							<xs:element name="LucroMensalLiquido" type="xs:double" />
+							<xs:element name="LucoBrutoAnual" type="xs:double" />
+							<xs:element name="DespesaADMAnual" type="xs:double" />
+							<xs:element name="LucroAnualLiquido" type="xs:double" />	
+							<xs:element name="MediaPonderadaValorUnitario" type="xs:double" />
+							<xs:element name="TotalReceitaMensal" type="xs:double" />
+							<xs:element name="TotalReceitaAnual" type="xs:double" />							
+							<xs:element name="TotalDespesa_Exa_AdmDem_Qtd" type="xs:double" />
+							<xs:element name="TotalDespesa_Exa_AdmDem_ValorUnit" type="xs:double" />
+							<xs:element name="TotalDespesa_Exa_AdmDem_ValorMensal" type="xs:double" />
+							<xs:element name="TotalDespesa_Exa_AdmDem_ValorAnual" type="xs:double" />
+							<xs:element name="TotalDespesa_Exa_Periodico_Qtd" type="xs:double" />
+							<xs:element name="TotalDespesa_Exa_Periodico_ValorUnit" type="xs:double" />
+							<xs:element name="TotalDespesa_Exa_Periodico_ValorMensal" type="xs:double" />
+							<xs:element name="TotalDespesa_Exa_Periodico_ValorAnual" type="xs:double" />							
+							<xs:element name="TotalDespesa_MedicaMensal" type="xs:double" />
+							<xs:element name="TotalDespesa_MedicaAnual" type="xs:double" />
+							<xs:element name="TotalLucroBrutoMensal" type="xs:double" />
+							<xs:element name="TotalDespesaADMMensal" type="xs:double" />
+							<xs:element name="TotalLucroMensalLiquido" type="xs:double" />
+							<xs:element name="TotalLucroBrutoAnual" type="xs:double" />
+							<xs:element name="TotalDespesaADMAnual" type="xs:double" />
+							<xs:element name="TotalLucroAnualLiquido" type="xs:double" />							
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="Constraint1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:DSReuniaoCipa" />
+			<xs:field xpath="mstns:ID" />
+		</xs:unique>
+	</xs:element>
+</xs:schema>

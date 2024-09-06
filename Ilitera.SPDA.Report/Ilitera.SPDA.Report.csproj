@@ -1,0 +1,390 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B732AA0B-4810-49FA-AC8F-F70F987939A3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ilitera.SPDA.Report</RootNamespace>
+    <AssemblyName>Ilitera.SPDA.Report</AssemblyName>
+    <StartupObject>
+    </StartupObject>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>Ilitera.pfx</AssemblyOriginatorKeyFile>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>SecurityRules.ruleset</CodeAnalysisRuleSet>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WINDOWS\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataSourceCronograma.cs" />
+    <Compile Include="DataSourceDocumentoBase.cs" />
+    <Compile Include="DataSourceLaudoSPDA.cs" />
+    <Compile Include="DataSourceLaudoSPDA2.cs" />
+    <Compile Include="DataSourceQuadroLaudoEletrico.cs" />
+    <Compile Include="DataSource\DSCapa.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSCapa.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSource\DSEspacosConfinados.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSEspacosConfinados.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSource\DSLaudoEletrico.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSLaudoEletrico.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSource\DSLaudoEletrico_Adequacao.cs">
+      <DependentUpon>DSLaudoEletrico_Adequacao.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSource\DSLaudoEletrico_Adequacao.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSLaudoEletrico_Adequacao.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSource\DSPontos.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSPontos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSource\DSTrabalhoAltura.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSTrabalhoAltura.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RptCronogramaLaudoEletrico.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptCronogramaLaudoEletrico.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptDocumentoBase.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptDocumentoBase.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptEspacoConfinado.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptEspacoConfinado.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptLaudoSPDA.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptLaudoSPDA.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptLaudoSPDA_Conclusao.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptLaudoSPDA_Conclusao.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptSPDA2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptSPDA2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptSPDA2_Final.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptSPDA2_Final.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptSPDA2_Intro.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptSPDA2_Intro.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="RptCronogramaLaudoEletrico.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptCronogramaLaudoEletrico.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptDocumentoBase.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptDocumentoBase.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptEspacoConfinado.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptEspacoConfinado.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptLaudoSPDA.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptLaudoSPDA.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptLaudoSPDA_Conclusao.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptLaudoSPDA_Conclusao.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptSPDA2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptSPDA2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptSPDA2_Final.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptSPDA2_Final.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptSPDA2_Intro.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptSPDA2_Intro.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Content Include="DataSource\DSVasoCaldeiraProjeto.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSVasoCaldeiraInspecao.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="DataSource\DSCapa.xsc">
+      <DependentUpon>DSCapa.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSCapa.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSCapa.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSource\DSCapa.xss">
+      <DependentUpon>DSCapa.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSEspacosConfinados.xsc">
+      <DependentUpon>DSEspacosConfinados.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSEspacosConfinados.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSEspacosConfinados.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSource\DSEspacosConfinados.xss">
+      <DependentUpon>DSEspacosConfinados.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSLaudoEletrico.xsc">
+      <DependentUpon>DSLaudoEletrico.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSLaudoEletrico.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSLaudoEletrico.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSource\DSLaudoEletrico.xss">
+      <DependentUpon>DSLaudoEletrico.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSLaudoEletrico_Adequacao.xsc">
+      <DependentUpon>DSLaudoEletrico_Adequacao.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSLaudoEletrico_Adequacao.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSLaudoEletrico_Adequacao.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSource\DSLaudoEletrico_Adequacao.xss">
+      <DependentUpon>DSLaudoEletrico_Adequacao.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSPontos.xsc">
+      <DependentUpon>DSPontos.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSPontos.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSPontos.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSource\DSPontos.xss">
+      <DependentUpon>DSPontos.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSTrabalhoAltura.xsc">
+      <DependentUpon>DSTrabalhoAltura.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSTrabalhoAltura.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSTrabalhoAltura.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSource\DSTrabalhoAltura.xss">
+      <DependentUpon>DSTrabalhoAltura.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSVasoCaldeiraInspecao.xsc">
+      <DependentUpon>DSVasoCaldeiraInspecao.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSVasoCaldeiraInspecao.xss">
+      <DependentUpon>DSVasoCaldeiraInspecao.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSVasoCaldeiraInspecao.xsx">
+      <DependentUpon>DSVasoCaldeiraInspecao.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSVasoCaldeiraProjeto.xsc">
+      <DependentUpon>DSVasoCaldeiraProjeto.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSVasoCaldeiraProjeto.xss">
+      <DependentUpon>DSVasoCaldeiraProjeto.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSVasoCaldeiraProjeto.xsx">
+      <DependentUpon>DSVasoCaldeiraProjeto.xsd</DependentUpon>
+    </None>
+    <None Include="Ilitera.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3924545A-F8E2-475A-B1A4-05175BC41E50}" />
+    <Service Include="{5AD368F8-9AD3-4e4c-97D8-1F4F1C124158}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Ilitera.Common\Ilitera.Common.csproj">
+      <Project>{6EF4B4EC-69D3-4F21-8934-F23F34A52533}</Project>
+      <Name>Ilitera.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ilitera.Data\Ilitera.Data.csproj">
+      <Project>{DDD39289-1377-486B-8AA3-122884700431}</Project>
+      <Name>Ilitera.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ilitera.Opsa.Data\Ilitera.Opsa.Data.csproj">
+      <Project>{7C453D2C-00BB-4CDC-9A34-3E4F52A66E13}</Project>
+      <Name>Ilitera.Opsa.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>del   "$(ProjectDir)obj\x64\Debug\*.*"  /q
+del   "$(ProjectDir)obj\Debug\*.*"  /q</PostBuildEvent>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,41 @@
+<?xml version="1.0" standalone="yes" ?>
+<xs:schema id="DataSet" targetNamespace="http://www.tempuri.org/DataSet1.xsd" xmlns:mstns="http://www.tempuri.org/DataSet1.xsd"
+	xmlns="http://www.tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+	<xs:element name="DataSet" msdata:IsDataSet="true" msdata:Locale="pt-BR">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="Result">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="CLIENTE" type="xs:string" minOccurs="0" />
+							<xs:element name="UNIDADE" type="xs:string" minOccurs="0" />
+							<xs:element name="IS_UNIDADE" type="xs:boolean" minOccurs="0" />
+							<xs:element name="COM_UNIDADE" type="xs:boolean" minOccurs="0" />
+							<xs:element name="CEP" type="xs:string" minOccurs="0" />
+							<xs:element name="VALOR_SM" type="xs:string" minOccurs="0" />
+							<xs:element name="VALOR_PCMSO" type="xs:float" minOccurs="0" />
+							<xs:element name="VALOR_MOEDA" type="xs:float" minOccurs="0" />
+							<xs:element name="QTD_EMPREGADOS" type="xs:int" minOccurs="0" />
+							<xs:element name="ELEICAO" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="ELEICAO_RESPONSAVEL" type="xs:string" minOccurs="0" />
+							<xs:element name="OBRIGACAO" type="xs:string" minOccurs="0" />
+							<xs:element name="PPRA_ULTIMO" type="xs:string" minOccurs="0" />
+							<xs:element name="PPRA_VENCIMENTO" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="PPRA_PEDIDO" type="xs:string" minOccurs="0" />
+							<xs:element name="DOCUMENTO" type="xs:string" minOccurs="0" />
+							<xs:element name="PRESTADOR" type="xs:string" minOccurs="0" />
+							<xs:element name="ENDERECO" type="xs:string" minOccurs="0" />
+							<xs:element name="BAIRRO" type="xs:string" minOccurs="0" />
+							<xs:element name="CIDADE" type="xs:string" minOccurs="0" />
+							<xs:element name="UF" type="xs:string" minOccurs="0" />
+							<xs:element name="QUADRADO" type="xs:string" minOccurs="0" />
+							<xs:element name="TEM_CIPA" type="xs:string" minOccurs="0" />
+							<xs:element name="CIPA_CONTRATADA" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

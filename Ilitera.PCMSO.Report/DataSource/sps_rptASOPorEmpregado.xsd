@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="Dataset" targetNamespace="http://tempuri.org/Dataset.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/Dataset.xsd" xmlns:mstns="http://tempuri.org/Dataset.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="Dataset" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="Result">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="nID_EMPREGADO" type="xs:int" />
+							<xs:element name="nID_SETOR" type="xs:int" minOccurs="0" />
+							<xs:element name="nID_FUNCAO" type="xs:int" minOccurs="0" />
+							<xs:element name="tNO_EMPG" type="xs:string" minOccurs="0" />
+							<xs:element name="tNU_CTPS" type="xs:string" minOccurs="0" />
+							<xs:element name="hDT_ADM" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="hDT_DEM" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="nNO_FOTO" type="xs:string" minOccurs="0" />
+							<xs:element name="nJORN" type="xs:short" minOccurs="0" />
+							<xs:element name="tNO_PIS_PASEP" type="xs:float" minOccurs="0" />
+							<xs:element name="tNO_IDENTIDADE" type="xs:string" minOccurs="0" />
+							<xs:element name="nSEXO" type="xs:string" minOccurs="0" />
+							<xs:element name="hDT_NASC" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="nPESO" type="xs:double" minOccurs="0" />
+							<xs:element name="nALTURA" type="xs:double" minOccurs="0" />
+							<xs:element name="bDEMITIDO" type="xs:boolean" minOccurs="0" />
+							<xs:element name="NomeReduzido" type="xs:string" minOccurs="0" />
+							<xs:element name="RazãoSocial" type="xs:string" minOccurs="0" />
+							<xs:element name="Endereço" type="xs:string" minOccurs="0" />
+							<xs:element name="Bairro" type="xs:string" minOccurs="0" />
+							<xs:element name="Cidade" type="xs:string" minOccurs="0" />
+							<xs:element name="Estado" type="xs:string" minOccurs="0" />
+							<xs:element name="CEP" type="xs:string" minOccurs="0" />
+							<xs:element name="CGC" type="xs:string" minOccurs="0" />
+							<xs:element name="IE" type="xs:string" minOccurs="0" />
+							<xs:element name="tDS_EXAME_TIPO" type="xs:string" minOccurs="0" />
+							<xs:element name="tNOME_MEDICO" type="xs:string" />
+							<xs:element name="tTITULO_MEDICO" type="xs:string" />
+							<xs:element name="tCONTATO_MEDICO" type="xs:string" />
+							<xs:element name="dDT_EXAME" type="xs:string" minOccurs="0" />
+							<xs:element name="tDS_EXAME" type="xs:string" minOccurs="0" />
+							<xs:element name="nRS_EXAME" type="xs:short" minOccurs="0" />
+							<xs:element name="tNO_STR_EMPR" type="xs:string" />
+							<xs:element name="tNO_FUNC_EMPR" type="xs:string" />
+							<xs:element name="tNO_DIR_FTO_EMPG" type="xs:string" minOccurs="0" />
+							<xs:element name="tNO_ARQ_INIC_FTO_EMPG" type="xs:string" minOccurs="0" />
+							<xs:element name="tNO_ARQ_TERM_FTO_EMPG" type="xs:string" minOccurs="0" />
+							<xs:element name="tNO_ARQ_EXT_FTO_EMPG" type="xs:string" minOccurs="0" />
+							<xs:element name="tNO_FOTO" type="xs:string" minOccurs="0" />
+							<xs:element name="tMEDICO_COORD_PCMSO" type="xs:string" />
+							<xs:element name="tVIA" type="xs:string" />
+							<xs:element name="nID_GHE" type="xs:int" minOccurs="0" />
+							<xs:element name="tNO_GHE" type="xs:string" />
+							<xs:element name="tX_APTO" type="xs:string" />
+							<xs:element name="tX_INAPTO" type="xs:string" />
+							<xs:element name="PressaoArterial" type="xs:string" />								
+							<xs:element name="Pulso" type="xs:string" />	
+							<xs:element name="Altura" type="xs:string" />	
+							<xs:element name="Peso" type="xs:string" />	
+							<xs:element name="DataUltimaMenstruacao" type="xs:string" />	
+							<xs:element name="bPCI" type="xs:int" />
+							<xs:element name="iFOTO" type="xs:base64Binary" minOccurs="0" />
+							<xs:element name="tX_CabecaPescocoCA" type="xs:string" />
+							<xs:element name="tX_CabecaPescocoSA" type="xs:string" />
+							<xs:element name="tX_CoracaoCA" type="xs:string" />
+							<xs:element name="tX_CoracaoSA" type="xs:string" />
+							<xs:element name="tX_PulmoesCA" type="xs:string" />
+							<xs:element name="tX_PulmoesSA" type="xs:string" />
+							<xs:element name="tX_MembrosInferioresCA" type="xs:string" />
+							<xs:element name="tX_MembrosInferioresSA" type="xs:string" />
+							<xs:element name="tX_RegiaoCervicalCA" type="xs:string" />
+							<xs:element name="tX_RegiaoCervicalSA" type="xs:string" />
+							<xs:element name="tX_MembrosSuperioresCA" type="xs:string" />
+							<xs:element name="tX_MembrosSuperioresSA" type="xs:string" />
+							<xs:element name="HasQueixasAtuais" type="xs:string" />
+							<xs:element name="HasAfastamento" type="xs:string" />
+							<xs:element name="HasTraumatismos" type="xs:string" />
+							<xs:element name="HasCirurgia" type="xs:string" />
+							<xs:element name="HasMedicacoes" type="xs:string" />
+							<xs:element name="HasAntecedentes" type="xs:string" />
+							<xs:element name="HasTabagismo" type="xs:string" />
+							<xs:element name="HasAlcoolismo" type="xs:string" />
+							<xs:element name="HasDeficienciaFisica" type="xs:string" />
+							<xs:element name="HasMudancaRiscoOcupacional" type="xs:string" />
+							<xs:element name="Observacao" type="xs:string" />
+							<xs:element name="ObservacaoResultado" type="xs:string" />														
+							<xs:element name="RiscosOcupacionais" type="xs:string" />
+							<xs:element name="ExamesComplementares" type="xs:string" />							
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

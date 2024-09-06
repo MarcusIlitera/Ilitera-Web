@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ilitera.Sied.Report", "Ilitera.Sied.Report.csproj", "{FEA4E9D9-6182-46BC-B6CE-9AAC09B63E1F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FEA4E9D9-6182-46BC-B6CE-9AAC09B63E1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEA4E9D9-6182-46BC-B6CE-9AAC09B63E1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEA4E9D9-6182-46BC-B6CE-9AAC09B63E1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEA4E9D9-6182-46BC-B6CE-9AAC09B63E1F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

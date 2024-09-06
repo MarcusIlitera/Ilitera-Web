@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSVacinaPreventiva" targetNamespace="http://tempuri.org/DSVacinaPreventiva.xsd" xmlns:mstns="http://tempuri.org/DSVacinaPreventiva.xsd" xmlns="http://tempuri.org/DSVacinaPreventiva.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSVacinaPreventiva" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DSVacinaPreventiva" msprop:Generator_UserDSName="DSVacinaPreventiva">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Result" msprop:Generator_TableClassName="ResultDataTable" msprop:Generator_TableVarName="tableResult" msprop:Generator_TablePropName="Result" msprop:Generator_RowDeletingName="ResultRowDeleting" msprop:Generator_RowChangingName="ResultRowChanging" msprop:Generator_RowEvHandlerName="ResultRowChangeEventHandler" msprop:Generator_RowDeletedName="ResultRowDeleted" msprop:Generator_UserTableName="Result" msprop:Generator_RowChangedName="ResultRowChanged" msprop:Generator_RowEvArgName="ResultRowChangeEvent" msprop:Generator_RowClassName="ResultRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Colaborador" msprop:Generator_ColumnVarNameInTable="columnColaborador" msprop:Generator_ColumnPropNameInRow="Colaborador" msprop:Generator_ColumnPropNameInTable="ColaboradorColumn" msprop:Generator_UserColumnName="Colaborador" type="xs:string" minOccurs="0" />
+              <xs:element name="Matricula" msprop:Generator_ColumnVarNameInTable="columnMatricula" msprop:Generator_ColumnPropNameInRow="Matricula" msprop:Generator_ColumnPropNameInTable="MatriculaColumn" msprop:Generator_UserColumnName="Matricula" type="xs:string" minOccurs="0" />
+              <xs:element name="Setor" msprop:Generator_ColumnVarNameInTable="columnSetor" msprop:Generator_ColumnPropNameInRow="Setor" msprop:Generator_ColumnPropNameInTable="SetorColumn" msprop:Generator_UserColumnName="Setor" type="xs:string" minOccurs="0" />
+              <xs:element name="Funcao" msprop:Generator_ColumnVarNameInTable="columnFuncao" msprop:Generator_ColumnPropNameInRow="Funcao" msprop:Generator_ColumnPropNameInTable="FuncaoColumn" msprop:Generator_UserColumnName="Funcao" type="xs:string" minOccurs="0" />
+              <xs:element name="Admissao" msprop:Generator_ColumnVarNameInTable="columnAdmissao" msprop:Generator_ColumnPropNameInRow="Admissao" msprop:Generator_ColumnPropNameInTable="AdmissaoColumn" msprop:Generator_UserColumnName="Admissao" type="xs:string" minOccurs="0" />
+              <xs:element name="Data_Vacina" msprop:Generator_ColumnVarNameInTable="columnData_Vacina" msprop:Generator_ColumnPropNameInRow="Data_Vacina" msprop:Generator_ColumnPropNameInTable="Data_VacinaColumn" msprop:Generator_UserColumnName="Data_Vacina" type="xs:string" minOccurs="0" />
+              <xs:element name="VacinaTipo" msprop:Generator_ColumnVarNameInTable="columnVacinaTipo" msprop:Generator_ColumnPropNameInRow="VacinaTipo" msprop:Generator_ColumnPropNameInTable="VacinaTipoColumn" msprop:Generator_UserColumnName="VacinaTipo" type="xs:string" minOccurs="0" />
+              <xs:element name="Dose" msprop:Generator_ColumnVarNameInTable="columnDose" msprop:Generator_ColumnPropNameInRow="Dose" msprop:Generator_ColumnPropNameInTable="DoseColumn" msprop:Generator_UserColumnName="Dose" type="xs:string" minOccurs="0" />
+              <xs:element name="Dias_Vacina" msprop:Generator_ColumnVarNameInTable="columnDias_Vacina" msprop:Generator_ColumnPropNameInRow="Dias_Vacina" msprop:Generator_ColumnPropNameInTable="Dias_VacinaColumn" msprop:Generator_UserColumnName="Dias_Vacina" type="xs:string" minOccurs="0" />
+              <xs:element name="Dias_Admissao" msprop:Generator_ColumnVarNameInTable="columnDias_Admissao" msprop:Generator_ColumnPropNameInRow="Dias_Admissao" msprop:Generator_ColumnPropNameInTable="Dias_AdmissaoColumn" msprop:Generator_UserColumnName="Dias_Admissao" type="xs:string" minOccurs="0" />
+              <xs:element name="Vacina_Preventiva" msprop:Generator_ColumnVarNameInTable="columnVacina_Preventiva" msprop:Generator_ColumnPropNameInRow="Vacina_Preventiva" msprop:Generator_ColumnPropNameInTable="Vacina_PreventivaColumn" msprop:Generator_UserColumnName="Vacina_Preventiva" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,212 @@
+.errorFont
+{
+	font: xx-small Verdana;
+	color: Red;
+}
+.obrigatorio
+{
+	font: xx-small Verdana;
+	color: Red;
+	font-style: italic;
+}
+.subtitulo {
+	color: #006633;
+	font-size: 11px;
+	background-repeat: repeat-x;
+	height: 16px;
+	font-family: "Century Gothic";
+	font-weight: bold;
+}
+.textDadosCampo {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	color: #666666;
+	cursor: default;
+	background-position: center;
+	white-space: nowrap;
+	background-color: #FFFFFF;
+	border: 1px solid #CCCCCC;
+	margin: 0px;
+	padding: 0px;
+	height: 13px;
+	vertical-align: middle;
+}
+.textDadosNome {
+	font-family: Verdana, Helvetica, sans-serif;
+	color: #414121;
+	text-indent: 7px;
+	background-color: #FFFFFF;
+	border: 1px solid #CCCCCC;
+	height: 11px;
+	font-weight: bold;
+	margin: 0px;
+	padding: 0px;
+	font-size: 10px;
+
+}
+.textDadosOpcao {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	color: #666666;
+	cursor: default;
+	font-weight: bold;
+	margin: 0px;
+	padding: 0px;
+	height: 11px;
+
+}
+.textCampoNome {
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #44926d;
+	font-weight: bold;
+	text-indent: 7px;
+	cursor: default;
+	border-top: 1px solid;
+	border-right: 1px solid;
+	border-bottom: 1px solid #7cc5a1;
+	border-left: 1px solid #7cc5a1;
+	background-color: #EEEEEE;
+	margin: 0px;
+	padding: 0px;
+
+}
+.tableBorder {
+	border: 1px solid #333333;
+	margin: 0px;
+	padding: 0px;
+
+}
+.buttonBox
+{
+	background: #3E684D center top;
+	font: bold 9px Verdana, Arial, Helvetica, sans-serif, Tahoma;
+	color:White;
+	border-top: thin solid #597C4E;
+	border-right: thin solid #23361F;
+	border-bottom: thin solid #23361F;
+	border-left: thin solid #597C4E;
+	height: 19px;
+
+}
+.tableSpace {
+	height: 2px;
+	margin: 0px;
+	padding: 0px;
+
+
+}
+.tableEdit {
+	height: 11px;
+	padding: 0px;
+	margin: 0px;
+
+}
+.fotoBorder {
+	border-top: 1px solid #E6E6E6;
+	border-right: 1px solid #E6E6E6;
+	border-bottom: 1px solid #E6E6E6;
+	border-left: #E6E6E6;
+}
+.buttonFoto {
+
+	background: F5F5F5 center top;
+	font: bold 9px Arial, Helvetica, sans-serif, Tahoma;
+	color:#000000;
+	border-top: 1px solid #CCCCCC;
+	border-right: 1px solid #666666;
+	border-bottom: 1px solid #666666;
+	border-left: 1px solid #CCCCCC;
+	height: 16px;
+}
+
+
+.normalFont
+{
+	font: xx-small Verdana;
+	color: #44926D;
+}
+
+.destaqueFont
+{
+	font: xx-small Verdana;
+	color: #404000;
+}
+
+.largeFont
+{
+	font: 8pt Verdana;
+	color: #44926D;
+}
+
+.boldFont
+{
+	font: Bold xx-small Verdana;
+	color:#44926D;
+}
+
+.boldFontBranca
+{
+	font: Bold xx-small Verdana;
+	color:#FFFFFF;
+}
+.largeboldFont
+{
+	font: Bold 8pt Verdana;
+	color:#44926D;
+	text-decoration: underline;
+}
+
+
+.inputBox
+{
+	font: xx-small Verdana;
+	border: 1px solid #7CC5A1;
+	color: #004000;
+	background-color: #FCFEFD;
+	text-align: left;
+	
+}
+
+.inputBoxYellow
+{
+	border-right: solid 1px #004000;
+	border-top: solid 1px #004000;
+	border-left: solid 1px #004000;
+	border-bottom: solid 1px #004000;
+	font-size: xx-small;
+	color: #004000;
+	font-family: Verdana;
+	background-color: #FFFFC0;
+	text-align: center;
+}
+
+
+
+A:link
+{ 
+	color: #44926D;
+	font-style: normal;
+	text-decoration: none
+}
+
+A:active
+{
+	color: #44926D;
+	font-style: normal;
+	text-decoration: none
+}
+
+A:visited
+{
+	color: #44926D;
+	font-style: normal;
+	text-decoration: none
+}
+
+A:hover
+{
+	color: #44926D;
+	font-style: normal;
+	text-decoration: underline
+}

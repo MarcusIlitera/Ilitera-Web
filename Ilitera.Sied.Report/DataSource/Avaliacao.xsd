@@ -1,0 +1,57 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="DataSet" targetNamespace="http://www.tempuri.org/DataSet1.xsd" xmlns:mstns="http://www.tempuri.org/DataSet1.xsd" xmlns="http://www.tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+    <xs:element name="DataSet" msdata:IsDataSet="true" msdata:Locale="pt-BR">
+        <xs:complexType>
+            <xs:choice maxOccurs="unbounded">
+                <xs:element name="Avaliacao">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="IdGhe" type="xs:int" minOccurs="0" />
+                            <xs:element name="IdRisco" type="xs:int" minOccurs="0" />
+                            <xs:element name="IsQualitativo" type="xs:boolean" minOccurs="0" />
+                            <xs:element name="TituloRisco" type="xs:string" minOccurs="0" />
+                            <xs:element name="SubtituloRisco" type="xs:string" minOccurs="0" />
+                            <xs:element name="TituloAgQuimico" type="xs:string" minOccurs="0" />
+                            <xs:element name="Trajetoria" type="xs:string" minOccurs="0" />
+                            <xs:element name="MeiosPropagacao" type="xs:string" minOccurs="0" />
+                            <xs:element name="ModoExposicao" type="xs:string" minOccurs="0" />
+                            <xs:element name="FontesGeradoras" type="xs:string" minOccurs="0" />
+                            <xs:element name="MateriaPrima" type="xs:string" minOccurs="0" />
+                            <xs:element name="DanosSaude" type="xs:string" minOccurs="0" />
+                            <xs:element name="LimiteTolUltSim" type="xs:string" minOccurs="0" />
+                            <xs:element name="LimiteTolUltNao" type="xs:string" minOccurs="0" />
+                            <xs:element name="AvaliacaoValor" type="xs:string" minOccurs="0" />
+                            <xs:element name="AvaliacaoTempo" type="xs:string" minOccurs="0" />
+                            <xs:element name="AvaliacaoLimite" type="xs:string" minOccurs="0" />
+                            <xs:element name="Calor_DescansoLocalDiverso" type="xs:boolean" minOccurs="0" />
+                            <xs:element name="Calor_IBUTG_LD" type="xs:string" minOccurs="0" />
+                            <xs:element name="Calor_IBUTG_LP" type="xs:string" minOccurs="0" />
+                            <xs:element name="Calor_LimiteTol_LD" type="xs:string" minOccurs="0" />
+                            <xs:element name="Calor_LimiteTol_LP" type="xs:string" minOccurs="0" />
+                            <xs:element name="Calor_TaxaMetabolismo" type="xs:string" minOccurs="0" />
+                            <xs:element name="Calor_Tempo" type="xs:string" minOccurs="0" />
+                            <xs:element name="TrabTempo" type="xs:string" minOccurs="0" />
+                            <xs:element name="TrabIBUTG" type="xs:string" minOccurs="0" />
+                            <xs:element name="TrabMetabolismo" type="xs:string" minOccurs="0" />
+                            <xs:element name="DescTempo" type="xs:string" minOccurs="0" />
+                            <xs:element name="DescIBUTG" type="xs:string" minOccurs="0" />
+                            <xs:element name="DescMetabolismo" type="xs:string" minOccurs="0" />
+                            <xs:element name="Avaliacao" type="xs:string" minOccurs="0" />
+                            <xs:element name="EPIRecomendado" type="xs:string" minOccurs="0" />
+                            <xs:element name="EPIExistente" type="xs:string" minOccurs="0" />
+                            <xs:element name="EPCRecomendado" type="xs:string" minOccurs="0" />
+                            <xs:element name="EPCExistente" type="xs:string" minOccurs="0" />
+                            <xs:element name="MedidasAdm" type="xs:string" minOccurs="0" />
+                            <xs:element name="MedidasEdu" type="xs:string" minOccurs="0" />
+                            <xs:element name="LimiteTolUltSimLD" type="xs:string" minOccurs="0" />
+                            <xs:element name="LimiteTolUltNaoLD" type="xs:string" minOccurs="0" />
+                            <xs:element name="LimiteTolUltSimLP" type="xs:string" minOccurs="0" />
+                            <xs:element name="LimiteTolUltNaoLP" type="xs:string" minOccurs="0" />
+                            <xs:element name="SubtituloAvaliacao" type="xs:string" minOccurs="0" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

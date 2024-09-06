@@ -1,0 +1,2281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CD6E7529-FDDA-4BEC-9219-6C75FC078BEF}</ProjectGuid>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>Ilitera.Opsa.Report</AssemblyName>
+    <AssemblyOriginatorKeyFile>Ilitera.pfx</AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Ilitera.Opsa.Report</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SignAssembly>false</SignAssembly>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <FileAlignment>4096</FileAlignment>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>SecurityRules.ruleset</CodeAnalysisRuleSet>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <Optimize>true</Optimize>
+    <FileAlignment>4096</FileAlignment>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ceTe.DynamicPDF.35, Version=6.0.0.35, Culture=neutral, PublicKeyToken=09b5ce0d5c0a9d8b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\LIB\ceTe.DynamicPDF.35.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Data.AdoDotNetInterop, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\CrystalDecisions.Data.AdoDotNetInterop.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DynamicPDF, Version=6.0.0.15421, Culture=neutral, PublicKeyToken=09b5ce0d5c0a9d8b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\LIB\DynamicPDF.dll</HintPath>
+    </Reference>
+    <Reference Include="Ilitera.Marshall.Data">
+      <HintPath>..\Ilitera.Marshall.Data\bin\Debug\Ilitera.Marshall.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataSouceClientesExames.cs" />
+    <Compile Include="DataSouceEmpregados.cs" />
+    <Compile Include="DataSourceAbsenteismos.cs" />
+    <Compile Include="DataSourceAmbulatoriais.cs" />
+    <Compile Include="DataSourceAnexo.cs" />
+    <Compile Include="DataSourceColaboradores.cs" />
+    <Compile Include="DataSourceFaturamentoServicoAnalitico.cs" />
+    <Compile Include="DataSourceGHE_Funcao_Exames.cs" />
+    <Compile Include="DataSourceGuiasGeradas.cs" />
+    <Compile Include="DataSourcePCD.cs" />
+    <Compile Include="DataSourceProtocoloEntrega.cs" />
+    <Compile Include="DataSourceAbsenteismo.cs" />
+    <Compile Include="DataSourceQuadroEPI _2.cs" />
+    <Compile Include="DataSourceVacinas.cs" />
+    <Compile Include="DataSource\DSMailing.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSMailing.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSource\DSVacinaPreventiva.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSVacinaPreventiva.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSource\PPRA_Anexo.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PPRA_Anexo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSource\DSColaborador.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSColaborador.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSource\DSAbsenteismo.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSAbsenteismo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSource\DSClientesExames.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSClientesExames.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RptAbsenteismo.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptAbsenteismo.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptAbsenteismo_Analitico.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptAbsenteismo_Analitico.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptAbsenteismo_Analitico_Empr.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptAbsenteismo_Analitico_Empr.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptAbsenteismo_Sumarizado.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptAbsenteismo_Sumarizado.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptAmbulatoriais_Analitico.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptAmbulatoriais_Analitico.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptAmbulatoriais_Sumarizado.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptAmbulatoriais_Sumarizado.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptAnexo.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptAnexo.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptAtaDaPosse_New.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptAtaDaPosse_New.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptClientesExames_Sumarizado.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptClientesExames_Sumarizado.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptClientesExames.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptClientesExames.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptColaboradores.cs">
+      <DependentUpon>rptColaboradores.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="rptColaboradoresAptidoes.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptColaboradoresAptidoes.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptContratoFluxo.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptContratoFluxo.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptEleicao_New.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptEleicao_New.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptEmpregados.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptEmpregados.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptFaturamentoPorCentroCusto.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptFaturamentoPorCentroCusto.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptFaturamentoServicoAnalitico.cs">
+      <DependentUpon>RptFaturamentoServicoAnalitico.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="DataSourceTimeSheet.cs" />
+    <Compile Include="DataSourceTimeSheetCliente.cs" />
+    <Compile Include="RptContratoListaCliente.cs">
+      <DependentUpon>RptContratoListaCliente.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="RptEtiquetaModPimaco6282.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptEtiquetaModPimaco6282.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptFaxPagInicial.cs">
+      <DependentUpon>RptFaxPagInicial.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="DataSourceFaxAvisoAgendamento.cs" />
+    <Compile Include="DataSourceCipa.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataSourceContrato.cs" />
+    <Compile Include="DataSourceContratoServico.cs" />
+    <Compile Include="DataSourceAtaReuniaoCIPA.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataSourceBioSegurancaColetivo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataSourceBioSegurancaIndividual.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataSourceBoleto.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataSourceBoletoRecibo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataSourceCaracterizacao.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataSourceChamadasPorPessoa.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataSourceContatosAcessos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataSourceContratoCliente.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataSourceControleFinanceiro.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataSourceControleRecebimento.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataSourceEleicaoCIPA.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataSourceEmpresas.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataSourceEPI.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataSourceContratoServicoReajuste.cs" />
+    <Compile Include="DataSourceExtintores.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataSourceFaturamentoPedido.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataSourceFichaCadastral.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataSourceFichaCadastralCliente.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataSourceFichaCadastralProspeccao.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataSourceListaCompromisso.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataSourceListaDeClientes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataSourceListaDeClientesTenente.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataSourceListaEmpregados.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataSourceLocalDeTrabalho.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataSourceMalaDiretaImposto.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataSourceObrigacoesLegais.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataSourceObrigacoesLegaisPCMSO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataSourceQuadrosNR4.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataSourceRecebimentoMensal.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataSourceSaidaDocumento.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataSourceSemAcessoMestraNET.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataSourceSolicitacaoAtividade.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataSourceTopAccessMestraNET.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RptFichaJuridica.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptFichaJuridica.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportAcessos.cs">
+      <DependentUpon>ReportAcessos.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="ReportNaoAcessos.cs">
+      <DependentUpon>ReportNaoAcessos.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptAtaDaPosse.cs">
+      <DependentUpon>RptAtaDaPosse.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptAtaReuniaoCipa.cs">
+      <DependentUpon>RptAtaReuniaoCipa.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptFaxAvisoAgendamento.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptFaxAvisoAgendamento.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptBoleto033.cs">
+      <DependentUpon>RptBoleto033.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptCalendario.cs">
+      <DependentUpon>RptCalendario.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptCancelados.cs">
+      <DependentUpon>RptCancelados.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptCaracterizacao.cs">
+      <DependentUpon>RptCaracterizacao.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptCaracterizacaoCliente.cs">
+      <DependentUpon>RptCaracterizacaoCliente.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptCedulaDeVotacao.cs">
+      <DependentUpon>RptCedulaDeVotacao.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptChamadasPorPessoa1.cs">
+      <DependentUpon>RptChamadasPorPessoa.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptClienteSemAcessoMestraNET1.cs">
+      <DependentUpon>RptClienteSemAcessoMestraNET.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptComprovanteDeInscricao.cs">
+      <DependentUpon>RptComprovanteDeInscricao.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptContatosAcessos1.cs">
+      <DependentUpon>RptContatosAcessos.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptContrato.cs">
+      <DependentUpon>RptContrato.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptContratoCliente.cs">
+      <DependentUpon>RptContratoCliente.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptContratoServico.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptContratoServico.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptContratoServicoReajuste1.cs">
+      <DependentUpon>RptContratoServicoReajuste.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptControleFinanceiroMensal.cs">
+      <DependentUpon>RptControleFinanceiroMensal.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptControleRecebimentoMensal.cs">
+      <DependentUpon>RptControleRecebimentoMensal.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptCursoCliente.cs">
+      <DependentUpon>RptCursoCliente.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptEdital.cs">
+      <DependentUpon>RptEdital.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptElaboracaoDeAta.cs">
+      <DependentUpon>RptElaboracaoDeAta.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptEleicao.cs">
+      <DependentUpon>RptEleicao.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptEmpresasAcessosWEB.cs">
+      <DependentUpon>RptEmpresasAcessosWEB.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptEntregaEPIEmpr1.cs">
+      <DependentUpon>RptEntregaEPIEmpr.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptEtiqueta.cs">
+      <DependentUpon>RptEtiqueta.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptEtiquetaMod2.cs">
+      <DependentUpon>RptEtiquetaMod2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptEtiquetaMod3.cs">
+      <DependentUpon>RptEtiquetaMod3.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptEtiquetaMod4.cs">
+      <DependentUpon>RptEtiquetaMod4.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptExecutados.cs">
+      <DependentUpon>RptExecutados.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptExtintorDetalhe1.cs">
+      <DependentUpon>RptExtintorDetalhe.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptFaturamentoPedido1.cs">
+      <DependentUpon>RptFaturamentoPedido.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptFichaCadastral.cs">
+      <DependentUpon>RptFichaCadastral.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptFichaCadastralCliente.cs">
+      <DependentUpon>RptFichaCadastralCliente.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptFichaCadastralProspeccao1.cs">
+      <DependentUpon>RptFichaCadastralProspeccao.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptFolhaDeApuracao.cs">
+      <DependentUpon>RptFolhaDeApuracao.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptFolhaDeApuracao_New.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptFolhaDeApuracao_New.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptGHE_Funcao_Exames.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptGHE_Funcao_Exames.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptGuiasGeradas.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptGuiasGeradas.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptGuias_Bloqueio.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptGuias_Bloqueio.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptGuias_Bloqueio_Sumarizado.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptGuias_Bloqueio_Sumarizado.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptGuias_Sumarizado.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptGuias_Sumarizado.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptInicioInscricoes.cs">
+      <DependentUpon>RptInicioInscricoes.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptInscricaoDeCandidatos.cs">
+      <DependentUpon>RptInscricaoDeCandidatos.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptListaCompromisso1.cs">
+      <DependentUpon>RptListaCompromisso.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptListaDeClientes1.cs">
+      <DependentUpon>RptListaDeClientes.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptListaDeClientesTenente.cs">
+      <DependentUpon>RptListaDeClientesTenente.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptListaEmpregados.cs">
+      <DependentUpon>RptListaEmpregados.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptListagemExtintores.cs">
+      <DependentUpon>RptListagemExtintores.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptListaJuridicaPorCep1.cs">
+      <DependentUpon>RptListaJuridicaPorCep.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptListaJuridicaPorMotorista.cs">
+      <DependentUpon>RptListaJuridicaPorMotorista.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptLocalDeTrabalho.cs">
+      <DependentUpon>RptLocalDeTrabalho.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rptMailing.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptMailing.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptMalaDiretaImposto.cs">
+      <DependentUpon>RptMalaDiretaImposto.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptObrigacoesLegais.cs">
+      <DependentUpon>RptObrigacoesLegais.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptObrigacoesLegaisComCaracterizacao.cs">
+      <DependentUpon>RptObrigacoesLegaisComCaracterizacao.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptObrigacoesLegaisPCMSO.cs">
+      <DependentUpon>RptObrigacoesLegaisPCMSO.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptObrigacoesLegaisPCMSOComEndereco1.cs">
+      <DependentUpon>RptObrigacoesLegaisPCMSOComEndereco.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptObrigacoesLegaisPorPrestador.cs">
+      <DependentUpon>RptObrigacoesLegaisPorPrestador.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rptPCD.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptPCD.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptPCD_Sumarizado.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptPCD_Sumarizado.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptPendentes.cs">
+      <DependentUpon>RptPendentes.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptPericulosidade.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptPericulosidade.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptProtocoloEntrega.cs">
+      <DependentUpon>RptProtocoloEntrega.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptPublicacao.cs">
+      <DependentUpon>RptPublicacao.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rptClientesExames_Sumarizado_2.cs">
+      <DependentUpon>rptClientesExames_Sumarizado_2.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="RptQuadroEPI_2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptQuadroEPI_2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptQuadrosNR4.cs">
+      <DependentUpon>RptQuadrosNR4.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptRecebimentoMensal.cs">
+      <DependentUpon>RptRecebimentoMensal.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptRecibo.cs">
+      <DependentUpon>RptRecibo.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptRegistroDRT1.cs">
+      <DependentUpon>RptRegistroDRT.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptContratoFluxoTabela.cs">
+      <DependentUpon>RptContratoFluxoTabela.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="RptSaidaDocumento.cs">
+      <DependentUpon>RptSaidaDocumento.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptSaidaDocumentoMotorista.cs">
+      <DependentUpon>RptSaidaDocumentoMotorista.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptSindicato.cs">
+      <DependentUpon>RptSindicato.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptSolicitacaoDeAtividades.cs">
+      <DependentUpon>RptSolicitacaoDeAtividades.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptSugestoes.cs">
+      <DependentUpon>RptSugestoes.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptTerminoInscricao.cs">
+      <DependentUpon>RptTerminoInscricao.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptTimeSheet.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptTimeSheet.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptTimeSheetCliente.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptTimeSheetCliente.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptToxicologicoSorteado.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptToxicologicoSorteado.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptVacinas_Analitico.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptVacinas_Analitico.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptVacinas_Atrasadas.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptVacinas_Atrasadas.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptVacinas_Sumarizado.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptVacinas_Sumarizado.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <EmbeddedResource Include="RptAbsenteismo.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptAbsenteismo.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptAbsenteismo_Analitico.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptAbsenteismo_Analitico.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptAbsenteismo_Analitico_Empr.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptAbsenteismo_Analitico_Empr.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptAbsenteismo_Sumarizado.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptAbsenteismo_Sumarizado.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptAmbulatoriais_Analitico.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptAmbulatoriais_Analitico.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptAmbulatoriais_Sumarizado.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptAmbulatoriais_Sumarizado.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptAnexo.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptAnexo.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptAtaDaPosse_New.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptAtaDaPosse_New.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptClientesExames_Sumarizado.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptClientesExames_Sumarizado.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptClientesExames.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptClientesExames.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptColaboradores.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptColaboradores.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptColaboradoresAptidoes.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptColaboradoresAptidoes.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptContratoFluxo.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptContratoFluxo.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptEleicao_New.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptEleicao_New.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptEmpregados.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptEmpregados.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptFaturamentoPorCentroCusto.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptFaturamentoPorCentroCusto.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptFaturamentoServicoAnalitico.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptFaturamentoServicoAnalitico.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptContratoListaCliente.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptContratoListaCliente.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptEtiquetaModPimaco6282.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptEtiquetaModPimaco6282.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptFaxPagInicial.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptFaxPagInicial.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptFichaJuridica.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptFichaJuridica.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportAcessos.resx">
+      <DependentUpon>ReportAcessos.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportAcessos.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportAcessos.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportNaoAcessos.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportNaoAcessos.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptAtaDaPosse.resx">
+      <DependentUpon>RptAtaDaPosse.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptAtaDaPosse.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptAtaDaPosse.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptAtaReuniaoCipa.resx">
+      <DependentUpon>RptAtaReuniaoCipa.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptAtaReuniaoCipa.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptAtaReuniaoCipa.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptFaxAvisoAgendamento.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptFaxAvisoAgendamento.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptBoleto033.resx">
+      <DependentUpon>RptBoleto033.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptBoleto033.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptBoleto033.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptCalendario.resx">
+      <DependentUpon>RptCalendario.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptCalendario.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptCalendario.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptCancelados.resx">
+      <DependentUpon>RptCancelados.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptCancelados.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptCancelados.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptCaracterizacao.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptCaracterizacao.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptCaracterizacaoCliente.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptCaracterizacaoCliente.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptCedulaDeVotacao.resx">
+      <DependentUpon>RptCedulaDeVotacao.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptCedulaDeVotacao.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptCedulaDeVotacao.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptChamadasPorPessoa.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptChamadasPorPessoa1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptClienteSemAcessoMestraNET.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptClienteSemAcessoMestraNET1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptClienteSemAcessoMestraNET1.resx">
+      <DependentUpon>RptClienteSemAcessoMestraNET1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptComprovanteDeInscricao.resx">
+      <DependentUpon>RptComprovanteDeInscricao.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptComprovanteDeInscricao.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptComprovanteDeInscricao.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptContatosAcessos.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptContatosAcessos1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptContrato.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptContrato.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptContratoCliente.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptContratoCliente.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptContratoServico.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptContratoServico.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptContratoServicoReajuste.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptContratoServicoReajuste1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptControleFinanceiroMensal.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptControleFinanceiroMensal.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptControleRecebimentoMensal.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptControleRecebimentoMensal.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptCursoCliente.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptCursoCliente.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptEdital.resx">
+      <DependentUpon>RptEdital.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptEdital.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptEdital.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptElaboracaoDeAta.resx">
+      <DependentUpon>RptElaboracaoDeAta.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptElaboracaoDeAta.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptElaboracaoDeAta.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptEleicao.resx">
+      <DependentUpon>RptEleicao.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptEleicao.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptEleicao.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptEmpresasAcessosWEB.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptEmpresasAcessosWEB.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptEntregaEPIEmpr.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptEntregaEPIEmpr1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptEtiqueta.resx">
+      <DependentUpon>RptEtiqueta.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptEtiqueta.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptEtiqueta.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptEtiquetaMod2.resx">
+      <DependentUpon>RptEtiquetaMod2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptEtiquetaMod2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptEtiquetaMod2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptEtiquetaMod3.resx">
+      <DependentUpon>RptEtiquetaMod3.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptEtiquetaMod3.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptEtiquetaMod3.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptEtiquetaMod4.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptEtiquetaMod4.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptExecutados.resx">
+      <DependentUpon>RptExecutados.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptExecutados.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptExecutados.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptExtintorDetalhe.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptExtintorDetalhe1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptFaturamentoPedido.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptFaturamentoPedido1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptFichaCadastral.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptFichaCadastral.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptFichaCadastralCliente.resx">
+      <DependentUpon>RptFichaCadastralCliente.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptFichaCadastralCliente.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptFichaCadastralCliente.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptFichaCadastralProspeccao.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptFichaCadastralProspeccao1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptFolhaDeApuracao.resx">
+      <DependentUpon>RptFolhaDeApuracao.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptFolhaDeApuracao.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptFolhaDeApuracao.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptFolhaDeApuracao_New.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptFolhaDeApuracao_New.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptGHE_Funcao_Exames.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptGHE_Funcao_Exames.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptGuiasGeradas.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptGuiasGeradas.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptGuias_Bloqueio.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptGuias_Bloqueio.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptGuias_Bloqueio_Sumarizado.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptGuias_Bloqueio_Sumarizado.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptGuias_Sumarizado.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptGuias_Sumarizado.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptInicioInscricoes.resx">
+      <DependentUpon>RptInicioInscricoes.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptInicioInscricoes.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptInicioInscricoes.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptInscricaoDeCandidatos.resx">
+      <DependentUpon>RptInscricaoDeCandidatos.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptInscricaoDeCandidatos.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptInscricaoDeCandidatos.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptListaCompromisso.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptListaCompromisso1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptListaDeClientes.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptListaDeClientes1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptListaDeClientesTenente.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptListaDeClientesTenente.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptListaEmpregados.resx">
+      <DependentUpon>RptListaEmpregados.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptListaEmpregados.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptListaEmpregados.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptListagemExtintores.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptListagemExtintores.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptListaJuridicaPorCep.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptListaJuridicaPorCep1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptListaJuridicaPorMotorista.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptListaJuridicaPorMotorista.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptLocalDeTrabalho.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptLocalDeTrabalho.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptMailing.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptMailing.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptMalaDiretaImposto.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptMalaDiretaImposto.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptObrigacoesLegais.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptObrigacoesLegais.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptObrigacoesLegaisComCaracterizacao.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptObrigacoesLegaisComCaracterizacao.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptObrigacoesLegaisPCMSO.resx">
+      <DependentUpon>RptObrigacoesLegaisPCMSO.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptObrigacoesLegaisPCMSO.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptObrigacoesLegaisPCMSO.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptObrigacoesLegaisPCMSOComEndereco.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptObrigacoesLegaisPCMSOComEndereco1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptObrigacoesLegaisPorPrestador.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptObrigacoesLegaisPorPrestador.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptPCD.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptPCD.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptPCD_Sumarizado.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptPCD_Sumarizado.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptPendentes.resx">
+      <DependentUpon>RptPendentes.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptPendentes.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptPendentes.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptPericulosidade.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptPericulosidade.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptProtocoloEntrega.resx">
+      <DependentUpon>RptProtocoloEntrega.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptProtocoloEntrega.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptProtocoloEntrega.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptPublicacao.resx">
+      <DependentUpon>RptPublicacao.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptPublicacao.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptPublicacao.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptClientesExames_Sumarizado_2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptClientesExames_Sumarizado_2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptQuadroEPI_2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptQuadroEPI_2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptQuadrosNR4.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptQuadrosNR4.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptRecebimentoMensal.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptRecebimentoMensal.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptRecibo.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptRecibo.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptRegistroDRT.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptRegistroDRT1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptRegistroDRT1.resx">
+      <DependentUpon>RptRegistroDRT1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptContratoFluxoTabela.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptContratoFluxoTabela.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptSaidaDocumento.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptSaidaDocumento.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptSaidaDocumentoMotorista.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptSaidaDocumentoMotorista.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptSindicato.resx">
+      <DependentUpon>RptSindicato.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptSindicato.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptSindicato.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptSolicitacaoDeAtividades.resx">
+      <DependentUpon>RptSolicitacaoDeAtividades.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptSolicitacaoDeAtividades.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptSolicitacaoDeAtividades.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptSugestoes.resx">
+      <DependentUpon>RptSugestoes.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptSugestoes.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptSugestoes.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptTerminoInscricao.resx">
+      <DependentUpon>RptTerminoInscricao.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptTerminoInscricao.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptTerminoInscricao.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptTimeSheet.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptTimeSheet.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptTimeSheetCliente.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptTimeSheetCliente.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Content Include="DataSource\DSAgendaDeClientes.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSAtaDaPosse.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSAtaDaPosseAssinaturaComissaoEleitoral.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSAtaDaPosseAssinaturaSecretarios.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSAtaDeEleicao.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSBoletoRecibo.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSBoletoServico.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSCalendario.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSCancelados.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSCandidatosEleitos.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSCandidatosNaoEleitos.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSCedulaDeVotacao.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSChamadasPorPessoa.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSClassificacao.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSComprovanteDeInscricaoComissaoEleitoral.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSComprovanteDeInscricaoDadosDaEmpresa.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSComprovanteDeInscricaoDadosEmpregados.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSComprovanteDeInscricaoDataDaEleicao.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSContatos.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSContatosAcessos.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSContratoCliente.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSContratoClienteServido.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSContratoClienteServidoObrigacao.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSControleFinanceiroMensal.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSControleRecebimentoMensal.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSDemaisVotadosApuracao.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSEdital.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSElaboracaoDeAta.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSEmpregadorApuracao.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSEmpregadosApuracao.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSEntregaEPIEmpreg.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSEtiqueta.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSEventoCliente.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSEventoClienteAcao.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSEventoClienteParticipante.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSEventoDiaEParticipantes.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSExecutados.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSExtintor.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSFaturamentoPedido.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSFichaCadastral.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSFichaCadastralProspeccao.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSHistoricoContatos.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSHistoricoExtintor.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSInicioInscricao.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSInscricaoDeCandidatos.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSIntegrantesSESMET.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSListaCompromisso.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSListaDeCliente.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSListaDeClientesTenente.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSListaDePedidos.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSListaSaidaDocumento.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSMalaDiretaImposto.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSMembrosDaCipa.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSNotaFiscal.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSNotaFiscalServico.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSObrigacoesLegaisPCMSO.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSPendentes.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSPeriodoRealizacaoAtividades.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSProspeccaoFilial.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSProtocoloEntrega.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSPublicacao.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSQuadroIII.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSQuadroIV.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSQuadrosNR4DadosBasicos.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSRegistroDRT.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSRepresentantesDoEmpregador.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSRepresentates.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSReuniaoCipa.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSReuniaoCipaParticipantes.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSReunioes.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSSaidaDocumento.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DsSaidaDocumentoMotorista.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSSecretarios.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSSemAcessoMestraNET.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSSindicato.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSSolicitacaoDeAtividades.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSSugestoes.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSTerminoInscricao.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSTopAccessMestraNET.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\FichaCadastralSindicato.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\ListaEmpregados.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\ListaJuridicas.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSObrigacoesLegais.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSAvisoAgendamentoFax.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSQuadroV.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSQuadroVI.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSFolhaApuracao.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSFaturamentoServicoAnalitico.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <EmbeddedResource Include="RptToxicologicoSorteado.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptToxicologicoSorteado.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptVacinas_Analitico.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptVacinas_Analitico.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptVacinas_Atrasadas.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptVacinas_Atrasadas.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptVacinas_Sumarizado.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptVacinas_Sumarizado.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="DataSource\DSExtintor.xsc">
+      <DependentUpon>DSExtintor.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSExtintor.xss">
+      <DependentUpon>DSExtintor.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSMailing.xsc">
+      <DependentUpon>DSMailing.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSMailing.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSMailing.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSource\DSMailing.xss">
+      <DependentUpon>DSMailing.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSVacinaPreventiva.xsc">
+      <DependentUpon>DSVacinaPreventiva.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSVacinaPreventiva.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSVacinaPreventiva.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSource\DSVacinaPreventiva.xss">
+      <DependentUpon>DSVacinaPreventiva.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\PPRA_Anexo.xsc">
+      <DependentUpon>PPRA_Anexo.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\PPRA_Anexo.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PPRA_Anexo.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSource\PPRA_Anexo.xss">
+      <DependentUpon>PPRA_Anexo.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSColaborador.xsc">
+      <DependentUpon>DSColaborador.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSColaborador.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSColaborador.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSource\DSColaborador.xss">
+      <DependentUpon>DSColaborador.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSAbsenteismo.xsc">
+      <DependentUpon>DSAbsenteismo.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSAbsenteismo.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSAbsenteismo.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSource\DSAbsenteismo.xss">
+      <DependentUpon>DSAbsenteismo.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSClientesExames.xsc">
+      <DependentUpon>DSClientesExames.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSClientesExames.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSClientesExames.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSource\DSClientesExames.xss">
+      <DependentUpon>DSClientesExames.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSFaturamentoServicoAnalitico.xsc">
+      <DependentUpon>DSFaturamentoServicoAnalitico.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSFaturamentoServicoAnalitico.xss">
+      <DependentUpon>DSFaturamentoServicoAnalitico.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSFaturamentoServicoAnalitico.xsx">
+      <DependentUpon>DSFaturamentoServicoAnalitico.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSFolhaApuracao.xsc">
+      <DependentUpon>DSFolhaApuracao.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSFolhaApuracao.xss">
+      <DependentUpon>DSFolhaApuracao.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSFolhaApuracao.xsx">
+      <DependentUpon>DSFolhaApuracao.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSEdital.xsc">
+      <DependentUpon>DSEdital.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSEdital.xss">
+      <DependentUpon>DSEdital.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSObrigacoesLegaisPCMSO.xsc">
+      <DependentUpon>DSObrigacoesLegaisPCMSO.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSObrigacoesLegaisPCMSO.xss">
+      <DependentUpon>DSObrigacoesLegaisPCMSO.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSQuadroIII.xsc">
+      <DependentUpon>DSQuadroIII.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSQuadroIII.xss">
+      <DependentUpon>DSQuadroIII.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSQuadroVI.xsc">
+      <DependentUpon>DSQuadroVI.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSQuadroVI.xss">
+      <DependentUpon>DSQuadroVI.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSQuadroVI.xsx">
+      <DependentUpon>DSQuadroVI.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSQuadroV.xsc">
+      <DependentUpon>DSQuadroV.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSQuadroV.xss">
+      <DependentUpon>DSQuadroV.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSQuadroV.xsx">
+      <DependentUpon>DSQuadroV.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSAvisoAgendamentoFax.xsc">
+      <DependentUpon>DSAvisoAgendamentoFax.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSAvisoAgendamentoFax.xss">
+      <DependentUpon>DSAvisoAgendamentoFax.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSAvisoAgendamentoFax.xsx">
+      <DependentUpon>DSAvisoAgendamentoFax.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSAgendaDeClientes.xsx">
+      <DependentUpon>DSAgendaDeClientes.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSAtaDaPosse.xsx">
+      <DependentUpon>DSAtaDaPosse.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSAtaDaPosseAssinaturaComissaoEleitoral.xsx">
+      <DependentUpon>DSAtaDaPosseAssinaturaComissaoEleitoral.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSAtaDaPosseAssinaturaSecretarios.xsx">
+      <DependentUpon>DSAtaDaPosseAssinaturaSecretarios.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSAtaDeEleicao.xsx">
+      <DependentUpon>DSAtaDeEleicao.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSBoletoRecibo.xsx">
+      <DependentUpon>DSBoletoRecibo.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSBoletoServico.xsx">
+      <DependentUpon>DSBoletoServico.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSCalendario.xsx">
+      <DependentUpon>DSCalendario.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSCancelados.xsx">
+      <DependentUpon>DSCancelados.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSCandidatosEleitos.xsx">
+      <DependentUpon>DSCandidatosEleitos.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSCandidatosNaoEleitos.xsx">
+      <DependentUpon>DSCandidatosNaoEleitos.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSCedulaDeVotacao.xsx">
+      <DependentUpon>DSCedulaDeVotacao.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSChamadasPorPessoa.xsx">
+      <DependentUpon>DSChamadasPorPessoa.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSClassificacao.xsx">
+      <DependentUpon>DSClassificacao.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSComprovanteDeInscricaoComissaoEleitoral.xsx">
+      <DependentUpon>DSComprovanteDeInscricaoComissaoEleitoral.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSComprovanteDeInscricaoDadosDaEmpresa.xsx">
+      <DependentUpon>DSComprovanteDeInscricaoDadosDaEmpresa.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSComprovanteDeInscricaoDadosEmpregados.xsx">
+      <DependentUpon>DSComprovanteDeInscricaoDadosEmpregados.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSComprovanteDeInscricaoDataDaEleicao.xsc">
+      <DependentUpon>DSComprovanteDeInscricaoDataDaEleicao.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSComprovanteDeInscricaoDataDaEleicao.xss">
+      <DependentUpon>DSComprovanteDeInscricaoDataDaEleicao.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSComprovanteDeInscricaoDataDaEleicao.xsx">
+      <DependentUpon>DSComprovanteDeInscricaoDataDaEleicao.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSContatos.xsx">
+      <DependentUpon>DSContatos.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSContatosAcessos.xsx">
+      <DependentUpon>DSContatosAcessos.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSContratoCliente.xsc">
+      <DependentUpon>DSContratoCliente.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSContratoCliente.xss">
+      <DependentUpon>DSContratoCliente.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSContratoCliente.xsx">
+      <DependentUpon>DSContratoCliente.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSContratoClienteServido.xsc">
+      <DependentUpon>DSContratoClienteServido.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSContratoClienteServido.xss">
+      <DependentUpon>DSContratoClienteServido.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSContratoClienteServido.xsx">
+      <DependentUpon>DSContratoClienteServido.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSContratoClienteServidoObrigacao.xsc">
+      <DependentUpon>DSContratoClienteServidoObrigacao.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSContratoClienteServidoObrigacao.xss">
+      <DependentUpon>DSContratoClienteServidoObrigacao.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSContratoClienteServidoObrigacao.xsx">
+      <DependentUpon>DSContratoClienteServidoObrigacao.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSControleFinanceiroMensal.xsc">
+      <DependentUpon>DSControleFinanceiroMensal.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSControleFinanceiroMensal.xss">
+      <DependentUpon>DSControleFinanceiroMensal.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSControleFinanceiroMensal.xsx">
+      <DependentUpon>DSControleFinanceiroMensal.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSControleRecebimentoMensal.xsx">
+      <DependentUpon>DSControleRecebimentoMensal.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSDemaisVotadosApuracao.xsx">
+      <DependentUpon>DSDemaisVotadosApuracao.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSEdital.xsx">
+      <DependentUpon>DSEdital.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSElaboracaoDeAta.xsx">
+      <DependentUpon>DSElaboracaoDeAta.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSEmpregadorApuracao.xsx">
+      <DependentUpon>DSEmpregadorApuracao.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSEmpregadosApuracao.xsx">
+      <DependentUpon>DSEmpregadosApuracao.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSEntregaEPIEmpreg.xsx">
+      <DependentUpon>DSEntregaEPIEmpreg.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSEtiqueta.xsx">
+      <DependentUpon>DSEtiqueta.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSEventoCliente.xsx">
+      <DependentUpon>DSEventoCliente.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSEventoClienteAcao.xsx">
+      <DependentUpon>DSEventoClienteAcao.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSEventoClienteParticipante.xsx">
+      <DependentUpon>DSEventoClienteParticipante.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSEventoDiaEParticipantes.xsx">
+      <DependentUpon>DSEventoDiaEParticipantes.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSExecutados.xsx">
+      <DependentUpon>DSExecutados.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSExtintor.xsx">
+      <DependentUpon>DSExtintor.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSFaturamentoPedido.xsx">
+      <DependentUpon>DSFaturamentoPedido.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSFichaCadastral.xsx">
+      <DependentUpon>DSFichaCadastral.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSFichaCadastralProspeccao.xsx">
+      <DependentUpon>DSFichaCadastralProspeccao.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSHistoricoContatos.xsx">
+      <DependentUpon>DSHistoricoContatos.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSHistoricoExtintor.xsx">
+      <DependentUpon>DSHistoricoExtintor.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSInicioInscricao.xsx">
+      <DependentUpon>DSInicioInscricao.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSInscricaoDeCandidatos.xsx">
+      <DependentUpon>DSInscricaoDeCandidatos.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSIntegrantesSESMET.xsx">
+      <DependentUpon>DSIntegrantesSESMET.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSListaCompromisso.xsx">
+      <DependentUpon>DSListaCompromisso.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSListaDeCliente.xsx">
+      <DependentUpon>DSListaDeCliente.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSListaDeClientesTenente.xsx">
+      <DependentUpon>DSListaDeClientesTenente.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSListaDePedidos.xsx">
+      <DependentUpon>DSListaDePedidos.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSListaSaidaDocumento.xsx">
+      <DependentUpon>DSListaSaidaDocumento.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSMalaDiretaImposto.xsx">
+      <DependentUpon>DSMalaDiretaImposto.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSMembrosDaCipa.xsx">
+      <DependentUpon>DSMembrosDaCipa.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSNotaFiscal.xsx">
+      <DependentUpon>DSNotaFiscal.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSNotaFiscalServico.xsx">
+      <DependentUpon>DSNotaFiscalServico.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSObrigacoesLegais.xsc">
+      <DependentUpon>DSObrigacoesLegais.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSObrigacoesLegais.xss">
+      <DependentUpon>DSObrigacoesLegais.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSObrigacoesLegaisPCMSO.xsx">
+      <DependentUpon>DSObrigacoesLegaisPCMSO.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSPendentes.xsx">
+      <DependentUpon>DSPendentes.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSProspeccaoFilial.xsx">
+      <DependentUpon>DSProspeccaoFilial.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSProtocoloEntrega.xsc">
+      <DependentUpon>DSProtocoloEntrega.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSProtocoloEntrega.xss">
+      <DependentUpon>DSProtocoloEntrega.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSProtocoloEntrega.xsx">
+      <DependentUpon>DSProtocoloEntrega.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSPublicacao.xsx">
+      <DependentUpon>DSPublicacao.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSQuadroIII.xsx">
+      <DependentUpon>DSQuadroIII.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSQuadroIV.xsx">
+      <DependentUpon>DSQuadroIV.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSQuadrosNR4DadosBasicos.xsx">
+      <DependentUpon>DSQuadrosNR4DadosBasicos.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSRegistroDRT.xsc">
+      <DependentUpon>DSRegistroDRT.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSRegistroDRT.xss">
+      <DependentUpon>DSRegistroDRT.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSRegistroDRT.xsx">
+      <DependentUpon>DSRegistroDRT.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSRepresentantesDoEmpregador.xsx">
+      <DependentUpon>DSRepresentantesDoEmpregador.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSRepresentates.xsx">
+      <DependentUpon>DSRepresentates.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSReuniaoCipa.xsx">
+      <DependentUpon>DSReuniaoCipa.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSReuniaoCipaParticipantes.xsx">
+      <DependentUpon>DSReuniaoCipaParticipantes.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSReunioes.xsx">
+      <DependentUpon>DSReunioes.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSSaidaDocumento.xsx">
+      <DependentUpon>DSSaidaDocumento.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DsSaidaDocumentoMotorista.xsx">
+      <DependentUpon>DsSaidaDocumentoMotorista.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSSecretarios.xsx">
+      <DependentUpon>DSSecretarios.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSSemAcessoMestraNET.xsx">
+      <DependentUpon>DSSemAcessoMestraNET.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSSindicato.xsx">
+      <DependentUpon>DSSindicato.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSSolicitacaoDeAtividades.xsx">
+      <DependentUpon>DSSolicitacaoDeAtividades.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSSugestoes.xsx">
+      <DependentUpon>DSSugestoes.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSTerminoInscricao.xsx">
+      <DependentUpon>DSTerminoInscricao.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSTopAccessMestraNET.xsx">
+      <DependentUpon>DSTopAccessMestraNET.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\FichaCadastralSindicato.xsx">
+      <DependentUpon>FichaCadastralSindicato.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\ListaEmpregados.xsx">
+      <DependentUpon>ListaEmpregados.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\ListaJuridicas.xsx">
+      <DependentUpon>ListaJuridicas.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSObrigacoesLegais.xsx">
+      <DependentUpon>DSObrigacoesLegais.xsd</DependentUpon>
+    </None>
+    <Content Include="DataSource\DSContratoServico.xsd">
+      <SubType>Designer</SubType>
+      <LastGenOutput>DSContratoServico.Designer.cs</LastGenOutput>
+    </Content>
+    <None Include="DataSource\DSContratoServico.xsc">
+      <DependentUpon>DSContratoServico.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSContratoServico.xss">
+      <DependentUpon>DSContratoServico.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSContratoServico.xsx">
+      <DependentUpon>DSContratoServico.xsd</DependentUpon>
+    </None>
+    <None Include="Ilitera.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3924545A-F8E2-475A-B1A4-05175BC41E50}" />
+    <Service Include="{5AD368F8-9AD3-4E4C-97D8-1F4F1C124158}" />
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+    <Service Include="{CF845C55-C321-4742-B673-E6212D061ED9}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Ilitera.Common\Ilitera.Common.csproj">
+      <Project>{6ef4b4ec-69d3-4f21-8934-f23f34a52533}</Project>
+      <Name>Ilitera.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ilitera.Data\Ilitera.Data.csproj">
+      <Project>{ddd39289-1377-486b-8aa3-122884700431}</Project>
+      <Name>Ilitera.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ilitera.Opsa.Data\Ilitera.Opsa.Data.csproj">
+      <Project>{7c453d2c-00bb-4cdc-9a34-3e4f52a66e13}</Project>
+      <Name>Ilitera.Opsa.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>del   "$(ProjectDir)obj\x64\Debug\*.*"  /q
+del   "$(ProjectDir)obj\Debug\*.*"  /q</PostBuildEvent>
+  </PropertyGroup>
+</Project>

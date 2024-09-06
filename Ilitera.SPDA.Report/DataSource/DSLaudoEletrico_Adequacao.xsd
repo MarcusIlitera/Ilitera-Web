@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSLaudoEletrico_Adequacao" targetNamespace="http://tempuri.org/DSLaudoEletrico_Adequacao.xsd" xmlns:mstns="http://tempuri.org/DSLaudoEletrico_Adequacao.xsd" xmlns="http://tempuri.org/DSLaudoEletrico_Adequacao.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSLaudoEletrico_Adequacao" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DSLaudoEletrico_Adequacao" msprop:Generator_UserDSName="DSLaudoEletrico_Adequacao">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Result" msprop:Generator_TableClassName="ResultDataTable" msprop:Generator_TableVarName="tableResult" msprop:Generator_TablePropName="Result" msprop:Generator_RowDeletingName="ResultRowDeleting" msprop:Generator_RowChangingName="ResultRowChanging" msprop:Generator_RowEvHandlerName="ResultRowChangeEventHandler" msprop:Generator_RowDeletedName="ResultRowDeleted" msprop:Generator_UserTableName="Result" msprop:Generator_RowChangedName="ResultRowChanged" msprop:Generator_RowEvArgName="ResultRowChangeEvent" msprop:Generator_RowClassName="ResultRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Titulo" msprop:Generator_ColumnVarNameInTable="columnTitulo" msprop:Generator_ColumnPropNameInRow="Titulo" msprop:Generator_ColumnPropNameInTable="TituloColumn" msprop:Generator_UserColumnName="Titulo" type="xs:string" minOccurs="0" />
+              <xs:element name="Descricao" msprop:Generator_ColumnVarNameInTable="columnDescricao" msprop:Generator_ColumnPropNameInRow="Descricao" msprop:Generator_ColumnPropNameInTable="DescricaoColumn" msprop:Generator_UserColumnName="Descricao" type="xs:string" minOccurs="0" />
+              <xs:element name="Foto" msprop:Generator_ColumnVarNameInTable="columnFoto" msprop:Generator_ColumnPropNameInRow="Foto" msprop:Generator_ColumnPropNameInTable="FotoColumn" msprop:Generator_UserColumnName="Foto" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="Ordem" msprop:Generator_ColumnVarNameInTable="columnOrdem" msprop:Generator_ColumnPropNameInRow="Ordem" msprop:Generator_ColumnPropNameInTable="OrdemColumn" msprop:Generator_UserColumnName="Ordem" type="xs:short" minOccurs="0" />
+              <xs:element name="Foto_Adeq" msprop:Generator_ColumnVarNameInTable="columnFoto_Adeq" msprop:Generator_ColumnPropNameInRow="Foto_Adeq" msprop:Generator_ColumnPropNameInTable="Foto_AdeqColumn" msprop:Generator_UserColumnName="Foto_Adeq" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="Foto_Adeq2" msprop:Generator_ColumnVarNameInTable="columnFoto_Adeq2" msprop:Generator_ColumnPropNameInRow="Foto_Adeq2" msprop:Generator_ColumnPropNameInTable="Foto_Adeq2Column" msprop:Generator_UserColumnName="Foto_Adeq2" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="Foto_Adeq3" msprop:Generator_ColumnVarNameInTable="columnFoto_Adeq3" msprop:Generator_ColumnPropNameInRow="Foto_Adeq3" msprop:Generator_ColumnPropNameInTable="Foto_Adeq3Column" msprop:Generator_UserColumnName="Foto_Adeq3" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="Foto_Termografia" msprop:Generator_ColumnVarNameInTable="columnFoto_Termografia" msprop:Generator_ColumnPropNameInRow="Foto_Termografia" msprop:Generator_ColumnPropNameInTable="Foto_TermografiaColumn" msprop:Generator_UserColumnName="Foto_Termografia" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="Irregularidade" msprop:Generator_ColumnVarNameInTable="columnIrregularidade" msprop:Generator_ColumnPropNameInRow="Irregularidade" msprop:Generator_ColumnPropNameInTable="IrregularidadeColumn" msprop:Generator_UserColumnName="Irregularidade" type="xs:string" minOccurs="0" />
+              <xs:element name="Recomendacoes" msprop:Generator_ColumnVarNameInTable="columnRecomendacoes" msprop:Generator_ColumnPropNameInRow="Recomendacoes" msprop:Generator_ColumnPropNameInTable="RecomendacoesColumn" msprop:Generator_UserColumnName="Recomendacoes" type="xs:string" minOccurs="0" />
+              <xs:element name="Situacao" msprop:Generator_ColumnVarNameInTable="columnSituacao" msprop:Generator_ColumnPropNameInRow="Situacao" msprop:Generator_ColumnPropNameInTable="SituacaoColumn" msprop:Generator_UserColumnName="Situacao" type="xs:string" minOccurs="0" />
+              <xs:element name="OrdemItem" msprop:Generator_ColumnVarNameInTable="columnOrdemItem" msprop:Generator_ColumnPropNameInRow="OrdemItem" msprop:Generator_ColumnPropNameInTable="OrdemItemColumn" msprop:Generator_UserColumnName="OrdemItem" type="xs:short" minOccurs="0" />
+              <xs:element name="Condicao_Risco" msprop:Generator_ColumnVarNameInTable="columnCondicao_Risco" msprop:Generator_ColumnPropNameInRow="Condicao_Risco" msprop:Generator_ColumnPropNameInTable="Condicao_RiscoColumn" msprop:Generator_UserColumnName="Condicao_Risco" type="xs:string" minOccurs="0" />
+              <xs:element name="Delimitacao" msprop:Generator_ColumnVarNameInTable="columnDelimitacao" msprop:Generator_ColumnPropNameInRow="Delimitacao" msprop:Generator_ColumnPropNameInTable="DelimitacaoColumn" msprop:Generator_UserColumnName="Delimitacao" type="xs:string" minOccurs="0" />
+              <xs:element name="Conclusao" msprop:Generator_ColumnVarNameInTable="columnConclusao" msprop:Generator_ColumnPropNameInRow="Conclusao" msprop:Generator_ColumnPropNameInTable="ConclusaoColumn" msprop:Generator_UserColumnName="Conclusao" type="xs:string" minOccurs="0" />
+              <xs:element name="Observacoes" msprop:Generator_ColumnVarNameInTable="columnObservacoes" msprop:Generator_ColumnPropNameInRow="Observacoes" msprop:Generator_ColumnPropNameInTable="ObservacoesColumn" msprop:Generator_UserColumnName="Observacoes" type="xs:string" minOccurs="0" />
+              <xs:element name="Recomendacoes2" msprop:Generator_ColumnVarNameInTable="columnRecomendacoes2" msprop:Generator_ColumnPropNameInRow="Recomendacoes2" msprop:Generator_ColumnPropNameInTable="Recomendacoes2Column" msprop:Generator_UserColumnName="Recomendacoes2" type="xs:string" minOccurs="0" />
+              <xs:element name="Area_Risco" msprop:Generator_ColumnVarNameInTable="columnArea_Risco" msprop:Generator_ColumnPropNameInRow="Area_Risco" msprop:Generator_ColumnPropNameInTable="Area_RiscoColumn" msprop:Generator_UserColumnName="Area_Risco" type="xs:string" minOccurs="0" />
+              <xs:element name="Condicao" msprop:Generator_ColumnVarNameInTable="columnCondicao" msprop:Generator_ColumnPropNameInRow="Condicao" msprop:Generator_ColumnPropNameInTable="CondicaoColumn" msprop:Generator_UserColumnName="Condicao" type="xs:string" minOccurs="0" />
+              <xs:element name="Foto_A1" msprop:Generator_ColumnVarNameInTable="columnFoto_A1" msprop:Generator_ColumnPropNameInRow="Foto_A1" msprop:Generator_ColumnPropNameInTable="Foto_A1Column" msprop:Generator_UserColumnName="Foto_A1" type="xs:string" minOccurs="0" />
+              <xs:element name="Foto_A2" msprop:Generator_ColumnVarNameInTable="columnFoto_A2" msprop:Generator_ColumnPropNameInRow="Foto_A2" msprop:Generator_ColumnPropNameInTable="Foto_A2Column" msprop:Generator_UserColumnName="Foto_A2" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,47 @@
+<?xml version="1.0" standalone="yes" ?>
+<xs:schema id="DataSet" targetNamespace="http://www.tempuri.org/DataSet1.xsd" xmlns:mstns="http://www.tempuri.org/DataSet1.xsd"
+	xmlns="http://www.tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+	<xs:element name="DataSet" msdata:IsDataSet="true" msdata:Locale="pt-BR">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="Result">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="NomeCliente" type="xs:string" minOccurs="0" />
+							<xs:element name="PeriodoAno" type="xs:int"/>
+							<xs:element name="QtdEmpregados" type="xs:int" minOccurs="0" />							
+							<xs:element name="QtdExamesRealizadosJan" type="xs:string" minOccurs="0" />
+							<xs:element name="QtdExamesRealizadosFev" type="xs:string" minOccurs="0" />
+							<xs:element name="QtdExamesRealizadosMar" type="xs:string" minOccurs="0" />
+							<xs:element name="QtdExamesRealizadosAbr" type="xs:string" minOccurs="0" />
+							<xs:element name="QtdExamesRealizadosMai" type="xs:string" minOccurs="0" />
+							<xs:element name="QtdExamesRealizadosJun" type="xs:string" minOccurs="0" />
+							<xs:element name="QtdExamesRealizadosJul" type="xs:string" minOccurs="0" />
+							<xs:element name="QtdExamesRealizadosAgo" type="xs:string" minOccurs="0" />
+							<xs:element name="QtdExamesRealizadosSet" type="xs:string" minOccurs="0" />
+							<xs:element name="QtdExamesRealizadosOut" type="xs:string" minOccurs="0" />
+							<xs:element name="QtdExamesRealizadosNov" type="xs:string" minOccurs="0" />
+							<xs:element name="QtdExamesRealizadosDez" type="xs:string" minOccurs="0" />
+							<xs:element name="PorcExamesRealizadosJan" type="xs:string" minOccurs="0" />
+							<xs:element name="PorcExamesRealizadosFev" type="xs:string" minOccurs="0" />
+							<xs:element name="PorcExamesRealizadosMar" type="xs:string" minOccurs="0" />
+							<xs:element name="PorcExamesRealizadosAbr" type="xs:string" minOccurs="0" />
+							<xs:element name="PorcExamesRealizadosMai" type="xs:string" minOccurs="0" />
+							<xs:element name="PorcExamesRealizadosJun" type="xs:string" minOccurs="0" />
+							<xs:element name="PorcExamesRealizadosJul" type="xs:string" minOccurs="0" />
+							<xs:element name="PorcExamesRealizadosAgo" type="xs:string" minOccurs="0" />
+							<xs:element name="PorcExamesRealizadosSet" type="xs:string" minOccurs="0" />
+							<xs:element name="PorcExamesRealizadosOut" type="xs:string" minOccurs="0" />
+							<xs:element name="PorcExamesRealizadosNov" type="xs:string" minOccurs="0" />
+							<xs:element name="PorcExamesRealizadosDez" type="xs:string" minOccurs="0" />		
+							<xs:element name="ExamesAno" type="xs:int" minOccurs="0" />
+							<xs:element name="TurnoverAnual" type="xs:float" />
+							<xs:element name="TurnoverCombinado" type="xs:float"/>						
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

@@ -1,0 +1,60 @@
+<?xml version="1.0" standalone="yes" ?>
+<xs:schema id="DataSet" targetNamespace="http://www.tempuri.org/DataSet1.xsd" xmlns:mstns="http://www.tempuri.org/DataSet1.xsd" xmlns="http://www.tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+	<xs:element name="DataSet" msdata:IsDataSet="true" msdata:Locale="pt-BR">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="Result">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="tNomeCompleto" type="xs:string" minOccurs="0" />
+							<xs:element name="tCod" type="xs:string" minOccurs="0" />
+							<xs:element name="tEndereco" type="xs:string" minOccurs="0" />
+							<xs:element name="tBairro" type="xs:string" minOccurs="0" />
+							<xs:element name="tCidade" type="xs:string" minOccurs="0" />
+							<xs:element name="tUF" type="xs:string" minOccurs="0" />
+							<xs:element name="tCEP" type="xs:string" minOccurs="0" />
+							<xs:element name="tIE" type="xs:string" minOccurs="0" />
+							<xs:element name="tCGC" type="xs:string" minOccurs="0" />
+							<xs:element name="tRamoAtividade" type="xs:string" minOccurs="0" />
+							<xs:element name="tCaldeira" type="xs:string" minOccurs="0" />
+							<xs:element name="tCompressor" type="xs:string" minOccurs="0" />
+							<xs:element name="tEmpilhadeira" type="xs:string" minOccurs="0" />
+							<xs:element name="tObservacoes" type="xs:string" minOccurs="0" />
+							<xs:element name="tOrigem" type="xs:string" minOccurs="0" />
+							<xs:element name="tEleicaoResponsavel" type="xs:string" minOccurs="0" />
+							<xs:element name="tSindicato" type="xs:string" minOccurs="0" />
+							<xs:element name="tNumeroCNAE" type="xs:string" minOccurs="0" />
+							<xs:element name="tDescricaoCNAE" type="xs:string" minOccurs="0" />
+							<xs:element name="tGrupoRisco" type="xs:string" minOccurs="0" />
+							<xs:element name="tGrupoCipa" type="xs:string" minOccurs="0" />
+							<xs:element name="tSuplentes" type="xs:string" minOccurs="0" />
+							<xs:element name="tTitular" type="xs:string" minOccurs="0" />
+							<xs:element name="tNumeroDeEmpregados" type="xs:string" minOccurs="0" />
+							<xs:element name="tLocalAtividade" type="xs:string" minOccurs="0" />
+							<xs:element name="tMotorista" type="xs:string" minOccurs="0" />
+							<xs:element name="tSite" type="xs:string" minOccurs="0" />
+							<xs:element name="tEmail" type="xs:string" minOccurs="0" />
+							<xs:element name="tPontesRolantes" type="xs:string" minOccurs="0" />
+							<xs:element name="tPrensas" type="xs:string" minOccurs="0" />
+							<xs:element name="tTanques" type="xs:string" minOccurs="0" />
+							<xs:element name="tObrigacoesCipaContratada" type="xs:string" minOccurs="0" />
+							<xs:element name="tObrigacoesPCMSOContratada" type="xs:string" minOccurs="0" />
+							<xs:element name="tObrigacoesRecargaExtintor" type="xs:string" minOccurs="0" />
+							<xs:element name="tObrigacoesObraConsCivil" type="xs:string" minOccurs="0" />
+							<xs:element name="tObrigacoesMineradora" type="xs:string" minOccurs="0" />
+							<xs:element name="tDRT" type="xs:string" minOccurs="0" />
+							<xs:element name="DataDRT" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="tNumeroDRT" type="xs:string" minOccurs="0" />
+							<xs:element name="tOrigemCliente" type="xs:string" minOccurs="0" />
+							<xs:element name="tOrigemOutros" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="Constraint1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:DSReuniaoCipa" />
+			<xs:field xpath="mstns:ID" />
+		</xs:unique>
+	</xs:element>
+</xs:schema>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Dataset" targetNamespace="http://tempuri.org/Dataset.xsd" xmlns:mstns="http://tempuri.org/Dataset.xsd" xmlns="http://tempuri.org/Dataset.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Dataset" msdata:IsDataSet="true" msdata:Locale="en-US" msprop:Generator_UserDSName="Dataset" msprop:Generator_DataSetName="Dataset">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Result" msprop:Generator_UserTableName="Result" msprop:Generator_RowDeletedName="ResultRowDeleted" msprop:Generator_RowChangedName="ResultRowChanged" msprop:Generator_RowClassName="ResultRow" msprop:Generator_RowChangingName="ResultRowChanging" msprop:Generator_RowEvArgName="ResultRowChangeEvent" msprop:Generator_RowEvHandlerName="ResultRowChangeEventHandler" msprop:Generator_TableClassName="ResultDataTable" msprop:Generator_TableVarName="tableResult" msprop:Generator_RowDeletingName="ResultRowDeleting" msprop:Generator_TablePropName="Result">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NomeEmpregado" msprop:Generator_UserColumnName="NomeEmpregado" msprop:Generator_ColumnPropNameInRow="NomeEmpregado" msprop:Generator_ColumnVarNameInTable="columnNomeEmpregado" msprop:Generator_ColumnPropNameInTable="NomeEmpregadoColumn" type="xs:string" />
+              <xs:element name="ExamesSolicitados" msprop:Generator_UserColumnName="ExamesSolicitados" msprop:Generator_ColumnPropNameInRow="ExamesSolicitados" msprop:Generator_ColumnVarNameInTable="columnExamesSolicitados" msprop:Generator_ColumnPropNameInTable="ExamesSolicitadosColumn" type="xs:string" />
+              <xs:element name="DataSolicitacao" msprop:Generator_UserColumnName="DataSolicitacao" msprop:Generator_ColumnPropNameInRow="DataSolicitacao" msprop:Generator_ColumnVarNameInTable="columnDataSolicitacao" msprop:Generator_ColumnPropNameInTable="DataSolicitacaoColumn" type="xs:string" />
+              <xs:element name="NomeMedico" msprop:Generator_UserColumnName="NomeMedico" msprop:Generator_ColumnPropNameInRow="NomeMedico" msprop:Generator_ColumnVarNameInTable="columnNomeMedico" msprop:Generator_ColumnPropNameInTable="NomeMedicoColumn" type="xs:string" />
+              <xs:element name="TituloMedico" msprop:Generator_UserColumnName="TituloMedico" msprop:Generator_ColumnPropNameInRow="TituloMedico" msprop:Generator_ColumnVarNameInTable="columnTituloMedico" msprop:Generator_ColumnPropNameInTable="TituloMedicoColumn" type="xs:string" />
+              <xs:element name="NumeroMedico" msprop:Generator_UserColumnName="NumeroMedico" msprop:Generator_ColumnPropNameInRow="NumeroMedico" msprop:Generator_ColumnVarNameInTable="columnNumeroMedico" msprop:Generator_ColumnPropNameInTable="NumeroMedicoColumn" type="xs:string" />
+              <xs:element name="ContatoMedico" msprop:Generator_UserColumnName="ContatoMedico" msprop:Generator_ColumnPropNameInRow="ContatoMedico" msprop:Generator_ColumnVarNameInTable="columnContatoMedico" msprop:Generator_ColumnPropNameInTable="ContatoMedicoColumn" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

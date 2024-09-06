@@ -1,0 +1,3559 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{476857C7-A83C-4A5A-9BBC-DF07DFA58723}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ilitera.Net</RootNamespace>
+    <AssemblyName>Ilitera.Net</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <TargetFrameworkProfile />
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x64</PlatformTarget>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <IncludeIisSettings>true</IncludeIisSettings>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Design, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.CrystalReports.TemplateEngine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.Data.AdoDotNetInterop, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Enterprise.Viewing.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.ClientDoc, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.CommLayer, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.CommonControls, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.CommonObjectModel, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.Controllers, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.CubeDefModel, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.DataDefModel, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.DataSetConversion, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportAppServer.ObjectFactory, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.Prompting, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.ReportDefModel, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.XmlSerialize, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.VSDesigner, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Web, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files (x86)\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\CrystalDecisions.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="EO.Web, Version=11.0.31.2, Culture=neutral, PublicKeyToken=e92353a6bf73fffc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="FusionCharts, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\FusionCharts.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zip.Reduced, Version=1.9.1.8, Culture=neutral, PublicKeyToken=edbe51ad942a3f5c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Ionic.Zip.Reduced.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>packages\Microsoft.Office.Interop.Excel.15.0.4795.1001\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Web.Administration, Version=7.9.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\System32\inetsrv\Microsoft.Web.Administration.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.IdentityModel" />
+    <Reference Include="System.IdentityModel.Selectors" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="AddReuniao.aspx" />
+    <Content Include="AdicionarIndicado.aspx" />
+    <Content Include="Auditoria\AlertSettings.aspx" />
+    <Content Include="Auditoria\Apresentacao.aspx" />
+    <Content Include="Auditoria\AudIntroducao.aspx" />
+    <Content Include="Auditoria\Auditoria.aspx" />
+    <Content Include="Auditoria\AuditoriaFlash.aspx" />
+    <Content Include="Auditoria\CadResponsavel.aspx" />
+    <Content Include="Auditoria\CadTipoIrregu.aspx" />
+    <Content Include="Auditoria\DetalheIrregularidade.aspx" />
+    <Content Include="Auditoria\AnaliseLaboratorial.aspx" />
+    <Content Include="Auditoria\EquipCalibracao.aspx" />
+    <Content Include="Auditoria\AnaliseLaboratorial_Det.aspx" />
+    <Content Include="Auditoria\ImgIrregularidade.aspx" />
+    <Content Include="Auditoria\img\5pixel.gif" />
+    <Content Include="Auditoria\img\busca.gif" />
+    <Content Include="Auditoria\img\busca_f2.gif" />
+    <Content Include="Auditoria\img\default_img.gif" />
+    <Content Include="Auditoria\img\download.gif" />
+    <Content Include="Auditoria\img\flashDocument.jpg" />
+    <Content Include="Auditoria\img\fotoaud.gif" />
+    <Content Include="Auditoria\img\left.gif" />
+    <Content Include="Auditoria\img\print.gif" />
+    <Content Include="Auditoria\img\right.gif" />
+    <Content Include="Auditoria\index.aspx" />
+    <Content Include="Auditoria\ListaEmpresa.aspx" />
+    <Content Include="Auditoria\ListagemAuditorias.aspx" />
+    <Content Include="Auditoria\ListagemIrregula.aspx" />
+    <Content Include="Auditoria\ListagemIrregulaCompl.aspx" />
+    <Content Include="Auditoria\ListagemIrregularidades.aspx" />
+    <Content Include="Auditoria\LoginRestrito.aspx" />
+    <Content Include="Auditoria\MenuList.aspx" />
+    <Content Include="Auditoria\Norma.aspx" />
+    <Content Include="Auditoria\PageSet.aspx" />
+    <Content Include="Auditoria\EquipCalibracao_Det.aspx" />
+    <Content Include="Auditoria\scripts\datagrid.css" />
+    <Content Include="Auditoria\scripts\style.css" />
+    <Content Include="Auditoria\scripts\stylemenu.css" />
+    <Content Include="Auditoria\scripts\styleNew.css" />
+    <Content Include="Auditoria\scripts\validador.js" />
+    <Content Include="CheckInsalubridade.aspx" />
+    <Content Include="CheckLaudoEletricoPeriodos.aspx" />
+    <Content Include="CheckLaudoErgonomicoPeriodo.aspx" />
+    <Content Include="CheckLaudoSPDAPeriodos.aspx" />
+    <Content Include="CheckLTCAT.aspx" />
+    <Content Include="Cipa_New.aspx" />
+    <Content Include="EditMembroCIPA.aspx" />
+    <Content Include="EnviarAta.aspx" />
+    <Content Include="eSocial\Controle_eSocial_2221.aspx" />
+    <Content Include="MembrosCIPA.aspx" />
+    <Content Include="MembrosUltimasCipas.aspx" />
+    <Content Include="OutrosParticipantes.aspx" />
+    <Content Include="PresentesReuniao.aspx" />
+    <Content Include="ReunioesExtraordinarias.aspx" />
+    <Content Include="Toxicologico.aspx" />
+    <Content Include="Toxicologico_Sorteio.aspx" />
+    <Content Include="Toxicologico_Configuracao.aspx" />
+    <Content Include="CheckPGRPeriodos.aspx" />
+    <Content Include="AF.asmx" />
+    <Content Include="Dashboard.aspx" />
+    <Content Include="Grafico_Google.aspx" />
+    <Content Include="Grafico_Google2.aspx" />
+    <Content Include="MOC.asmx" />
+    <Content Include="consume.aspx" />
+    <Content Include="IliNet_eSocial.asmx" />
+    <Content Include="Dash_ExamesPendentes.aspx" />
+    <Content Include="CheckXML.aspx" />
+    <Content Include="CheckPAE.aspx" />
+    <Content Include="CheckNR4.aspx" />
+    <Content Include="CheckVasos.aspx" />
+    <Content Include="CheckMapas.aspx" />
+    <Content Include="CheckPCAPeriodos.aspx" />
+    <Content Include="CheckPCMSOPeriodos.aspx" />
+    <Content Include="CheckPericulosidade.aspx" />
+    <Content Include="CheckPPPEmpregado.aspx" />
+    <Content Include="CheckPPRAPeriodos.aspx" />
+    <Content Include="close.html" />
+    <Content Include="close_essence.html" />
+    <Content Include="Agendamento_Auto.aspx" />
+    <Content Include="ComunicacaoDash.asmx" />
+    <Content Include="ComunicacaoFec.asmx" />
+    <Content Include="Comunicacao.asmx" />
+    <Content Include="Comunicacao_Fec.aspx" />
+    <Content Include="Comunicacao2.aspx" />
+    <Content Include="ControleCIPA\CipaRepositorio.aspx" />
+    <Content Include="ControleCIPA\img\5pixel.gif" />
+    <Content Include="ControleCIPA\img\backtitu.jpg" />
+    <Content Include="ControleCIPA\img\busca.gif" />
+    <Content Include="ControleCIPA\img\cancel.gif" />
+    <Content Include="ControleCIPA\img\print.gif" />
+    <Content Include="ControleCIPA\img\quadlaranja.gif" />
+    <Content Include="ControleCIPA\img\quadverde.gif" />
+    <Content Include="ControleCIPA\img\quadvermelho.gif" />
+    <Content Include="ControleCIPA\img\update.gif" />
+    <Content Include="ControleCIPA\IndicarCIPA.aspx" />
+    <Content Include="ControleCIPA\ListaReunioesCIPA.aspx" />
+    <Content Include="ControleCIPA\RelatorioAnual.aspx" />
+    <Content Include="ControleCIPA\Repositorio.aspx" />
+    <Content Include="ControleEPI\AddEquipamento.aspx" />
+    <Content Include="ControleEPI\AddFabricante.aspx" />
+    <Content Include="ControleEPI\AddFornecedor.aspx" />
+    <Content Include="ControleEPI\Alerta_EPI.aspx" />
+    <Content Include="ControleEPI\CadastroCompra.aspx" />
+    <Content Include="ControleEPI\CadastroEPI.aspx" />
+    <Content Include="ControleEPI\ControleEstoque.aspx" />
+    <Content Include="ControleEPI\EntregaEPI_Auto.aspx" />
+    <Content Include="ControleEPI\EPIRepositorio.aspx" />
+    <Content Include="ControleEPI\Fornecimento_Lista.aspx" />
+    <Content Include="ControleEPI\RepositorioEPI.aspx" />
+    <Content Include="ControleEPI\scripts\datagrid.css" />
+    <Content Include="ControleEPI\DetalheCA.aspx" />
+    <Content Include="ControleEPI\EntregaEPI.aspx" />
+    <Content Include="ControleEPI\HistoricoEntrega.aspx" />
+    <Content Include="ControleEPI\HistoricoEPIEmpregado.aspx" />
+    <Content Include="ControleEPI\index.aspx" />
+    <Content Include="ControleEPI\ListaEmpresa.aspx" />
+    <Content Include="ControleEPI\ListagemEPI.aspx" />
+    <Content Include="ControleEPI\ListagemEPITodos.aspx" />
+    <Content Include="ControleEPI\MenuList.aspx" />
+    <Content Include="ControleEPI\NovoCA.aspx" />
+    <Content Include="ControleEPI\RelatorioComplEntEPI.aspx" />
+    <Content Include="ControleEPI\RelatorioComplTodosEntEPI.aspx" />
+    <Content Include="ControleEPI\RelatorioEntregaEPI.aspx" />
+    <Content Include="ControleEPI\StatusEPIEmpregado.aspx" />
+    <Content Include="ControleEPI\scripts\style.css" />
+    <Content Include="ControleEPI\scripts\stylemenu.css" />
+    <Content Include="ControleEPI\topo1.jpg" />
+    <Content Include="ControleEPI\scripts\validador.js" />
+    <Content Include="ControleExtintores\CadastroExtintores.aspx" />
+    <Content Include="ControleExtintores\CadFabricanteExtintor.aspx" />
+    <Content Include="ControleExtintores\CadTipoExtintor.aspx" />
+    <Content Include="ControleExtintores\ExtintorDetalhe.aspx" />
+    <Content Include="ControleExtintores\HistoricoExtintores.aspx" />
+    <Content Include="ControleExtintores\img\5pixel.gif" />
+    <Content Include="ControleExtintores\img\backtitu.jpg" />
+    <Content Include="ControleExtintores\img\busca.gif" />
+    <Content Include="ControleExtintores\img\cancel.gif" />
+    <Content Include="ControleExtintores\img\print.gif" />
+    <Content Include="ControleExtintores\img\quadlaranja.gif" />
+    <Content Include="ControleExtintores\img\quadverde.gif" />
+    <Content Include="ControleExtintores\img\quadvermelho.gif" />
+    <Content Include="ControleExtintores\img\update.gif" />
+    <Content Include="ControleExtintores\ListaExtintores.aspx" />
+    <Content Include="ControleExtintores\ListagemExtintores.aspx" />
+    <Content Include="ControleExtintores\scripts\datagrid.css" />
+    <Content Include="ControleExtintores\scripts\menu.js" />
+    <Content Include="ControleExtintores\scripts\menuall.js" />
+    <Content Include="ControleExtintores\scripts\menudoctor.js" />
+    <Content Include="ControleExtintores\scripts\menuEmp.js" />
+    <Content Include="ControleExtintores\scripts\style.css" />
+    <Content Include="ControleExtintores\scripts\stylemenu.css" />
+    <Content Include="ControleExtintores\scripts\validador.js" />
+    <Content Include="ControleCIPA\RelatorioInscricaoCIPA.aspx" />
+    <Content Include="DadosEmpresa\RelatorioAbsenteismo.aspx" />
+    <Content Include="DadosEmpresa\RelatorioAmbulatoriais.aspx" />
+    <Content Include="DadosEmpresa\RelatorioSAE.aspx">
+      <BrowseToURL>~/DadosEmpresa/RelatorioSAE.aspx</BrowseToURL>
+    </Content>
+    <Content Include="DadosEmpresa\RelatorioColaboradores.aspx" />
+    <Content Include="DadosEmpresa\RelatorioExames.aspx" />
+    <Content Include="DadosEmpresa\RelatorioGHE_Funcao_Exames.aspx" />
+    <Content Include="DadosEmpresa\RelatorioGuiaASO_Auto.aspx" />
+    <Content Include="DadosEmpresa\RelatorioGuiaASO.aspx" />
+    <Content Include="DadosEmpresa\RelatorioGuiaComp.aspx" />
+    <Content Include="DadosEmpresa\RelatorioGuias.aspx" />
+    <Content Include="DadosEmpresa\RelatorioMailing.aspx" />
+    <Content Include="DadosEmpresa\RelatorioVacinas.aspx" />
+    <Content Include="Comunicacao.aspx" />
+    <Content Include="eSocial\Controle_eSocial_1060.aspx" />
+    <Content Include="eSocial\Controle_eSocial_2210.aspx" />
+    <Content Include="eSocial\Controle_eSocial_2220.aspx" />
+    <Content Include="eSocial\Controle_eSocial_2230.aspx" />
+    <Content Include="eSocial\Controle_eSocial_2240.aspx" />
+    <Content Include="eSocial\Controle_eSocial_2245.aspx" />
+    <Content Include="eSocial\ViewXML.aspx" />
+    <Content Include="eSocial\topo1.jpg" />
+    <Content Include="PCMSOAnalitico.aspx" />
+    <Content Include="PGRTR.aspx" />
+    <Content Include="PGRIntroducao.aspx" />
+    <Content Include="PlanilhaPGR.aspx" />
+    <Content Include="PGRCompleto.aspx" />
+    <Content Include="VacSetor.aspx" />
+    <Content Include="Importar_Planilha_Transf.aspx" />
+    <Content Include="Importar_Planilha.aspx" />
+    <Content Include="PCMSO\Vacina_Setor.aspx" />
+    <Content Include="PCMSO\ListaVacinas.aspx" />
+    <Content Include="PCMSO\DadosEmpregado_Guia_Auto.aspx" />
+    <Content Include="PCMSO\ExameClinico_EY.aspx" />
+    <Content Include="PCMSO\ExameNaoOcupacional_EY_old.aspx" />
+    <Content Include="PCMSO\ExameNaoOcupacional_EY.aspx" />
+    <Content Include="PCMSO\Relatorio_Empregados_Aptidoes.aspx" />
+    <Content Include="QuadroNR4.aspx" />
+    <Content Include="RelatMateriais.aspx" />
+    <Content Include="Repositorio.aspx" />
+    <Content Include="eSocial\Gerar_eSocial.aspx" />
+    <Content Include="Grafico1.aspx" />
+    <Content Include="Grafico2.aspx" />
+    <Content Include="help.aspx" />
+    <Content Include="Images\Crystal_Clear_app_shutdown.png" />
+    <Content Include="Images\shutdown.jpg" />
+    <Content Include="Images\shutdown.png" />
+    <Content Include="Insalubridade.aspx" />
+    <Content Include="InserirDadosEmpregado.aspx" />
+    <Content Include="LaudoEletrico.aspx" />
+    <Content Include="LaudoErgCronograma.aspx" />
+    <Content Include="LaudoErgonomico.aspx" />
+    <Content Include="LaudoSPDA.aspx" />
+    <Content Include="LembrarSenha.aspx" />
+    <Content Include="ListaPendencias.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="LTCAT.aspx" />
+    <Content Include="OrdemdeServico2\CadAPR.aspx" />
+    <Content Include="OrdemdeServico2\CadAspecto.aspx" />
+    <Content Include="OrdemdeServico2\CadCelula.aspx" />
+    <Content Include="OrdemdeServico2\CadConjunto.aspx" />
+    <Content Include="OrdemdeServico2\CadConjuntoProcedimento.aspx" />
+    <Content Include="OrdemdeServico2\CadDanos.aspx" />
+    <Content Include="OrdemdeServico2\CadEmpregadoConjuntoProcedimento.aspx" />
+    <Content Include="OrdemdeServico2\CadEquipamento.aspx" />
+    <Content Include="OrdemdeServico2\CadFerramenta.aspx" />
+    <Content Include="OrdemdeServico2\CadPerigo.aspx" />
+    <Content Include="OrdemdeServico2\CadProcedimento.aspx" />
+    <Content Include="OrdemdeServico2\CadProduto.aspx" />
+    <Content Include="OrdemdeServico2\CadRiscoAcidente.aspx" />
+    <Content Include="OrdemdeServico2\ImportProcGenerico.aspx" />
+    <Content Include="OrdemdeServico2\ListaProcedimento.aspx" />
+    <Content Include="OrdemdeServico2\ListaProcedimentoAPR.aspx" />
+    <Content Include="OrdemdeServico2\OSCompleto.aspx" />
+    <Content Include="OrdemdeServico2\RptAPR.aspx" />
+    <Content Include="OrdemdeServico2\RptConjuntoProcedimento.aspx" />
+    <Content Include="OrdemdeServico2\RptIntroducaoOS.aspx" />
+    <Content Include="OrdemdeServico2\RptListaProcOS.aspx" />
+    <Content Include="OrdemdeServico2\RptOrdemDeServico.aspx" />
+    <Content Include="OrdemdeServico2\RptPOP.aspx" />
+    <Content Include="OrdemdeServico2\RptPOPGenerico.aspx" />
+    <Content Include="OrdemdeServico2\RptProcedimento.aspx" />
+    <Content Include="OrdemdeServico2\RptProcNome.aspx" />
+    <Content Include="OrdemdeServico2\RptProcNumero.aspx" />
+    <Content Include="OrdemdeServico2\topo1.jpg" />
+    <Content Include="PCA.aspx" />
+    <Content Include="PCMSO\AnamneseDinamica.aspx" />
+    <Content Include="PCMSO\AnamneseDinamicaBranco.aspx" />
+    <Content Include="PCMSO\DadosEmpregado_Dashboard.aspx" />
+    <Content Include="PCMSO\DadosEmpregado_Questionario.aspx" />
+    <Content Include="PCMSO\DadosEmpregado_Vacina.aspx" />
+    <Content Include="PCMSO\ExameClinicoIlitera.aspx" />
+    <Content Include="PCMSO\ExameQuestionario.aspx" />
+    <Content Include="PCMSO\PCICompleto.aspx" />
+    <Content Include="PCMSO.aspx" />
+    <Content Include="PCMSOAnual.aspx" />
+    <Content Include="PCMSOCompleto.aspx" />
+    <Content Include="PCMSOExRealizados.aspx" />
+    <Content Include="PCMSOPlanejado.aspx" />
+    <Content Include="PCMSOPlanejado_NE.aspx" />
+    <Content Include="PCMSOPlanejamento.aspx" />
+    <Content Include="PCMSOPorEmpregado.aspx" />
+    <Content Include="PCMSOPorExames.aspx" />
+    <Content Include="PCMSO\AnamneseAud.aspx" />
+    <Content Include="PCMSO\ASOGuiaEmpregado.aspx" />
+    <Content Include="PCMSO\Audiograma.aspx" />
+    <Content Include="PCMSO\CadAbsentismo.aspx" />
+    <Content Include="PCMSO\CadAcidente.aspx" />
+    <Content Include="PCMSO\CadastroUniformes.aspx" />
+    <Content Include="PCMSO\CadFatorRisco.aspx" />
+    <Content Include="PCMSO\Cancelar_Agendamento.aspx" />
+    <Content Include="PCMSO\DadosEmpregado_CA.aspx" />
+    <Content Include="PCMSO\DadosEmpregado_Digitalizado.aspx" />
+    <Content Include="PCMSO\DadosEmpregado_Guia_Dup.aspx" />
+    <Content Include="PCMSO\DadosEmpregado_Lista.aspx" />
+    <Content Include="PCMSO\ExameClinicoGuia.aspx" />
+    <Content Include="PCMSO\ListaAcidentes2.aspx" />
+    <Content Include="PCMSO\ListaUniformes.aspx" />
+    <Content Include="PCMSO\Graficos.aspx">
+      <BrowseToURL>~/PCMSO/Graficos.aspx</BrowseToURL>
+    </Content>
+    <Content Include="PCMSO\Relatorio_Absenteismo.aspx" />
+    <Content Include="PCMSO\Relatorio_Ambulatoriais.aspx" />
+    <Content Include="PCMSO\Relatorio_AON.aspx" />
+    <Content Include="PCMSO\Relatorio_Empregados.aspx" />
+    <Content Include="PCMSO\Relatorio_Exames.aspx" />
+    <Content Include="PCMSO\Relatorio_GHE_Funcao_Exames.aspx" />
+    <Content Include="PCMSO\Relatorio_Guias.aspx" />
+    <Content Include="PCMSO\Relatorio_Mailing.aspx" />
+    <Content Include="PCMSO\Relatorio_PCD.aspx" />
+    <Content Include="PCMSO\Relatorio_Vacinas.aspx" />
+    <Content Include="PCMSO\Relatorio_Vacinas_Atrasadas.aspx" />
+    <Content Include="PCMSO\TestesEspeciais.aspx" />
+    <Content Include="PCMSO\Vacinas.aspx" />
+    <Content Include="PCMSO\Vacinas_Setor.aspx" />
+    <Content Include="PlanilhaPPRA.aspx" />
+    <Content Include="Repositorio_Cadastro.aspx" />
+    <Content Include="Properties\DataSources\System.Xml.XmlNode.datasource" />
+    <Content Include="packages.config" />
+    <None Include="Service References\Comunicacao_Dash2\ComunicacaoDash.wsdl" />
+    <Content Include="Service References\Comunicacao_Dash2\Ilitera.Net.Comunicacao_Dash2.Exposicao_ColaboradoresResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Comunicacao_Dash2\Ilitera.Net.Comunicacao_Dash2.solicitar_CATResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\Comunicacao_Dash\ComunicacaoDash.wsdl" />
+    <None Include="Service References\Comunicacao_Dash2\ComunicacaoDash.disco" />
+    <None Include="Service References\Comunicacao_Dash2\configuration91.svcinfo" />
+    <None Include="Service References\Comunicacao_Dash2\configuration.svcinfo" />
+    <None Include="Service References\Comunicacao_Dash2\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Service References\Comunicacao_Dash\Ilitera.Net.Comunicacao_Dash.Exposicao_ColaboradoresResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Comunicacao_Dash\Ilitera.Net.Comunicacao_Dash.solicitar_CATResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\Comunicacao_Dec2\Comunicacao.wsdl" />
+    <None Include="Service References\Comunicacao_Dash\ComunicacaoDash.disco" />
+    <None Include="Service References\Comunicacao_Dash\configuration91.svcinfo" />
+    <None Include="Service References\Comunicacao_Dash\configuration.svcinfo" />
+    <None Include="Service References\Comunicacao_Dash\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Service References\Comunicacao_Dec2\Ilitera.Net.Comunicacao_Dec2.Executar_AcidenteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Comunicacao_Dec2\Ilitera.Net.Comunicacao_Dec2.Executar_AfastamentoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Comunicacao_Dec2\Ilitera.Net.Comunicacao_Dec2.Executar_ConvocacaoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Comunicacao_Dec2\Ilitera.Net.Comunicacao_Dec2.Executar_ExameResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Comunicacao_Dec2\Ilitera.Net.Comunicacao_Dec2.Executar_CIPAResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Comunicacao_Dec2\Ilitera.Net.Comunicacao_Dec2.Executar_CIPA_EventoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Comunicacao_Dec2\Ilitera.Net.Comunicacao_Dec2.Executar_Convocacao_OldResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Comunicacao_Dec2\Ilitera.Net.Comunicacao_Dec2.Retornar_ClinicasResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Comunicacao_Dec2\Ilitera.Net.Comunicacao_Dec2.Retornar_LaudosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Comunicacao_Dec2\Ilitera.Net.Comunicacao_Dec2.Criar_CargoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Comunicacao_Dec2\Ilitera.Net.Comunicacao_Dec2.Editar_AfastamentoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Comunicacao_Dec2\Ilitera.Net.Comunicacao_Dec2.Resultado_ExameResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Comunicacao_Dec2\Ilitera.Net.Comunicacao_Dec2.Cadastrar_UnidadeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Comunicacao_Dec2\Ilitera.Net.Comunicacao_Dec2.Editar_AcidenteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\Comunicacao_Dec\Comunicacao.disco" />
+    <None Include="Service References\Comunicacao_Dec\configuration91.svcinfo" />
+    <None Include="Service References\Comunicacao_Dec\configuration.svcinfo" />
+    <None Include="Service References\Comunicacao_Dec2\Comunicacao.disco" />
+    <None Include="Service References\Comunicacao_Dec2\configuration91.svcinfo" />
+    <None Include="Service References\Comunicacao_Dec2\configuration.svcinfo" />
+    <None Include="Service References\Comunicacao_Dec2\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Service References\Comunicacao_Dec\Ilitera.Net.Comunicacao_Dec.Executar_AfastamentoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Comunicacao_Dec\Ilitera.Net.Comunicacao_Dec.Executar_ConvocacaoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Comunicacao_Dec\Ilitera.Net.Comunicacao_Dec.Executar_ExameResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Comunicacao_Dec\Ilitera.Net.Comunicacao_Dec.Executar_AcidenteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Comunicacao_Dec\Ilitera.Net.Comunicacao_Dec.Executar_CIPAResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Comunicacao_Dec\Ilitera.Net.Comunicacao_Dec.Executar_CIPA_EventoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Comunicacao_Dec\Ilitera.Net.Comunicacao_Dec.Executar_Convocacao_OldResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Comunicacao_Dec\Ilitera.Net.Comunicacao_Dec.Retornar_ClinicasResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Comunicacao_Dec\Ilitera.Net.Comunicacao_Dec.Retornar_LaudosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Comunicacao_Dec\Ilitera.Net.Comunicacao_Dec.Editar_AfastamentoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Comunicacao_Dec\Ilitera.Net.Comunicacao_Dec.Resultado_ExameResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Comunicacao_Dec\Ilitera.Net.Comunicacao_Dec.Criar_CargoResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Comunicacao_Dec\Ilitera.Net.Comunicacao_Dec.Cadastrar_UnidadeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Comunicacao_Dec\Ilitera.Net.Comunicacao_Dec.Editar_AcidenteResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Comunicacao_Dec\Ilitera.Net.Comunicacao_Dec.solicitar_CATResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\Comunicacao_Dec\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\Comunicacao_Fecomercio2\ComunicacaoFec.wsdl" />
+    <Content Include="Service References\Comunicacao_Fecomercio2\Ilitera.Net.Comunicacao_Fecomercio2.Executar_ConvocacaoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Comunicacao_Fecomercio2\Ilitera.Net.Comunicacao_Fecomercio2.Retornar_ClinicasResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Comunicacao_Fecomercio2\Ilitera.Net.Comunicacao_Fecomercio2.Retornar_LaudosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Comunicacao_Fecomercio2\Ilitera.Net.Comunicacao_Fecomercio2.Retornar_CargosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Comunicacao_Fecomercio2\Ilitera.Net.Comunicacao_Fecomercio2.Retornar_SetoresResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Comunicacao_Fecomercio2\Ilitera.Net.Comunicacao_Fecomercio2.Solicitar_LaudoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Comunicacao_Fecomercio2\Ilitera.Net.Comunicacao_Fecomercio2.Retornar_ASOResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Comunicacao_Fecomercio2\Ilitera.Net.Comunicacao_Fecomercio2.Retornar_DigitalizadoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Comunicacao_Fecomercio2\Ilitera.Net.Comunicacao_Fecomercio2.Solicitar_eSocial_1060Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Comunicacao_Fecomercio2\Ilitera.Net.Comunicacao_Fecomercio2.Retornar_Clinicas_ClienteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Comunicacao_Fecomercio2\Ilitera.Net.Comunicacao_Fecomercio2.Retornar_Status_ExameResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Comunicacao_Fecomercio2\Ilitera.Net.Comunicacao_Fecomercio2.Solicitar_eSocial_2210Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\Comunicacao_Fecomercio\ComunicacaoFec.disco" />
+    <None Include="Service References\Comunicacao_Fecomercio\configuration91.svcinfo" />
+    <None Include="Service References\Comunicacao_Fecomercio\configuration.svcinfo" />
+    <None Include="Service References\Comunicacao_Fecomercio2\ComunicacaoFec.disco" />
+    <None Include="Service References\Comunicacao_Fecomercio2\configuration91.svcinfo" />
+    <None Include="Service References\Comunicacao_Fecomercio2\configuration.svcinfo" />
+    <None Include="Service References\Comunicacao_Fecomercio2\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Service References\Comunicacao_Fecomercio\Ilitera.Net.Comunicacao_Fecomercio.Executar_ConvocacaoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Comunicacao_Fecomercio\Ilitera.Net.Comunicacao_Fecomercio.Retornar_ClinicasResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Comunicacao_Fecomercio\Ilitera.Net.Comunicacao_Fecomercio.Retornar_LaudosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Comunicacao_Fecomercio\Ilitera.Net.Comunicacao_Fecomercio.Retornar_CargosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Comunicacao_Fecomercio\Ilitera.Net.Comunicacao_Fecomercio.Retornar_SetoresResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Comunicacao_Fecomercio\Ilitera.Net.Comunicacao_Fecomercio.Solicitar_LaudoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Comunicacao_Fecomercio\Ilitera.Net.Comunicacao_Fecomercio.Retornar_ASOResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Comunicacao_Fecomercio\Ilitera.Net.Comunicacao_Fecomercio.Retornar_DigitalizadoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Comunicacao_Fecomercio\Ilitera.Net.Comunicacao_Fecomercio.Solicitar_eSocial_1060Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Comunicacao_Fecomercio\Ilitera.Net.Comunicacao_Fecomercio.Retornar_Clinicas_ClienteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Comunicacao_Fecomercio\Ilitera.Net.Comunicacao_Fecomercio.Retornar_Status_ExameResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Comunicacao_Fecomercio\Ilitera.Net.Comunicacao_Fecomercio.Solicitar_eSocial_2210Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Comunicacao_Fecomercio\Ilitera.Net.Comunicacao_Fecomercio.Solicitar_eSocial_2220Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Comunicacao_Fecomercio\Ilitera.Net.Comunicacao_Fecomercio.Solicitar_eSocial_2221Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Comunicacao_Fecomercio\Ilitera.Net.Comunicacao_Fecomercio.Solicitar_eSocial_2230Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Comunicacao_Fecomercio\Ilitera.Net.Comunicacao_Fecomercio.Solicitar_eSocial_2240Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Comunicacao_Fecomercio\Ilitera.Net.Comunicacao_Fecomercio.Solicitar_eSocial_2245Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\Comunicacao_Fecomercio\Ilitera.Net.Comunicacao_Fecomercio.Eventos_eSocial_1060Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\Comunicacao_Fecomercio\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\IliNet_eSocial\IliNet_eSocial.disco" />
+    <None Include="Service References\IliNet_eSocial\configuration91.svcinfo" />
+    <None Include="Service References\IliNet_eSocial\configuration.svcinfo" />
+    <None Include="Service References\IliNet_eSocial\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Vasos.aspx" />
+    <Content Include="PPR.aspx" />
+    <Content Include="PPRACompleto.aspx" />
+    <Content Include="PPRACompletoIndice.aspx" />
+    <Content Include="PPRADocBase.aspx" />
+    <Content Include="QuadroEPI.aspx" />
+    <Content Include="DadosEmpresa\RelatorioGuia.aspx" />
+    <Content Include="Images\blank.gif" />
+    <Content Include="Images\button1_hover.gif" />
+    <Content Include="Images\button1_normal.gif" />
+    <Content Include="Images\button_cancel.gif" />
+    <Content Include="Images\button_ok.gif" />
+    <Content Include="Images\comment.gif" />
+    <Content Include="Images\dark_blue_dlg_ok.gif" />
+    <Content Include="Images\grid_header.gif" />
+    <Content Include="Images\holiday_Christian.gif" />
+    <Content Include="Images\holiday_Commonwealth.gif" />
+    <Content Include="Images\holiday_Halloween.gif" />
+    <Content Include="Images\holiday_Jewish.gif" />
+    <Content Include="Images\holiday_Love.gif" />
+    <Content Include="Images\holiday_US.gif" />
+    <Content Include="Images\holiday_Valentine.gif" />
+    <Content Include="Images\Lexus GS 430.jpg" />
+    <Content Include="Images\loading.gif" />
+    <Content Include="Images\logo.gif" />
+    <Content Include="Images\Mercedes-Benz CLK.jpg" />
+    <Content Include="Images\page_background.gif" />
+    <Content Include="Images\page_background_left.gif" />
+    <Content Include="Images\page_background_right.gif" />
+    <Content Include="Images\question_mark.gif" />
+    <Content Include="Images\sys_prop_advanced.gif" />
+    <Content Include="Images\sys_prop_automatic_update.gif" />
+    <Content Include="Images\sys_prop_computer_name.gif" />
+    <Content Include="Images\sys_prop_general.gif" />
+    <Content Include="Images\sys_prop_hardware.gif" />
+    <Content Include="Images\sys_prop_remote.gif" />
+    <Content Include="Images\week.gif" />
+    <Content Include="ListaEmpregados.aspx" />
+    <Content Include="ListaEmpresas2.aspx" />
+    <Content Include="MapaRisco.aspx" />
+    <Content Include="PCMSO\AnotacoesPCI.aspx" />
+    <Content Include="PCMSO\ASOEmpregado.aspx" />
+    <Content Include="PCMSO\CadProcedimentoClinico.aspx" />
+    <Content Include="PCMSO\CadQueixaClinica.aspx" />
+    <Content Include="PCMSO\DadosEmpregado.aspx" />
+    <Content Include="PCMSO\DadosEmpregado_Guia.aspx" />
+    <Content Include="PCMSO\ExameAudiometrico.aspx" />
+    <Content Include="PCMSO\ExameClinico.aspx" />
+    <Content Include="PCMSO\ExameComplementar.aspx" />
+    <Content Include="PCMSO\ExameDigitalizado.aspx" />
+    <Content Include="PCMSO\ExameNaoOcupacional.aspx" />
+    <Content Include="PCMSO\img\5pixel.gif" />
+    <Content Include="PCMSO\img\adendo.gif" />
+    <Content Include="PCMSO\img\backtitu.jpg" />
+    <Content Include="PCMSO\img\busca.gif" />
+    <Content Include="PCMSO\img\busca_f2.gif" />
+    <Content Include="PCMSO\img\head.swf" />
+    <Content Include="PCMSO\img\left.jpg" />
+    <Content Include="PCMSO\img\leftAllDisabled.jpg" />
+    <Content Include="PCMSO\img\leftAllEnabled.jpg" />
+    <Content Include="PCMSO\img\leftDisabled.jpg" />
+    <Content Include="PCMSO\img\loading.gif" />
+    <Content Include="PCMSO\img\Ok.gif" />
+    <Content Include="PCMSO\img\print.gif" />
+    <Content Include="PCMSO\img\recomenda.gif" />
+    <Content Include="PCMSO\img\right.jpg" />
+    <Content Include="PCMSO\img\rightAllDisabled.jpg" />
+    <Content Include="PCMSO\img\rightAllEnabled.jpg" />
+    <Content Include="PCMSO\img\rightDisabled.jpg" />
+    <Content Include="PCMSO\RiscosEPIs.aspx" />
+    <Content Include="PCMSO\scripts\datagrid.css" />
+    <Content Include="PCMSO\scripts\menu.js" />
+    <Content Include="PCMSO\scripts\menuall.js" />
+    <Content Include="PCMSO\scripts\menudoctor.js" />
+    <Content Include="PCMSO\scripts\menuEmp.js" />
+    <Content Include="PCMSO\scripts\style.css" />
+    <Content Include="PCMSO\scripts\stylemenu.css" />
+    <Content Include="PCMSO\scripts\validador.js" />
+    <Content Include="PPPEmpregado.aspx" />
+    <Content Include="PCMSO\WbUsrCntrlAudiograma.ascx" />
+    <Content Include="PPRAIntroducao.aspx" />
+    <Content Include="QuadroEPI2.aspx" />
+    <Content Include="RelatAbsenteismo.aspx" />
+    <Content Include="Scripts\style.css" />
+    <Content Include="SelecaoGHE.aspx" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Tratar_Excecao.aspx" />
+    <Content Include="Treinamentos\CadastroCurso.aspx" />
+    <Content Include="Treinamentos\CertificadoColetivo.aspx" />
+    <Content Include="Treinamentos\CertificadoIndividual.aspx" />
+    <Content Include="Treinamentos\EmpregadoTreinamento.aspx" />
+    <Content Include="Treinamentos\FichaEmpregado.aspx" />
+    <Content Include="Treinamentos\img\5pixel.gif" />
+    <Content Include="Treinamentos\img\adendo.gif" />
+    <Content Include="Treinamentos\img\backtitu.jpg" />
+    <Content Include="Treinamentos\img\busca.gif" />
+    <Content Include="Treinamentos\img\busca_f2.gif" />
+    <Content Include="Treinamentos\img\head.swf" />
+    <Content Include="Treinamentos\img\left.jpg" />
+    <Content Include="Treinamentos\img\leftAllDisabled.jpg" />
+    <Content Include="Treinamentos\img\leftAllEnabled.jpg" />
+    <Content Include="Treinamentos\img\leftDisabled.jpg" />
+    <Content Include="Treinamentos\img\loading.gif" />
+    <Content Include="Treinamentos\img\Ok.gif" />
+    <Content Include="Treinamentos\img\print.gif" />
+    <Content Include="Treinamentos\img\recomenda.gif" />
+    <Content Include="Treinamentos\img\right.jpg" />
+    <Content Include="Treinamentos\img\rightAllDisabled.jpg" />
+    <Content Include="Treinamentos\img\rightAllEnabled.jpg" />
+    <Content Include="Treinamentos\img\rightDisabled.jpg" />
+    <Content Include="Treinamentos\InfragisticsImg\16_excel.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\16_print.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\a.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\Acesso.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\alertservice.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\arrow_black.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\auditoria.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\BackChangeClient.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\bankingbtn.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\billpay.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\BlackFadeSep.bmp" />
+    <Content Include="Treinamentos\InfragisticsImg\BlueExplorer.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\BookWithStar.bmp" />
+    <Content Include="Treinamentos\InfragisticsImg\cal.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\calindex.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\change.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\clearpixel.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ClosedBook.bmp" />
+    <Content Include="Treinamentos\InfragisticsImg\conjprocedimento.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\cursor_drag.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\downarrows_trans.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\downarrows_white.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\dropdown_up.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\Empregados.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\epi.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\epiutilizacao.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\examAgendados.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\exames.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ExIndicados.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\explorerbar.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\finance-smallbtn.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\finance.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\finduser.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\folder.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\folderBio.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\folderopen.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\go.bmp" />
+    <Content Include="Treinamentos\InfragisticsImg\go.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\go2.bmp" />
+    <Content Include="Treinamentos\InfragisticsImg\gohome.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\GrayExplorer.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\groupBackground.bmp" />
+    <Content Include="Treinamentos\InfragisticsImg\GroupHeader.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\HeaderBackGreen.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ie.bmp" />
+    <Content Include="Treinamentos\InfragisticsImg\igcmbo_mscrmdown.GIF" />
+    <Content Include="Treinamentos\InfragisticsImg\igcmbo_mscrmup.GIF" />
+    <Content Include="Treinamentos\InfragisticsImg\Igdtc_arrowdown.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\igdtc_arrowup.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\igdtc_elipses.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\igmenu_scrolldown.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\igmenu_scrolldown_disabled.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\igmenu_scrollup.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\igmenu_scrollup_disabled.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\igpnl_dwn.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\igpnl_office2k3.png" />
+    <Content Include="Treinamentos\InfragisticsImg\igpnl_office2k3_drk.png" />
+    <Content Include="Treinamentos\InfragisticsImg\igpnl_up.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\igpnl_vs2k5.png" />
+    <Content Include="Treinamentos\InfragisticsImg\igsch_dropdown_down_o2003olive.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\igsch_dropdown_down_o2003silver.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\igsch_dropdown_hover_o2003olive.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\igsch_dropdown_hover_o2003silver.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\igsch_dropdown_up_o2003olive.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\igsch_dropdown_up_o2003silver.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\igsch_left_arrow.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\igsch_mscrmdown.GIF" />
+    <Content Include="Treinamentos\InfragisticsImg\igsch_mscrmup.GIF" />
+    <Content Include="Treinamentos\InfragisticsImg\igsch_o2003hover.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\igsch_right_arrow.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\igsch_xpbluedn.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\igsch_xpblueup.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_butCRM1.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_butCRM2.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_butCRM3.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_butMac1.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_butMac2.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_butMac4.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_butXP1.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_butXP1h.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_butXP1o.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_butXP1s.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_butXP1w.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_butXP1wh.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_butXP2.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_butXP2h.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_butXP2o.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_butXP2s.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_butXP2w.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_butXP2wh.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_butXP3.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_butXP3h.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_butXP3o.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_butXP3s.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_butXP3w.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_butXP3wh.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_butXP4.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_butXP4h.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_butXP4o.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_butXP4s.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_butXP4w.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_butXP4wh.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_butXP5.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_butXP5h.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_butXP5o.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_butXP5s.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_butXP5w.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_butXP5wh.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_cal_blue1.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_cal_blue2.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_cal_blue3.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_cal_blueDN.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_cal_blueDP.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_cal_blueN.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_cal_blueN0.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_cal_blueP.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_cal_blueP0.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_cal_grayN.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_cal_grayN0.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_cal_grayP.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_cal_grayP0.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_cal_light1.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_cal_light2.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_cal_light3.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_cal_metal1.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_cal_metal2.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_cal_metalN.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_cal_metalN0.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_cal_metalP.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_cal_metalP0.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_cal_next1.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_cal_prev1.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_cal_rose1.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_cal_rose2.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_cal_roseN.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_cal_roseN0.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_cal_roseP.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_cal_roseP0.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_cal_silver1.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_cal_silver2.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_cal_silverN.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_cal_silverN0.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_cal_silverP.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_cal_silverP0.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_cmboCorpGold_down.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_cmboCorpGold_up.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_cmboCorpSil1.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_cmboCorpSil2.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_cmboDown1.bmp" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_cmboDown1.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_cmboDown2.bmp" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_cmboDown2.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_cmboDownXP1.bmp" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_cmboDownXP2.bmp" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_cmbodownxp_olive.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_cmbodownxp_olive2.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_down_d.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_down_s.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_edit_0.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_edit_01.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_edit_01b.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_edit_0b.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_edit_1.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_edit_11.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_edit_11b.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_edit_1b.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_edit_2.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_edit_21.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_edit_21b.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_edit_2b.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_home_d.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_home_s.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_logo1.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_menu2003Orange.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_menu2003Spacer1.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_menu2003SpacerBlue.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_menu2003SpacerOlive.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_menu2003SpacerOrange.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_menu2003SpacerSilver.bmp" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_menu2003SpacerSilver.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_menuBlueDown.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_menuBlueDown_disabled.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_menuBlueUp.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_menuBlueUp_disabled.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_menuCheck.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_menuCRMspacer1.GIF" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_menuCRM_arrow_down.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_menuGreenDown.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_menuGreenDown_disabled.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_menuGreenUp.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_menuGreenUp_disabled.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_menuSep.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_menuSilverDown.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_menuSilverDown_disabled.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_menuSilverUp.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_menuSilverUp_disabled.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_menuStandardSep.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_menuTri.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_menuUncheck.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_menuXPspacer1.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_menuXPspacer2.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_menu_2003Spacer1.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_menu_scrolldown.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_menu_scrolldownWhite.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_menu_scrolldown_disabled.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_menu_scrollup.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_menu_scrollupWhite.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_menu_scrollup_disabled.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_prod_d.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_prod_s.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_sched_next.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_sched_prev.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_sched_reminder.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_serv_d.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_serv_s.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tab_blue1.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tab_blue2.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tab_blue3.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tab_blueb1.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tab_blueb2.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tab_bluebY1.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tab_bluebY2.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tab_blueY1.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tab_blueY2.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tab_defb1.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tab_defb2.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tab_defbc1.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tab_defbc2.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tab_defbr1.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tab_defbr2.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tab_defbv1.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tab_defbv2.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tab_defbvc1.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tab_defbvc2.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tab_defl1.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tab_defl2.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tab_deflc1.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tab_deflc2.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tab_deflr1.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tab_deflr2.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tab_deflv1.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tab_deflv2.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tab_deflvc1.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tab_deflvc2.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tab_defr1.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tab_defr2.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tab_defrc1.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tab_defrc2.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tab_defrr1.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tab_defrr2.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tab_defrv1.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tab_defrv2.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tab_defrvc1.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tab_defrvc2.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tab_deft1.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tab_deft2.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tab_deftc1.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tab_deftc2.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tab_deftr1.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tab_deftr2.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tab_deftv1.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tab_deftv2.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tab_deftvc1.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tab_deftvc2.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tab_light0.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tab_light1.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tab_light11.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tab_light2.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tab_light3.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tab_lightb1.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tab_lightb2.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tab_lightb3.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tab_lightb4.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tab_lightbY1.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tab_lightbY2.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tab_lightY1.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tab_lightY2.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tab_msn0.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tab_msn1.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tab_msn2.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tab_msn4.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tab_msnY0.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tab_msnY1.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tab_msnY2.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tab_msnY4.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tab_scroll0.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tab_scroll1.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tab_scroll2.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tab_scroll3.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tab_scrollXP0.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tab_scrollXP1.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tab_scrollXP2.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tab_scrollXP3.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tab_win2000.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tab_win2000Y.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tab_winXP1.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tab_winXP2.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tab_winXP3.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tab_winXPo1.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tab_winXPo2.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tab_winXPo3.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tab_winXPs1.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tab_winXPs2.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tab_winXPs3.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tab_winXPY1.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tab_winXPY2.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tab_winXPY3.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tblBlank.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tblcrm_rowarrow_down.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tblcrm_rowarrow_right.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tblFixedOff.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tblFixedOn.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tblGroupBy.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tblMinus.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tblNewrow.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tblPimgDn.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tblPimgUp.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tblPlus.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tblSortAsc.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tblSortAsc_White.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tblSortDesc.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tblSortDesc_White.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tblTri.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tblTriEdit.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tblTri_Aqua3d.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tblTri_Black.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tblTri_Black3d.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tblTri_Blue.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tblTri_Blue3d.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tblTri_BrightRed.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tblTri_BrightRed3d.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tblTri_Brown.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tblTri_Brown3d.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tblTri_Fleshcolor.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tblTri_Fleshcolor3d.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tblTri_Gray.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tblTri_Gray2.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tblTri_gray3d.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tblTri_GrayB3d.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tblTri_Green.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tblTri_Green3d.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tblTri_LightBlue.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tblTri_LightBlue3d.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tblTri_LightRed.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tblTri_LightRed3d.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tblTri_LightYellow.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tblTri_LightYellow3d.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tblTri_MintGreen.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tblTri_MintGreen3d.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tblTri_Navy.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tblTri_Navy3d.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tblTri_Olivegreen.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tblTri_Olivegreen3d.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tblTri_Red.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tblTri_Red3d.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tblTri_Rust.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tblTri_Rust3d.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tblTri_SageGreen.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tblTri_SageGreen3d.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tblTri_Tan.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tblTri_Tan3d.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tblTri_Teal.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tblTri_Teal3d.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tblTri_White.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tblTri_White3d.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tblTri_Yellow.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tblTri_Yellow3d.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tblUnGroupBy.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tb_back03.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tb_move00.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tb_move03.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_treearrowdown.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_treearrowdown_2.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_treearrowdown_3.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_treearrowright.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_treearrowright_2.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_treearrowright_3.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_treearrowup.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_treecheck.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_treecheck_2.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_treedown.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_treeF.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_treeFminus.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_treefolder.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_treeFolderopen.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_treeFplus.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_treeI.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_treeL.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_treeLminus.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_treeLplus.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_treeMinus.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_treeMinus2.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_treeMminus.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_treeMplus.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_treeOfficeFolder.GIF" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_treeOminus.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_treeOplus.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_treePlus.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_treePlus2.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_treeright.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_treeS.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_treeT.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_treeTri.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_treeWhite.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_treeXPFolderClosed.GIF" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_treeXPFolderOpen.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_treeXPMinus.GIF" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_treeXPPlus.GIF" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tree_X.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\ig_tree_X_1.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\inbox.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\Inbox.ico" />
+    <Content Include="Treinamentos\InfragisticsImg\left.bmp" />
+    <Content Include="Treinamentos\InfragisticsImg\left.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\leftCollapsed.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\Left_BlueStripe.bmp" />
+    <Content Include="Treinamentos\InfragisticsImg\loans.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\minus.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\moneymanager.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\movies.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\mutualfunds.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\Office2003BlueBG.png" />
+    <Content Include="Treinamentos\InfragisticsImg\Office2003DropDownBlue.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\Office2003DropDownGreen.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\Office2003DropDownOrange.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\Office2003DropDownSilver.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\Office2003OliveBG.png" />
+    <Content Include="Treinamentos\InfragisticsImg\Office2003SelRow.png" />
+    <Content Include="Treinamentos\InfragisticsImg\Office2003SilverBG.png" />
+    <Content Include="Treinamentos\InfragisticsImg\OliveExplorer.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\OpenBook.bmp" />
+    <Content Include="Treinamentos\InfragisticsImg\OrangeExplorer.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\OrangeExplorer2.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\os.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\personal.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\plus.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\procedimento.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\prontuario.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\public.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\right.bmp" />
+    <Content Include="Treinamentos\InfragisticsImg\right.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\rightCollapsed.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\riscos.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\RoundedBlueExplorer.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\RoundedGrayExplorer.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\RoundedOrangeExplorer.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\Santa Fe Stucco.bmp" />
+    <Content Include="Treinamentos\InfragisticsImg\Soap Bubbles.bmp" />
+    <Content Include="Treinamentos\InfragisticsImg\taxes.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\TranspBack.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\uparrows_trans.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\uparrows_white.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\view_choose.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\xpgreendn.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\xpgreenup.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\XpOlive\add_disabled.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\XpOlive\add_down.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\XpOlive\add_hover.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\XpOlive\add_up.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\XpOlive\del_disabled.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\XpOlive\del_down.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\XpOlive\del_hover.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\XpOlive\del_up.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\XpOlive\Down_down.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\XpOlive\Down_downDisabled.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\XpOlive\end_disabled.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\XpOlive\end_down.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\XpOlive\end_hover.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\XpOlive\end_up.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\XpOlive\ff_disabled.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\XpOlive\ff_down.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\XpOlive\ff_hover.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\XpOlive\ff_up.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\XpOlive\next_disabled.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\XpOlive\next_down.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\XpOlive\next_hover.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\XpOlive\next_up.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\XpOlive\plain_disabled.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\XpOlive\plain_down.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\XpOlive\plain_hover.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\XpOlive\plain_up.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\XpOlive\prev_disabled.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\XpOlive\prev_down.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\XpOlive\prev_hover.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\XpOlive\prev_up.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\XpOlive\rew_disabled.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\XpOlive\rew_down.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\XpOlive\rew_hover.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\XpOlive\rew_up.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\XpOlive\start_disabled.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\XpOlive\start_down.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\XpOlive\start_hover.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\XpOlive\start_up.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\XpOlive\submit_disabled.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\XpOlive\submit_down.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\XpOlive\submit_hover.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\XpOlive\submit_up.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\XpOlive\Up_down.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\XpOlive\Up_downDisabled.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\xpsilverdn.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\xpsilverup.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\yahoo.gif" />
+    <Content Include="Treinamentos\InfragisticsImg\yahoo2.gif" />
+    <Content Include="Treinamentos\ListaEmpregadoCurso.aspx" />
+    <Content Include="Treinamentos\ListaTreinamentos.aspx" />
+    <Content Include="Treinamentos\ParticipantesCurso.aspx" />
+    <Content Include="Treinamentos\scripts\datagrid.css" />
+    <Content Include="Treinamentos\scripts\menu.js" />
+    <Content Include="Treinamentos\scripts\menuall.js" />
+    <Content Include="Treinamentos\scripts\menudoctor.js" />
+    <Content Include="Treinamentos\scripts\menuEmp.js" />
+    <Content Include="Treinamentos\scripts\style.css" />
+    <Content Include="Treinamentos\scripts\stylemenu.css" />
+    <Content Include="Treinamentos\scripts\validador.js" />
+    <Content Include="Treinamentos\topo1.jpg" />
+    <Content Include="visualizarDadosEmpregado_Novo2.aspx" />
+    <Content Include="VisualizarDadosEmpresa.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web References\WSRPS\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </Content>
+    <None Include="Service References\IliNet_eSocial\IliNet_eSocial.wsdl" />
+    <None Include="Web References\WSRPS\ServiceGinfesImplService.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddReuniao.aspx.cs">
+      <DependentUpon>AddReuniao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddReuniao.aspx.designer.cs">
+      <DependentUpon>AddReuniao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdicionarIndicado.aspx.cs">
+      <DependentUpon>AdicionarIndicado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdicionarIndicado.aspx.designer.cs">
+      <DependentUpon>AdicionarIndicado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Auditoria\AlertSettings.aspx.cs">
+      <DependentUpon>AlertSettings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Auditoria\AlertSettings.aspx.designer.cs">
+      <DependentUpon>AlertSettings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Auditoria\Apresentacao.aspx.cs">
+      <DependentUpon>Apresentacao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Auditoria\Apresentacao.aspx.designer.cs">
+      <DependentUpon>Apresentacao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Auditoria\AudIntroducao.aspx.cs">
+      <DependentUpon>AudIntroducao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Auditoria\AudIntroducao.aspx.designer.cs">
+      <DependentUpon>AudIntroducao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Auditoria\Auditoria.aspx.cs">
+      <DependentUpon>Auditoria.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Auditoria\Auditoria.aspx.designer.cs">
+      <DependentUpon>Auditoria.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Auditoria\AuditoriaFlash.aspx.cs">
+      <DependentUpon>AuditoriaFlash.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Auditoria\AuditoriaFlash.aspx.designer.cs">
+      <DependentUpon>AuditoriaFlash.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Auditoria\CadResponsavel.aspx.cs">
+      <DependentUpon>CadResponsavel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Auditoria\CadResponsavel.aspx.designer.cs">
+      <DependentUpon>CadResponsavel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Auditoria\CadTipoIrregu.aspx.cs">
+      <DependentUpon>CadTipoIrregu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Auditoria\CadTipoIrregu.aspx.designer.cs">
+      <DependentUpon>CadTipoIrregu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Auditoria\DetalheIrregularidade.aspx.cs">
+      <DependentUpon>DetalheIrregularidade.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Auditoria\DetalheIrregularidade.aspx.designer.cs">
+      <DependentUpon>DetalheIrregularidade.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Auditoria\AnaliseLaboratorial.aspx.cs">
+      <DependentUpon>AnaliseLaboratorial.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Auditoria\AnaliseLaboratorial.aspx.designer.cs">
+      <DependentUpon>AnaliseLaboratorial.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Auditoria\EquipCalibracao.aspx.cs">
+      <DependentUpon>EquipCalibracao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Auditoria\EquipCalibracao.aspx.designer.cs">
+      <DependentUpon>EquipCalibracao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Auditoria\AnaliseLaboratorial_Det.aspx.cs">
+      <DependentUpon>AnaliseLaboratorial_Det.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Auditoria\AnaliseLaboratorial_Det.aspx.designer.cs">
+      <DependentUpon>AnaliseLaboratorial_Det.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Auditoria\ImgIrregularidade.aspx.cs">
+      <DependentUpon>ImgIrregularidade.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Auditoria\ImgIrregularidade.aspx.designer.cs">
+      <DependentUpon>ImgIrregularidade.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Auditoria\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Auditoria\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Auditoria\ListaEmpresa.aspx.cs">
+      <DependentUpon>ListaEmpresa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Auditoria\ListaEmpresa.aspx.designer.cs">
+      <DependentUpon>ListaEmpresa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Auditoria\ListagemAuditorias.aspx.cs">
+      <DependentUpon>ListagemAuditorias.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Auditoria\ListagemAuditorias.aspx.designer.cs">
+      <DependentUpon>ListagemAuditorias.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Auditoria\ListagemIrregula.aspx.cs">
+      <DependentUpon>ListagemIrregula.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Auditoria\ListagemIrregula.aspx.designer.cs">
+      <DependentUpon>ListagemIrregula.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Auditoria\ListagemIrregulaCompl.aspx.cs">
+      <DependentUpon>ListagemIrregulaCompl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Auditoria\ListagemIrregulaCompl.aspx.designer.cs">
+      <DependentUpon>ListagemIrregulaCompl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Auditoria\ListagemIrregularidades.aspx.cs">
+      <DependentUpon>ListagemIrregularidades.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Auditoria\ListagemIrregularidades.aspx.designer.cs">
+      <DependentUpon>ListagemIrregularidades.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Auditoria\LoginRestrito.aspx.cs">
+      <DependentUpon>LoginRestrito.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Auditoria\LoginRestrito.aspx.designer.cs">
+      <DependentUpon>LoginRestrito.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Auditoria\MenuList.aspx.cs">
+      <DependentUpon>MenuList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Auditoria\MenuList.aspx.designer.cs">
+      <DependentUpon>MenuList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Auditoria\Norma.aspx.cs">
+      <DependentUpon>Norma.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Auditoria\Norma.aspx.designer.cs">
+      <DependentUpon>Norma.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Auditoria\PageSet.aspx.cs">
+      <DependentUpon>PageSet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Auditoria\PageSet.aspx.designer.cs">
+      <DependentUpon>PageSet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Auditoria\EquipCalibracao_Det.aspx.cs">
+      <DependentUpon>EquipCalibracao_Det.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Auditoria\EquipCalibracao_Det.aspx.designer.cs">
+      <DependentUpon>EquipCalibracao_Det.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CheckInsalubridade.aspx.cs">
+      <DependentUpon>CheckInsalubridade.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CheckInsalubridade.aspx.designer.cs">
+      <DependentUpon>CheckInsalubridade.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CheckLaudoEletricoPeriodos.aspx.cs">
+      <DependentUpon>CheckLaudoEletricoPeriodos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CheckLaudoEletricoPeriodos.aspx.designer.cs">
+      <DependentUpon>CheckLaudoEletricoPeriodos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CheckLaudoErgonomicoPeriodo.aspx.cs">
+      <DependentUpon>CheckLaudoErgonomicoPeriodo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CheckLaudoErgonomicoPeriodo.aspx.designer.cs">
+      <DependentUpon>CheckLaudoErgonomicoPeriodo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CheckLaudoSPDAPeriodos.aspx.cs">
+      <DependentUpon>CheckLaudoSPDAPeriodos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CheckLaudoSPDAPeriodos.aspx.designer.cs">
+      <DependentUpon>CheckLaudoSPDAPeriodos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CheckLTCAT.aspx.cs">
+      <DependentUpon>CheckLTCAT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CheckLTCAT.aspx.designer.cs">
+      <DependentUpon>CheckLTCAT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cipa_New.aspx.cs">
+      <DependentUpon>Cipa_New.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cipa_New.aspx.designer.cs">
+      <DependentUpon>Cipa_New.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditMembroCIPA.aspx.cs">
+      <DependentUpon>EditMembroCIPA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditMembroCIPA.aspx.designer.cs">
+      <DependentUpon>EditMembroCIPA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EnviarAta.aspx.cs">
+      <DependentUpon>EnviarAta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EnviarAta.aspx.designer.cs">
+      <DependentUpon>EnviarAta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="eSocial\Controle_eSocial_2221.aspx.cs">
+      <DependentUpon>Controle_eSocial_2221.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="eSocial\Controle_eSocial_2221.aspx.designer.cs">
+      <DependentUpon>Controle_eSocial_2221.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MembrosCIPA.aspx.cs">
+      <DependentUpon>MembrosCIPA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MembrosCIPA.aspx.designer.cs">
+      <DependentUpon>MembrosCIPA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MembrosUltimasCipas.aspx.cs">
+      <DependentUpon>MembrosUltimasCipas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MembrosUltimasCipas.aspx.designer.cs">
+      <DependentUpon>MembrosUltimasCipas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OutrosParticipantes.aspx.cs">
+      <DependentUpon>OutrosParticipantes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OutrosParticipantes.aspx.designer.cs">
+      <DependentUpon>OutrosParticipantes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PresentesReuniao.aspx.cs">
+      <DependentUpon>PresentesReuniao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PresentesReuniao.aspx.designer.cs">
+      <DependentUpon>PresentesReuniao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReunioesExtraordinarias.aspx.cs">
+      <DependentUpon>ReunioesExtraordinarias.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReunioesExtraordinarias.aspx.designer.cs">
+      <DependentUpon>ReunioesExtraordinarias.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Toxicologico.aspx.cs">
+      <DependentUpon>Toxicologico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Toxicologico.aspx.designer.cs">
+      <DependentUpon>Toxicologico.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Toxicologico_Sorteio.aspx.cs">
+      <DependentUpon>Toxicologico_Sorteio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Toxicologico_Sorteio.aspx.designer.cs">
+      <DependentUpon>Toxicologico_Sorteio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Toxicologico_Configuracao.aspx.cs">
+      <DependentUpon>Toxicologico_Configuracao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Toxicologico_Configuracao.aspx.designer.cs">
+      <DependentUpon>Toxicologico_Configuracao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CheckPGRPeriodos.aspx.cs">
+      <DependentUpon>CheckPGRPeriodos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CheckPGRPeriodos.aspx.designer.cs">
+      <DependentUpon>CheckPGRPeriodos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AF.asmx.cs">
+      <DependentUpon>AF.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Dashboard.aspx.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard.aspx.designer.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Grafico_Google.aspx.cs">
+      <DependentUpon>Grafico_Google.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Grafico_Google.aspx.designer.cs">
+      <DependentUpon>Grafico_Google.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Grafico_Google2.aspx.cs">
+      <DependentUpon>Grafico_Google2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Grafico_Google2.aspx.designer.cs">
+      <DependentUpon>Grafico_Google2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MOC.asmx.cs">
+      <DependentUpon>MOC.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="consume.aspx.cs">
+      <DependentUpon>consume.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="consume.aspx.designer.cs">
+      <DependentUpon>consume.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IliNet_eSocial.asmx.cs">
+      <DependentUpon>IliNet_eSocial.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Dash_ExamesPendentes.aspx.cs">
+      <DependentUpon>Dash_ExamesPendentes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dash_ExamesPendentes.aspx.designer.cs">
+      <DependentUpon>Dash_ExamesPendentes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CheckXML.aspx.cs">
+      <DependentUpon>CheckXML.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CheckXML.aspx.designer.cs">
+      <DependentUpon>CheckXML.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CheckPAE.aspx.cs">
+      <DependentUpon>CheckPAE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CheckPAE.aspx.designer.cs">
+      <DependentUpon>CheckPAE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CheckNR4.aspx.cs">
+      <DependentUpon>CheckNR4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CheckNR4.aspx.designer.cs">
+      <DependentUpon>CheckNR4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CheckVasos.aspx.cs">
+      <DependentUpon>CheckVasos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CheckVasos.aspx.designer.cs">
+      <DependentUpon>CheckVasos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CheckMapas.aspx.cs">
+      <DependentUpon>CheckMapas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CheckMapas.aspx.designer.cs">
+      <DependentUpon>CheckMapas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CheckPCAPeriodos.aspx.cs">
+      <DependentUpon>CheckPCAPeriodos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CheckPCAPeriodos.aspx.designer.cs">
+      <DependentUpon>CheckPCAPeriodos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CheckPCMSOPeriodos.aspx.cs">
+      <DependentUpon>CheckPCMSOPeriodos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CheckPCMSOPeriodos.aspx.designer.cs">
+      <DependentUpon>CheckPCMSOPeriodos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CheckPericulosidade.aspx.cs">
+      <DependentUpon>CheckPericulosidade.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CheckPericulosidade.aspx.designer.cs">
+      <DependentUpon>CheckPericulosidade.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CheckPPPEmpregado.aspx.cs">
+      <DependentUpon>CheckPPPEmpregado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CheckPPPEmpregado.aspx.designer.cs">
+      <DependentUpon>CheckPPPEmpregado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CheckPPRAPeriodos.aspx.cs">
+      <DependentUpon>CheckPPRAPeriodos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CheckPPRAPeriodos.aspx.designer.cs">
+      <DependentUpon>CheckPPRAPeriodos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Agendamento_Auto.aspx.cs">
+      <DependentUpon>Agendamento_Auto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Agendamento_Auto.aspx.designer.cs">
+      <DependentUpon>Agendamento_Auto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ComunicacaoDash.asmx.cs">
+      <DependentUpon>ComunicacaoDash.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ComunicacaoFec.asmx.cs">
+      <DependentUpon>ComunicacaoFec.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Comunicacao.asmx.cs">
+      <DependentUpon>Comunicacao.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Comunicacao_Fec.aspx.cs">
+      <DependentUpon>Comunicacao_Fec.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comunicacao_Fec.aspx.designer.cs">
+      <DependentUpon>Comunicacao_Fec.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comunicacao2.aspx.cs">
+      <DependentUpon>Comunicacao2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comunicacao2.aspx.designer.cs">
+      <DependentUpon>Comunicacao2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControleCIPA\CipaRepositorio.aspx.cs">
+      <DependentUpon>CipaRepositorio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControleCIPA\CipaRepositorio.aspx.designer.cs">
+      <DependentUpon>CipaRepositorio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControleCIPA\IndicarCIPA.aspx.cs">
+      <DependentUpon>IndicarCIPA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControleCIPA\IndicarCIPA.aspx.designer.cs">
+      <DependentUpon>IndicarCIPA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControleCIPA\ListaReunioesCIPA.aspx.cs">
+      <DependentUpon>ListaReunioesCIPA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControleCIPA\ListaReunioesCIPA.aspx.designer.cs">
+      <DependentUpon>ListaReunioesCIPA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControleCIPA\RelatorioAnual.aspx.cs">
+      <DependentUpon>RelatorioAnual.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControleCIPA\RelatorioAnual.aspx.designer.cs">
+      <DependentUpon>RelatorioAnual.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControleCIPA\Repositorio.aspx.cs">
+      <DependentUpon>Repositorio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControleCIPA\Repositorio.aspx.designer.cs">
+      <DependentUpon>Repositorio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControleEPI\AddEquipamento.aspx.cs">
+      <DependentUpon>AddEquipamento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControleEPI\AddEquipamento.aspx.designer.cs">
+      <DependentUpon>AddEquipamento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControleEPI\AddFabricante.aspx.cs">
+      <DependentUpon>AddFabricante.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControleEPI\AddFabricante.aspx.designer.cs">
+      <DependentUpon>AddFabricante.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControleEPI\AddFornecedor.aspx.cs">
+      <DependentUpon>AddFornecedor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControleEPI\AddFornecedor.aspx.designer.cs">
+      <DependentUpon>AddFornecedor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControleEPI\Alerta_EPI.aspx.cs">
+      <DependentUpon>Alerta_EPI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControleEPI\Alerta_EPI.aspx.designer.cs">
+      <DependentUpon>Alerta_EPI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControleEPI\CadastroCompra.aspx.cs">
+      <DependentUpon>CadastroCompra.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControleEPI\CadastroCompra.aspx.designer.cs">
+      <DependentUpon>CadastroCompra.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControleEPI\CadastroEPI.aspx.cs">
+      <DependentUpon>CadastroEPI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControleEPI\CadastroEPI.aspx.designer.cs">
+      <DependentUpon>CadastroEPI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControleEPI\ControleEstoque.aspx.cs">
+      <DependentUpon>ControleEstoque.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControleEPI\ControleEstoque.aspx.designer.cs">
+      <DependentUpon>ControleEstoque.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControleEPI\DetalheCA.aspx.cs">
+      <DependentUpon>DetalheCA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControleEPI\DetalheCA.aspx.designer.cs">
+      <DependentUpon>DetalheCA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControleEPI\EntregaEPI.aspx.cs">
+      <DependentUpon>EntregaEPI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControleEPI\EntregaEPI.aspx.designer.cs">
+      <DependentUpon>EntregaEPI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControleEPI\EntregaEPI_Auto.aspx.cs">
+      <DependentUpon>EntregaEPI_Auto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControleEPI\EntregaEPI_Auto.aspx.designer.cs">
+      <DependentUpon>EntregaEPI_Auto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControleEPI\EPIRepositorio.aspx.cs">
+      <DependentUpon>EPIRepositorio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControleEPI\EPIRepositorio.aspx.designer.cs">
+      <DependentUpon>EPIRepositorio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControleEPI\Fornecimento_Lista.aspx.cs">
+      <DependentUpon>Fornecimento_Lista.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControleEPI\Fornecimento_Lista.aspx.designer.cs">
+      <DependentUpon>Fornecimento_Lista.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControleEPI\HistoricoEntrega.aspx.cs">
+      <DependentUpon>HistoricoEntrega.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControleEPI\HistoricoEntrega.aspx.designer.cs">
+      <DependentUpon>HistoricoEntrega.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControleEPI\HistoricoEPIEmpregado.aspx.cs">
+      <DependentUpon>HistoricoEPIEmpregado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControleEPI\HistoricoEPIEmpregado.aspx.designer.cs">
+      <DependentUpon>HistoricoEPIEmpregado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControleEPI\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControleEPI\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControleEPI\ListaEmpresa.aspx.cs">
+      <DependentUpon>ListaEmpresa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControleEPI\ListaEmpresa.aspx.designer.cs">
+      <DependentUpon>ListaEmpresa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControleEPI\ListagemEPI.aspx.cs">
+      <DependentUpon>ListagemEPI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControleEPI\ListagemEPI.aspx.designer.cs">
+      <DependentUpon>ListagemEPI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControleEPI\ListagemEPITodos.aspx.cs">
+      <DependentUpon>ListagemEPITodos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControleEPI\ListagemEPITodos.aspx.designer.cs">
+      <DependentUpon>ListagemEPITodos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControleEPI\MenuList.aspx.cs">
+      <DependentUpon>MenuList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControleEPI\MenuList.aspx.designer.cs">
+      <DependentUpon>MenuList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControleEPI\NovoCA.aspx.cs">
+      <DependentUpon>NovoCA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControleEPI\NovoCA.aspx.designer.cs">
+      <DependentUpon>NovoCA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControleEPI\RelatorioComplEntEPI.aspx.cs">
+      <DependentUpon>RelatorioComplEntEPI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControleEPI\RelatorioComplEntEPI.aspx.designer.cs">
+      <DependentUpon>RelatorioComplEntEPI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControleEPI\RelatorioComplTodosEntEPI.aspx.cs">
+      <DependentUpon>RelatorioComplTodosEntEPI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControleEPI\RelatorioComplTodosEntEPI.aspx.designer.cs">
+      <DependentUpon>RelatorioComplTodosEntEPI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControleEPI\RelatorioEntregaEPI.aspx.cs">
+      <DependentUpon>RelatorioEntregaEPI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControleEPI\RelatorioEntregaEPI.aspx.designer.cs">
+      <DependentUpon>RelatorioEntregaEPI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControleEPI\RepositorioEPI.aspx.cs">
+      <DependentUpon>RepositorioEPI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControleEPI\RepositorioEPI.aspx.designer.cs">
+      <DependentUpon>RepositorioEPI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControleEPI\StatusEPIEmpregado.aspx.cs">
+      <DependentUpon>StatusEPIEmpregado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControleEPI\StatusEPIEmpregado.aspx.designer.cs">
+      <DependentUpon>StatusEPIEmpregado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControleEPI\WebPageController.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControleExtintores\CadastroExtintores.aspx.cs">
+      <DependentUpon>CadastroExtintores.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControleExtintores\CadastroExtintores.aspx.designer.cs">
+      <DependentUpon>CadastroExtintores.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControleExtintores\CadFabricanteExtintor.aspx.cs">
+      <DependentUpon>CadFabricanteExtintor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControleExtintores\CadFabricanteExtintor.aspx.designer.cs">
+      <DependentUpon>CadFabricanteExtintor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControleExtintores\CadTipoExtintor.aspx.cs">
+      <DependentUpon>CadTipoExtintor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControleExtintores\CadTipoExtintor.aspx.designer.cs">
+      <DependentUpon>CadTipoExtintor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControleExtintores\ExtintorDetalhe.aspx.cs">
+      <DependentUpon>ExtintorDetalhe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControleExtintores\ExtintorDetalhe.aspx.designer.cs">
+      <DependentUpon>ExtintorDetalhe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControleExtintores\HistoricoExtintores.aspx.cs">
+      <DependentUpon>HistoricoExtintores.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControleExtintores\HistoricoExtintores.aspx.designer.cs">
+      <DependentUpon>HistoricoExtintores.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControleExtintores\ListaExtintores.aspx.cs">
+      <DependentUpon>ListaExtintores.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControleExtintores\ListaExtintores.aspx.designer.cs">
+      <DependentUpon>ListaExtintores.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControleExtintores\ListagemExtintores.aspx.cs">
+      <DependentUpon>ListagemExtintores.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControleExtintores\ListagemExtintores.aspx.designer.cs">
+      <DependentUpon>ListagemExtintores.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControleCIPA\RelatorioInscricaoCIPA.aspx.cs">
+      <DependentUpon>RelatorioInscricaoCIPA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControleCIPA\RelatorioInscricaoCIPA.aspx.designer.cs">
+      <DependentUpon>RelatorioInscricaoCIPA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DadosEmpresa\RelatorioAbsenteismo.aspx.cs">
+      <DependentUpon>RelatorioAbsenteismo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DadosEmpresa\RelatorioAbsenteismo.aspx.designer.cs">
+      <DependentUpon>RelatorioAbsenteismo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DadosEmpresa\RelatorioAmbulatoriais.aspx.cs">
+      <DependentUpon>RelatorioAmbulatoriais.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DadosEmpresa\RelatorioAmbulatoriais.aspx.designer.cs">
+      <DependentUpon>RelatorioAmbulatoriais.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DadosEmpresa\RelatorioSAE.aspx.cs">
+      <DependentUpon>RelatorioSAE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DadosEmpresa\RelatorioSAE.aspx.designer.cs">
+      <DependentUpon>RelatorioSAE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DadosEmpresa\RelatorioColaboradores.aspx.cs">
+      <DependentUpon>RelatorioColaboradores.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DadosEmpresa\RelatorioColaboradores.aspx.designer.cs">
+      <DependentUpon>RelatorioColaboradores.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DadosEmpresa\RelatorioExames.aspx.cs">
+      <DependentUpon>RelatorioExames.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DadosEmpresa\RelatorioExames.aspx.designer.cs">
+      <DependentUpon>RelatorioExames.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DadosEmpresa\RelatorioGHE_Funcao_Exames.aspx.cs">
+      <DependentUpon>RelatorioGHE_Funcao_Exames.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DadosEmpresa\RelatorioGHE_Funcao_Exames.aspx.designer.cs">
+      <DependentUpon>RelatorioGHE_Funcao_Exames.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DadosEmpresa\RelatorioGuiaASO_Auto.aspx.cs">
+      <DependentUpon>RelatorioGuiaASO_Auto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DadosEmpresa\RelatorioGuiaASO_Auto.aspx.designer.cs">
+      <DependentUpon>RelatorioGuiaASO_Auto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DadosEmpresa\RelatorioGuiaASO.aspx.cs">
+      <DependentUpon>RelatorioGuiaASO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DadosEmpresa\RelatorioGuiaASO.aspx.designer.cs">
+      <DependentUpon>RelatorioGuiaASO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DadosEmpresa\RelatorioGuiaComp.aspx.cs">
+      <DependentUpon>RelatorioGuiaComp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DadosEmpresa\RelatorioGuiaComp.aspx.designer.cs">
+      <DependentUpon>RelatorioGuiaComp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DadosEmpresa\RelatorioGuias.aspx.cs">
+      <DependentUpon>RelatorioGuias.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DadosEmpresa\RelatorioGuias.aspx.designer.cs">
+      <DependentUpon>RelatorioGuias.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DadosEmpresa\RelatorioMailing.aspx.cs">
+      <DependentUpon>RelatorioMailing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DadosEmpresa\RelatorioMailing.aspx.designer.cs">
+      <DependentUpon>RelatorioMailing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DadosEmpresa\RelatorioVacinas.aspx.cs">
+      <DependentUpon>RelatorioVacinas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DadosEmpresa\RelatorioVacinas.aspx.designer.cs">
+      <DependentUpon>RelatorioVacinas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comunicacao.aspx.cs">
+      <DependentUpon>Comunicacao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comunicacao.aspx.designer.cs">
+      <DependentUpon>Comunicacao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="eSocial\Controle_eSocial_1060.aspx.cs">
+      <DependentUpon>Controle_eSocial_1060.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="eSocial\Controle_eSocial_1060.aspx.designer.cs">
+      <DependentUpon>Controle_eSocial_1060.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="eSocial\Controle_eSocial_2210.aspx.cs">
+      <DependentUpon>Controle_eSocial_2210.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="eSocial\Controle_eSocial_2210.aspx.designer.cs">
+      <DependentUpon>Controle_eSocial_2210.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="eSocial\Controle_eSocial_2220.aspx.cs">
+      <DependentUpon>Controle_eSocial_2220.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="eSocial\Controle_eSocial_2220.aspx.designer.cs">
+      <DependentUpon>Controle_eSocial_2220.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="eSocial\Controle_eSocial_2230.aspx.cs">
+      <DependentUpon>Controle_eSocial_2230.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="eSocial\Controle_eSocial_2230.aspx.designer.cs">
+      <DependentUpon>Controle_eSocial_2230.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="eSocial\Controle_eSocial_2245.aspx.cs">
+      <DependentUpon>Controle_eSocial_2245.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="eSocial\Controle_eSocial_2245.aspx.designer.cs">
+      <DependentUpon>Controle_eSocial_2245.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="eSocial\evtafasttemp_xmldsig-core-schema.cs" />
+    <Compile Include="eSocial\evtcat_xmldsig-core-schema.cs" />
+    <Compile Include="eSocial\evtexprisco_xmldsig-core-schema.cs" />
+    <Compile Include="eSocial\evtmonit_xmldsig-core-schema.cs" />
+    <Compile Include="eSocial\evttabambiente_xmldsig-core-schema.cs" />
+    <Compile Include="eSocial\evtTabEstab_xmldsig-core-schema.cs" />
+    <Compile Include="eSocial\evttoxic_xmldsig-core-schema.cs" />
+    <Compile Include="eSocial\evtTreiCap_xmldsig-core-schema.cs" />
+    <Compile Include="eSocial\Controle_eSocial_2240.aspx.cs">
+      <DependentUpon>Controle_eSocial_2240.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="eSocial\Controle_eSocial_2240.aspx.designer.cs">
+      <DependentUpon>Controle_eSocial_2240.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="eSocial\ViewXML.aspx.cs">
+      <DependentUpon>ViewXML.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="eSocial\ViewXML.aspx.designer.cs">
+      <DependentUpon>ViewXML.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PCMSOAnalitico.aspx.cs">
+      <DependentUpon>PCMSOAnalitico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PCMSOAnalitico.aspx.designer.cs">
+      <DependentUpon>PCMSOAnalitico.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PGRTR.aspx.cs">
+      <DependentUpon>PGRTR.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PGRTR.aspx.designer.cs">
+      <DependentUpon>PGRTR.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PGRIntroducao.aspx.cs">
+      <DependentUpon>PGRIntroducao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PGRIntroducao.aspx.designer.cs">
+      <DependentUpon>PGRIntroducao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PlanilhaPGR.aspx.cs">
+      <DependentUpon>PlanilhaPGR.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PlanilhaPGR.aspx.designer.cs">
+      <DependentUpon>PlanilhaPGR.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PGRCompleto.aspx.cs">
+      <DependentUpon>PGRCompleto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PGRCompleto.aspx.designer.cs">
+      <DependentUpon>PGRCompleto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VacSetor.aspx.cs">
+      <DependentUpon>VacSetor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VacSetor.aspx.designer.cs">
+      <DependentUpon>VacSetor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Importar_Planilha_Transf.aspx.cs">
+      <DependentUpon>Importar_Planilha_Transf.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Importar_Planilha_Transf.aspx.designer.cs">
+      <DependentUpon>Importar_Planilha_Transf.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Importar_Planilha.aspx.cs">
+      <DependentUpon>Importar_Planilha.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Importar_Planilha.aspx.designer.cs">
+      <DependentUpon>Importar_Planilha.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PCMSO\Vacina_Setor.aspx.cs">
+      <DependentUpon>Vacina_Setor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PCMSO\Vacina_Setor.aspx.designer.cs">
+      <DependentUpon>Vacina_Setor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PCMSO\ListaVacinas.aspx.cs">
+      <DependentUpon>ListaVacinas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PCMSO\ListaVacinas.aspx.designer.cs">
+      <DependentUpon>ListaVacinas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PCMSO\DadosEmpregado_Guia_Auto.aspx.cs">
+      <DependentUpon>DadosEmpregado_Guia_Auto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PCMSO\DadosEmpregado_Guia_Auto.aspx.designer.cs">
+      <DependentUpon>DadosEmpregado_Guia_Auto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PCMSO\ExameClinico_EY.aspx.cs">
+      <DependentUpon>ExameClinico_EY.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PCMSO\ExameClinico_EY.aspx.designer.cs">
+      <DependentUpon>ExameClinico_EY.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PCMSO\ExameNaoOcupacional_EY_old.aspx.cs">
+      <DependentUpon>ExameNaoOcupacional_EY_old.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PCMSO\ExameNaoOcupacional_EY_old.aspx.designer.cs">
+      <DependentUpon>ExameNaoOcupacional_EY_old.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PCMSO\ExameNaoOcupacional_EY.aspx.cs">
+      <DependentUpon>ExameNaoOcupacional_EY.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PCMSO\ExameNaoOcupacional_EY.aspx.designer.cs">
+      <DependentUpon>ExameNaoOcupacional_EY.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PCMSO\Relatorio_Empregados_Aptidoes.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PCMSO\Relatorio_Empregados_Aptidoes.aspx.designer.cs">
+      <DependentUpon>Relatorio_Empregados_Aptidoes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="QuadroNR4.aspx.cs">
+      <DependentUpon>QuadroNR4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RelatMateriais.aspx.cs">
+      <DependentUpon>RelatMateriais.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Repositorio.aspx.cs">
+      <DependentUpon>Repositorio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Repositorio.aspx.designer.cs">
+      <DependentUpon>Repositorio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="eSocial\Gerar_eSocial.aspx.cs">
+      <DependentUpon>Gerar_eSocial.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="eSocial\Gerar_eSocial.aspx.designer.cs">
+      <DependentUpon>Gerar_eSocial.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Grafico1.aspx.cs">
+      <DependentUpon>Grafico1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Grafico1.aspx.designer.cs">
+      <DependentUpon>Grafico1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Grafico2.aspx.cs">
+      <DependentUpon>Grafico2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Grafico2.aspx.designer.cs">
+      <DependentUpon>Grafico2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="help.aspx.cs">
+      <DependentUpon>help.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="help.aspx.designer.cs">
+      <DependentUpon>help.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Insalubridade.aspx.cs">
+      <DependentUpon>Insalubridade.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Insalubridade.aspx.designer.cs">
+      <DependentUpon>Insalubridade.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InserirDadosEmpregado.aspx.cs">
+      <DependentUpon>InserirDadosEmpregado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InserirDadosEmpregado.aspx.designer.cs">
+      <DependentUpon>InserirDadosEmpregado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LaudoEletrico.aspx.cs">
+      <DependentUpon>LaudoEletrico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LaudoEletrico.aspx.designer.cs">
+      <DependentUpon>LaudoEletrico.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LaudoErgCronograma.aspx.cs">
+      <DependentUpon>LaudoErgCronograma.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LaudoErgCronograma.aspx.designer.cs">
+      <DependentUpon>LaudoErgCronograma.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LaudoErgonomico.aspx.cs">
+      <DependentUpon>LaudoErgonomico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LaudoErgonomico.aspx.designer.cs">
+      <DependentUpon>LaudoErgonomico.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LaudoSPDA.aspx.cs">
+      <DependentUpon>LaudoSPDA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LaudoSPDA.aspx.designer.cs">
+      <DependentUpon>LaudoSPDA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LembrarSenha.aspx.cs">
+      <DependentUpon>LembrarSenha.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LembrarSenha.aspx.designer.cs">
+      <DependentUpon>LembrarSenha.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ListaPendencias.aspx.cs">
+      <DependentUpon>ListaPendencias.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListaPendencias.aspx.designer.cs">
+      <DependentUpon>ListaPendencias.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LTCAT.aspx.cs">
+      <DependentUpon>LTCAT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LTCAT.aspx.designer.cs">
+      <DependentUpon>LTCAT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MapaRisco.aspx.designer.cs">
+      <DependentUpon>MapaRisco.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OrdemdeServico2\CadAPR.aspx.cs">
+      <DependentUpon>CadAPR.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrdemdeServico2\CadAPR.aspx.designer.cs">
+      <DependentUpon>CadAPR.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OrdemdeServico2\CadAspecto.aspx.cs">
+      <DependentUpon>CadAspecto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrdemdeServico2\CadAspecto.aspx.designer.cs">
+      <DependentUpon>CadAspecto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OrdemdeServico2\CadCelula.aspx.cs">
+      <DependentUpon>CadCelula.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrdemdeServico2\CadCelula.aspx.designer.cs">
+      <DependentUpon>CadCelula.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OrdemdeServico2\CadConjunto.aspx.cs">
+      <DependentUpon>CadConjunto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrdemdeServico2\CadConjunto.aspx.designer.cs">
+      <DependentUpon>CadConjunto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OrdemdeServico2\CadConjuntoProcedimento.aspx.cs">
+      <DependentUpon>CadConjuntoProcedimento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrdemdeServico2\CadConjuntoProcedimento.aspx.designer.cs">
+      <DependentUpon>CadConjuntoProcedimento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OrdemdeServico2\CadDanos.aspx.cs">
+      <DependentUpon>CadDanos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrdemdeServico2\CadDanos.aspx.designer.cs">
+      <DependentUpon>CadDanos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OrdemdeServico2\CadEmpregadoConjuntoProcedimento.aspx.cs">
+      <DependentUpon>CadEmpregadoConjuntoProcedimento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrdemdeServico2\CadEmpregadoConjuntoProcedimento.aspx.designer.cs">
+      <DependentUpon>CadEmpregadoConjuntoProcedimento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OrdemdeServico2\CadEquipamento.aspx.cs">
+      <DependentUpon>CadEquipamento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrdemdeServico2\CadEquipamento.aspx.designer.cs">
+      <DependentUpon>CadEquipamento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OrdemdeServico2\CadFerramenta.aspx.cs">
+      <DependentUpon>CadFerramenta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrdemdeServico2\CadFerramenta.aspx.designer.cs">
+      <DependentUpon>CadFerramenta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OrdemdeServico2\CadPerigo.aspx.cs">
+      <DependentUpon>CadPerigo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrdemdeServico2\CadPerigo.aspx.designer.cs">
+      <DependentUpon>CadPerigo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OrdemdeServico2\CadProcedimento.aspx.cs">
+      <DependentUpon>CadProcedimento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrdemdeServico2\CadProcedimento.aspx.designer.cs">
+      <DependentUpon>CadProcedimento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OrdemdeServico2\CadProduto.aspx.cs">
+      <DependentUpon>CadProduto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrdemdeServico2\CadProduto.aspx.designer.cs">
+      <DependentUpon>CadProduto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OrdemdeServico2\CadRiscoAcidente.aspx.cs">
+      <DependentUpon>CadRiscoAcidente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrdemdeServico2\CadRiscoAcidente.aspx.designer.cs">
+      <DependentUpon>CadRiscoAcidente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OrdemdeServico2\ImportProcGenerico.aspx.cs">
+      <DependentUpon>ImportProcGenerico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrdemdeServico2\ImportProcGenerico.aspx.designer.cs">
+      <DependentUpon>ImportProcGenerico.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OrdemdeServico2\ListaProcedimento.aspx.cs">
+      <DependentUpon>ListaProcedimento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrdemdeServico2\ListaProcedimento.aspx.designer.cs">
+      <DependentUpon>ListaProcedimento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OrdemdeServico2\ListaProcedimentoAPR.aspx.cs">
+      <DependentUpon>ListaProcedimentoAPR.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrdemdeServico2\ListaProcedimentoAPR.aspx.designer.cs">
+      <DependentUpon>ListaProcedimentoAPR.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OrdemdeServico2\OSCompleto.aspx.cs">
+      <DependentUpon>OSCompleto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrdemdeServico2\OSCompleto.aspx.designer.cs">
+      <DependentUpon>OSCompleto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OrdemdeServico2\RptAPR.aspx.cs">
+      <DependentUpon>RptAPR.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrdemdeServico2\RptAPR.aspx.designer.cs">
+      <DependentUpon>RptAPR.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OrdemdeServico2\RptConjuntoProcedimento.aspx.cs">
+      <DependentUpon>RptConjuntoProcedimento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrdemdeServico2\RptConjuntoProcedimento.aspx.designer.cs">
+      <DependentUpon>RptConjuntoProcedimento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OrdemdeServico2\RptIntroducaoOS.aspx.cs">
+      <DependentUpon>RptIntroducaoOS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrdemdeServico2\RptIntroducaoOS.aspx.designer.cs">
+      <DependentUpon>RptIntroducaoOS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OrdemdeServico2\RptListaProcOS.aspx.cs">
+      <DependentUpon>RptListaProcOS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrdemdeServico2\RptListaProcOS.aspx.designer.cs">
+      <DependentUpon>RptListaProcOS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OrdemdeServico2\RptOrdemDeServico.aspx.cs">
+      <DependentUpon>RptOrdemDeServico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrdemdeServico2\RptOrdemDeServico.aspx.designer.cs">
+      <DependentUpon>RptOrdemDeServico.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OrdemdeServico2\RptPOP.aspx.cs">
+      <DependentUpon>RptPOP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrdemdeServico2\RptPOP.aspx.designer.cs">
+      <DependentUpon>RptPOP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OrdemdeServico2\RptPOPGenerico.aspx.cs">
+      <DependentUpon>RptPOPGenerico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrdemdeServico2\RptPOPGenerico.aspx.designer.cs">
+      <DependentUpon>RptPOPGenerico.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OrdemdeServico2\RptProcedimento.aspx.cs">
+      <DependentUpon>RptProcedimento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrdemdeServico2\RptProcedimento.aspx.designer.cs">
+      <DependentUpon>RptProcedimento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OrdemdeServico2\RptProcNome.aspx.cs">
+      <DependentUpon>RptProcNome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrdemdeServico2\RptProcNome.aspx.designer.cs">
+      <DependentUpon>RptProcNome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OrdemdeServico2\RptProcNumero.aspx.cs">
+      <DependentUpon>RptProcNumero.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrdemdeServico2\RptProcNumero.aspx.designer.cs">
+      <DependentUpon>RptProcNumero.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PCA.aspx.cs">
+      <DependentUpon>PCA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PCA.aspx.designer.cs">
+      <DependentUpon>PCA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PCMSO\AnamneseDinamica.aspx.cs">
+      <DependentUpon>AnamneseDinamica.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PCMSO\AnamneseDinamica.aspx.designer.cs">
+      <DependentUpon>AnamneseDinamica.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PCMSO\AnamneseDinamicaBranco.aspx.cs">
+      <DependentUpon>AnamneseDinamicaBranco.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PCMSO\AnamneseDinamicaBranco.aspx.designer.cs">
+      <DependentUpon>AnamneseDinamicaBranco.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PCMSO\DadosEmpregado_Dashboard.aspx.cs">
+      <DependentUpon>DadosEmpregado_Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PCMSO\DadosEmpregado_Dashboard.aspx.designer.cs">
+      <DependentUpon>DadosEmpregado_Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PCMSO\DadosEmpregado_Questionario.aspx.cs">
+      <DependentUpon>DadosEmpregado_Questionario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PCMSO\DadosEmpregado_Questionario.aspx.designer.cs">
+      <DependentUpon>DadosEmpregado_Questionario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PCMSO\DadosEmpregado_Vacina.aspx.cs">
+      <DependentUpon>DadosEmpregado_Vacina.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PCMSO\DadosEmpregado_Vacina.aspx.designer.cs">
+      <DependentUpon>DadosEmpregado_Vacina.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PCMSO\ExameClinicoIlitera.aspx.cs">
+      <DependentUpon>ExameClinicoIlitera.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PCMSO\ExameClinicoIlitera.aspx.designer.cs">
+      <DependentUpon>ExameClinicoIlitera.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PCMSO\ExameQuestionario.aspx.cs">
+      <DependentUpon>ExameQuestionario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PCMSO\ExameQuestionario.aspx.designer.cs">
+      <DependentUpon>ExameQuestionario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PCMSO\PCICompleto.aspx.cs">
+      <DependentUpon>PCICompleto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PCMSO\PCICompleto.aspx.designer.cs">
+      <DependentUpon>PCICompleto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PCMSO.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>PCMSO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PCMSO.aspx.designer.cs">
+      <DependentUpon>PCMSO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PCMSOAnual.aspx.cs">
+      <DependentUpon>PCMSOAnual.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PCMSOAnual.aspx.designer.cs">
+      <DependentUpon>PCMSOAnual.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PCMSOCompleto.aspx.cs">
+      <DependentUpon>PCMSOCompleto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PCMSOCompleto.aspx.designer.cs">
+      <DependentUpon>PCMSOCompleto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PCMSOExRealizados.aspx.cs">
+      <DependentUpon>PCMSOExRealizados.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PCMSOExRealizados.aspx.designer.cs">
+      <DependentUpon>PCMSOExRealizados.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PCMSOPlanejado.aspx.cs">
+      <DependentUpon>PCMSOPlanejado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PCMSOPlanejado.aspx.designer.cs">
+      <DependentUpon>PCMSOPlanejado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PCMSOPlanejado_NE.aspx.cs">
+      <DependentUpon>PCMSOPlanejado_NE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PCMSOPlanejado_NE.aspx.designer.cs">
+      <DependentUpon>PCMSOPlanejado_NE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PCMSOPlanejamento.aspx.cs">
+      <DependentUpon>PCMSOPlanejamento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PCMSOPlanejamento.aspx.designer.cs">
+      <DependentUpon>PCMSOPlanejamento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PCMSOPorEmpregado.aspx.cs">
+      <DependentUpon>PCMSOPorEmpregado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PCMSOPorEmpregado.aspx.designer.cs">
+      <DependentUpon>PCMSOPorEmpregado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PCMSOPorExames.aspx.cs">
+      <DependentUpon>PCMSOPorExames.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PCMSOPorExames.aspx.designer.cs">
+      <DependentUpon>PCMSOPorExames.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PCMSO\AnamneseAud.aspx.cs">
+      <DependentUpon>AnamneseAud.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PCMSO\AnamneseAud.aspx.designer.cs">
+      <DependentUpon>AnamneseAud.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PCMSO\ASOGuiaEmpregado.aspx.cs">
+      <DependentUpon>ASOGuiaEmpregado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PCMSO\ASOGuiaEmpregado.aspx.designer.cs">
+      <DependentUpon>ASOGuiaEmpregado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PCMSO\Audiograma.aspx.cs">
+      <DependentUpon>Audiograma.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PCMSO\Audiograma.aspx.designer.cs">
+      <DependentUpon>Audiograma.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PCMSO\CadAbsentismo.aspx.cs">
+      <DependentUpon>CadAbsentismo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PCMSO\CadAbsentismo.aspx.designer.cs">
+      <DependentUpon>CadAbsentismo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PCMSO\CadAcidente.aspx.cs">
+      <DependentUpon>CadAcidente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PCMSO\CadAcidente.aspx.designer.cs">
+      <DependentUpon>CadAcidente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PCMSO\CadastroUniformes.aspx.cs">
+      <DependentUpon>CadastroUniformes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PCMSO\CadastroUniformes.aspx.designer.cs">
+      <DependentUpon>CadastroUniformes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PCMSO\CadFatorRisco.aspx.cs">
+      <DependentUpon>CadFatorRisco.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PCMSO\CadFatorRisco.aspx.designer.cs">
+      <DependentUpon>CadFatorRisco.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PCMSO\Cancelar_Agendamento.aspx.cs">
+      <DependentUpon>Cancelar_Agendamento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PCMSO\Cancelar_Agendamento.aspx.designer.cs">
+      <DependentUpon>Cancelar_Agendamento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PCMSO\DadosEmpregado_CA.aspx.cs">
+      <DependentUpon>DadosEmpregado_CA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PCMSO\DadosEmpregado_CA.aspx.designer.cs">
+      <DependentUpon>DadosEmpregado_CA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PCMSO\DadosEmpregado_Digitalizado.aspx.cs">
+      <DependentUpon>DadosEmpregado_Digitalizado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PCMSO\DadosEmpregado_Digitalizado.aspx.designer.cs">
+      <DependentUpon>DadosEmpregado_Digitalizado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PCMSO\DadosEmpregado_Guia_Dup.aspx.cs">
+      <DependentUpon>DadosEmpregado_Guia_Dup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PCMSO\DadosEmpregado_Guia_Dup.aspx.designer.cs">
+      <DependentUpon>DadosEmpregado_Guia_Dup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PCMSO\DadosEmpregado_Lista.aspx.cs">
+      <DependentUpon>DadosEmpregado_Lista.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PCMSO\DadosEmpregado_Lista.aspx.designer.cs">
+      <DependentUpon>DadosEmpregado_Lista.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PCMSO\ExameClinicoGuia.aspx.cs">
+      <DependentUpon>ExameClinicoGuia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PCMSO\ExameClinicoGuia.aspx.designer.cs">
+      <DependentUpon>ExameClinicoGuia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PCMSO\ListaAcidentes2.aspx.cs">
+      <DependentUpon>ListaAcidentes2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PCMSO\ListaAcidentes2.aspx.designer.cs">
+      <DependentUpon>ListaAcidentes2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PCMSO\ListaUniformes.aspx.cs">
+      <DependentUpon>ListaUniformes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PCMSO\ListaUniformes.aspx.designer.cs">
+      <DependentUpon>ListaUniformes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PCMSO\Graficos.aspx.cs">
+      <DependentUpon>Graficos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PCMSO\Graficos.aspx.designer.cs">
+      <DependentUpon>Graficos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PCMSO\Relatorio_Absenteismo.aspx.cs">
+      <DependentUpon>Relatorio_Absenteismo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PCMSO\Relatorio_Absenteismo.aspx.designer.cs">
+      <DependentUpon>Relatorio_Absenteismo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PCMSO\Relatorio_Ambulatoriais.aspx.cs">
+      <DependentUpon>Relatorio_Ambulatoriais.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PCMSO\Relatorio_Ambulatoriais.aspx.designer.cs">
+      <DependentUpon>Relatorio_Ambulatoriais.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PCMSO\Relatorio_AON.aspx.cs">
+      <DependentUpon>Relatorio_AON.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PCMSO\Relatorio_AON.aspx.designer.cs">
+      <DependentUpon>Relatorio_AON.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PCMSO\Relatorio_Empregados.aspx.designer.cs">
+      <DependentUpon>Relatorio_Empregados.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PCMSO\Relatorio_Empregados.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PCMSO\Relatorio_Exames.aspx.cs">
+      <DependentUpon>Relatorio_Exames.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PCMSO\Relatorio_Exames.aspx.designer.cs">
+      <DependentUpon>Relatorio_Exames.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PCMSO\Relatorio_GHE_Funcao_Exames.aspx.cs">
+      <DependentUpon>Relatorio_GHE_Funcao_Exames.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PCMSO\Relatorio_GHE_Funcao_Exames.aspx.designer.cs">
+      <DependentUpon>Relatorio_GHE_Funcao_Exames.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PCMSO\Relatorio_Guias.aspx.cs">
+      <DependentUpon>Relatorio_Guias.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PCMSO\Relatorio_Guias.aspx.designer.cs">
+      <DependentUpon>Relatorio_Guias.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PCMSO\Relatorio_Mailing.aspx.cs">
+      <DependentUpon>Relatorio_Mailing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PCMSO\Relatorio_Mailing.aspx.designer.cs">
+      <DependentUpon>Relatorio_Mailing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PCMSO\Relatorio_PCD.aspx.cs">
+      <DependentUpon>Relatorio_PCD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PCMSO\Relatorio_PCD.aspx.designer.cs">
+      <DependentUpon>Relatorio_PCD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PCMSO\Relatorio_Vacinas.aspx.cs">
+      <DependentUpon>Relatorio_Vacinas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PCMSO\Relatorio_Vacinas.aspx.designer.cs">
+      <DependentUpon>Relatorio_Vacinas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PCMSO\Relatorio_Vacinas_Atrasadas.aspx.cs">
+      <DependentUpon>Relatorio_Vacinas_Atrasadas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PCMSO\Relatorio_Vacinas_Atrasadas.aspx.designer.cs">
+      <DependentUpon>Relatorio_Vacinas_Atrasadas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PCMSO\TestesEspeciais.aspx.cs">
+      <DependentUpon>TestesEspeciais.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PCMSO\TestesEspeciais.aspx.designer.cs">
+      <DependentUpon>TestesEspeciais.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PCMSO\Vacinas.aspx.cs">
+      <DependentUpon>Vacinas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PCMSO\Vacinas.aspx.designer.cs">
+      <DependentUpon>Vacinas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PCMSO\Vacinas_Setor.aspx.cs">
+      <DependentUpon>Vacinas_Setor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PCMSO\Vacinas_Setor.aspx.designer.cs">
+      <DependentUpon>Vacinas_Setor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PlanilhaPPRA.aspx.cs">
+      <DependentUpon>PlanilhaPPRA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PlanilhaPPRA.aspx.designer.cs">
+      <DependentUpon>PlanilhaPPRA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PPPEmpregado.aspx.designer.cs">
+      <DependentUpon>PPPEmpregado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Repositorio_Cadastro.aspx.cs">
+      <DependentUpon>Repositorio_Cadastro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Repositorio_Cadastro.aspx.designer.cs">
+      <DependentUpon>Repositorio_Cadastro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\Comunicacao_Dash2\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\Comunicacao_Dash\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\Comunicacao_Dec2\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\Comunicacao_Dec\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\Comunicacao_Fecomercio2\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\Comunicacao_Fecomercio\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\IliNet_eSocial\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Vasos.aspx.cs">
+      <DependentUpon>Vasos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vasos.aspx.designer.cs">
+      <DependentUpon>Vasos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PPR.aspx.cs">
+      <DependentUpon>PPR.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PPR.aspx.designer.cs">
+      <DependentUpon>PPR.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PPRACompleto.aspx.cs">
+      <DependentUpon>PPRACompleto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PPRACompleto.aspx.designer.cs">
+      <DependentUpon>PPRACompleto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PPRACompletoIndice.aspx.cs">
+      <DependentUpon>PPRACompletoIndice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PPRACompletoIndice.aspx.designer.cs">
+      <DependentUpon>PPRACompletoIndice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PPRADocBase.aspx.cs">
+      <DependentUpon>PPRADocBase.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PPRADocBase.aspx.designer.cs">
+      <DependentUpon>PPRADocBase.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PPRAIntroducao.aspx.designer.cs">
+      <DependentUpon>PPRAIntroducao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QuadroEPI.aspx.cs">
+      <DependentUpon>QuadroEPI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QuadroEPI.aspx.designer.cs">
+      <DependentUpon>QuadroEPI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DadosEmpresa\RelatorioGuia.aspx.cs">
+      <DependentUpon>RelatorioGuia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DadosEmpresa\RelatorioGuia.aspx.designer.cs">
+      <DependentUpon>RelatorioGuia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="ListaEmpregados.aspx.cs">
+      <DependentUpon>ListaEmpregados.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListaEmpregados.aspx.designer.cs">
+      <DependentUpon>ListaEmpregados.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ListaEmpresas2.aspx.cs">
+      <DependentUpon>ListaEmpresas2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListaEmpresas2.aspx.designer.cs">
+      <DependentUpon>ListaEmpresas2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MapaRisco.aspx.cs">
+      <DependentUpon>MapaRisco.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PCMSO\AnotacoesPCI.aspx.cs">
+      <DependentUpon>AnotacoesPCI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PCMSO\AnotacoesPCI.aspx.designer.cs">
+      <DependentUpon>AnotacoesPCI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PCMSO\ASOEmpregado.aspx.cs">
+      <DependentUpon>ASOEmpregado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PCMSO\ASOEmpregado.aspx.designer.cs">
+      <DependentUpon>ASOEmpregado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PCMSO\CadProcedimentoClinico.aspx.cs">
+      <DependentUpon>CadProcedimentoClinico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PCMSO\CadProcedimentoClinico.aspx.designer.cs">
+      <DependentUpon>CadProcedimentoClinico.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PCMSO\CadQueixaClinica.aspx.cs">
+      <DependentUpon>CadQueixaClinica.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PCMSO\CadQueixaClinica.aspx.designer.cs">
+      <DependentUpon>CadQueixaClinica.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PCMSO\DadosEmpregado.aspx.cs">
+      <DependentUpon>DadosEmpregado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PCMSO\DadosEmpregado.aspx.designer.cs">
+      <DependentUpon>DadosEmpregado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PCMSO\DadosEmpregado_Guia.aspx.cs">
+      <DependentUpon>DadosEmpregado_Guia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PCMSO\DadosEmpregado_Guia.aspx.designer.cs">
+      <DependentUpon>DadosEmpregado_Guia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PCMSO\ExameAudiometrico.aspx.cs">
+      <DependentUpon>ExameAudiometrico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PCMSO\ExameAudiometrico.aspx.designer.cs">
+      <DependentUpon>ExameAudiometrico.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PCMSO\ExameClinico.aspx.cs">
+      <DependentUpon>ExameClinico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PCMSO\ExameClinico.aspx.designer.cs">
+      <DependentUpon>ExameClinico.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PCMSO\ExameComplementar.aspx.cs">
+      <DependentUpon>ExameComplementar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PCMSO\ExameComplementar.aspx.designer.cs">
+      <DependentUpon>ExameComplementar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PCMSO\ExameDigitalizado.aspx.cs">
+      <DependentUpon>ExameDigitalizado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PCMSO\ExameDigitalizado.aspx.designer.cs">
+      <DependentUpon>ExameDigitalizado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PCMSO\ExameNaoOcupacional.aspx.cs">
+      <DependentUpon>ExameNaoOcupacional.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PCMSO\ExameNaoOcupacional.aspx.designer.cs">
+      <DependentUpon>ExameNaoOcupacional.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PCMSO\RiscosEPIs.aspx.cs">
+      <DependentUpon>RiscosEPIs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PCMSO\RiscosEPIs.aspx.designer.cs">
+      <DependentUpon>RiscosEPIs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PPPEmpregado.aspx.cs">
+      <DependentUpon>PPPEmpregado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PCMSO\WbUsrCntrlAudiograma.ascx.cs">
+      <DependentUpon>WbUsrCntrlAudiograma.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PCMSO\WbUsrCntrlAudiograma.ascx.designer.cs">
+      <DependentUpon>WbUsrCntrlAudiograma.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="PPRAIntroducao.aspx.cs">
+      <DependentUpon>PPRAIntroducao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuadroEPI2.aspx.cs">
+      <DependentUpon>QuadroEPI2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QuadroEPI2.aspx.designer.cs">
+      <DependentUpon>QuadroEPI2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RelatAbsenteismo.aspx.cs">
+      <DependentUpon>RelatAbsenteismo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SelecaoGHE.aspx.cs">
+      <DependentUpon>SelecaoGHE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SelecaoGHE.aspx.designer.cs">
+      <DependentUpon>SelecaoGHE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Tratar_Excecao.aspx.cs">
+      <DependentUpon>Tratar_Excecao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tratar_Excecao.aspx.designer.cs">
+      <DependentUpon>Tratar_Excecao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Treinamentos\CadastroCurso.aspx.cs">
+      <DependentUpon>CadastroCurso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Treinamentos\CadastroCurso.aspx.designer.cs">
+      <DependentUpon>CadastroCurso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Treinamentos\CertificadoColetivo.aspx.cs">
+      <DependentUpon>CertificadoColetivo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Treinamentos\CertificadoColetivo.aspx.designer.cs">
+      <DependentUpon>CertificadoColetivo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Treinamentos\CertificadoIndividual.aspx.cs">
+      <DependentUpon>CertificadoIndividual.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Treinamentos\CertificadoIndividual.aspx.designer.cs">
+      <DependentUpon>CertificadoIndividual.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Treinamentos\EmpregadoTreinamento.aspx.cs">
+      <DependentUpon>EmpregadoTreinamento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Treinamentos\EmpregadoTreinamento.aspx.designer.cs">
+      <DependentUpon>EmpregadoTreinamento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Treinamentos\FichaEmpregado.aspx.cs">
+      <DependentUpon>FichaEmpregado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Treinamentos\FichaEmpregado.aspx.designer.cs">
+      <DependentUpon>FichaEmpregado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Treinamentos\ListaEmpregadoCurso.aspx.cs">
+      <DependentUpon>ListaEmpregadoCurso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Treinamentos\ListaEmpregadoCurso.aspx.designer.cs">
+      <DependentUpon>ListaEmpregadoCurso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Treinamentos\ListaTreinamentos.aspx.cs">
+      <DependentUpon>ListaTreinamentos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Treinamentos\ListaTreinamentos.aspx.designer.cs">
+      <DependentUpon>ListaTreinamentos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Treinamentos\ParticipantesCurso.aspx.cs">
+      <DependentUpon>ParticipantesCurso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Treinamentos\ParticipantesCurso.aspx.designer.cs">
+      <DependentUpon>ParticipantesCurso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="visualizarDadosEmpregado_Novo2.aspx.cs">
+      <DependentUpon>visualizarDadosEmpregado_Novo2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="visualizarDadosEmpregado_Novo2.aspx.designer.cs">
+      <DependentUpon>visualizarDadosEmpregado_Novo2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VisualizarDadosEmpresa.aspx.cs">
+      <DependentUpon>VisualizarDadosEmpresa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VisualizarDadosEmpresa.aspx.designer.cs">
+      <DependentUpon>VisualizarDadosEmpresa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WsConsultar\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WsEnviar\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WSRPS\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="PCMSO\Images\" />
+    <Folder Include="Treinamentos\Images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Bll\BLL\BLL.csproj">
+      <Project>{6ECD4668-72EB-418A-BD0D-77401EC1F950}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="Dal\DAL\DAL.csproj">
+      <Project>{C6ECE0A5-3AC2-4F23-8C13-28B5BE97FD26}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="Entities\Entities\Entities.csproj">
+      <Project>{A9BF4411-1F6C-4776-87E5-B57695F0A57F}</Project>
+      <Name>Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="Facade\Facade\Facade.csproj">
+      <Project>{85BEE3B0-F17E-446C-A297-C7216DADD8F7}</Project>
+      <Name>Facade</Name>
+    </ProjectReference>
+    <ProjectReference Include="Ilitera.ASO.Report\Ilitera.ASO.Report.csproj">
+      <Project>{1ab7fb28-770b-4819-a354-785882b01332}</Project>
+      <Name>Ilitera.ASO.Report</Name>
+    </ProjectReference>
+    <ProjectReference Include="Ilitera.Auditoria.Report\Ilitera.Auditoria.Report.csproj">
+      <Project>{BA25CFEB-81EE-4330-B50E-AB366DCFAEB3}</Project>
+      <Name>Ilitera.Auditoria.Report</Name>
+    </ProjectReference>
+    <ProjectReference Include="Ilitera.Common\Ilitera.Common.csproj">
+      <Project>{6EF4B4EC-69D3-4F21-8934-F23F34A52533}</Project>
+      <Name>Ilitera.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="Ilitera.Cursos.Report\Ilitera.Cursos.Report.csproj">
+      <Project>{0225D2B9-4E1C-47DE-9C74-CB98C4C7125C}</Project>
+      <Name>Ilitera.Cursos.Report</Name>
+    </ProjectReference>
+    <ProjectReference Include="Ilitera.Data\Ilitera.Data.csproj">
+      <Project>{ddd39289-1377-486b-8aa3-122884700431}</Project>
+      <Name>Ilitera.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="Ilitera.Marshall.Data\Ilitera.Marshall.Data.csproj">
+      <Project>{941534C1-D9DF-4B77-845C-ED091078847F}</Project>
+      <Name>Ilitera.Marshall.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="Ilitera.Opsa.Data\Ilitera.Opsa.Data.csproj">
+      <Project>{7C453D2C-00BB-4CDC-9A34-3E4F52A66E13}</Project>
+      <Name>Ilitera.Opsa.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="Ilitera.Opsa.Report\Ilitera.Opsa.Report.csproj">
+      <Project>{CD6E7529-FDDA-4BEC-9219-6C75FC078BEF}</Project>
+      <Name>Ilitera.Opsa.Report</Name>
+    </ProjectReference>
+    <ProjectReference Include="Ilitera.OrdemServico.Report\Ilitera.OrdemServico.Report.csproj">
+      <Project>{3255FC8F-09FE-4515-A610-E46C7B024B57}</Project>
+      <Name>Ilitera.OrdemServico.Report</Name>
+    </ProjectReference>
+    <ProjectReference Include="Ilitera.PCMSO.Report\Ilitera.PCMSO.Report.csproj">
+      <Project>{147DB043-FA09-4CB4-A56E-289AD9168FD4}</Project>
+      <Name>Ilitera.PCMSO.Report</Name>
+    </ProjectReference>
+    <ProjectReference Include="Ilitera.PPR.Report\Ilitera.PPR.Report.csproj">
+      <Project>{831c0a0b-cb41-41eb-b508-e50d8b095787}</Project>
+      <Name>Ilitera.PPR.Report</Name>
+    </ProjectReference>
+    <ProjectReference Include="Ilitera.Relatorios.Report\Ilitera.Relatorios.Report.csproj">
+      <Project>{e52a821d-d59d-4d4c-bff7-d35f50d05b3a}</Project>
+      <Name>Ilitera.Relatorios.Report</Name>
+    </ProjectReference>
+    <ProjectReference Include="Ilitera.Sied.Report\Ilitera.Sied.Report.csproj">
+      <Project>{FEA4E9D9-6182-46BC-B6CE-9AAC09B63E1F}</Project>
+      <Name>Ilitera.Sied.Report</Name>
+    </ProjectReference>
+    <ProjectReference Include="Ilitera.SPDA.Report\Ilitera.SPDA.Report.csproj">
+      <Project>{b732aa0b-4810-49fa-ac8f-f70f987939a3}</Project>
+      <Name>Ilitera.SPDA.Report</Name>
+    </ProjectReference>
+    <ProjectReference Include="Ilitera.VasoCaldeira.Report\Ilitera.VasoCaldeira.Report.csproj">
+      <Project>{BF1B4F3D-4583-4F4B-8341-CE20319FC5A0}</Project>
+      <Name>Ilitera.VasoCaldeira.Report</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Bll\BLL\Ilitera.pfx" />
+    <None Include="ControleEPI\vssver2.scc" />
+    <None Include="ControleExtintores\img\vssver2.scc" />
+    <None Include="Help\Manual_Novo_Ilitera_Net_Teste.pdf" />
+    <Content Include="Ilitera.pfx" />
+    <None Include="PCMSO\img\vssver2.scc" />
+    <None Include="Properties\PublishProfiles\Profile1.pubxml" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\Comunicacao_Dec\Comunicacao.wsdl" />
+    <None Include="Service References\Comunicacao_Fecomercio\ComunicacaoFec.wsdl" />
+    <None Include="Treinamentos\img\vssver2.scc" />
+    <None Include="Treinamentos\scripts\vssver2.scc" />
+    <Content Include="Web References\WsConsultar\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </Content>
+    <None Include="Web References\WsConsultar\ServicoConsultarLoteEventos.wsdl" />
+    <Content Include="Web References\WsEnviar\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </Content>
+    <None Include="Web References\WsEnviar\ServicoEnviarLoteEventos.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="I:\Desenv\Ilitera.Net_Essential_Objects\Web References\ServiceGinfesImpl.xml">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WSRPS\</RelPath>
+      <UpdateFromURL>I:\Desenv\Ilitera.Net_Essential_Objects\Web References\ServiceGinfesImpl.xml</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Ilitera_Net_WSRPS_ServiceGinfesImplService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="I:\Desenv\Ilitera\Mestra\Mestra.Viewer\eSocial\WSDL\LoteEventos\WsConsultarLoteEventos.xml">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WsConsultar\</RelPath>
+      <UpdateFromURL>I:\Desenv\Ilitera\Mestra\Mestra.Viewer\eSocial\WSDL\LoteEventos\WsConsultarLoteEventos.xml</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Ilitera_Net_WsConsultar_ServicoConsultarLoteEventos</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="I:\Desenv\Ilitera\Mestra\Mestra.Viewer\eSocial\WSDL\LoteEventos\WsEnviarLoteEventos.xml">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WsEnviar\</RelPath>
+      <UpdateFromURL>I:\Desenv\Ilitera\Mestra\Mestra.Viewer\eSocial\WSDL\LoteEventos\WsEnviarLoteEventos.xml</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Ilitera_Net_WsEnviar_ServicoEnviarLoteEventos</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\Comunicacao_Dash2\" />
+    <WCFMetadataStorage Include="Service References\Comunicacao_Dash\" />
+    <WCFMetadataStorage Include="Service References\Comunicacao_Dec2\" />
+    <WCFMetadataStorage Include="Service References\Comunicacao_Dec\" />
+    <WCFMetadataStorage Include="Service References\Comunicacao_Fecomercio2\" />
+    <WCFMetadataStorage Include="Service References\Comunicacao_Fecomercio\" />
+    <WCFMetadataStorage Include="Service References\IliNet_eSocial\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>SecurityRules.ruleset</CodeAnalysisRuleSet>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>Bll\BLL\Ilitera.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>46870</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,899 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Ilitera.Net.SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <style id="Style1" type="text/css" runat="server">
+
+        /* fontes */
+
+        @font-face{
+            font-family: "Univia Pro";
+            src: url("css/UniviaPro-Regular.otf");
+        }
+
+        @font-face{
+            font-family: "Ubuntu";
+            src: url("css/Ubuntu-Regular.ttf");
+        }
+
+        .eo_css_ctrl_ctl00_Menu111{
+            color: rgba(176, 171, 171, 0.3) !important;
+        }
+
+       img{
+           width: 25px;
+       }
+        /* configurações gerais */
+
+       body  {
+        background: #c4e9bd;
+        font-family: "Ubuntu" !important;
+        margin: 0px;
+        padding: 0px;
+        color: #696969;
+        width: 100%;
+       }
+
+       .main{
+           width: 100%;
+           display: flex;
+           flex-direction: column;
+           padding: 0 !important;
+           margin: 0 !important;
+       }
+
+       div.menu{
+           padding: 0 !important;
+       }
+
+       .menu{
+           justify-content: start;
+           height: 100%;
+           background-color: #f1f1f1;
+       }
+
+       #ctl00_Menu1{
+           height: 100%;
+           width: fit-content;
+           position: fixed;
+           background-color: #f1f1f1;
+           display: flex;
+       }
+
+       img#eo_ele_21, img#eo_ele_130, img#eo_ele_138, img#eo_ele_144, img#eo_ele_149, img#eo_ele_156, img#eo_ele_164, img#eo_ele_110, img#eo_ele_118, img#eo_ele_57,
+       img#eo_ele_62, img#eo_ele_67, img#eo_ele_78, img#eo_ele_91, img#eo_ele_14, img#eo_ele_146, img#eo_ele_152, img#eo_ele_157, img#eo_ele_125, img#eo_ele_165, 
+       #eo_ele_56, #eo_ele_61, #eo_ele_66, #eo_ele_77, #eo_ele_90, #eo_ele_117, #eo_ele_124, #eo_ele_137, #eo_ele_145, #eo_ele_151{
+           width: 10px !important;
+           opacity: 35%;
+       }
+
+       img#eo_ele_99{
+           width: 25px !important;
+           height: 25px !important;
+       }
+
+       @media screen and (max-width:800px){
+           #ctl00_Menu1{
+               flex-direction: column;
+           }
+       }
+
+       /* cabeçalho */
+
+       .row{
+           --bs-gutter-x: 0px!important;
+           height: fit-content;
+            margin-right: 0px !important;
+            padding-right: 0px !important;
+            /*margin: 0 90px 0 90px;*/
+            margin-left: 0px !important;
+        }
+
+       .alinhar{
+           margin-left: 71px !important;
+       }
+
+       .header2 {
+            width: 100%;
+            height: 90px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: .5rem;
+            border-bottom: 1px solid #1C9489;
+            margin-bottom: 2rem;
+            margin-left: 60px!important;
+        }
+
+       .cabecalho{
+           display: flex;
+           width: 100%;
+       }
+
+       .comeco {
+            display: flex;
+            justify-content: start;
+            align-items: flex-start;
+            flex-direction: column;
+            transform: translateY(20%);
+            width: 65%;
+        }
+
+       .primeiro{
+           justify-content: flex-start;
+           width: 15%;
+       }
+
+       .terceiro{
+           justify-content: flex-end;
+           width: 20%;
+       }
+
+       .triangulo{
+            padding-top: .2rem;
+            width: 47px;            
+            transform: translateY(55%);
+            justify-content: flex-start;
+            text-transform: uppercase;
+            vertical-align: central;
+        }
+
+        .logo{
+            width: 120px;
+            justify-content: right;
+            padding-right: 0;
+            padding-top: .2rem!important;
+        }
+
+        .tituloPagina{
+            padding-top: 2rem;
+            font-family: "Univia Pro";
+            font-size: 1rem; 
+            font-weight: 500;
+            text-transform: uppercase;
+            color: #E98035;
+        }           
+
+        .subtituloPagina{
+            font-family: "Univia Pro";
+            font-size: 0.8rem; 
+            font-weight: 500;
+            text-align: left;
+            color: #B0ABAB;
+            margin-top: 0px;
+        }
+
+        @media screen and (max-width: 375px) {
+            .tituloPagina{
+                font-size: 18px;
+            }
+
+            .subtituloPagina{
+                font-size: 18px; 
+            }
+        }
+
+        /* fundo img menu */
+
+        #eo_ele_3, #eo_ele_29, #eo_ele_10, #eo_ele_63, #eo_ele_105, #eo_ele_113, #eo_ele_133{
+            background-color: transparent !important;
+        }
+
+        /* fonte menu lateral teste */
+
+        .eo_css_ctrl_ctl00_Menu16, .eo_css_ctrl_ctl00_Menu111{
+            color: #7D7B7B !important;
+        }
+
+    </style>
+    <title></title>
+    <link href="css/Site.css" rel="stylesheet" type="text/css" />
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+
+
+     <script type="text/javascript" src="http://static.fusioncharts.com/code/latest/fusioncharts.js?cacheBust=823"></script>
+	<script type="text/javascript" src="http://static.fusioncharts.com/code/latest/fusioncharts.charts.js?cacheBust=823"></script>
+	<script type="text/javascript" src="http://static.fusioncharts.com/code/latest/themes/fusioncharts.theme.fint.js?cacheBust=823"></script>
+
+
+</head>
+
+<%@ Register Assembly="EO.Web" Namespace="EO.Web" TagPrefix="eo" %>
+
+<body  style="background-color:#f7f8f9" >
+
+
+    <form runat="server" >
+
+<%--<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,0,0" width="1200" height="160" id="player1" align="middle">
+							<param name="movie" value="http://www.ilitera.net/abertura.swf" />
+							<param name="menu" value="false" />
+							<param name="quality" value="high" />
+							<param name="bgcolor" value="#FFFFFF" />
+							<embed src="http://www.ilitera.net/abertura.swf" menu="false" quality="high" bgcolor="#FFFFFF" width="1200" height="160" name="player" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />
+						</object>--%>
+ <%--<div class="page" 
+        style="position: fixed; z-index: auto; width: 1200px; left: 1px;" >
+        <div class="header" >
+            <div class="title" style="height: 1px; top: 0px; left: 0px;" 
+            style="background-color: #f7f8f9" >
+                <h1 style="height: 29px">
+        
+                </h1>
+          
+            </div>--%>
+
+
+  <div class="main d-flex" style="background-color: #f7f8f9" > 
+      <div class="row">
+          <div class="menu" style="background-color: #f7f8f9" >        
+        <eo:Menu ID="Menu1" runat="server" ControlSkinID="None" Width="71px" RaisesServerEvent="True" OnItemClick="Menu1_ItemClick">
+            <LookItems>
+                <eo:MenuItem HoverStyle-CssText="color:#F7B00A;padding-left:2px;padding-right:14px;" 
+                ItemID="_TopLevelItem" 
+                NormalStyle-CssText="padding-left:10px;padding-right:10px;" 
+                ExpandedStyle-CssText="padding-left:10px;padding-right:10px;" 
+                SelectedExpandedStyle-CssText="padding-left:10px;padding-right:10px;" 
+                SelectedHoverStyle-CssText="padding-left:10px;padding-right:10px;" 
+                SelectedStyle-CssText="padding-left:10px;padding-right:10px;" Image-Url="#">
+                    <SubMenu ItemSpacing="4" 
+                        Style-CssText="background-color:#f1f1f1;opacity:0.9;color:#7D7B7B;cursor:hand;font-family:Univia Pro;font-size:12px;padding:5px; border-radius:4px;border-color:transparent;width:260px;" 
+                        OffsetX="13" OffsetY="3" ShadowDepth="0">
+                    </SubMenu>
+                </eo:MenuItem>
+                <eo:MenuItem IsSeparator="True" ItemID="_Separator" 
+                    NormalStyle-CssText="width: 1px; height: 1px; background-color:#e0e0e0;">
+                </eo:MenuItem>
+                <eo:MenuItem 
+                    HoverStyle-CssText="color:#E98035;padding-left:5px;padding-right:5px;" 
+                    ItemID="_Default" 
+                    NormalStyle-CssText="">
+                    <SubMenu ItemSpacing="5" 
+                        Style-CssText="background-color:#f1f1f1;opacity:0.9;color:#7D7B7B;cursor:hand;font-family:Univia Pro;font-size:12px;padding:5px; border-radius:4px;border-color:transparent;width:260px;" 
+                        OffsetX="13" OffsetY="-4" ShadowDepth="0">
+                    </SubMenu>
+                </eo:MenuItem>
+            </LookItems>
+            <TopGroup
+                Style-CssText="color:#006600;cursor:hand; font-family:Univia Pro;font-size:10px; padding: 10px;" Orientation="Vertical">
+            <Items>
+
+                <eo:MenuItem ItemID="1" LeftIcon-Url="~/Images/icon_empresa2.png"  
+                    Value="Cadastro" ExpandedStyle-CssText="font-family:Univia Pro;font-size:9pt;" 
+                    HoverStyle-CssText=" font-family:Univia Pro;font-size:9pt;" 
+                    NormalStyle-CssText=" font-family:Univia Pro;font-size:9pt;" 
+                    SelectedStyle-CssText="" SubMenuIcon="None" Height="55">
+                    <SubMenu ExpandEffect-Type="GlideTopLeftToBottomRight" 
+                        Style-CssText="border:none">
+                        <Items>
+                            <eo:MenuItem Text-Html="Empresas do Grupo" Disabled="true" DisabledStyle-CssText="color:#E98035; font-size:16px;">
+                            </eo:MenuItem>
+
+                            <eo:MenuItem IsSeparator="True">
+                            </eo:MenuItem>
+
+                            <eo:MenuItem Text-Html="Listar Empresas" >
+                            </eo:MenuItem>
+
+                            <eo:MenuItem IsSeparator="True">
+                            </eo:MenuItem>
+
+                            <eo:MenuItem  Text-Html="Dados Cadastrais">
+                            </eo:MenuItem>
+                        </Items>
+                    </SubMenu>
+                </eo:MenuItem>
+
+                <%-- LISTAGEM DE COLABORADORES --%>
+
+                <eo:MenuItem  LeftIcon-Url="~/Images/colaboradores2.png"  
+                    ExpandedStyle-CssText=" font-family:Univia Pro;font-size:9pt;" 
+                    HoverStyle-CssText=" font-family:Univia Pro;font-size:9pt;" 
+                    NormalStyle-CssText=" font-family:Univia Pro;font-size:9pt;" SubMenuIcon="None" Height="55">
+                    <SubMenu ExpandEffect-Type="GlideTopLeftToBottomRight" 
+                        Style-CssText="border:none;">
+                        <Items>
+                            <eo:MenuItem Text-Html="Listagem de Colaboradores" Disabled="true" DisabledStyle-CssText="color:#E98035; font-size:16px;">
+                            </eo:MenuItem>
+
+                            <eo:MenuItem IsSeparator="True">
+                            </eo:MenuItem>
+
+                            <eo:MenuItem Text-Html="Colaboradores">
+                                <SubMenu ExpandEffect-Type="GlideTopLeftToBottomRight" 
+                                Style-CssText="border:none;">
+                                    <Items>
+                                        <eo:MenuItem Text-Html="Listar Colaboradores">
+                                        </eo:MenuItem>
+                                        <eo:MenuItem Text-Html="Edição do Colaborador">
+                                        </eo:MenuItem>
+                                        <eo:MenuItem Text-Html="Inserir Colaborador">
+                                        </eo:MenuItem>
+                                        <eo:MenuItem Text-Html="Relatório de Colaboradores"></eo:MenuItem>
+                                    </Items>
+                                </SubMenu>
+                            </eo:MenuItem>
+
+                            <eo:MenuItem IsSeparator="True">
+                            </eo:MenuItem>
+
+                            <eo:MenuItem Text-Html="Serviços Disponíveis">
+                                <SubMenu ExpandEffect-Type="GlideTopLeftToBottomRight"
+                                Style-CssText="border:none;">
+                                    <Items>
+                                        <eo:MenuItem  Text-Html="Exames e Pendências">
+                                        </eo:MenuItem>
+                                        <eo:MenuItem Text-Html="Colaborador x GHE">
+                                        </eo:MenuItem>
+                                    </Items>
+                                </SubMenu>
+                            </eo:MenuItem>
+                          
+                        </Items>
+                    </SubMenu>
+                </eo:MenuItem>
+
+                <%-- SEGURANÇA DO TRABALHO --%>
+
+                <eo:MenuItem LeftIcon-Url="~/Images/fundo-imagem-pasta-document.png"  
+                    ExpandedStyle-CssText=" font-family:Univia Pro;font-size:9pt;" 
+                    HoverStyle-CssText=" font-family:Univia Pro;font-size:9pt;" 
+                    NormalStyle-CssText=" font-family:Univia Pro;font-size:9pt;" SubMenuIcon="None" Height="55">
+                    <SubMenu ExpandEffect-Type="GlideTopLeftToBottomRight" 
+                        Style-CssText="border:none;">
+                        <Items>
+                            <eo:MenuItem Text-Html="Segurança do Trabalho" Disabled="true" DisabledStyle-CssText="color:#E98035; font-size:16px;">
+                            </eo:MenuItem>
+
+                            <eo:MenuItem IsSeparator="True">
+                            </eo:MenuItem>
+
+                            <eo:MenuItem Text-Html="PGR">
+                            </eo:MenuItem>
+
+                            <eo:MenuItem IsSeparator="True">
+                            </eo:MenuItem>
+
+                            <eo:MenuItem Text-Html="PPRA">
+                            </eo:MenuItem>
+
+                            <eo:MenuItem IsSeparator="True">
+                            </eo:MenuItem>
+
+                            <eo:MenuItem Text-Html="LTCAT">
+                            </eo:MenuItem>
+
+                            <eo:MenuItem IsSeparator="True">
+                            </eo:MenuItem>
+
+                            <eo:MenuItem Text-Html="Laudo de Insalubridade">
+                            </eo:MenuItem>
+
+                            <eo:MenuItem IsSeparator="True">
+                            </eo:MenuItem>
+
+                            <eo:MenuItem Text-Html="Laudo de Periculosidade">
+                            </eo:MenuItem>
+
+                            <eo:MenuItem IsSeparator="True">
+                            </eo:MenuItem>
+                            
+                            <eo:MenuItem Text-Html="Mapa de Riscos">
+                            </eo:MenuItem>
+
+                            <eo:MenuItem IsSeparator="True">
+                            </eo:MenuItem>
+
+                            <eo:MenuItem Text-Html="Elétrica" >
+                            </eo:MenuItem>
+
+                            <eo:MenuItem IsSeparator="True">
+                            </eo:MenuItem>
+
+                            <eo:MenuItem Text-Html="SPDA" >
+                            </eo:MenuItem>
+
+                            <eo:MenuItem IsSeparator="True">
+                            </eo:MenuItem>
+
+                            <eo:MenuItem Text-Html="Vasos de Pressão">
+                            </eo:MenuItem>
+
+                            <eo:MenuItem IsSeparator="True">
+                            </eo:MenuItem>
+
+                            <eo:MenuItem Text-Html="PPP">
+                            </eo:MenuItem>
+                
+                            <eo:MenuItem IsSeparator="True">
+                            </eo:MenuItem>
+                            
+                            <eo:MenuItem Text-Html="Ergonomia">
+                            </eo:MenuItem>
+
+                            <eo:MenuItem IsSeparator="True">
+                            </eo:MenuItem>
+                            
+                            <eo:MenuItem Text-Html="PAE">
+                            </eo:MenuItem>
+                            
+                            <eo:MenuItem IsSeparator="True">
+                            </eo:MenuItem>
+
+                            <eo:MenuItem Text-Html="Quadros NR-4">
+                            </eo:MenuItem>
+
+                            <eo:MenuItem IsSeparator="True">
+                            </eo:MenuItem>
+                            
+                            <eo:MenuItem Text-Html="Caldeiras" Disabled="true" 
+                                DisabledStyle-CssText="color:#B9B7B7;">
+                            </eo:MenuItem>
+
+                            <eo:MenuItem IsSeparator="True">
+                            </eo:MenuItem>
+                            
+                            <eo:MenuItem Text-Html="PPRAG" Disabled="true" DisabledStyle-CssText="color:#B9B7B7;" ToolTip="Programa de Prevenção de Riscos Ambientais em Galvânica">
+                            </eo:MenuItem>
+                            
+                            <eo:MenuItem Text-Html="PPRMIN" Disabled="true" DisabledStyle-CssText="color:#B9B7B7;"  >
+                            </eo:MenuItem>
+
+                            <eo:MenuItem IsSeparator="True">
+                            </eo:MenuItem>
+                            
+                            <eo:MenuItem Text-Html="PPRPS" Disabled="true" DisabledStyle-CssText="color:#B9B7B7;" ToolTip=" Programa de Prevenção de Riscos em Prensas e Equipamentos Similares">
+                            </eo:MenuItem>
+
+                            <eo:MenuItem IsSeparator="True">
+                            </eo:MenuItem>
+                            
+                            <eo:MenuItem Text-Html="PGR" Disabled="true" DisabledStyle-CssText="color:#B9B7B7;" ToolTip="Programa de Gerenciamento de Riscos">
+                            </eo:MenuItem>
+
+                            <eo:MenuItem IsSeparator="True">
+                            </eo:MenuItem>
+                            
+                            <eo:MenuItem Text-Html="PPSV" Disabled="true" DisabledStyle-CssText="color:#B9B7B7;" ToolTip="Programa de Prevenção a Saúde Vocal">
+                            </eo:MenuItem>
+
+                            <eo:MenuItem IsSeparator="True">
+                            </eo:MenuItem>
+                            
+                            <eo:MenuItem Text-Html="PPSP" Disabled="true" DisabledStyle-CssText="color:#B9B7B7;" ToolTip="Programa de Prevenção do Uso Indevido de Substâncias Psicoativas na Aviação Civil">
+                            </eo:MenuItem>
+                        </Items>
+                    </SubMenu>
+                </eo:MenuItem>
+
+                <%-- SAÚDE OCUPACIONAL --%>
+
+     <eo:MenuItem LeftIcon-Url="~/Images/saude_ocup.png"   ExpandedStyle-CssText=" font-family:Univia Pro;font-size:10px;" 
+                    HoverStyle-CssText=" font-family:Univia Pro;font-size:10px;" 
+                    NormalStyle-CssText=" font-family:Univia Pro;font-size:10px;" SubMenuIcon="None" Height="55">
+                <SubMenu ExpandEffect-Type="GlideTopLeftToBottomRight" 
+                        Style-CssText="border:none;">
+                <Items>
+                    <eo:MenuItem Text-Html="Saúde Ocupacional" Disabled="true" DisabledStyle-CssText="color:#E98035; font-size:16px;">
+                            </eo:MenuItem>
+
+                            <eo:MenuItem IsSeparator="True">
+                            </eo:MenuItem>
+
+                    <eo:MenuItem Text-Html="Documentos">
+                        <SubMenu ExpandEffect-Type="GlideTopLeftToBottomRight"
+                            Style-CssText="border:none;">
+                            <Items>
+                                <eo:MenuItem Text-Html="PCMSO">
+                                </eo:MenuItem>
+                                <eo:MenuItem Text-Html="PCA / PPR">
+                                </eo:MenuItem>
+                            </Items>
+                        </SubMenu>
+                    </eo:MenuItem>
+
+                    <eo:MenuItem IsSeparator="True">
+                    </eo:MenuItem>
+
+                    <eo:MenuItem Text-Html="Agendamento de Exames">
+                        <SubMenu ExpandEffect-Type="GlideTopLeftToBottomRight"
+                            Style-CssText="border:none;">
+                            <Items>
+                                <eo:MenuItem  Text-Html="Guia de Encaminhamento">
+                                </eo:MenuItem>
+                                <eo:MenuItem  Text-Html="Guias de Encaminhamentos Separadas">
+                                </eo:MenuItem>
+                            </Items>
+                        </SubMenu>
+                    </eo:MenuItem>
+
+                    <eo:MenuItem IsSeparator="True">
+                    </eo:MenuItem>
+
+                    <eo:MenuItem Text-Html="Prontuário">
+                        <SubMenu ExpandEffect-Type="GlideTopLeftToBottomRight"
+                            Style-CssText="border:none;">
+                            <Items>
+                                <eo:MenuItem  Text-Html="Prontuários Digitais">
+                                </eo:MenuItem>
+                                <eo:MenuItem  Text-Html="Clínicos">
+                                </eo:MenuItem>
+                                <eo:MenuItem  Text-Html="Complementares">
+                                </eo:MenuItem>
+                                <eo:MenuItem  Text-Html="Audiométricos">
+                                </eo:MenuItem>
+                                <eo:MenuItem  Text-Html="Ficha Clínica">
+                                </eo:MenuItem>
+                                <eo:MenuItem  Text-Html="PCI">
+                                </eo:MenuItem>
+                                <eo:MenuItem  Text-Html="Não-Ocupacionais">
+                                </eo:MenuItem>
+                                <eo:MenuItem  Text-Html="Riscos e EPI">
+                                </eo:MenuItem>
+                            </Items>
+                        </SubMenu>
+                    </eo:MenuItem>
+                    
+                    <eo:MenuItem IsSeparator="True">
+                    </eo:MenuItem>
+
+                    <eo:MenuItem Text-Html="Relatórios">
+                        <SubMenu ExpandEffect-Type="GlideTopLeftToBottomRight"
+                            Style-CssText="border:none;">
+                            <Items>
+                                <eo:MenuItem  Text-Html="Relatório de Guias Geradas">
+                                </eo:MenuItem>
+                                <eo:MenuItem  Text-Html="Relatório de Exames Gerados">
+                                </eo:MenuItem>
+                                <eo:MenuItem  Text-Html="Relatório de ASO com bloqueio">
+                                </eo:MenuItem>
+                                <eo:MenuItem  Text-Html="Relatório de Mailing">
+                                </eo:MenuItem>
+                                <eo:MenuItem  Text-Html="Relatório de GHE - Função - Exames">
+                                </eo:MenuItem>
+                                <eo:MenuItem  Text-Html="Relatório de Absenteísmo">
+                                </eo:MenuItem>
+                                <eo:MenuItem  Text-Html="Relatório de Exames Ambulatoriais">
+                                </eo:MenuItem>
+                                <eo:MenuItem  Text-Html="Relatório PCD">
+                                </eo:MenuItem>
+                                <eo:MenuItem  Text-Html="Relatório de Vacinação">
+                                </eo:MenuItem>
+                                <eo:MenuItem Text-Html="Relatório de Colaboradores e Aptidões">
+                                </eo:MenuItem>
+                            </Items>
+                        </SubMenu>
+                    </eo:MenuItem>
+                    
+                    <eo:MenuItem IsSeparator="True">
+                    </eo:MenuItem>
+
+                    <eo:MenuItem Text-Html="Vacinação">
+                        <SubMenu ExpandEffect-Type="GlideTopLeftToBottomRight"
+                            Style-CssText="border:none;">
+                            <Items>
+                                <eo:MenuItem  Text-Html="Convocação de Vacinação">
+                                </eo:MenuItem>
+                                <eo:MenuItem  Text-Html="Vacinação">
+                                </eo:MenuItem>
+                                <eo:MenuItem  Text-Html="Vacinas - Setor">
+                                </eo:MenuItem>
+                            </Items>
+                        </SubMenu>
+                    </eo:MenuItem>
+                </Items>
+              </SubMenu>
+     </eo:MenuItem>
+
+                <%-- ESOCIAL --%>
+
+                <eo:MenuItem  Image-Url="" LeftIcon-Url="~/Images/esocial.svg"  
+                    ExpandedStyle-CssText=" font-family:Univia Pro;font-size:9pt;" 
+                    HoverStyle-CssText=" font-family:Univia Pro;font-size:9pt;" 
+                    NormalStyle-CssText=" font-family:Univia Pro;font-size:9pt;" SubMenuIcon="None" Height="55">
+                    <SubMenu ExpandEffect-Type="GlideTopLeftToBottomRight" 
+                        Style-CssText="border:none;">
+                        <Items>
+                            <eo:MenuItem Text-Html="eSocial" Disabled="true" DisabledStyle-CssText="color:#E98035; font-size:16px;">
+                            </eo:MenuItem>
+
+                            <eo:MenuItem IsSeparator="True">
+                            </eo:MenuItem>
+
+                            <eo:MenuItem Text-Html="Evento S-2210 - Comunicação de Acidente de Trabalho">
+                            </eo:MenuItem>
+
+                            <eo:MenuItem IsSeparator="True">
+                            </eo:MenuItem> 
+
+                            <eo:MenuItem Text-Html="Evento S-2220 - Monitoramento da Saúde do Trabalhador">
+                            </eo:MenuItem>
+
+                            <eo:MenuItem IsSeparator="True">
+                            </eo:MenuItem>  
+
+                            <eo:MenuItem Text-Html="Evento S-2221 - Exame Toxicológico">
+                            </eo:MenuItem>
+
+                            <eo:MenuItem IsSeparator="True">
+                            </eo:MenuItem>  
+                            
+                            <eo:MenuItem Text-Html="Evento S-2240 - Condições Ambientais do Trabalho">
+                            </eo:MenuItem>
+                        </Items>
+                    </SubMenu>
+                </eo:MenuItem>
+
+                <%-- ADM DA CIPA --%>
+
+                <eo:MenuItem  Image-Url="" LeftIcon-Url="~/Images/CIPA22.png"  
+                    ExpandedStyle-CssText=" font-family:Univia Pro;font-size:9pt;" 
+                    HoverStyle-CssText=" font-family:Univia Pro;font-size:9pt;" 
+                    NormalStyle-CssText=" font-family:Univia Pro;font-size:9pt;" SubMenuIcon="None" Height="55">
+                    <SubMenu ExpandEffect-Type="GlideTopLeftToBottomRight" 
+                        Style-CssText="border:none;">
+                        <Items>
+                            <eo:MenuItem Text-Html="Administração da CIPA" Disabled="true" DisabledStyle-CssText="color:#E98035; font-size:16px;">
+                            </eo:MenuItem>
+
+                            <eo:MenuItem IsSeparator="True">
+                            </eo:MenuItem>
+
+                            <eo:MenuItem Text-Html="Cipa">
+                            </eo:MenuItem>
+
+                        </Items>
+                    </SubMenu>
+                </eo:MenuItem>
+
+                <%-- CONTROLE DE EPI --%>
+           
+                <eo:MenuItem LeftIcon-Url="~/Images/epi.png"   ExpandedStyle-CssText=" font-family:Univia Pro;font-size:9pt;" 
+                    HoverStyle-CssText=" font-family:Univia Pro;font-size:9pt;border-radius:8px;border-color:transparent;" 
+                    NormalStyle-CssText=" font-family:Univia Pro;font-size:9pt;border-radius:8px;border-color:transparent;" SubMenuIcon="None" Height="55">
+                    <SubMenu ExpandEffect-Type="GlideTopLeftToBottomRight" 
+                        Style-CssText="border:none;">
+                        <Items>
+                            <eo:MenuItem Text-Html="Controle de EPI" Disabled="true" DisabledStyle-CssText="color:#E98035; font-size:16px;">
+                            </eo:MenuItem>
+
+                            <eo:MenuItem IsSeparator="True">
+                            </eo:MenuItem>
+
+                            <eo:MenuItem Text-Html="Fornecer EPI">
+                                <SubMenu ExpandEffect-Type="GlideTopLeftToBottomRight"
+                                Style-CssText="border:none;">
+                                    <Items>
+                                        <eo:MenuItem Text-Html="Fornecimento de EPI Automático">
+                                        </eo:MenuItem>
+                                        <eo:MenuItem Text-Html="Fornecimento de EPI Manual">
+                                        </eo:MenuItem>
+                                        <eo:MenuItem Text-Html="Fornecimento de EPI - Lista">
+                                        </eo:MenuItem>
+                                        <eo:MenuItem Text-Html="Histórico de Entrega">
+                                        </eo:MenuItem>
+                                    </Items>
+                                </SubMenu>
+                            </eo:MenuItem>
+
+                            <eo:MenuItem IsSeparator="True">
+                            </eo:MenuItem>
+
+                            <eo:MenuItem Text-Html="Serviços Disponíveis">
+                                <SubMenu ExpandEffect-Type="GlideTopLeftToBottomRight"
+                                Style-CssText="border:none;">
+                                    <Items>
+                                        <eo:MenuItem Text-Html="Compra de EPI">
+                                        </eo:MenuItem>
+                                        <eo:MenuItem Text-Html="CA e Periodicidade">
+                                        </eo:MenuItem>
+                                        <eo:MenuItem Text-Html="Atualização Manual do Estoque">
+                                        </eo:MenuItem>
+                                        <eo:MenuItem Text-Html="Alerta de EPI">
+                                        </eo:MenuItem>
+                                        <eo:MenuItem Text-Html="Repositório EPI">
+                                        </eo:MenuItem>
+                                    </Items>
+                                </SubMenu>
+                            </eo:MenuItem>
+
+                        </Items>
+                    </SubMenu>
+                </eo:MenuItem>
+
+                <%-- OUTRAS OPÇÕES --%>
+
+                <eo:MenuItem  LeftIcon-Url="~/Images/icone_auditorias.png"  
+                    ExpandedStyle-CssText=" font-family:Univia Pro;font-size:9pt;" 
+                    HoverStyle-CssText=" font-family:Univia Pro;font-size:9pt;" 
+                    NormalStyle-CssText=" font-family:Univia Pro;font-size:9pt;" SubMenuIcon="None" Height="55">
+                    <SubMenu ExpandEffect-Type="GlideTopLeftToBottomRight" 
+                        Style-CssText="border:none;">
+                        <Items>
+                            <eo:MenuItem Text-Html="Outras Opções" Disabled="true" DisabledStyle-CssText="color:#E98035; font-size:16px;">
+                            </eo:MenuItem>
+
+                            <eo:MenuItem IsSeparator="True">
+                            </eo:MenuItem>
+
+                            <eo:MenuItem Text-Html="Equipamentos">
+                                <SubMenu ExpandEffect-Type="GlideTopLeftToBottomRight"
+                                Style-CssText="border:none;">
+                                    <Items>
+                                        <eo:MenuItem Text-Html="Cadastro de Extintores">
+                                        </eo:MenuItem>
+                                        <eo:MenuItem Text-Html="Cadastro de Uniformes">
+                                        </eo:MenuItem>
+                                        <eo:MenuItem Text-Html="Equipamentos/Calibração">
+                                        </eo:MenuItem>
+                                        <eo:MenuItem Text-Html="Análise Laboratorial">
+                                        </eo:MenuItem>
+                                        <eo:MenuItem Text-Html="Carga XML" Disabled="true" 
+                                            DisabledStyle-CssText="color:#B9B7B7;">
+                                        </eo:MenuItem>
+                                    </Items>
+                                </SubMenu>
+                            </eo:MenuItem>
+                
+                            <eo:MenuItem IsSeparator="True">
+                            </eo:MenuItem>
+
+                            <eo:MenuItem Text-Html="Auditoria">
+                                <SubMenu ExpandEffect-Type="GlideTopLeftToBottomRight"
+                                Style-CssText="border:none;">
+                                    <Items>
+                                        <eo:MenuItem Text-Html="Normas" Disabled="true" 
+                                            DisabledStyle-CssText="color:#B9B7B7;"></eo:MenuItem>
+										<eo:MenuItem Text-Html="Auditoria/Irregularidades"></eo:MenuItem>
+										<eo:MenuItem Text-Html="Gerar Alertas"></eo:MenuItem>
+                                    </Items>
+                                </SubMenu>
+                            </eo:MenuItem>
+                
+                            <eo:MenuItem IsSeparator="True">
+                            </eo:MenuItem>
+
+                            <eo:MenuItem Text-Html="Controle de Treinamentos">
+                                <SubMenu ExpandEffect-Type="GlideTopLeftToBottomRight"
+                                Style-CssText="border:none;">
+                                    <Items>
+                                        <eo:MenuItem Text-Html="Realizados">
+                                        </eo:MenuItem>
+                                        <eo:MenuItem Text-Html="Certificados">
+                                        </eo:MenuItem>
+                                    </Items>
+                                </SubMenu>
+                            </eo:MenuItem>
+                
+                            <eo:MenuItem IsSeparator="True">
+                            </eo:MenuItem>
+
+                            <eo:MenuItem Text-Html="Ordens de Serviço">
+                                <SubMenu ExpandEffect-Type="GlideTopLeftToBottomRight"
+                                Style-CssText="border:none;">
+                                    <Items>
+                                        <eo:MenuItem Text-Html="Procedimentos">
+                                        </eo:MenuItem>
+                                        <eo:MenuItem Text-Html="Conjunto de Procedimentos">
+                                        </eo:MenuItem>
+                                        <eo:MenuItem Text-Html="Ordens de Serviço">
+                                        </eo:MenuItem>
+                                        <eo:MenuItem Text-Html="Proc.Empregados">
+                                        </eo:MenuItem>
+                                    </Items>
+                                </SubMenu>
+                            </eo:MenuItem>
+
+                            <eo:MenuItem IsSeparator="True">
+                            </eo:MenuItem>
+                
+                            <eo:MenuItem Text-Html="Sorteio Toxicológico">
+                            </eo:MenuItem>
+
+                            <eo:MenuItem IsSeparator="True">
+                            </eo:MenuItem>
+                            
+                            <eo:MenuItem Text-Html="Indicadores">
+                            </eo:MenuItem>
+
+                            <eo:MenuItem IsSeparator="True">
+                            </eo:MenuItem>
+
+                            <eo:MenuItem Text-Html="Outros">
+                                <SubMenu ExpandEffect-Type="GlideTopLeftToBottomRight"
+                                Style-CssText="border:none;">
+                                    <Items>
+                                         <eo:MenuItem Text-Html="Política de Privacidade">
+                                         </eo:MenuItem>
+                                         <eo:MenuItem Text-Html="Repositório Documentos/Laudos">
+                                         </eo:MenuItem>
+                                         <eo:MenuItem Text-Html="Importação Planilha">
+                                         </eo:MenuItem>
+                                         <eo:MenuItem Text-Html="Importação Planilha Transf.">
+                                         </eo:MenuItem>
+                                    </Items>
+                                </SubMenu>
+                            </eo:MenuItem>
+                
+                        </Items>
+                      </SubMenu>
+                    </eo:MenuItem>
+
+                
+                <eo:MenuItem  LeftIcon-Url="~/Images/help2.png" ItemID="Ajuda"
+                    ExpandedStyle-CssText=" font-family:Univia Pro;font-size:9pt;" 
+                    HoverStyle-CssText=" font-family:Univia Pro;font-size:9pt;" 
+                    NormalStyle-CssText=" font-family:Univia Pro;font-size:9pt;" SubMenuIcon="None" Height="55">
+
+</eo:MenuItem>
+
+
+
+                <eo:MenuItem  LeftIcon-Url="~/Images/shutdown.png"  ItemID="Sair"
+                    ExpandedStyle-CssText=" font-family:Univia Pro;font-size:9pt;" 
+                    HoverStyle-CssText=" font-family:Univia Pro;font-size:9pt;" 
+                    NormalStyle-CssText=" font-family:Univia Pro;font-size:9pt;" Height="55">
+
+</eo:MenuItem>
+
+            </Items>
+        </TopGroup>
+    </eo:Menu>
+
+
+    
+
+            <%-- <asp:Label ID="lbl_Empresa" runat="server" Text="Label" Font-Bold="True" 
+                    Font-Names="Tahoma" Font-Size="9pt" ForeColor="#5F576C"></asp:Label>        
+        
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        
+        
+            <asp:Label ID="lbl_Colaborador" runat="server" Text="Label" Font-Bold="True" 
+                    Font-Names="Tahoma" Font-Size="9pt" ForeColor="#5F576C"></asp:Label> --%>
+            </div>
+
+          <div runat="server">
+            <%-- Título da Página --%>
+            <div runat="server" class="container-fluid d-flex header2 mt-3">
+                <div runat="server" class="row cabecalho alinhar">
+                    <div runat="server" class="col-1 justify-content-right align-middle me-4">
+                        <asp:Image ID="ElementoMenu" runat="server" AlternateText="Triângulo laranja" ImageAlign="Left" ImageUrl="Images/triangulo.png" CssClass="triangulo" />
+                    </div>
+                    <div runat="server" class="col-7 d-flex flex-column me-5" style="height:90px;">
+                        <h1 class="tituloPagina text-left">Listagem de Empresas</h1>
+                        <asp:Label ID="lbl_Empresa" runat="server" Text="Empresa Selecionada: "
+                               CssClass="subtituloPagina text-left"></asp:Label>                
+                        <asp:Label ID="lbl_Colaborador" runat="server" Text="Colaborador Selecionado: " CssClass="subtituloPagina text-left"></asp:Label>
+                    </div>
+                    <div runat="server" class="col-2 text-left ms-5 ps-5">
+                        <asp:Image runat="server" src="Images/ilinet.svg" alt="Logo Ilinet" class="logo" />
+                    </div>
+                </div>
+            </div>
+              <div class="alinhar">
+                <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+              </div>
+         </div>
+      </div>
+
+        </div>
+        <div class="clear">
+      </div>
+   
+
+ <eo:msgbox ID="MsgBox1" runat="server" BackColor="#47729F" ControlSkinID="None" 
+        HeaderHtml="Dialog Title" Height="100px" Width="168px">
+        <HeaderStyleActive CssText="border-right: #22456a 1px solid; padding-right: 4px; border-top: #ffbf00 3px solid; padding-left: 4px; font-weight: bold; font-size: 11px; padding-bottom: 2px; color: white; padding-top: 2px; border-bottom: #22456a 1px solid; font-family: verdana" />
+        <ContentStyleActive CssText="border-right: #22456a 1px solid; padding-right: 4px; border-top: #7d97b6 1px solid; padding-left: 4px; border-left-width: 1px; font-size: 11px; border-left-color: #728eb8; padding-bottom: 4px; color: white; padding-top: 4px; border-bottom: #22456a 1px solid; font-family: verdana" />
+        <FooterStyleActive CssText="border-right: #22456a 1px solid; padding-right: 4px; border-top: #7d97b6 1px solid; padding-left: 4px; border-left-width: 1px; font-size: 11px; border-left-color: #728eb8; padding-bottom: 4px; color: white; padding-top: 4px; border-bottom: #22456a 1px solid; font-family: verdana" />
+        </eo:msgbox>
+
+    </form>
+    <p>
+&nbsp;</p>
+</body>
+</html>

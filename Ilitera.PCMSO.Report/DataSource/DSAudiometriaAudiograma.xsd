@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="Dataset" targetNamespace="http://tempuri.org/Dataset.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/Dataset.xsd" xmlns:mstns="http://tempuri.org/Dataset.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="Dataset" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="Result">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="IdAudiometria" type="xs:int" />
+							<xs:element name="DataAudiometria" type="xs:string" />
+							<xs:element name="RepousoAuditivo" type="xs:string" minOccurs="0" />
+							<xs:element name="Audiometro" type="xs:string" minOccurs="0" />
+							<xs:element name="DataCalibracao" type="xs:string" minOccurs="0" />
+							<xs:element name="ODParecer" type="xs:string" minOccurs="0" />
+							<xs:element name="ODAudiograma" type="xs:string" minOccurs="0" />
+							<xs:element name="OEParecer" type="xs:string" minOccurs="0" />
+							<xs:element name="OEAudiograma" type="xs:string" minOccurs="0" />
+							<xs:element name="Observacao" type="xs:string" minOccurs="0" />
+							
+							<xs:element name="ODAerea025" type="xs:string" />
+							<xs:element name="ODAerea050" type="xs:string" />
+							<xs:element name="ODAerea1" type="xs:string" />
+							<xs:element name="ODAerea2" type="xs:string" />
+							<xs:element name="ODAerea3" type="xs:string" />
+							<xs:element name="ODAerea4" type="xs:string" />
+							<xs:element name="ODAerea6" type="xs:string" />
+							<xs:element name="ODAerea8" type="xs:string" />
+							
+							<xs:element name="ODOssea050" type="xs:string" />
+							<xs:element name="ODOssea1" type="xs:string" />
+							<xs:element name="ODOssea2" type="xs:string" />
+							<xs:element name="ODOssea3" type="xs:string" />
+							<xs:element name="ODOssea4" type="xs:string" />
+							<xs:element name="ODOssea6" type="xs:string" />
+							
+							<xs:element name="OEAerea025" type="xs:string" />
+							<xs:element name="OEAerea050" type="xs:string" />
+							<xs:element name="OEAerea1" type="xs:string" />
+							<xs:element name="OEAerea2" type="xs:string" />
+							<xs:element name="OEAerea3" type="xs:string" />
+							<xs:element name="OEAerea4" type="xs:string" />
+							<xs:element name="OEAerea6" type="xs:string" />
+							<xs:element name="OEAerea8" type="xs:string" />
+							
+							<xs:element name="OEOssea050" type="xs:string" />
+							<xs:element name="OEOssea1" type="xs:string" />
+							<xs:element name="OEOssea2" type="xs:string" />
+							<xs:element name="OEOssea3" type="xs:string" />
+							<xs:element name="OEOssea4" type="xs:string" />
+							<xs:element name="OEOssea6" type="xs:string" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

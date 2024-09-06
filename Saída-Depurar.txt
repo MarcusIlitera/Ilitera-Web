@@ -1,0 +1,86 @@
+﻿'WebDev.WebServer20.EXE' (Gerenciado (v2.0.50727)): Carregado 'C:\Windows\assembly\GAC_32\mscorlib\2.0.0.0__b77a5c561934e089\mscorlib.dll'
+'WebDev.WebServer20.EXE' (Gerenciado (v2.0.50727)): Carregado 'C:\Program Files (x86)\Common Files\Microsoft Shared\DevServer\10.0\WebDev.WebServer20.exe'
+'WebDev.WebServer20.EXE' (Gerenciado (v2.0.50727)): Carregado 'C:\Windows\assembly\GAC_MSIL\mscorlib.resources\2.0.0.0_pt-BR_b77a5c561934e089\mscorlib.resources.dll'
+'WebDev.WebServer20.EXE' (Gerenciado (v2.0.50727)): Carregado 'C:\Windows\assembly\GAC_32\WebDev.WebHost20\10.0.0.0__b03f5f7f11d50a3a\WebDev.WebHost20.dll'
+'WebDev.WebServer20.EXE' (Gerenciado (v2.0.50727)): Carregado 'C:\Windows\assembly\GAC_MSIL\System.Windows.Forms\2.0.0.0__b77a5c561934e089\System.Windows.Forms.dll'
+'WebDev.WebServer20.EXE' (Gerenciado (v2.0.50727)): Carregado 'C:\Windows\assembly\GAC_MSIL\System\2.0.0.0__b77a5c561934e089\System.dll'
+'WebDev.WebServer20.EXE' (Gerenciado (v2.0.50727)): Carregado 'C:\Windows\assembly\GAC_MSIL\System.Drawing\2.0.0.0__b03f5f7f11d50a3a\System.Drawing.dll'
+'WebDev.WebServer20.EXE' (Gerenciado (v2.0.50727)): Carregado 'C:\Windows\assembly\GAC_32\System.Web\2.0.0.0__b03f5f7f11d50a3a\System.Web.dll'
+'WebDev.WebServer20.EXE' (Gerenciado (v2.0.50727)): Carregado 'C:\Windows\assembly\GAC_MSIL\System.Configuration\2.0.0.0__b03f5f7f11d50a3a\System.Configuration.dll'
+'WebDev.WebServer20.EXE' (Gerenciado (v2.0.50727)): Carregado 'C:\Windows\assembly\GAC_MSIL\System.Xml\2.0.0.0__b77a5c561934e089\System.Xml.dll'
+'WebDev.WebServer20.EXE' (Gerenciado (v2.0.50727)): Carregado 'C:\Program Files (x86)\Common Files\Microsoft Shared\DevServer\10.0\pt-BR\WebDev.WebServer20.resources.dll'
+'WebDev.WebServer20.EXE' (Gerenciado (v2.0.50727)): Carregado 'C:\Windows\assembly\GAC_MSIL\WebDev.WebHost20.resources\10.0.0.0_pt-BR_b03f5f7f11d50a3a\WebDev.WebHost20.resources.dll'
+'WebDev.WebServer20.EXE' (Gerenciado (v2.0.50727)): Carregado 'C:\Windows\assembly\GAC_MSIL\System.Web.resources\2.0.0.0_pt-BR_b03f5f7f11d50a3a\System.Web.resources.dll'
+Uma exceção first chance do tipo 'System.ArgumentException' ocorreu em mscorlib.dll
+'WebDev.WebServer20.EXE' (Gerenciado (v2.0.50727)): Carregado 'C:\Windows\assembly\GAC_MSIL\Microsoft.JScript\8.0.0.0__b03f5f7f11d50a3a\Microsoft.JScript.dll'
+'WebDev.WebServer20.EXE' (Gerenciado (v2.0.50727)): Carregado 'C:\Windows\assembly\GAC_32\System.Data\2.0.0.0__b77a5c561934e089\System.Data.dll'
+'WebDev.WebServer20.EXE' (Gerenciado (v2.0.50727)): Carregado 'C:\Windows\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll'
+'WebDev.WebServer20.EXE' (Gerenciado (v2.0.50727)): Carregado 'C:\Windows\assembly\GAC_32\System.EnterpriseServices\2.0.0.0__b03f5f7f11d50a3a\System.EnterpriseServices.dll'
+'WebDev.WebServer20.EXE' (Gerenciado (v2.0.50727)): Carregado 'C:\Windows\assembly\GAC_MSIL\System.Web.Mobile\2.0.0.0__b03f5f7f11d50a3a\System.Web.Mobile.dll'
+'WebDev.WebServer20.EXE' (Gerenciado (v2.0.50727)): Carregado 'C:\Windows\Microsoft.NET\Framework\v2.0.50727\Temporary ASP.NET Files\root\64652a7a\46bc9697\assembly\dl3\af9d791a\82f283fb_c7b7cf01\BLL.DLL', Símbolos carregados.
+'WebDev.WebServer20.EXE' (Gerenciado (v2.0.50727)): Carregado 'C:\Windows\Microsoft.NET\Framework\v2.0.50727\Temporary ASP.NET Files\root\64652a7a\46bc9697\assembly\dl3\5e461dce\4ff68070_d19dcb01\ceTe.DynamicPDF.35.DLL'
+'WebDev.WebServer20.EXE' (Gerenciado (v2.0.50727)): Carregado 'C:\Windows\Microsoft.NET\Framework\v2.0.50727\Temporary ASP.NET Files\root\64652a7a\46bc9697\assembly\dl3\413e6179\00e789a8_0e0ec801\CrystalDecisions.VSDesigner.DLL'
+'WebDev.WebServer20.EXE' (Gerenciado (v2.0.50727)): Carregado 'C:\Windows\Microsoft.NET\Framework\v2.0.50727\Temporary ASP.NET Files\root\64652a7a\46bc9697\assembly\dl3\b61f3ede\554e95c5_a429d001\DAL.DLL', Símbolos carregados.
+'WebDev.WebServer20.EXE' (Gerenciado (v2.0.50727)): Carregado 'C:\Windows\Microsoft.NET\Framework\v2.0.50727\Temporary ASP.NET Files\root\64652a7a\46bc9697\assembly\dl3\de27f0d8\14107e70_d19dcb01\DynamicPDF.DLL'
+'WebDev.WebServer20.EXE' (Gerenciado (v2.0.50727)): Carregado 'C:\Windows\Microsoft.NET\Framework\v2.0.50727\Temporary ASP.NET Files\root\64652a7a\46bc9697\assembly\dl3\45bc12e1\fd2beec3_a429d001\Entities.DLL', Símbolos carregados.
+'WebDev.WebServer20.EXE' (Gerenciado (v2.0.50727)): Carregado 'C:\Windows\Microsoft.NET\Framework\v2.0.50727\Temporary ASP.NET Files\root\64652a7a\46bc9697\assembly\dl3\4683a178\00bfe038_abe7ce01\EO.Web.DLL'
+'WebDev.WebServer20.EXE' (Gerenciado (v2.0.50727)): Carregado 'C:\Windows\Microsoft.NET\Framework\v2.0.50727\Temporary ASP.NET Files\root\64652a7a\46bc9697\assembly\dl3\6079724c\acc94bce_a429d001\Facade.DLL', Símbolos carregados.
+'WebDev.WebServer20.EXE' (Gerenciado (v2.0.50727)): Carregado 'C:\Windows\Microsoft.NET\Framework\v2.0.50727\Temporary ASP.NET Files\root\64652a7a\46bc9697\assembly\dl3\1c773afe\42d39e2e_2e50d001\Ilitera.Auditoria.Report.DLL', Símbolos carregados.
+'WebDev.WebServer20.EXE' (Gerenciado (v2.0.50727)): Carregado 'C:\Windows\Microsoft.NET\Framework\v2.0.50727\Temporary ASP.NET Files\root\64652a7a\46bc9697\assembly\dl3\ea8f1d54\96f1fd2c_2e50d001\Ilitera.Common.DLL', Símbolos carregados.
+'WebDev.WebServer20.EXE' (Gerenciado (v2.0.50727)): Carregado 'C:\Windows\Microsoft.NET\Framework\v2.0.50727\Temporary ASP.NET Files\root\64652a7a\46bc9697\assembly\dl3\efd4e73d\174a4a2e_2e50d001\Ilitera.Cursos.Report.DLL', Símbolos carregados.
+'WebDev.WebServer20.EXE' (Gerenciado (v2.0.50727)): Carregado 'C:\Windows\Microsoft.NET\Framework\v2.0.50727\Temporary ASP.NET Files\root\64652a7a\46bc9697\assembly\dl3\c83efae5\33d46c2c_2e50d001\Ilitera.Data.DLL', Símbolos carregados.
+'WebDev.WebServer20.EXE' (Gerenciado (v2.0.50727)): Carregado 'C:\Windows\Microsoft.NET\Framework\v2.0.50727\Temporary ASP.NET Files\root\64652a7a\46bc9697\assembly\dl3\e1e8a014\2fb3e92d_2e50d001\Ilitera.Marshall.Data.DLL', Símbolos carregados.
+'WebDev.WebServer20.EXE' (Gerenciado (v2.0.50727)): Carregado 'C:\Windows\Microsoft.NET\Framework\v2.0.50727\Temporary ASP.NET Files\root\64652a7a\46bc9697\assembly\dl3\0ffed60e\376f8234_2e50d001\Ilitera.Net.DLL', Símbolos carregados.
+'WebDev.WebServer20.EXE' (Gerenciado (v2.0.50727)): Carregado 'C:\Windows\Microsoft.NET\Framework\v2.0.50727\Temporary ASP.NET Files\root\64652a7a\46bc9697\assembly\dl3\93dc5eda\8a50c42d_2e50d001\Ilitera.Opsa.Data.DLL', Símbolos carregados.
+'WebDev.WebServer20.EXE' (Gerenciado (v2.0.50727)): Carregado 'C:\Windows\Microsoft.NET\Framework\v2.0.50727\Temporary ASP.NET Files\root\64652a7a\46bc9697\assembly\dl3\cdb7013c\c486172f_2e50d001\Ilitera.Opsa.Report.DLL', Símbolos carregados.
+'WebDev.WebServer20.EXE' (Gerenciado (v2.0.50727)): Carregado 'C:\Windows\Microsoft.NET\Framework\v2.0.50727\Temporary ASP.NET Files\root\64652a7a\46bc9697\assembly\dl3\7b717857\8761612f_2e50d001\Ilitera.OrdemServico.Report.DLL', Símbolos carregados.
+'WebDev.WebServer20.EXE' (Gerenciado (v2.0.50727)): Carregado 'C:\Windows\Microsoft.NET\Framework\v2.0.50727\Temporary ASP.NET Files\root\64652a7a\46bc9697\assembly\dl3\0e4aef65\2ff3b12f_2e50d001\Ilitera.PCMSO.Report.DLL', Símbolos carregados.
+'WebDev.WebServer20.EXE' (Gerenciado (v2.0.50727)): Carregado 'C:\Windows\Microsoft.NET\Framework\v2.0.50727\Temporary ASP.NET Files\root\64652a7a\46bc9697\assembly\dl3\3dd987a4\c991f030_2e50d001\Ilitera.Sied.Report.DLL', Símbolos carregados.
+'WebDev.WebServer20.EXE' (Gerenciado (v2.0.50727)): Carregado 'C:\Windows\Microsoft.NET\Framework\v2.0.50727\Temporary ASP.NET Files\root\64652a7a\46bc9697\assembly\dl3\e4cc0604\6a338e31_2e50d001\Ilitera.VasoCaldeira.Report.DLL', Símbolos carregados.
+'WebDev.WebServer20.EXE' (Gerenciado (v2.0.50727)): Carregado 'C:\Windows\Microsoft.NET\Framework\v2.0.50727\Temporary ASP.NET Files\root\64652a7a\46bc9697\assembly\dl3\e06bbb6a\00b8e2ae_2f41c601\IMAP4.Net.DLL'
+'WebDev.WebServer20.EXE' (Gerenciado (v2.0.50727)): Carregado 'C:\Windows\Microsoft.NET\Framework\v2.0.50727\Temporary ASP.NET Files\root\64652a7a\46bc9697\assembly\dl3\69505408\6b0741c4_a429d001\Interop.EASYMAILIMAP4Lib.DLL'
+'WebDev.WebServer20.EXE' (Gerenciado (v2.0.50727)): Carregado 'C:\Windows\Microsoft.NET\Framework\v2.0.50727\Temporary ASP.NET Files\root\64652a7a\46bc9697\assembly\dl3\b4277368\cf1f64c4_a429d001\Interop.EASYMAILMESSAGEPRINTERLib.DLL'
+'WebDev.WebServer20.EXE' (Gerenciado (v2.0.50727)): Carregado 'C:\Windows\Microsoft.NET\Framework\v2.0.50727\Temporary ASP.NET Files\root\64652a7a\46bc9697\assembly\dl3\251bd923\323887c4_a429d001\Interop.EASYMAILSMTPLib.DLL'
+'WebDev.WebServer20.EXE' (Gerenciado (v2.0.50727)): Carregado 'C:\Windows\Microsoft.NET\Framework\v2.0.50727\Temporary ASP.NET Files\root\64652a7a\46bc9697\assembly\dl3\046ffcc6\35d7abc4_a429d001\Interop.EMMESSAGELib.DLL'
+'WebDev.WebServer20.EXE' (Gerenciado (v2.0.50727)): Carregado 'C:\Windows\Microsoft.NET\Framework\v2.0.50727\Temporary ASP.NET Files\root\64652a7a\46bc9697\assembly\dl3\cf9fc583\3876d0c4_a429d001\Interop.EMPOP3Lib.DLL'
+'WebDev.WebServer20.EXE' (Gerenciado (v2.0.50727)): Carregado 'C:\Windows\Microsoft.NET\Framework\v2.0.50727\Temporary ASP.NET Files\root\64652a7a\46bc9697\assembly\dl3\335a41cd\4d3b7c70_d19dcb01\itextsharp.DLL'
+'WebDev.WebServer20.EXE' (Gerenciado (v2.0.50727)): Carregado 'C:\Windows\Microsoft.NET\Framework\v2.0.50727\Temporary ASP.NET Files\root\64652a7a\46bc9697\assembly\dl3\c04cc574\00b9da3c_80ddca01\Microsoft.Practices.EnterpriseLibrary.Common.DLL', Símbolos carregados.
+'WebDev.WebServer20.EXE' (Gerenciado (v2.0.50727)): Carregado 'C:\Windows\Microsoft.NET\Framework\v2.0.50727\Temporary ASP.NET Files\root\64652a7a\46bc9697\assembly\dl3\1702d06e\00b9da3c_80ddca01\Microsoft.Practices.EnterpriseLibrary.Data.DLL', Símbolos carregados.
+'WebDev.WebServer20.EXE' (Gerenciado (v2.0.50727)): Carregado 'C:\Windows\Microsoft.NET\Framework\v2.0.50727\Temporary ASP.NET Files\root\64652a7a\46bc9697\assembly\dl3\26b3ee9c\00b9da3c_80ddca01\Microsoft.Practices.ServiceLocation.DLL', Símbolos carregados.
+'WebDev.WebServer20.EXE' (Gerenciado (v2.0.50727)): Carregado 'C:\Windows\Microsoft.NET\Framework\v2.0.50727\Temporary ASP.NET Files\root\64652a7a\46bc9697\assembly\dl3\fc6c737a\00246c6d_7bddca01\Microsoft.Practices.Unity.DLL', Símbolos carregados.
+'WebDev.WebServer20.EXE' (Gerenciado (v2.0.50727)): Carregado 'C:\Windows\Microsoft.NET\Framework\v2.0.50727\Temporary ASP.NET Files\root\64652a7a\46bc9697\assembly\dl3\100891f6\00246c6d_7bddca01\Microsoft.Practices.Unity.Interception.DLL', Símbolos carregados.
+'WebDev.WebServer20.EXE' (Gerenciado (v2.0.50727)): Carregado 'C:\Windows\Microsoft.NET\Framework\v2.0.50727\Temporary ASP.NET Files\root\64652a7a\46bc9697\assembly\dl3\d5994e5e\00b8e2ae_2f41c601\Parse.Net.DLL'
+'WebDev.WebServer20.EXE' (Gerenciado (v2.0.50727)): Carregado 'C:\Windows\Microsoft.NET\Framework\v2.0.50727\Temporary ASP.NET Files\root\64652a7a\46bc9697\assembly\dl3\67f0ff8b\ec85baf3_dd9dcb01\PdfSharp.DLL'
+'WebDev.WebServer20.EXE' (Gerenciado (v2.0.50727)): Carregado 'C:\Windows\Microsoft.NET\Framework\v2.0.50727\Temporary ASP.NET Files\root\64652a7a\46bc9697\assembly\dl3\70900523\00b8e2ae_2f41c601\POP3.Net.DLL'
+'WebDev.WebServer20.EXE' (Gerenciado (v2.0.50727)): Carregado 'C:\Windows\Microsoft.NET\Framework\v2.0.50727\Temporary ASP.NET Files\root\64652a7a\46bc9697\assembly\dl3\8637b4f0\00e513b0_2f41c601\SASL.Net.DLL'
+'WebDev.WebServer20.EXE' (Gerenciado (v2.0.50727)): Carregado 'C:\Windows\Microsoft.NET\Framework\v2.0.50727\Temporary ASP.NET Files\root\64652a7a\46bc9697\assembly\dl3\30f5adac\00b8e2ae_2f41c601\SMIME.Net.DLL'
+'WebDev.WebServer20.EXE' (Gerenciado (v2.0.50727)): Carregado 'C:\Windows\Microsoft.NET\Framework\v2.0.50727\Temporary ASP.NET Files\root\64652a7a\46bc9697\assembly\dl3\9925ba47\00b8e2ae_2f41c601\SMTP.Net.DLL'
+'WebDev.WebServer20.EXE' (Gerenciado (v2.0.50727)): Carregado 'C:\Windows\Microsoft.NET\Framework\v2.0.50727\Temporary ASP.NET Files\root\64652a7a\46bc9697\assembly\dl3\f1deeba2\00e513b0_2f41c601\SSL.Net.DLL'
+'WebDev.WebServer20.EXE' (Gerenciado (v2.0.50727)): Carregado 'C:\Windows\assembly\GAC_MSIL\System.Runtime.Serialization\3.0.0.0__b77a5c561934e089\System.Runtime.Serialization.dll'
+'WebDev.WebServer20.EXE' (Gerenciado (v2.0.50727)): Carregado 'C:\Windows\assembly\GAC_MSIL\System.IdentityModel\3.0.0.0__b77a5c561934e089\System.IdentityModel.dll'
+'WebDev.WebServer20.EXE' (Gerenciado (v2.0.50727)): Carregado 'C:\Windows\assembly\GAC_MSIL\System.ServiceModel\3.0.0.0__b77a5c561934e089\System.ServiceModel.dll'
+'WebDev.WebServer20.EXE' (Gerenciado (v2.0.50727)): Carregado 'C:\Windows\assembly\GAC_MSIL\System.ServiceModel.Web\3.5.0.0__31bf3856ad364e35\System.ServiceModel.Web.dll'
+'WebDev.WebServer20.EXE' (Gerenciado (v2.0.50727)): Carregado 'C:\Windows\assembly\GAC_MSIL\System.WorkflowServices\3.5.0.0__31bf3856ad364e35\System.WorkflowServices.dll'
+'WebDev.WebServer20.EXE' (Gerenciado (v2.0.50727)): Carregado 'C:\Windows\assembly\GAC_MSIL\System.Design\2.0.0.0__b03f5f7f11d50a3a\System.Design.dll'
+'WebDev.WebServer20.EXE' (Gerenciado (v2.0.50727)): Carregado 'C:\Windows\assembly\GAC_MSIL\System.Core\3.5.0.0__b77a5c561934e089\System.Core.dll'
+'WebDev.WebServer20.EXE' (Gerenciado (v2.0.50727)): Carregado 'C:\Windows\assembly\GAC_MSIL\System.Web.Extensions\3.5.0.0__31bf3856ad364e35\System.Web.Extensions.dll'
+'WebDev.WebServer20.EXE' (Gerenciado (v2.0.50727)): Carregado 'C:\Windows\assembly\GAC_MSIL\System.Web.Abstractions\3.5.0.0__31bf3856ad364e35\System.Web.Abstractions.dll'
+'WebDev.WebServer20.EXE' (Gerenciado (v2.0.50727)): Carregado 'C:\Windows\assembly\GAC_MSIL\System.Xml.Linq\3.5.0.0__b77a5c561934e089\System.Xml.Linq.dll'
+'WebDev.WebServer20.EXE' (Gerenciado (v2.0.50727)): Carregado 'C:\Windows\assembly\GAC_MSIL\System.Data.DataSetExtensions\3.5.0.0__b77a5c561934e089\System.Data.DataSetExtensions.dll'
+'WebDev.WebServer20.EXE' (Gerenciado (v2.0.50727)): Carregado 'C:\Windows\assembly\GAC_MSIL\System.Web.RegularExpressions\2.0.0.0__b03f5f7f11d50a3a\System.Web.RegularExpressions.dll'
+'WebDev.WebServer20.EXE' (Gerenciado (v2.0.50727)): Carregado 'C:\Windows\assembly\GAC_32\System.EnterpriseServices\2.0.0.0__b03f5f7f11d50a3a\System.EnterpriseServices.Wrapper.dll'
+'WebDev.WebServer20.EXE' (Gerenciado (v2.0.50727)): Carregado 'C:\Windows\assembly\GAC_MSIL\System.resources\2.0.0.0_pt-BR_b77a5c561934e089\System.resources.dll'
+'WebDev.WebServer20.EXE' (Gerenciado (v2.0.50727)): Carregado 'C:\Windows\Microsoft.NET\Framework\v2.0.50727\Temporary ASP.NET Files\root\64652a7a\46bc9697\App_global.asax.qjy4qtqc.dll', Símbolos carregados.
+'WebDev.WebServer20.EXE' (Gerenciado (v2.0.50727)): Carregado 'rynru4lw'
+'WebDev.WebServer20.EXE' (Gerenciado (v2.0.50727)): Carregado 'xt34zyv-'
+'WebDev.WebServer20.EXE' (Gerenciado (v2.0.50727)): Carregado 'C:\Windows\assembly\GAC_MSIL\SMDiagnostics\3.0.0.0__b77a5c561934e089\SMDiagnostics.dll'
+'WebDev.WebServer20.EXE' (Gerenciado (v2.0.50727)): Carregado 'A_4874b047_39c5_4b17_8c50_7da32c7e6799'
+'WebDev.WebServer20.EXE' (Gerenciado (v2.0.50727)): Carregado 'M_4874b047_39c5_4b17_8c50_7da32c7e6799'
+Uma exceção first chance do tipo 'System.ArgumentException' ocorreu em System.dll
+'WebDev.WebServer20.EXE' (Gerenciado (v2.0.50727)): Carregado 'C:\Windows\Microsoft.NET\Framework\v2.0.50727\Temporary ASP.NET Files\root\64652a7a\46bc9697\App_Web_75gj9sf6.dll', Símbolos carregados.
+'WebDev.WebServer20.EXE' (Gerenciado (v2.0.50727)): Carregado 'C:\Windows\Microsoft.NET\Framework\v2.0.50727\Temporary ASP.NET Files\root\64652a7a\46bc9697\App_Web_h-7iobrr.dll', Símbolos carregados.
+'WebDev.WebServer20.EXE' (Gerenciado (v2.0.50727)): Carregado 'C:\Windows\Microsoft.NET\Framework\v2.0.50727\Temporary ASP.NET Files\root\64652a7a\46bc9697\App_Web_vd2wxahv.dll', Símbolos carregados.
+'WebDev.WebServer20.EXE' (Gerenciado (v2.0.50727)): Carregado 'C:\Windows\assembly\GAC_MSIL\System.Web.Extensions.resources\3.5.0.0_pt-BR_31bf3856ad364e35\System.Web.Extensions.resources.dll'
+Uma exceção first chance do tipo 'System.Web.HttpException' ocorreu em System.Web.dll
+Uma exceção first chance do tipo 'System.Web.HttpException' ocorreu em System.Web.dll
+O programa '[3452] WebDev.WebServer20.EXE: Gerenciado (v2.0.50727)' foi encerrado com o código 0 (0x0).

@@ -1,0 +1,44 @@
+<?xml version="1.0" standalone="yes" ?>
+<xs:schema id="DataSet" targetNamespace="http://www.tempuri.org/DataSet1.xsd" xmlns:mstns="http://www.tempuri.org/DataSet1.xsd"
+	xmlns="http://www.tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+	<xs:element name="DataSet" msdata:IsDataSet="true" msdata:Locale="pt-BR">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="Result">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="NomeCliente" type="xs:string" minOccurs="0" />
+							<xs:element name="LogradouroNumero" type="xs:string" minOccurs="0" />
+							<xs:element name="BairroCidadeEstadoCEP" type="xs:string" minOccurs="0" />
+							<xs:element name="CNPJ" type="xs:string" minOccurs="0" />							
+							<xs:element name="FotografiaCalddira" type="xs:base64Binary" minOccurs="0" />
+							<xs:element name="NumeroCaldeira" type="xs:string" minOccurs="0" />
+							<xs:element name="DataInicioInspecao" type="xs:string" minOccurs="0" />
+							<xs:element name="DataTerminoInspecao" type="xs:string" minOccurs="0" />
+							<xs:element name="FabricanteCaldeira" type="xs:string" minOccurs="0" />
+							<xs:element name="AnoFabricacao" type="xs:string" minOccurs="0" />
+							<xs:element name="NumeroSerie" type="xs:string" minOccurs="0" />
+							<xs:element name="TemperaturaMax" type="xs:string" minOccurs="0" />
+							<xs:element name="CategoriaCaldeira" type="xs:string" minOccurs="0" />
+							<xs:element name="DescargaVapor" type="xs:string" minOccurs="0" />
+							<xs:element name="PotenciaEletrica" type="xs:string" minOccurs="0" />
+							<xs:element name="PressaoMaxTrabPerm" type="xs:string" minOccurs="0" />
+							<xs:element name="PressaoMaxTrabAtual" type="xs:string" minOccurs="0" />
+							<xs:element name="PressaoUtilTesteHidrostatico" type="xs:string" minOccurs="0" />
+							<xs:element name="TipoFluidoCaldeira" type="xs:string" minOccurs="0" />
+							<xs:element name="TipoInspecaoExecutada" type="xs:string" minOccurs="0" />							
+							<xs:element name="CorpoCaldeira" type="xs:string" minOccurs="0" />
+							<xs:element name="PrevisaoProxExameExterno" type="xs:string" minOccurs="0" />
+							<xs:element name="PrevisaoProxtesteHidrostatico" type="xs:string" minOccurs="0" />
+							<xs:element name="DescricaoExamesExecutados" type="xs:string" minOccurs="0" />
+							<xs:element name="ResultadosInspecoesExec" type="xs:string" minOccurs="0" />
+							<xs:element name="Conclusoes" type="xs:string" minOccurs="0" />							
+							<xs:element name="RecomendacoesNecessarias" type="xs:string" minOccurs="0" />												
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

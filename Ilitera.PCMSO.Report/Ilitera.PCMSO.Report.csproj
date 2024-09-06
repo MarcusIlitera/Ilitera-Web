@@ -1,0 +1,1310 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{147DB043-FA09-4CB4-A56E-289AD9168FD4}</ProjectGuid>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>Ilitera.PCMSO.Report</AssemblyName>
+    <AssemblyOriginatorKeyFile>Ilitera.pfx</AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Ilitera.PCMSO.Report</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SignAssembly>false</SignAssembly>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <FileAlignment>4096</FileAlignment>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>SecurityRules.ruleset</CodeAnalysisRuleSet>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <Optimize>true</Optimize>
+    <FileAlignment>4096</FileAlignment>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ilitera.Common">
+      <HintPath>..\Ilitera.Common\bin\x64\Debug\Ilitera.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Ilitera.Data">
+      <HintPath>..\Ilitera.Data\bin\x64\Debug\Ilitera.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataSourceClientePCMSO.cs" />
+    <Compile Include="DataSourceClinicaValorExame.cs" />
+    <Compile Include="DataSourceExameAnamnese.cs" />
+    <Compile Include="DataSourceExamePlanejado.cs" />
+    <Compile Include="DataSourceQuadroPCMSO.cs" />
+    <Compile Include="DataSourceSAE.cs" />
+    <Compile Include="DataSourceTestesEspeciais.cs" />
+    <Compile Include="DataSource\DSSAE.cs">
+      <DependentUpon>DSSAE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSource\DSSAE.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSSAE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSource\DSExamesPlanejados.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSExamesPlanejados.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RptAnamnese.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptAnamnese.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptAso_Global.cs">
+      <DependentUpon>RptAso_Global.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="RptClientePcmso.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptClientePcmso.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptClinicaValorExamePorGrupo.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptClinicaValorExamePorGrupo.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptCronogramaPCMSO1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptCronogramaPCMSO.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptExamePlanejados.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptExamePlanejados.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptListaPlanejamentoExames.cs">
+      <DependentUpon>RptListaPlanejamentoExames.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="DataSourceGestaoExames.cs" />
+    <Compile Include="RptListaExamesCadastrados.cs">
+      <DependentUpon>RptListaExamesCadastrados.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="RptPci_Novo_Global.cs">
+      <DependentUpon>RptPci_Novo_Global.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="RptPci_NovoEY.cs">
+      <DependentUpon>RptPci_NovoEY.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="RptPci_Novo.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptPci_Novo.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptPci_Novo_EY2.cs">
+      <DependentUpon>RptPci_Novo_EY2.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="RptPci_Novo_Capgemini.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptPci_Novo_Capgemini.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptPCMSO_Preposto.cs">
+      <DependentUpon>RptPCMSO_Preposto.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="RptQuadroPCMSO1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptQuadroPCMSO.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptSAE.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptSAE.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptSolicitacaoExamesLista.cs">
+      <DependentUpon>RptSolicitacaoExamesLista.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="RptAsoPciModPagina.cs">
+      <DependentUpon>RptAsoPciModPagina.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="DataSourceNexoEdpidemiologico.cs" />
+    <Compile Include="RptAssinaturaCoordenadorPcmso.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptAssinaturaCoordenadorPcmso.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptExamePlanProgramaEspecial.cs">
+      <DependentUpon>RptExamePlanProgramaEspecial.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="DataSourceSolicitacaoExamesLaboratoriais.cs" />
+    <Compile Include="DataSourceExamesRealizados.cs" />
+    <Compile Include="DataSourceAudiometria.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataSourceClienteClinica.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataSourceClinicaCliente.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataSourceClinicaExame.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataSourceControlePCMSO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataSourceEncaminhamentoExame.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataSourceExameAsoPci.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataSourceExameDicionario.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataSourceExamePlanejamento.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataSourceRelatorioTurnover.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataSourceExamesVencidos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataSourceExposicaoAso.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataSourceGuiaExameComplementar.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataSourceOrdemDePagamento.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataSourceOrdemDePagamentoWeb.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataSourcePCMSO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataSourceProntuarioClinico.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataSourceProntuariosDigitalizados.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataSourceRelatorioAnual.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataSourceRelatorioAnualPorEmpregado.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataSourceVigenciaPCMSO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RptAso.cs">
+      <DependentUpon>RptAso.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptAsoViaEmpregado.cs">
+      <DependentUpon>RptAsoViaEmpregado.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptAsoViaEmpregador.cs">
+      <DependentUpon>RptAsoViaEmpregador.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptAsoViaPci1.cs">
+      <DependentUpon>RptAsoViaPci.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptAudiometria.cs">
+      <DependentUpon>RptAudiometria.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptAudiometriaAnamnese.cs">
+      <DependentUpon>RptAudiometriaAnamnese.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptAudiometriaAudiograma.cs">
+      <DependentUpon>RptAudiometriaAudiograma.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptAudiometriaFooter.cs">
+      <DependentUpon>RptAudiometriaFooter.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptAudiometriaHeader.cs">
+      <DependentUpon>RptAudiometriaHeader.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptAudiometriaQuadro.cs">
+      <DependentUpon>RptAudiometriaQuadro.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptClienteClinica.cs">
+      <DependentUpon>RptClienteClinica.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptClinicaCliente.cs">
+      <DependentUpon>RptClinicaCliente.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptClinicaExame.cs">
+      <DependentUpon>RptClinicaExame.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptControlePCMSO.cs">
+      <DependentUpon>RptControlePCMSO.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptDeclaRecebimentoASO.cs">
+      <DependentUpon>RptDeclaRecebimentoASO.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptEncaminhamentoExame.cs">
+      <DependentUpon>RptEncaminhamentoExame.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptExamePlanPorData.cs">
+      <DependentUpon>RptExamePlanPorData.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptExamePlanPorEmpregado.cs">
+      <DependentUpon>RptExamePlanPorEmpregado.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptExamesDicionarios.cs">
+      <DependentUpon>RptExamesDicionarios.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptGuiaExameComplementar.cs">
+      <DependentUpon>RptGuiaExameComplementar.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptListaDeExames.cs">
+      <DependentUpon>RptListaDeExames.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptNexoEpidemiologico.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptNexoEpidemiologico.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptOrdemDePagamento.cs">
+      <DependentUpon>RptOrdemDePagamento.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptOrdemDePagamentoWEB.cs">
+      <DependentUpon>RptOrdemDePagamentoWEB.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptPci.cs">
+      <DependentUpon>RptPci.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptPCMSO.cs">
+      <DependentUpon>RptPCMSO.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptProntuarioClinico.cs">
+      <DependentUpon>RptProntuarioClinico.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptProntuariosDigitalizados1.cs">
+      <DependentUpon>RptProntuariosDigitalizados.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptQuantidadeExames.cs">
+      <DependentUpon>RptQuantidadeExames.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptRelatorioAnual.cs">
+      <DependentUpon>RptRelatorioAnual.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptRelatorioAnualPorEmpregado.cs">
+      <DependentUpon>RptRelatorioAnualPorEmpregado.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptRelatorioTurnover.cs">
+      <DependentUpon>RptRelatorioTurnover.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptExamesRealizados.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptExamesRealizados.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptSolicitacaoExamesLaboratoriais.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptSolicitacaoExamesLaboratoriais.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptTestesEspeciais.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptTestesEspeciais.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptVencimentoExames.cs">
+      <DependentUpon>RptVencimentoExames.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="RptVigenciaPcmso.cs">
+      <DependentUpon>RptVigenciaPcmso.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <EmbeddedResource Include="RptAnamnese.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptAnamnese.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptAso_Global.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptAso_Global.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptClientePcmso.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptClientePcmso.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptClinicaValorExamePorGrupo.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptClinicaValorExamePorGrupo.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptCronogramaPCMSO.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptCronogramaPCMSO1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptExamePlanejados.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptExamePlanejados.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptListaPlanejamentoExames.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptListaPlanejamentoExames.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptListaExamesCadastrados.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptListaExamesCadastrados.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptPci_Novo_Global.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptPci_Novo_Global.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptPci_NovoEY.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptPci_NovoEY.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptPci_Novo.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptPci_Novo.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptPci_Novo_EY2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptPci_Novo_EY2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptPci_Novo_Capgemini.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptPci_Novo_Capgemini.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptPCMSO_Preposto.resx">
+      <DependentUpon>RptPCMSO_Preposto.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptPCMSO_Preposto.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptPCMSO_Preposto.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptQuadroPCMSO.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptQuadroPCMSO1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptSAE.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptSAE.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptSolicitacaoExamesLista.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptSolicitacaoExamesLista.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptAsoPciModPagina.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptAsoPciModPagina.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptAssinaturaCoordenadorPcmso.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptAssinaturaCoordenadorPcmso.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptExamePlanProgramaEspecial.resx">
+      <DependentUpon>RptExamePlanProgramaEspecial.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptExamePlanProgramaEspecial.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptExamePlanProgramaEspecial.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptAso.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptAso.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptAsoViaEmpregado.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptAsoViaEmpregado.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptAsoViaEmpregador.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptAsoViaEmpregador.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptAsoViaPci.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptAsoViaPci1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptAudiometria.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptAudiometria.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptAudiometriaAnamnese.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptAudiometriaAnamnese.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptAudiometriaAudiograma.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptAudiometriaAudiograma.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptAudiometriaFooter.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptAudiometriaFooter.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptAudiometriaHeader.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptAudiometriaHeader.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptAudiometriaQuadro.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptAudiometriaQuadro.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptClienteClinica.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptClienteClinica.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptClinicaCliente.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptClinicaCliente.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptClinicaExame.resx">
+      <DependentUpon>RptClinicaExame.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptClinicaExame.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptClinicaExame.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptControlePCMSO.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptControlePCMSO.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptDeclaRecebimentoASO.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptDeclaRecebimentoASO.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptEncaminhamentoExame.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptEncaminhamentoExame.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptExamePlanPorData.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptExamePlanPorData.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptExamePlanPorEmpregado.resx">
+      <DependentUpon>RptExamePlanPorEmpregado.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptExamePlanPorEmpregado.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptExamePlanPorEmpregado.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptExamesDicionarios.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptExamesDicionarios.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptGuiaExameComplementar.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptGuiaExameComplementar.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptListaDeExames.resx">
+      <DependentUpon>RptListaDeExames.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptListaDeExames.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptListaDeExames.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptNexoEpidemiologico.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptNexoEpidemiologico.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptOrdemDePagamento.resx">
+      <DependentUpon>RptOrdemDePagamento.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptOrdemDePagamento.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptOrdemDePagamento.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptOrdemDePagamentoWEB.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptOrdemDePagamentoWEB.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptPci.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptPci.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptPCMSO.resx">
+      <DependentUpon>RptPCMSO.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptPCMSO.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptPCMSO.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptProntuarioClinico.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptProntuarioClinico.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptProntuariosDigitalizados.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptProntuariosDigitalizados1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptQuantidadeExames.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptQuantidadeExames.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptRelatorioAnual.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptRelatorioAnual.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptRelatorioAnualPorEmpregado.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptRelatorioAnualPorEmpregado.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptRelatorioTurnover.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptRelatorioTurnover.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptExamesRealizados.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptExamesRealizados.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptSolicitacaoExamesLaboratoriais.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptSolicitacaoExamesLaboratoriais.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptTestesEspeciais.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptTestesEspeciais.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptVencimentoExames.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptVencimentoExames.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptVigenciaPcmso.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptVigenciaPcmso.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Content Include="DataSource\AsoExameComp.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\ClienteClinica.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\ClinicaCliente.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\ClinicaExame.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSAdendoExame.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSAso.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSAsoPrincipal.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSAudiometria.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSAudiometriaAnamnese.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSAudiometriaAudiograma.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSAudiometriaFooter.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSAudiometriaHeader.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSAudiometriaQuadro.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSAvaliacaoQualitativa.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSCabecalhoListaDeExames.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSGuiaExameComplementar.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSPci.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSPCMSO_Receitas_Despesas_Lucros_PorEmpresa.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSPrestador.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSProntExameAudiometrico.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSProntExameClinico.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSProntExameComplementar.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSProntListagemExames.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSProntListagemProntuarioDigital.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSProntuarioClinico.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSProntuarioDigital.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSRelatorioAnual.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DSRelatorioAnualPorEmpregado.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\DS_ASO_PCI.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\EncaminhamentoExame.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\ExameDicionario.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\ExamePlanejamento.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\ExamesRealizados.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\ExamesRealizadosCliente.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\ExamesVencidos.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\ListaExame.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\OrdemDePagamento.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\OrdemDePagamentoHeader.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\PCMSO.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\sps_Exposicao_Empresa.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\sps_rptAnotacoesPCI.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\sps_rptASOPorEmpregado.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\sps_rptPPP_Periodo.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\sps_rptProntuario.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\VigenciaPcmso.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="DataSource\AsoExameComp.xsx">
+      <DependentUpon>AsoExameComp.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\ClienteClinica.xsx">
+      <DependentUpon>ClienteClinica.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\ClinicaCliente.xsx">
+      <DependentUpon>ClinicaCliente.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\ClinicaExame.xsx">
+      <DependentUpon>ClinicaExame.xsd</DependentUpon>
+    </None>
+    <Content Include="DataSource\DSExamesRealizados.xsd">
+      <SubType>Designer</SubType>
+      <LastGenOutput>DSExamesRealizados.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="DataSource\DSHeaderGestaoExames.xsd">
+      <SubType>Designer</SubType>
+      <LastGenOutput>DSHeaderGestaoExames.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="DataSource\DSGestaoExames.xsd">
+      <LastGenOutput>DSGestaoExames.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="DataSource\DSAdendoExame.xsc">
+      <DependentUpon>DSAdendoExame.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSAdendoExame.xss">
+      <DependentUpon>DSAdendoExame.xsd</DependentUpon>
+    </None>
+    <Content Include="DataSource\DSSAE.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSSAE.Designer.cs</LastGenOutput>
+    </Content>
+    <None Include="DataSource\DSSAE.xsc">
+      <DependentUpon>DSSAE.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSSAE.xss">
+      <DependentUpon>DSSAE.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSSAE.xsx">
+      <DependentUpon>DSSAE.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSAudiometria.xsc">
+      <DependentUpon>DSAudiometria.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSAudiometria.xss">
+      <DependentUpon>DSAudiometria.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSExamesPlanejados.xsc">
+      <DependentUpon>DSExamesPlanejados.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSExamesPlanejados.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSExamesPlanejados.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSource\DSExamesPlanejados.xss">
+      <DependentUpon>DSExamesPlanejados.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSGestaoExames.xsc">
+      <DependentUpon>DSGestaoExames.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSGestaoExames.xss">
+      <DependentUpon>DSGestaoExames.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSGestaoExames.xsx">
+      <DependentUpon>DSGestaoExames.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSHeaderGestaoExames.xsc">
+      <DependentUpon>DSHeaderGestaoExames.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSHeaderGestaoExames.xss">
+      <DependentUpon>DSHeaderGestaoExames.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSHeaderGestaoExames.xsx">
+      <DependentUpon>DSHeaderGestaoExames.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSCabecalhoListaDeExames.xsc">
+      <DependentUpon>DSCabecalhoListaDeExames.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSCabecalhoListaDeExames.xss">
+      <DependentUpon>DSCabecalhoListaDeExames.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSExamesRealizados.xsx">
+      <DependentUpon>DSExamesRealizados.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSAdendoExame.xsx">
+      <DependentUpon>DSAdendoExame.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSAso.xsx">
+      <DependentUpon>DSAso.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSAsoPrincipal.xsx">
+      <DependentUpon>DSAsoPrincipal.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSAudiometria.xsx">
+      <DependentUpon>DSAudiometria.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSAudiometriaAnamnese.xsx">
+      <DependentUpon>DSAudiometriaAnamnese.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSAudiometriaAudiograma.xsx">
+      <DependentUpon>DSAudiometriaAudiograma.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSAudiometriaFooter.xsx">
+      <DependentUpon>DSAudiometriaFooter.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSAudiometriaHeader.xsx">
+      <DependentUpon>DSAudiometriaHeader.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSAudiometriaQuadro.xsx">
+      <DependentUpon>DSAudiometriaQuadro.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSAvaliacaoQualitativa.xsx">
+      <DependentUpon>DSAvaliacaoQualitativa.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSCabecalhoListaDeExames.xsx">
+      <DependentUpon>DSCabecalhoListaDeExames.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSGuiaExameComplementar.xsx">
+      <DependentUpon>DSGuiaExameComplementar.xsd</DependentUpon>
+    </None>
+    <Content Include="DataSource\DSListaDeExames.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="DataSource\DSListaDeExames.xss">
+      <DependentUpon>DSListaDeExames.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSListaDeExames.xsx">
+      <DependentUpon>DSListaDeExames.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSPci.xsc">
+      <DependentUpon>DSPci.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSPci.xss">
+      <DependentUpon>DSPci.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSPci.xsx">
+      <DependentUpon>DSPci.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSPCMSO_Receitas_Despesas_Lucros_PorEmpresa.xsx">
+      <DependentUpon>DSPCMSO_Receitas_Despesas_Lucros_PorEmpresa.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSPrestador.xsx">
+      <DependentUpon>DSPrestador.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSProntExameAudiometrico.xsx">
+      <DependentUpon>DSProntExameAudiometrico.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSProntExameClinico.xsx">
+      <DependentUpon>DSProntExameClinico.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSProntExameComplementar.xsx">
+      <DependentUpon>DSProntExameComplementar.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSProntListagemExames.xsx">
+      <DependentUpon>DSProntListagemExames.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSProntListagemProntuarioDigital.xsx">
+      <DependentUpon>DSProntListagemProntuarioDigital.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSProntuarioClinico.xsx">
+      <DependentUpon>DSProntuarioClinico.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSProntuarioDigital.xsx">
+      <DependentUpon>DSProntuarioDigital.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSRelatorioAnual.xsx">
+      <DependentUpon>DSRelatorioAnual.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSRelatorioAnualPorEmpregado.xsx">
+      <DependentUpon>DSRelatorioAnualPorEmpregado.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DS_ASO_PCI.xsx">
+      <DependentUpon>DS_ASO_PCI.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\EncaminhamentoExame.xsx">
+      <DependentUpon>EncaminhamentoExame.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\ExameDicionario.xsx">
+      <DependentUpon>ExameDicionario.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\ExamePlanejamento.xsx">
+      <DependentUpon>ExamePlanejamento.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\ExamesRealizados.xsc">
+      <DependentUpon>ExamesRealizados.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\ExamesRealizados.xss">
+      <DependentUpon>ExamesRealizados.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\ExamesRealizados.xsx">
+      <DependentUpon>ExamesRealizados.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\ExamesRealizadosCliente.xsc">
+      <DependentUpon>ExamesRealizadosCliente.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\ExamesRealizadosCliente.xss">
+      <DependentUpon>ExamesRealizadosCliente.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\ExamesRealizadosCliente.xsx">
+      <DependentUpon>ExamesRealizadosCliente.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\ExamesVencidos.xsx">
+      <DependentUpon>ExamesVencidos.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\ListaExame.xsc">
+      <DependentUpon>ListaExame.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\ListaExame.xss">
+      <DependentUpon>ListaExame.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\ListaExame.xsx">
+      <DependentUpon>ListaExame.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\OrdemDePagamento.xsc">
+      <DependentUpon>OrdemDePagamento.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\OrdemDePagamento.xss">
+      <DependentUpon>OrdemDePagamento.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\OrdemDePagamento.xsx">
+      <DependentUpon>OrdemDePagamento.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\OrdemDePagamentoHeader.xsc">
+      <DependentUpon>OrdemDePagamentoHeader.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\OrdemDePagamentoHeader.xss">
+      <DependentUpon>OrdemDePagamentoHeader.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\OrdemDePagamentoHeader.xsx">
+      <DependentUpon>OrdemDePagamentoHeader.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\PCMSO.xsc">
+      <DependentUpon>PCMSO.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\PCMSO.xss">
+      <DependentUpon>PCMSO.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\PCMSO.xsx">
+      <DependentUpon>PCMSO.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\sps_Exposicao_Empresa.xsx">
+      <DependentUpon>sps_Exposicao_Empresa.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\sps_rptAnotacoesPCI.xsx">
+      <DependentUpon>sps_rptAnotacoesPCI.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\sps_rptASOPorEmpregado.xsx">
+      <DependentUpon>sps_rptASOPorEmpregado.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\sps_rptPPP_Periodo.xsx">
+      <DependentUpon>sps_rptPPP_Periodo.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\sps_rptProntuario.xsx">
+      <DependentUpon>sps_rptProntuario.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\VigenciaPcmso.xsx">
+      <DependentUpon>VigenciaPcmso.xsd</DependentUpon>
+    </None>
+    <Content Include="DataSource\DSSolicitacaoExamesLaboratoriais.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Dr Chang - Assinatura Final.jpg" />
+    <None Include="DataSource\DSSolicitacaoExamesLaboratoriais.xsc">
+      <DependentUpon>DSSolicitacaoExamesLaboratoriais.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSSolicitacaoExamesLaboratoriais.xss">
+      <DependentUpon>DSSolicitacaoExamesLaboratoriais.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\DSSolicitacaoExamesLaboratoriais.xsx">
+      <DependentUpon>DSSolicitacaoExamesLaboratoriais.xsd</DependentUpon>
+    </None>
+    <None Include="Ilitera.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3924545A-F8E2-475A-B1A4-05175BC41E50}" />
+    <Service Include="{5AD368F8-9AD3-4E4C-97D8-1F4F1C124158}" />
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+    <Service Include="{CF845C55-C321-4742-B673-E6212D061ED9}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Ilitera.Opsa.Data\Ilitera.Opsa.Data.csproj">
+      <Project>{7c453d2c-00bb-4cdc-9a34-3e4f52a66e13}</Project>
+      <Name>Ilitera.Opsa.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>del   "$(ProjectDir)obj\x64\Debug\*.*"  /q
+del   "$(ProjectDir)obj\Debug\*.*"  /q</PostBuildEvent>
+  </PropertyGroup>
+</Project>
